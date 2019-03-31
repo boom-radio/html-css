@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!--https://youtu.be/QFJ28KIDyKU-->
+  </head>
+  <body>
+    <!--Password and usename validation form-->
+    <form data-abide novalidate>
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <div data-abide-alert class="alert callout" style="display: none;">
+            <p><i class="fi-alert"></i>There are some errors in your form</p>
+          </div>
+        </div>
+      </div>
+      <!--Number validate-->
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12">
+          <label>Number required
+            <input type="text" placeholder="1234" aria-describeBy="exampleHelpText" required pattern="number">
+            <span class="form-error">
+              You have filled this in wrong
+            </span>
+          </label>
+          <p class="help-text" id="exampleHelpText">Try again please this way</p>
+        </div>
+      </div>
+      <!--Password validation-->
+      <div class="cell small-12">
+        <label>Password Required
+        <input type="password" id="password" placeholder="sdio389" aria-describeBy="exampleHelpText" required>
+        <span class="form-error">I'm needed please</span>
+        </label>
+        <p class="help-text" id="exampleHelpText">Enter password please</p>
+      </div>
+    </form>
+
+    <!--accordion menu-->
+    <ul class="accordion" data-accordion>
+      <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Accordion 1</a>
+      <div class="accordion-content" data-tab-content>
+        <p>Hello World 1</p>
+        <a href="http://">Click me</a>
+      </div>
+    </li>
+    <li class="accordion-item is-active" data-accordion-item>
+        <a href="#" class="accordion-title">Accordion 2</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Hello World 2</p>
+          <a href="http://">Click me</a>
+        </div>
+      </li>
+      <li class="accordion-item is-active" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 3</a>
+          <div class="accordion-content" data-tab-content>
+            <p>Hello World 3</p>
+            <a href="http://">Click me</a>
+          </div>
+        </li>
+        <li class="accordion-item is-active" data-accordion-item>
+            <a href="#" class="accordion-title">Accordion 4</a>
+            <div class="accordion-content" data-tab-content>
+              <p>Hello World 4</p>
+              <a href="http://"Click me></a>
+            </div>
+          </li>
+    </ul>
+
+    <div style="margin-bottom: 2vh"></div>
+
+    <!--Badges-->
+    <span class="primary badge">A</span>
+    <span class="secondary badge">B</span>
+    <span class="warning badge">C</span>
+    <span class="alert badge">D</span>
+    <span class="success badge">E</span>
+
+    <div style="margin-bottom: 2vh"></div>
+
+    <!--Buttons section-->
+    <button class="button" type="button">Click Me</button>
+    <button class="success button" type="button">Click Me</button>
+    <button class="alert button" type="button">Click Me</button>
+    <button class="tiny button" type="button">Click Me</button>
+    <button class="success large button" type="button">Click Me</button>
+    <button class="expanded button" type="button">Click Me</button>
+    <button class="alert small button" type="button">Click Me</button>
+
+    <div style="margin-bottom: 2vh"></div>
+    <!--Callouts secion-->
+    <div class="callout" data-closable>
+      <button class="close-button" type="button" aria-label="Close alert" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h5>Hello World!</h5>
+      <p>This is a callout</p>
+      <a href="http://">Link</a>
+    </div>
+
+    <div class="callout warning">
+        <h5>Hello World!</h5>
+        <p>This is a callout</p>
+        <a href="http://">Link</a>
+      </div>
+
+      <div class="callout success">
+          <h5>Hello World!</h5>
+          <p>This is a callout</p>
+          <a href="http://">Link</a>
+        </div>
+
+        <div class="callout alert">
+            <h5>Hello World!</h5>
+            <p>This is a callout</p>
+            <a href="http://">Link</a>
+          </div>
+
+          <div class="callout secondary">
+              <h5>Hello World!</h5>
+              <p>This is a callout</p>
+              <a href="http://">Link</a>
+            </div>
+
+    <!--Dropdown pane-->
+
+    <div style="margin-bottom: 2vh"></div>
+
+    <div style="display: flex; justify-content: center; text-align: center; margin-bottom: 50px; ">
+        <button class="button" data-toggle="example-dropdown" type="button">Toggle Dropdown</button>
+        <div class="dropdown-pane" id="example-dropdown" data-dropdown>
+          Dropdown pane
+        </div>
+    </div>
+
+    <div style="margin-bottom: 2vh"></div>
+
+    <!--Floating buttons-->
+    <button class="success button float-left" type="button">Float left</button>
+    <button class="alert button float-right" type="button">Float right</button>
+
+    <div style="margin-bottom: 10vh"></div>
+
+    <!--Labels-->
+    <div>
+      <span class="primary label">Primary label</span>
+      <span class="success label">Primary label</span>
+      <span class="warning label">Primary label</span>
+      <span class="alert label">Primary label</span>
+    </div>
+
+    <div style="margin-bottom: 10vh"></div>
+
+    <!--Off Canvas-->
+    <div class="off-canvas-wrapper" data-closable>
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+            <button class="close-button" type="button" aria-label="Close alert" data-close>
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <a href="#"><h2>Hello World</h2></a>
+          <a href="#"><h4>Html</h4></a>
+          <a href="#"><h4>CSS</h4></a>
+          <a href="#"><h4>Javascript</h4></a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="button" data-toggle="offCanvasLeft">Off canvas</button>
+
+    <div style="margin-bottom: 10vh"></div>
+
+    <!--Pagination Bar-->
+    <div>
+      <ul class="pagination" role="navigation" aria-label="pagination">
+        <li class="disabled">Previous<span class="show-for-sr">Page</span></li>
+        <li class="current"><span class="show-for-sr">You are on Page</span>1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis" aria-hidden="true"></li>
+        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li><a href="#" aria-label="Page 14">14</a></li>
+        <li><a href="#" aria-label="Next page"></a>Next<span class="show-for-sr">Page</span></a></li>
+      </ul>
+  </div>
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
