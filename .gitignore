@@ -1,0 +1,10 @@
+/local
+/src
+/index.js
+/package.json
+/node_modules
+/yarn.lock
+*.docx
+*.pdf
+*.log
+*.lock
