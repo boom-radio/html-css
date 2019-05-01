@@ -8,11 +8,13 @@
     <title>Listen</title>
     <link rel="stylesheet" href="css-fanny/foundation.css">
     <link rel="stylesheet" href="css-fanny/app.css">
+    <link rel="stylesheet" href="assets/fonts/fa/css/all.css">
+
 </head>
 
 <body>
 <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
-  <aside class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+  <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
     <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
     <ul class="menu vertical text-center">
       <li><a href="./">Home</a></li>
@@ -43,15 +45,12 @@
               <!-- Desktop top bar -->
               <div class="title-bar" id="desktop-menu">
                 <div class="title-bar-left">
-                  <h1><a href="./">Site Title</a></h1>
-                </div>
-                <div class="title-bar-right">
-                  <ul class="menu float-right align-middle">
-                    <li><a href="./">Home</a></li>
+                  <a href="./" class="float-left"><img src="assets/img/BoomLogoWhite.svg"></a>
+                  <ul class="menu float-left align-middle">
+                    <li><button class="menu-icon" type="button" data-toggle="offCanvas"></button></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><button class="menu-icon" type="button" data-toggle="offCanvas"></button></li>
                     <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
                   </ul>
                 </div>
