@@ -8,13 +8,81 @@
   <title>Home</title>
   <link rel="stylesheet" href="css-john/foundation.css">
   <link rel="stylesheet" href="css-john/app.css">
+  <link rel="stylesheet" href="assets/fonts/fa/css/all.css">
 </head>
 
 <body>
-  <h1>Boom Radio Test</h1>
-  <script src="js-john/vendor/jquery.js"></script>
-  <script src="js-john/vendor/foundation.js"></script>
-  <script src="js-john/app.js"></script>
+  <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
+  <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+    <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
+    <ul class="menu vertical text-center">
+      <li><a href="./">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </aside>
+  <!-- In the off-canvas-content DIV goes the whole page content -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <!-- Your page content lives here -->
+    <div class="grid-container-fluid">
+      <div class="grid-x">
+        <!-- BEGINNING OF THE TOP BAR -->
+        <div class="cell">
+          <div class="top-bar-container" data-sticky-container>
+            <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+              <!-- Mobile top bar -->
+              <div class="title-bar" data-responsive-toggle="desktop-menu">
+                <div class="title-bar-left">
+                  <h1><a href="./">Site Title</a></h1>
+                </div>
+                <div class="title-bar-right">
+                  <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+                  <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                </div>
+              </div>
+              <!-- Desktop top bar -->
+              <div class="title-bar" id="desktop-menu">
+                <div class="title-bar-left">
+                  <h1><a href="./">Site Title</a></h1>
+                  <ul class="menu align-middle">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <!--<li><button class="menu-icon" type="button" data-toggle="offCanvas"></button></li>-->
+                    <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                  </ul>
+                </div>
+                <div class="title-bar-right">
+                  <ul class="menu float-right align-middle">
+                    <!--<li><a href="./">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>-->
+                    <li><input type="search" placeholder="Search"></li>
+                    <li><button type="button" class="button">Search</button></li>
+                    <li><button class="menu-icon" type="button" data-toggle="offCanvas"></button></li>
+                    <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                  </ul>
+                </div>
+                <!--<div class="top-bar-right">
+                  <ul class="menu">
+                    <li><input type="search" placeholder="Search"></li>
+                    <li><button type="button" class="button">Search</button></li>
+                  </ul>
+                </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF THE TOP BAR -->
+    <h1>Boom Radio Test</h1>
+    <script src="js-john/vendor/jquery.js"></script>
+    <script src="js-john/vendor/foundation.js"></script>
+    <script src="js-john/app.js"></script>
 </body>
 
 </html>
