@@ -1,0 +1,19 @@
+@mixin menu-icon-reset(){
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.menu-icon{
+    @include menu-icon-reset();
+}
+.menu-icon::after {
+    @include menu-icon-reset();}
+.menu-icon:hover {
+    @include menu-icon-reset();}
+.menu-icon:hover::after {
+    @include menu-icon-reset();}
+
+.c:hover, .d:hover{
+        fill:blue;}
+.svg{
+    margin:10px;
+}

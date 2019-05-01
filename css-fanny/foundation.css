@@ -2692,7 +2692,6 @@ ul.no-bullet, ol.no-bullet {
     position: relative;
     top: 0.4em;
     display: inline-block;
-    float: right;
     margin-left: 1em; }
   .button.dropdown.hollow::after, .button.dropdown.clear::after {
     border-top-color: #1779ba; }
@@ -3817,7 +3816,6 @@ select {
   border-color: transparent #1779ba transparent transparent;
   border-left-width: 0;
   display: inline-block;
-  vertical-align: middle;
   margin-right: 0.75rem; }
 
 .dropdown-pane {
