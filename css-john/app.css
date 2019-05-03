@@ -199,6 +199,12 @@ html * {
       @return #fff;
     }
   }*/
+.fa-search {
+  color: #EB5B27; }
+
+#desktop-menu div div div div ul li button {
+  background-color: #0a0a0a; }
+
 /*Set variables for the main site colours*/
 /*$color-dark: #4c61a5;*/
 @font-face {
@@ -230,6 +236,9 @@ html * {
       @return #fff;
     }
   }*/
+body {
+  font-family: 'Fjalla One', sans-serif; }
+
 header {
   background-image: url(../assets/img/BackHeader.png);
   height: 200px; }

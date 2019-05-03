@@ -1,2 +1,10 @@
 /*Navbar controls*/
 @import "config";
+
+.fa-search {
+    color: $color-six;
+}
+
+#desktop-menu div div div div ul li button {
+    background-color: $color-ten;
+}
