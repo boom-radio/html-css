@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Fjalla One', sans-serif;
+    background: $color-black !important;
 }
 
 header {
@@ -16,6 +17,30 @@ header {
 .off-canvas {
     background-color: rgba(0, 0, 0, 0.9);
 }
+
+
+/*This is for the sound wave and section title layout*/
+.section-title {
+    color: $color-six;
+    padding: 0.5rem;
+}
+.custom-list-class {
+    @include horizontal-list;
+}
+
+
+//Change footer to horizontal list with padded links (including hover effects):
+ul.menu {
+    @include horizontal-list-padded(5px, 10px);
+    i {
+        color: $color-six;
+    }
+    
+    i:hover {
+      color: $color-four;
+    }
+  }
+
 
 /*Possible gradient animation for blocks
 @-webkit-keyframes gradientAnimation {

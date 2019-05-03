@@ -238,7 +238,8 @@ html * {
     }
   }*/
 body {
-  font-family: 'Fjalla One', sans-serif; }
+  font-family: 'Fjalla One', sans-serif;
+  background: black !important; }
 
 header {
   background-image: url(../assets/img/BackHeader.png);
@@ -249,6 +250,41 @@ header {
 
 .off-canvas {
   background-color: rgba(0, 0, 0, 0.9); }
+
+/*This is for the sound wave and section title layout*/
+.section-title {
+  color: #eb5b27;
+  padding: 0.5rem; }
+
+.custom-list-class {
+  padding: 0;
+  text-align: center;
+  word-spacing: -1em;
+  display: table;
+  width: 100%;
+  margin: 0; }
+  .custom-list-class li {
+    display: inline-block;
+    word-spacing: 0; }
+
+ul.menu {
+  padding: 0;
+  text-align: center;
+  word-spacing: -1em;
+  display: table;
+  width: 100%;
+  margin: 0; }
+  ul.menu li {
+    display: inline-block;
+    word-spacing: 0; }
+  ul.menu li {
+    padding: 5px 0; }
+    ul.menu li a {
+      padding: 5px 10px; }
+  ul.menu i {
+    color: #eb5b27; }
+  ul.menu i:hover {
+    color: #3aa9e1; }
 
 /*Possible gradient animation for blocks
 @-webkit-keyframes gradientAnimation {
