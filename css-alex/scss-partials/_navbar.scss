@@ -1,8 +1,24 @@
 // This partial contains all the styles relative to the navbar (so in this case topbar and off canvas menu
 .top-bar-container {
-    top: 150px;
+    top: 145px;
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            color: $color-three;
+        }
+    }
 }
 
 .off-canvas {
     background-color: rgba(0, 0, 0, 0.8);
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            color: $color-three;
+        }
+    }
 }

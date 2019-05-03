@@ -1,0 +1,20 @@
+//ABOUT PAGE styles
+.about-box {
+    border-radius: 15px;
+
+    img {
+        border-radius: 15px;
+    }
+
+    &.gradient-one-two {
+        @include gradient-one-two;
+    }
+
+    &.gradient-three-four {
+        @include gradient-three-four;
+    }
+
+    &.gradient-five-six {
+        @include gradient-five-six;
+    }
+}

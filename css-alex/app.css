@@ -1,171 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/*Removed for accessibility guidleines iframe,*/
-html,
-body,
-div,
-span,
-applet,
-object,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block; }
-
-.category {
-  visibility: hidden; }
-
-body {
-  line-height: 1; }
-
-ol,
-ul {
-  list-style: none; }
-
-blockquote,
-q {
-  quotes: none; }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-html,
-html * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-/*Set variables for the main site colours*/
-/*$color-dark: #4c61a5;*/
-@font-face {
-  font-family: 'Fjalla One', sans-serif;
-  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
-
-@font-face {
-  font-family: 'Quicksand-Regular', sans-serif;
-  src: url(../assets/fonts/Quicksand-Regular.ttf); }
-
-@font-face {
-  font-family: 'Quicksand-Medium', sans-serif;
-  src: url(../assets/fonts/Quicksand-Medium.ttf); }
-
-/*@mixin mediaSm {
-    @media screen and (max-width: 500px) {
-      @content;
-    }
-  }
-  
-  @mixin mediaMd {
-    @media screen and (min-width: 665px) {
-      @content;
-    }
-  }
-
-@mixin mediaLg {
-    @media screen and (min-width: 1024px) {
-      @content;
-    }
-  }*/
+/*$color-dark: #4c61a5;
+$color-dark: #4c61a5;
+$color-bright: #d8b91f;
+$color-med: #C0C0C0;
+$color-white: #fff;
+$color-black: #000;
+$show-panel: true;*/
 /*For use as a relative position controller for images in desktop view
 @mixin panel-control {
   @if $show-panel {
@@ -176,12 +15,49 @@ html * {
 .test {
   border: 1px solid red; }
 
+body {
+  background: #110e16; }
+
+h1 {
+  color: #eb5b27;
+  text-transform: uppercase; }
+
+h2 {
+  text-transform: uppercase; }
+
+h3 {
+  color: #eb5b27; }
+
 header {
   background-image: url(../assets/img/BackHeader.png);
   height: 200px; }
 
 .top-bar-container {
-  top: 150px; }
+  top: 145px; }
+  .top-bar-container a {
+    color: white; }
+    .top-bar-container a:hover {
+      color: #3fc5be; }
 
 .off-canvas {
   background-color: rgba(0, 0, 0, 0.8); }
+  .off-canvas a {
+    color: white; }
+    .off-canvas a:hover {
+      color: #3fc5be; }
+
+.about-box {
+  border-radius: 15px; }
+  .about-box img {
+    border-radius: 15px; }
+  .about-box.gradient-one-two {
+    background-image: linear-gradient(to right, #faa294, #fe657e); }
+  .about-box.gradient-three-four {
+    background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
+  .about-box.gradient-five-six {
+    background-image: linear-gradient(to right, #fcab62, #eb5b27); }
+
+footer a {
+  color: #eb5b27; }
+  footer a:hover {
+    color: #3fc5be; }
