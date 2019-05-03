@@ -49,28 +49,28 @@ $show-panel: true;
     }
   }
 
-  @mixin horizontal-list {
-    padding: 0;
-    text-align: center;
-    word-spacing: -1em;
-    display: table;
-    width: 100%;
-    margin: 0;
-    li {
-      display: inline-block;
-      word-spacing: 0;
-    }
+@mixin horizontal-list {
+  padding: 0;
+  text-align: center;
+  word-spacing: -1em;
+  display: table;
+  width: 100%;
+  margin: 0;
+  li {
+    display: inline-block;
+    word-spacing: 0;
   }
+}
 
-  @mixin horizontal-list-padded($vertical, $horizontal) {
-    @include horizontal-list;
-    li {
-      padding: $vertical 0;
-      a {
-        padding: $vertical $horizontal;
-      }
+@mixin horizontal-list-padded($vertical, $horizontal) {
+  @include horizontal-list;
+  li {
+    padding: $vertical 0;
+    a {
+      padding: $vertical $horizontal;
     }
   }
+}
 
 /*For use as a relative position controller for images in desktop view
 @mixin panel-control {

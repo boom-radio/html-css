@@ -267,23 +267,26 @@ header {
     display: inline-block;
     word-spacing: 0; }
 
-ul.menu {
+ul.footer-menu {
+  height: 6vh;
   padding: 0;
   text-align: center;
   word-spacing: -1em;
   display: table;
   width: 100%;
   margin: 0; }
-  ul.menu li {
+  ul.footer-menu li {
     display: inline-block;
     word-spacing: 0; }
-  ul.menu li {
+  ul.footer-menu li {
     padding: 5px 0; }
-    ul.menu li a {
+    ul.footer-menu li a {
       padding: 5px 10px; }
-  ul.menu i {
-    color: #eb5b27; }
-  ul.menu i:hover {
+  ul.footer-menu i {
+    color: #eb5b27;
+    width: 4vh;
+    height: 4vh; }
+  ul.footer-menu i:hover {
     color: #3aa9e1; }
 
 /*Possible gradient animation for blocks

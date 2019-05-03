@@ -30,16 +30,20 @@ header {
 
 
 //Change footer to horizontal list with padded links (including hover effects):
-ul.menu {
+ul.footer-menu {
+    height: 6vh;
+
     @include horizontal-list-padded(5px, 10px);
     i {
         color: $color-six;
+        width: 4vh;
+        height: 4vh;
     }
-    
+
     i:hover {
       color: $color-four;
     }
-  }
+}
 
 
 /*Possible gradient animation for blocks
