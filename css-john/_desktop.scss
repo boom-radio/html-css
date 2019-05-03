@@ -1,0 +1,15 @@
+/*Desktop View*/
+@import "config";
+
+@include mediaLg {
+
+    body {
+        max-width: 2400px;
+        
+    }
+
+    //For use with block positioning for desktop view
+    /*div {
+        @include panel-control;    
+    }*/
+}

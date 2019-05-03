@@ -1,0 +1,124 @@
+@import "config";
+
+/*POssible graidnet animation for blocks
+@-webkit-keyframes gradientAnimation {
+    0% {
+        background-position: 0% 30%, 0 0;
+    }
+
+    50% {
+        background-position: 100% 70%, 0 0;
+    }
+
+    100% {
+        background-position: 0% 30%, 0 0;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 30%, 0 0;
+    }
+
+    50% {
+        background-position: 100% 70%, 0 0;
+    }
+
+    100% {
+        background-position: 0% 30%, 0 0;
+    }
+}*/
+
+/*Use for button mixin
+@mixin block_set($c:0 auto, $d: block, $e: relative){
+    margin: $c;
+    display: $d;
+    position: $e;
+}
+
+#ribbon {
+    @include block_set;
+    background: url('../images/ribbon.png') no-repeat;
+    width: 251px;
+    height: 48px;
+    top: -38px;
+}
+
+//For use with block positioning for desktop view
+div {
+    @include panel-control;
+   
+}
+
+//For use in mobile view
+.nodisplay {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/*Keyframes & Boxshadows for use with the boom speaker affect
+@keyframes robot-pulse {
+    0% {
+        box-shadow: 0 0 0 0px $color-dark;
+    }
+
+    100% {
+        box-shadow: 0 0 0 30px $color-bright;
+    }
+}
+
+.imagepulse {
+    margin: 3em;
+    width: 50%;
+    height: 50%;
+    background: $color-white;
+    border-radius: 50%;
+    animation: robot-pulse 1s infinite;
+}
+
+/*Grid container - use to change grid items when hovered and contain within required container
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: $color-white;
+    padding: 7px;
+}
+
+
+.grid-item {
+
+    &:nth-child(even) {
+        background-color: $color-dark;
+        border: 1px solid $color-black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &:nth-child(odd) {
+        background-color: $color-bright;
+        border: 1px solid $color-black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: $color-white;
+    }
+}
+
+2nd grid with @extend
+
+.extend-container {
+    @extend .grid-container;
+}
+
+.extend-item {
+    @extend .grid-item;
+}*/
+
+
+
+
