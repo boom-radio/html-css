@@ -1,5 +1,7 @@
 //ABOUT PAGE styles
-.about-box {
+@import "config";
+
+.gradiented-box {
     border-radius: 15px;
 
     img {
@@ -16,5 +18,65 @@
 
     &.gradient-five-six {
         @include gradient-five-six;
+    }
+}
+
+.img-left {
+    position: relative;
+    top: 3.5rem;
+    left: 1rem;
+
+    &.box-shadow-one-left {
+        @include box-shadow-one-left;
+    }
+
+    &.box-shadow-two-left {
+        @include box-shadow-two-left;
+    }
+
+    &.box-shadow-three-left {
+        @include box-shadow-three-left;
+    }
+
+    &.box-shadow-four-left {
+        @include box-shadow-four-left;
+    }
+
+    &.box-shadow-five-left {
+        @include box-shadow-five-left;
+    }
+
+    &.box-shadow-six-left {
+        @include box-shadow-six-left;
+    }
+}
+
+.img-right {
+    position: relative;
+    top: 3.5rem;
+    right: 1rem;
+
+    &.box-shadow-one-right {
+        @include box-shadow-one-right;
+    }
+
+    &.box-shadow-two-right {
+        @include box-shadow-two-right;
+    }
+
+    &.box-shadow-three-right {
+        @include box-shadow-three-right;
+    }
+
+    &.box-shadow-four-right {
+        @include box-shadow-four-right;
+    }
+
+    &.box-shadow-five-right {
+        @include box-shadow-five-right;
+    }
+
+    &.box-shadow-six-right {
+        @include box-shadow-six-right;
     }
 }

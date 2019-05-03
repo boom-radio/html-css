@@ -1,10 +1,10 @@
-/*$color-dark: #4c61a5;
-$color-dark: #4c61a5;
-$color-bright: #d8b91f;
-$color-med: #C0C0C0;
-$color-white: #fff;
-$color-black: #000;
-$show-panel: true;*/
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
 /*For use as a relative position controller for images in desktop view
 @mixin panel-control {
   @if $show-panel {
@@ -15,6 +15,13 @@ $show-panel: true;*/
 .test {
   border: 1px solid red; }
 
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
 body {
   background: #110e16; }
 
@@ -28,12 +35,19 @@ h2 {
 h3 {
   color: #eb5b27; }
 
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
 header {
   background-image: url(../assets/img/BackHeader.png);
   height: 200px; }
 
 .top-bar-container {
-  top: 145px; }
+  top: 125px; }
   .top-bar-container a {
     color: white; }
     .top-bar-container a:hover {
@@ -46,17 +60,89 @@ header {
     .off-canvas a:hover {
       color: #3fc5be; }
 
-.about-box {
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
+.gradiented-box {
   border-radius: 15px; }
-  .about-box img {
+  .gradiented-box img {
     border-radius: 15px; }
-  .about-box.gradient-one-two {
+  .gradiented-box.gradient-one-two {
     background-image: linear-gradient(to right, #faa294, #fe657e); }
-  .about-box.gradient-three-four {
+  .gradiented-box.gradient-three-four {
     background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
-  .about-box.gradient-five-six {
+  .gradiented-box.gradient-five-six {
     background-image: linear-gradient(to right, #fcab62, #eb5b27); }
 
+.img-left {
+  position: relative;
+  top: 3.5rem;
+  left: 1rem; }
+  .img-left.box-shadow-one-left {
+    -webkit-box-shadow: -0.5rem -0.5rem 0 0 #faa294;
+    -moz-box-shadow: -0.5rem -0.5rem 0 0 #faa294;
+    box-shadow: -0.5rem -0.5rem 0 0 #faa294; }
+  .img-left.box-shadow-two-left {
+    -webkit-box-shadow: -0.5rem -0.5rem 0 0 #fe657e;
+    -moz-box-shadow: -0.5rem -0.5rem 0 0 #fe657e;
+    box-shadow: -0.5rem -0.5rem 0 0 #fe657e; }
+  .img-left.box-shadow-three-left {
+    -webkit-box-shadow: -0.5rem -0.5rem 0 0 #3fc5be;
+    -moz-box-shadow: -0.5rem -0.5rem 0 0 #3fc5be;
+    box-shadow: -0.5rem -0.5rem 0 0 #3fc5be; }
+  .img-left.box-shadow-four-left {
+    -webkit-box-shadow: -0.5rem -0.5rem 0 0 #3aa9e1;
+    -moz-box-shadow: -0.5rem -0.5rem 0 0 #3aa9e1;
+    box-shadow: -0.5rem -0.5rem 0 0 #3aa9e1; }
+  .img-left.box-shadow-five-left {
+    -webkit-box-shadow: -0.5rem -0.5rem 0 0 #fcab62;
+    -moz-box-shadow: -0.5rem -0.5rem 0 0 #fcab62;
+    box-shadow: -0.5rem -0.5rem 0 0 #fcab62; }
+  .img-left.box-shadow-six-left {
+    -webkit-box-shadow: -0.5rem -0.5rem 0 0 #eb5b27;
+    -moz-box-shadow: -0.5rem -0.5rem 0 0 #eb5b27;
+    box-shadow: -0.5rem -0.5rem 0 0 #eb5b27; }
+
+.img-right {
+  position: relative;
+  top: 3.5rem;
+  right: 1rem; }
+  .img-right.box-shadow-one-right {
+    -webkit-box-shadow: 0.5rem -0.5rem 0 0 #faa294;
+    -moz-box-shadow: 0.5rem -0.5rem 0 0 #faa294;
+    box-shadow: 0.5rem -0.5rem 0 0 #faa294; }
+  .img-right.box-shadow-two-right {
+    -webkit-box-shadow: 0.5rem -0.5rem 0 0 #fe657e;
+    -moz-box-shadow: 0.5rem -0.5rem 0 0 #fe657e;
+    box-shadow: 0.5rem -0.5rem 0 0 #fe657e; }
+  .img-right.box-shadow-three-right {
+    -webkit-box-shadow: 0.5rem -0.5rem 0 0 #3fc5be;
+    -moz-box-shadow: 0.5rem -0.5rem 0 0 #3fc5be;
+    box-shadow: 0.5rem -0.5rem 0 0 #3fc5be; }
+  .img-right.box-shadow-four-right {
+    -webkit-box-shadow: 0.5rem -0.5rem 0 0 #3aa9e1;
+    -moz-box-shadow: 0.5rem -0.5rem 0 0 #3aa9e1;
+    box-shadow: 0.5rem -0.5rem 0 0 #3aa9e1; }
+  .img-right.box-shadow-five-right {
+    -webkit-box-shadow: 0.5rem -0.5rem 0 0 #fcab62;
+    -moz-box-shadow: 0.5rem -0.5rem 0 0 #fcab62;
+    box-shadow: 0.5rem -0.5rem 0 0 #fcab62; }
+  .img-right.box-shadow-six-right {
+    -webkit-box-shadow: 0.5rem -0.5rem 0 0 #eb5b27;
+    -moz-box-shadow: 0.5rem -0.5rem 0 0 #eb5b27;
+    box-shadow: 0.5rem -0.5rem 0 0 #eb5b27; }
+
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
 footer a {
   color: #eb5b27; }
   footer a:hover {
