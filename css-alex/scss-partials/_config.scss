@@ -1,12 +1,35 @@
-
-/*Set variables for the main site colours*/
-/*$color-dark: #4c61a5;*/
+/*$color-dark: #4c61a5;
 $color-dark: #4c61a5;
 $color-bright: #d8b91f;
 $color-med: #C0C0C0;
 $color-white: #fff;
 $color-black: #000;
-$show-panel: true;
+$show-panel: true;*/
+
+//Set variables for the main site colours
+$color-white: rgb(255,255,255,1); //#FFFFFF
+$color-black: rgb(0,0,0,1); //#000000
+$color-one: rgb(250,162,148,1); //#FAA294
+$color-two: rgb(254,101,126,1); //#FE657E
+$color-three: rgb(63,197,190,1); //#3FC5BE
+$color-four: rgb(58,169,225,1); //#3AA9E1
+$color-five: rgb(252,171,98,1); //#FCAB62
+$color-six: rgb(235,91,39,1); //#EB5B27
+$color-seven: rgb(17,14,22,1); //#110E16
+$color-eight: rgb(10,20,23,1); //#0A1417
+
+//Set mixins for gradients
+@mixin gradient-one-two {
+  background-image: linear-gradient(to right, $color-one , $color-two);
+}
+
+@mixin gradient-three-four {
+  background-image: linear-gradient(to right, $color-three , $color-four);
+}
+
+@mixin gradient-five-six {
+  background-image: linear-gradient(to right, $color-five , $color-six);
+}
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;

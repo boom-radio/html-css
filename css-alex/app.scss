@@ -3,3 +3,7 @@
 @import "scss-partials/test";
 @import "scss-partials/header";
 @import "scss-partials/navbar";
+
+body {
+    @include gradient-one-two;
+}
