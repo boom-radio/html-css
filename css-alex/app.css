@@ -1,3 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Removed for accessibility guidleines iframe,*/
+html,
+body,
+div,
+span,
+applet,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+.category {
+  visibility: hidden; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*Set variables for the main site colours*/
+/*$color-dark: #4c61a5;*/
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Medium', sans-serif;
+  src: url(../assets/fonts/Quicksand-Medium.ttf); }
+
+/*@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaMd {
+    @media screen and (min-width: 665px) {
+      @content;
+    }
+  }
+
+@mixin mediaLg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }*/
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
 .test {
   border: 1px solid red; }
 
@@ -9,4 +184,4 @@ header {
   top: 150px; }
 
 .off-canvas {
-  background-color: rgba(0, 0, 0, 0.9); }
+  background-color: rgba(0, 0, 0, 0.8); }

@@ -1,0 +1,62 @@
+
+/*Set variables for the main site colours*/
+/*$color-dark: #4c61a5;*/
+$color-dark: #4c61a5;
+$color-bright: #d8b91f;
+$color-med: #C0C0C0;
+$color-white: #fff;
+$color-black: #000;
+$show-panel: true;
+
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(../assets/fonts/FjallaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(../assets/fonts/Quicksand-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand-Medium', sans-serif;
+  src: url(../assets/fonts/Quicksand-Medium.ttf);
+}
+
+//media query mixins
+/*@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaMd {
+    @media screen and (min-width: 665px) {
+      @content;
+    }
+  }
+
+@mixin mediaLg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }*/
+
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
+
+//Set text colour - if required
+// @function set-text-color($color) {
+//     @if (lightness($color) > 48) {
+//       @return #000;
+//     }
+  
+//     @else {
+//       @return #fff;
+//     }
+//   }

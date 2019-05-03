@@ -1,16 +1,5 @@
-.test {
-    border: 1px solid red;
-}
-
-header {
-    background-image: url(../assets/img/BackHeader.png);
-    height: 200px;
-}
-
-.top-bar-container {
-    top: 150px;
-}
-
-.off-canvas {
-    background-color: rgba(0, 0, 0, 0.9);
-}
+@import "scss-partials/normalise";
+@import "scss-partials/config";
+@import "scss-partials/test";
+@import "scss-partials/header";
+@import "scss-partials/navbar";
