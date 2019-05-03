@@ -12,9 +12,100 @@
 </head>
 
 <body>
-    <script src="js-john/vendor/jquery.js"></script>
-    <script src="js-john/vendor/foundation.js"></script>
-    <script src="js-john/app.js"></script>
+    <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
+    <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+        <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
+        <div class="grid-container">
+            <div class="grid-x grid-padding-y">
+                <div class="cell">
+                    <ul class="menu vertical text-center">
+                        <li><a href="./"><img src="assets/img/BoomLogoWhite.svg" alt="Boom Radio Logo"></a></li>
+                        <li><input type="search" placeholder="Search"></li>
+                        <li><button type="button" class="button"><i class="fas fa-search"></i></button></li>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="listen.html">Listen</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <button class="close-button" aria-label="Close alert" type="button" data-close>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- In the off-canvas-content DIV goes the whole page content -->
+    <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Your page content lives here -->
+        <header class="grid-container-fluid">
+            <div class="grid-x">
+                <!-- BEGINNING OF THE TOP BAR -->
+                <div class="cell">
+                    <div class="top-bar-container" data-sticky-container>
+                        <div class="sticky sticky-topbar" data-sticky
+                            data-options="anchor: page; marginTop: 0; stickyOn: small;">
+                            <!-- Mobile top bar -->
+                            <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="xlarge">
+                                <div class="title-bar-left">
+                                    <div class="grid-container-fluid">
+                                        <div class="grid-x grid-margin-x grid-margin-y align-middle">
+                                            <div class="cell shrink">
+                                                <img src="assets/img/BoomLogoWhite.svg" alt="Boom Radio Logo">
+                                            </div>
+                                            <div class="cell shrink">
+                                                <button type="button" data-toggle="offCanvas"><img
+                                                        src="assets/img/+.svg" alt="+"></button>
+                                                <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Desktop top bar -->
+                            <div class="title-bar" id="desktop-menu">
+                                <div class="title-bar-left">
+                                    <div class="grid-container-fluid">
+                                        <div class="grid-x grid-margin-x grid-padding-x grid-margin-y align-middle">
+                                            <div class="cell shrink">
+                                                <a href="./"><img src="assets/img/BoomLogoWhite.svg"
+                                                        alt="Boom Radio Logo"></a>
+                                            </div>
+                                            <div class="cell shrink">
+                                                <button type="button" data-toggle="offCanvas"><img
+                                                        src="assets/img/+.svg" alt="+"></button>
+                                                <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                                            </div>
+                                            <div class="cell shrink">
+                                                <ul class="menu text-center">
+                                                    <li><a href="listen.html">Listen</a></li>
+                                                    <li><a href="music.html">Music</a></li>
+                                                    <li><a href="news.html">News</a></li>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cell auto">
+                                                <ul class="menu float-right">
+                                                    <li><input type="search" placeholder="Search"></li>
+                                                    <li><button type="button" class="button"><i
+                                                                class="fas fa-search"></i></button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END OF THE DESKTOP TOP BAR -->
+        <script src="js-john/vendor/jquery.js"></script>
+        <script src="js-john/vendor/foundation.js"></script>
+        <script src="js-john/app.js"></script>
 </body>
 
 </html>

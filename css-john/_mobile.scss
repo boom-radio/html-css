@@ -1,6 +1,19 @@
 @import "config";
 
-/*POssible graidnet animation for blocks
+header {
+    background-image: url(../assets/img/BackHeader.png);
+    height: 200px;
+}
+
+.top-bar-container {
+    top: 150px;
+}
+
+.off-canvas {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*Possible gradient animation for blocks
 @-webkit-keyframes gradientAnimation {
     0% {
         background-position: 0% 30%, 0 0;
