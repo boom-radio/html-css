@@ -1,0 +1,429 @@
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Removed for accessibility guidleines iframe,*/
+html,
+body,
+div,
+span,
+applet,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+.category {
+  visibility: hidden; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*Set variables for the main site colours*/
+/*$color-dark: #4c61a5;*/
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Medium', sans-serif;
+  src: url(../assets/fonts/Quicksand-Medium.ttf); }
+
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
+/*//Set text colour - if required
+@function set-text-color($color) {
+    @if (lightness($color) > 48) {
+      @return #000;
+    }
+  
+    @else {
+      @return #fff;
+    }
+  }*/
+/*Navbar controls*/
+/*Set variables for the main site colours*/
+/*$color-dark: #4c61a5;*/
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Medium', sans-serif;
+  src: url(../assets/fonts/Quicksand-Medium.ttf); }
+
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
+/*//Set text colour - if required
+@function set-text-color($color) {
+    @if (lightness($color) > 48) {
+      @return #000;
+    }
+  
+    @else {
+      @return #fff;
+    }
+  }*/
+/*Set variables for the main site colours*/
+/*$color-dark: #4c61a5;*/
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Medium', sans-serif;
+  src: url(../assets/fonts/Quicksand-Medium.ttf); }
+
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
+/*//Set text colour - if required
+@function set-text-color($color) {
+    @if (lightness($color) > 48) {
+      @return #000;
+    }
+  
+    @else {
+      @return #fff;
+    }
+  }*/
+header {
+  background-image: url(../assets/img/BackHeader.png);
+  height: 200px; }
+
+.top-bar-container {
+  top: 150px; }
+
+.off-canvas {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+/*Possible gradient animation for blocks
+@-webkit-keyframes gradientAnimation {
+    0% {
+        background-position: 0% 30%, 0 0;
+    }
+
+    50% {
+        background-position: 100% 70%, 0 0;
+    }
+
+    100% {
+        background-position: 0% 30%, 0 0;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 30%, 0 0;
+    }
+
+    50% {
+        background-position: 100% 70%, 0 0;
+    }
+
+    100% {
+        background-position: 0% 30%, 0 0;
+    }
+}*/
+/*Use for button mixin
+@mixin block_set($c:0 auto, $d: block, $e: relative){
+    margin: $c;
+    display: $d;
+    position: $e;
+}
+
+#ribbon {
+    @include block_set;
+    background: url('../images/ribbon.png') no-repeat;
+    width: 251px;
+    height: 48px;
+    top: -38px;
+}
+
+//For use with block positioning for desktop view
+div {
+    @include panel-control;
+   
+}
+
+//For use in mobile view
+.nodisplay {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/*Keyframes & Boxshadows for use with the boom speaker affect
+@keyframes robot-pulse {
+    0% {
+        box-shadow: 0 0 0 0px $color-dark;
+    }
+
+    100% {
+        box-shadow: 0 0 0 30px $color-bright;
+    }
+}
+
+.imagepulse {
+    margin: 3em;
+    width: 50%;
+    height: 50%;
+    background: $color-white;
+    border-radius: 50%;
+    animation: robot-pulse 1s infinite;
+}
+
+/*Grid container - use to change grid items when hovered and contain within required container
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: $color-white;
+    padding: 7px;
+}
+
+
+.grid-item {
+
+    &:nth-child(even) {
+        background-color: $color-dark;
+        border: 1px solid $color-black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &:nth-child(odd) {
+        background-color: $color-bright;
+        border: 1px solid $color-black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: $color-white;
+    }
+}
+
+2nd grid with @extend
+
+.extend-container {
+    @extend .grid-container;
+}
+
+.extend-item {
+    @extend .grid-item;
+}*/
+/*Tablet View*/
+/*Set variables for the main site colours*/
+/*$color-dark: #4c61a5;*/
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Medium', sans-serif;
+  src: url(../assets/fonts/Quicksand-Medium.ttf); }
+
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
+/*//Set text colour - if required
+@function set-text-color($color) {
+    @if (lightness($color) > 48) {
+      @return #000;
+    }
+  
+    @else {
+      @return #fff;
+    }
+  }*/
+/*Desktop View*/
+/*Set variables for the main site colours*/
+/*$color-dark: #4c61a5;*/
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+
+@font-face {
+  font-family: 'Quicksand-Medium', sans-serif;
+  src: url(../assets/fonts/Quicksand-Medium.ttf); }
+
+/*For use as a relative position controller for images in desktop view
+@mixin panel-control {
+  @if $show-panel {
+    .panel.show {
+    }
+}
+}*/
+/*//Set text colour - if required
+@function set-text-color($color) {
+    @if (lightness($color) > 48) {
+      @return #000;
+    }
+  
+    @else {
+      @return #fff;
+    }
+  }*/
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: 2400px; }
+  /*div {
+        @include panel-control;    
+    }*/ }
