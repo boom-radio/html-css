@@ -329,7 +329,6 @@ button.boom-button-dark {
   box-shadow: 2px 1000px 1px black inset; }
 
 .about-box img {
-  border-radius: 15px;
   box-shadow: darkgrey; }
 
 .about-box .gradient-one-two {
@@ -343,9 +342,7 @@ button.boom-button-dark {
 
 .about-box .about-tile {
   width: 50%;
-  padding-right: 0.5rem;
-  padding-top: 2.5rem;
-  padding-right: 1rem;
+  padding: 2.5rem 0.5rem 1rem 0.5rem;
   color: black; }
 
 /*Possible gradient animation for blocks
@@ -498,6 +495,21 @@ div {
       @return #fff;
     }
   }*/
+@media (min-width: 768px) {
+  .about-box img {
+    box-shadow: darkgrey; }
+  .about-box .gradient-one-two {
+    background-image: linear-gradient(to right, #faa294, #fe657e); }
+  .about-box .gradient-three-four {
+    background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
+  .about-box .gradient-five-six {
+    background-image: linear-gradient(to right, #fcab62, #eb5b27); }
+  .about-box .about-tile {
+    width: 50%;
+    padding: 2.5rem 0.5rem 1rem 0.5rem;
+    color: black;
+    text-align: justify; } }
+
 /*Desktop View*/
 /*Set variables for the main site colours*/
 /*$color-dark: #4c61a5;*/

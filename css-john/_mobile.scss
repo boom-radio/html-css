@@ -85,7 +85,6 @@ button.boom-button-dark {
 //Coloured panel gradient
 .about-box {
     img {
-        border-radius: 15px; 
         box-shadow: darkgrey;
     }
     .gradient-one-two {
@@ -97,9 +96,7 @@ button.boom-button-dark {
 
         .about-tile {
             width: 50%;
-            padding-right: 0.5rem;
-            padding-top: 2.5rem;
-            padding-right: 1rem;
+            padding: 2.5rem 0.5rem 1rem 0.5rem;
             color: $color-black;
         }
     }
