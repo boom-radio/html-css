@@ -46,12 +46,10 @@ header {
   background-image: url(../assets/img/BackHeader.png);
   height: 200px; }
 
-.top-bar-container {
-  top: 125px; }
-  .top-bar-container a {
-    color: white; }
-    .top-bar-container a:hover {
-      color: #3fc5be; }
+.top-bar-container a {
+  color: white; }
+  .top-bar-container a:hover {
+    color: #3fc5be; }
 
 .off-canvas {
   background-color: rgba(0, 0, 0, 0.8); }
