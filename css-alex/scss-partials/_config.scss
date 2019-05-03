@@ -31,39 +31,20 @@ $color-eight: rgba(10,20,23,1); //#0A1417
   background-image: linear-gradient(to right, $color-five , $color-six);
 }
 
-@font-face {
-  font-family: 'Fjalla One', sans-serif;
-  src: url(../assets/fonts/FjallaOne-Regular.ttf);
-}
+// @font-face {
+//   font-family: 'Fjalla One', sans-serif;
+//   src: url(../assets/fonts/FjallaOne-Regular.ttf);
+// }
 
-@font-face {
-  font-family: 'Quicksand-Regular', sans-serif;
-  src: url(../assets/fonts/Quicksand-Regular.ttf);
-}
+// @font-face {
+//   font-family: 'Quicksand-Regular', sans-serif;
+//   src: url(../assets/fonts/Quicksand-Regular.ttf);
+// }
 
-@font-face {
-  font-family: 'Quicksand-Medium', sans-serif;
-  src: url(../assets/fonts/Quicksand-Medium.ttf);
-}
-
-//media query mixins
-/*@mixin mediaSm {
-    @media screen and (max-width: 500px) {
-      @content;
-    }
-  }
-  
-  @mixin mediaMd {
-    @media screen and (min-width: 665px) {
-      @content;
-    }
-  }
-
-@mixin mediaLg {
-    @media screen and (min-width: 1024px) {
-      @content;
-    }
-  }*/
+// @font-face {
+//   font-family: 'Quicksand-Medium', sans-serif;
+//   src: url(../assets/fonts/Quicksand-Medium.ttf);
+// }
 
 /*For use as a relative position controller for images in desktop view
 @mixin panel-control {

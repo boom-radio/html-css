@@ -1,0 +1,9 @@
+footer {
+    a {
+        color: $color-six;
+    
+        &:hover {
+            color: $color-three;
+        }
+    }
+}

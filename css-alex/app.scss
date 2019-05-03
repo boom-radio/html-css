@@ -1,9 +1,8 @@
-@import "scss-partials/normalise";
+//@import "scss-partials/normalise";
 @import "scss-partials/config";
 @import "scss-partials/test";
+@import "scss-partials/general";
 @import "scss-partials/header";
 @import "scss-partials/navbar";
-
-body {
-    @include gradient-one-two;
-}
+@import "scss-partials/main";
+@import "scss-partials/footer";
