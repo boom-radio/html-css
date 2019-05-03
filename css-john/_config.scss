@@ -74,6 +74,19 @@ $show-panel: true;
   }
 }
 
+//Set mixins for gradients
+@mixin gradient-one-two {
+  background-image: linear-gradient(to right, $color-one , $color-two);
+}
+
+@mixin gradient-three-four {
+  background-image: linear-gradient(to right, $color-three , $color-four);
+}
+
+@mixin gradient-five-six {
+  background-image: linear-gradient(to right, $color-five , $color-six);
+}
+
 /*For use as a relative position controller for images in desktop view
 @mixin panel-control {
   @if $show-panel {

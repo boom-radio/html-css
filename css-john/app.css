@@ -249,7 +249,8 @@ html * {
   }*/
 body {
   font-family: 'Fjalla One', sans-serif;
-  background: black !important; }
+  background: black !important;
+  color: white !important; }
 
 header {
   background-image: url(../assets/img/BackHeader.png);
@@ -309,9 +310,7 @@ ul.footer-menu {
   ul.footer-menu i:hover {
     color: #3aa9e1; }
 
-button.boom-button {
-  /*Float works  with "bio" class in car sections*/
-  float: right;
+button.boom-button, button.boom-button-dark {
   border-radius: 0.5rem;
   padding: .5rem 1.5rem;
   color: white;
@@ -322,9 +321,32 @@ button.boom-button {
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #535156 inset; }
 
-button.boom-button:hover {
+button.boom-button:hover, button.boom-button-dark:hover {
   box-shadow: none;
   color: white; }
+
+button.boom-button-dark {
+  box-shadow: 2px 1000px 1px black inset; }
+
+.about-box img {
+  border-radius: 15px;
+  box-shadow: darkgrey; }
+
+.about-box .gradient-one-two {
+  background-image: linear-gradient(to right, #faa294, #fe657e); }
+
+.about-box .gradient-three-four {
+  background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
+
+.about-box .gradient-five-six {
+  background-image: linear-gradient(to right, #fcab62, #eb5b27); }
+
+.about-box .about-tile {
+  width: 50%;
+  padding-right: 0.5rem;
+  padding-top: 2.5rem;
+  padding-right: 1rem;
+  color: black; }
 
 /*Possible gradient animation for blocks
 @-webkit-keyframes gradientAnimation {
@@ -517,6 +539,36 @@ div {
   /*Reduce the padding in mobile*/
   .card-section {
     padding: 0.1rem 1rem 0.5rem 1rem !important; }
+  .about-box img {
+    border-radius: 15px;
+    box-shadow: darkgrey; }
+  .about-box .z-one {
+    width: 800px;
+    height: 20rem;
+    position: relative;
+    top: -11rem;
+    left: 0.2rem;
+    z-index: 1; }
+  .about-box .z-two {
+    width: 10rem;
+    height: 2rem;
+    position: relative;
+    top: -10rem;
+    left: 0px;
+    z-index: 2; }
+  .about-box .z-three {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    top: 1.8rem;
+    left: 3rem;
+    z-index: 3; }
+  .about-box .about-tile {
+    width: 50%;
+    padding-right: 0.5rem;
+    padding-top: 2.5rem;
+    padding-right: 1rem;
+    color: black; }
   /*div {
         @include panel-control;    
     }*/ }
