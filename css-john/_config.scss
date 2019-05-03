@@ -12,7 +12,8 @@ $color-five: rgba(252,171,98,1); //#FCAB62
 $color-six: rgba(235,91,39,1); //#EB5B27
 $color-seven: rgba(17,14,22,1); //#110E16
 $color-eight: rgba(10,20,23,1); //#0A1417
-$color-ten: rgba(10, 10, 10, 1); //#0a0a0a
+$color-nine: rgba(83,81,86,1); //#535156
+$color-nav: rgba(10, 10, 10, 1); //#0a0a0a
 $show-panel: true;
 
 @font-face {
@@ -49,19 +50,20 @@ $show-panel: true;
     }
   }
 
+/*Mixin for controlling section titles with sounds waves*/
 @mixin horizontal-list {
   padding: 0;
   text-align: center;
   word-spacing: -1em;
   display: table;
   width: 100%;
-  margin: 0;
   li {
     display: inline-block;
     word-spacing: 0;
   }
 }
 
+/*Mixin for controlling the Footer icins*/
 @mixin horizontal-list-padded($vertical, $horizontal) {
   @include horizontal-list;
   li {
@@ -80,8 +82,8 @@ $show-panel: true;
 }
 }*/
 
-/*//Set text colour - if required
-@function set-text-color($color) {
+//Set text colour - if required
+/*@function set-text-color($color) {
     @if (lightness($color) > 48) {
       @return #000;
     }

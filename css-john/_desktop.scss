@@ -8,6 +8,15 @@
         
     }
 
+    .grid-container {
+        max-width: 110rem !important;
+    }
+
+    /*Reduce the padding in mobile*/
+    .card-section {
+        padding: 0.1rem 1rem 0.5rem 1rem !important;
+    }
+
     //For use with block positioning for desktop view
     /*div {
         @include panel-control;    

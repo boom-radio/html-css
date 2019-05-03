@@ -7,5 +7,14 @@
 }
 
 #desktop-menu div div div div ul li button {
-    background-color: $color-ten;
+    background-color: $color-nav;
+}
+
+.top-bar-container {
+    top: 150px;
+}
+
+.off-canvas {
+    color: $color-white;
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
