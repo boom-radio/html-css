@@ -21,7 +21,7 @@
     .about-box {
         img {
             border-radius: 15px; 
-            box-shadow: darkgrey;
+            @include box-shadow;
         }
         
         .z-one {

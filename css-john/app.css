@@ -259,6 +259,17 @@ header {
 .callout {
   padding: 0 !important; }
 
+.boom-line {
+  margin: 25px 0;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#3fc5be), to(#3fc5be), color-stop(50%, #3aa9e1));
+  z-index: 1; }
+
+.boom-title {
+  color: #eb5b27;
+  z-index: 2; }
+
 .card {
   border: 0 !important; }
 
@@ -328,22 +339,18 @@ button.boom-button:hover, button.boom-button-dark:hover {
 button.boom-button-dark {
   box-shadow: 2px 1000px 1px black inset; }
 
-.about-box img {
-  box-shadow: darkgrey; }
-
-.about-box .gradient-one-two {
-  background-image: linear-gradient(to right, #faa294, #fe657e); }
-
-.about-box .gradient-three-four {
-  background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
-
-.about-box .gradient-five-six {
-  background-image: linear-gradient(to right, #fcab62, #eb5b27); }
-
-.about-box .about-tile {
-  width: 50%;
-  padding: 2.5rem 0.5rem 1rem 0.5rem;
-  color: black; }
+.about-box {
+  /*@include box-shadow;*/ }
+  .about-box .gradient-one-two {
+    background-image: linear-gradient(to right, #faa294, #fe657e); }
+  .about-box .gradient-three-four {
+    background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
+  .about-box .gradient-five-six {
+    background-image: linear-gradient(to right, #fcab62, #eb5b27); }
+  .about-box .about-tile {
+    width: 50%;
+    padding: 2.5rem 0.5rem 1rem 0.5rem;
+    color: black; }
 
 /*Possible gradient animation for blocks
 @-webkit-keyframes gradientAnimation {
@@ -553,7 +560,12 @@ div {
     padding: 0.1rem 1rem 0.5rem 1rem !important; }
   .about-box img {
     border-radius: 15px;
-    box-shadow: darkgrey; }
+    -webkit-box-shadow: 3px 3px 5px 6px #535156;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #535156;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 5px 5px 5px 0px #535156;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
   .about-box .z-one {
     width: 800px;
     height: 20rem;

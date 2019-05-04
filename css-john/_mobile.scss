@@ -15,6 +15,18 @@ header {
     padding: 0 !important;
 }
 
+//Seperator & Title line
+.boom-line {
+    @include boom-line;
+    z-index: 1;
+}
+
+.boom-title {
+    color: $color-six;
+    z-index: 2;
+}
+
+
 //Top three elements in the News section of index.html
 .card {
     border: 0 !important;
@@ -84,9 +96,7 @@ button.boom-button-dark {
 }
 //Coloured panel gradient
 .about-box {
-    img {
-        box-shadow: darkgrey;
-    }
+    /*@include box-shadow;*/
     .gradient-one-two {
         @include gradient-one-two }
     .gradient-three-four {

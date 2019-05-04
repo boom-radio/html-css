@@ -87,6 +87,21 @@ $show-panel: true;
   background-image: linear-gradient(to right, $color-five , $color-six);
 }
 
+//Webstandard box shadow
+@mixin box-shadow {
+    -webkit-box-shadow: 3px 3px 5px 6px $color-nine;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px $color-nine;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         5px 5px 5px 0px $color-nine;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+@mixin boom-line {
+      margin: 25px 0;
+      height: 1px;
+      background: black;
+      background: -webkit-gradient(linear, 0 0, 100% 0, from($color-three), to($color-three), color-stop(50%, $color-four));
+} 
+
+
 /*For use as a relative position controller for images in desktop view
 @mixin panel-control {
   @if $show-panel {
