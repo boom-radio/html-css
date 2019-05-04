@@ -1,0 +1,72 @@
+/*Desktop View*/
+@import "config";
+
+@include mediaLg {
+
+    body {
+        max-width: 2400px;
+        
+    }
+    header {
+        background-image: url(../assets/img/BackHeader.png);
+        height: 200px;
+    }
+
+    .grid-container {
+        max-width: 110rem !important;
+    }
+
+    /*Reduce the padding in mobile*/
+    .card-section {
+        padding: 0.1rem 1rem 0.5rem 1rem !important;
+    }
+
+    //This for the tiles large panels on with overlay
+    .about-box {
+        img {
+            @include box-shadow;
+        }
+        
+        .z-one {
+            width: 800px;
+            height: 20rem;
+            position: relative;                       
+            top: -11rem;
+            left: 0.2rem;
+            z-index: 1;
+        }
+        .z-two {
+            width: 10rem;
+            height: 2rem;
+            position: relative;                       
+            top: -10rem;
+            left: 0px;
+            z-index: 2;
+        }
+        .z-three {
+            width: 10rem;
+            height: 10rem;
+            position: relative;                       
+            top: 1.8rem;
+            left: 3rem;
+            z-index: 3;
+        }
+
+        .about-tile {
+            width: 50%;
+            padding-right: 0.5rem;
+            padding-top: 2.5rem;
+            padding-right: 1rem;
+            color: $color-black;
+
+            p {
+                padding-right: 1.5rem;
+            }
+        }
+    }
+}
+
+///Listen 
+.callout{
+    width:auto;
+}

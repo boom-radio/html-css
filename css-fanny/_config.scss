@@ -1,0 +1,208 @@
+//Set variables for the main site colours
+$color-white: rgba(255,255,255,1); //#FFFFFF
+$color-black: rgba(0,0,0,1); //#000000
+$color-one: rgba(250,162,148,1); //#FAA294 coral
+$color-two: rgba(254,101,126,1); //#FE657E pink
+$color-three: rgba(63,197,190,1); //#3FC5BE turquoise
+$color-four: rgba(58,169,225,1); //#3AA9E1 blue
+$color-five: rgba(252,171,98,1); //#FCAB62 light-orange
+$color-six: rgba(235,91,39,1); //#EB5B27 boom orange
+$color-seven: rgba(17,14,22,1); //#110E16 ///////////////////////NO NEED
+$color-eight: rgba(10,20,23,1); //#0A1417 dark grey background
+$color-nine: rgba(83,81,86,1); //#535156 //////////////////////// NO NEED
+$color-nav: rgba(10, 10, 10, 1); //#0a0a0a black
+
+
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(../assets/fonts/FjallaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(../assets/fonts/Quicksand-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand-Medium', sans-serif;
+  src: url(../assets/fonts/Quicksand-Medium.ttf);
+}
+
+//media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaMd {
+    @media screen and (min-width: 665px) {
+      @content;
+    }
+  }
+
+@mixin mediaLg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+
+/*Mixin for controlling section titles with sounds waves*/
+@mixin horizontal-list {
+  padding: 0;
+  text-align: center;
+  word-spacing: -1em;
+  display: table;
+  width: 100%;
+  li {
+    display: inline-block;
+    word-spacing: 0;
+  }
+}
+
+/*Mixin for controlling the Footer icins*/
+@mixin horizontal-list-padded($vertical, $horizontal) {
+  @include horizontal-list;
+  li {
+    padding: $vertical 0;
+    a {
+      padding: $vertical $horizontal;
+    }
+  }
+}
+
+//Set mixins for gradients
+@mixin gradient-one-two {
+  background-image: linear-gradient(to right, $color-one , $color-two);
+}
+
+@mixin gradient-three-four {
+  background-image: linear-gradient(to right, $color-three , $color-four);
+}
+
+@mixin gradient-five-six {
+  background-image: linear-gradient(to right, $color-five , $color-six);
+}
+
+//Webstandard box shadow
+@mixin box-shadow {
+    -webkit-box-shadow: 5px 5px 0px 0px rgba( $color-eight, .4 );  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    5px 5px 0px 0px rgba( $color-eight, .4 );  /* Firefox 3.5 - 3.6 */
+    box-shadow:         5px 5px 0px 0px rgba( $color-eight, .4 );  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+@mixin boom-line {
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from($color-three), to($color-three), color-stop(50%, $color-four));
+    background: -moz-linear-gradient(linear,  $color-three 0%, $color-five 50%, $color-three 100%);
+    background: -webkit-linear-gradient(linear,  $color-three 0%,$color-five 50%, $color-three 100%);
+    background: -o-linear-gradient(linear,  $color-three 0%,$color-five 50%,$color-three 100%);
+    background: -ms-linear-gradient(linear,  $color-three 0%,$color-five 50%,$color-three 100%);
+    background: linear-gradient(to right,  $color-three 0%,$color-five 50%,$color-three 100%);
+}
+ 
+@mixin module-border {
+  padding: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, $color-five, $color-three) 1 100%;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from($color-five), to($color-three)) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient($color-five, $color-three) 1 100%;
+  -moz-border-image: -moz-linear-gradient($color-five, $color-three) 1 100%;    
+  -o-border-image:-o-linear-gradient($color-five, $color-three) 1 100%;
+  }
+
+  @mixin module-border-hor {
+    padding: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-image-source: linear-gradient(45deg, $color-five, $color-three);
+    border-image-slice: 1;
+}
+
+
+//Sound wave
+@mixin sound-wave {
+  width: 100%;
+  height: 10px;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  
+  .sound-container {
+  /*position: relative;*/
+    width: 150px;
+    height: 100%;
+    display: inline-block;
+    margin-left: 4px;
+  }
+    
+  .sound-container>div {
+    /*position: relative;*/
+    height: 100%;
+    width: 10px;
+    background: $color-black;
+    display: inline-block;
+    animation: wave 3s infinite ease-in-out;
+    -webkit-animation: wave 3s infinite ease-in-out;
+    -moz-animation: wave 3s infinite ease-in-out;
+    -ms-animation: wave 3s infinite ease-in-out;
+    -o-animation: wave 3s infinite ease-in-out;
+
+  }
+
+  .sound-container .rect-2 {
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -ms-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+  }
+
+  .sound-container .rect-3 {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -ms-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+  }
+  
+  .sound-container .rect-4 {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+  }
+    
+  .sound-container .rect-5 {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+  }
+    
+  .sound-container .rect-6 {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.6s;
+    -ms-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+  }
+    
+  @keyframes wave {
+    0% {}
+    100% {transform: scaleY(1);background: $color-six;}
+    20% { transform: scaleY(3); background: $color-four;}
+    33% {transform: scaleY(1); background: $color-three;}
+    50% {transform: scaleY(3); background: $color-five;}
+    66% {transform: scaleY(1); background: $color-two;}
+    84% {transform: scaleY(3); background: $color-one;}
+  }
+}

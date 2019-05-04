@@ -13,55 +13,197 @@
 </head>
 
 <body>
+  
 <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
-  <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
-    <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
-    <ul class="menu vertical text-center">
-      <li><a href="./">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </aside>
-  <!-- In the off-canvas-content DIV goes the whole page content -->
-  <div class="off-canvas-content" data-off-canvas-content>
-    <!-- Your page content lives here -->
-    <div class="grid-container-fluid">
-      <div class="grid-x">
-        <!-- BEGINNING OF THE TOP BAR -->
-        <div class="cell">
-          <div class="top-bar-container" data-sticky-container>
-            <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-              <!-- Mobile top bar -->
-              <div class="title-bar" data-responsive-toggle="desktop-menu">
-                <div class="title-bar-left">
-                  <h1><a href="./">Site Title</a></h1>
-                </div>
-                <div class="title-bar-right">
-                  <button class="menu-icon" type="button" data-toggle="offCanvas"><i class="menu-icon-extended"></i></button>
-                  <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
-                </div>
-              </div>
-              <!-- Desktop top bar -->
-              <div class="title-bar" id="desktop-menu">
-                <div class="title-bar-left">
-                  <a href="./" class="float-left"><img src="assets/img/BoomLogoWhite.svg" width="150px"></a>
-                  <ul class="menu float-left align-middle">
-                    <li><button class="menu-icon" type="button" data-toggle="offCanvas"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 31.1 31.1"><defs><style>.a,.b{fill:none;}.b{stroke:#eb5b27;stroke-linecap:round;stroke-width:2px;}.c,.d{stroke:none;}.d{fill:#eb5b27;}</style></defs><g transform="translate(-37 -615.45)"><g class="a" transform="translate(37 615.45)"><path class="c" d="M15.55,0A15.55,15.55,0,1,1,0,15.55,15.55,15.55,0,0,1,15.55,0Z"/><path class="d" d="M 15.55000305175781 2.000003814697266 C 11.93066215515137 2.000003814697266 8.527963638305664 3.409452438354492 5.96870231628418 5.96870231628418 C 3.409452438354492 8.527963638305664 2.000003814697266 11.93066215515137 2.000003814697266 15.55000305175781 C 2.000003814697266 19.16934204101563 3.409452438354492 22.57204437255859 5.96870231628418 25.13130187988281 C 8.527963638305664 27.69055366516113 11.93066215515137 29.10000228881836 15.55000305175781 29.10000228881836 C 19.16934204101563 29.10000228881836 22.57204437255859 27.69055366516113 25.13130187988281 25.13130187988281 C 27.69055366516113 22.57204437255859 29.10000228881836 19.16934204101563 29.10000228881836 15.55000305175781 C 29.10000228881836 11.93066215515137 27.69055366516113 8.527963638305664 25.13130187988281 5.96870231628418 C 22.57204437255859 3.409452438354492 19.16934204101563 2.000003814697266 15.55000305175781 2.000003814697266 M 15.55000305175781 3.814697265625e-06 C 24.13803291320801 3.814697265625e-06 31.10000228881836 6.961973190307617 31.10000228881836 15.55000305175781 C 31.10000228881836 24.13803291320801 24.13803291320801 31.10000228881836 15.55000305175781 31.10000228881836 C 6.961973190307617 31.10000228881836 3.814697265625e-06 24.13803291320801 3.814697265625e-06 15.55000305175781 C 3.814697265625e-06 6.961973190307617 6.961973190307617 3.814697265625e-06 15.55000305175781 3.814697265625e-06 Z"/></g><line class="b" x2="14" transform="translate(46 631.45)"/><line class="b" y2="14" transform="translate(53 624.45)"/></g></svg></button></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
-                  </ul>
-                </div>
-              </div>
-            </div>
+<aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+  <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
+  <div class="grid-container">
+      <div class="grid-x grid-padding-y">
+          <div class="cell">
+              <ul class="menu vertical text-center">
+                  <li><a href="./"><img src="assets/img/BoomLogoWhite.svg" alt="Boom Radio Logo"></a></li>
+                  <li><input type="search" placeholder="Search"><i class="fas fa-search"></i></li>
+                  <li><a href="./">Home</a></li>
+                  <li><a href="listen.html">Listen</a></li>
+                  <li><a href="music.html">Music</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+              <button class="close-button" aria-label="Close alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+              </button>
           </div>
+      </div>
+  </div>
+</aside>
+<!-- In the off-canvas-content DIV goes the whole page content -->
+<div class="off-canvas-content" data-off-canvas-content>
+  <!-- Your page content lives here -->
+  <header class="grid-container-fluid">
+      <div class="grid-x">
+          <!-- BEGINNING OF THE TOP BAR -->
+          <div class="cell">
+              <div class="top-bar-container" data-sticky-container>
+                  <div class="sticky sticky-topbar" data-sticky
+                      data-options="anchor: page; marginTop: 0; stickyOn: small;">
+                      <!-- Mobile top bar -->
+                      <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="xlarge">
+                          <div class="title-bar-left">
+                              <div class="grid-container-fluid">
+                                  <div class="grid-x grid-margin-x grid-margin-y align-middle">
+                                      <div class="cell shrink">
+                                          <img src="assets/img/BoomLogoWhite.svg"  alt="Boom Radio Logo">
+                                      </div>
+                                      <div class="cell shrink">
+                                          <button type="button" data-toggle="offCanvas"><img
+                                                  src="assets/img/+.svg" alt="+"></button>
+                                          <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Desktop top bar -->
+                      <div class="title-bar" id="desktop-menu">
+                          <div class="title-bar-left">
+                              <div class="grid-container-fluid">
+                                  <div class="grid-x grid-margin-x grid-padding-x grid-margin-y align-middle">
+                                      <div class="cell shrink">
+                                          <a href="./"><img src="assets/img/BoomLogoWhite.svg" width="200px" alt="Boom Radio Logo"></a>
+                                      </div>
+                                      <div class="cell shrink">
+                                          <button type="button" data-toggle="offCanvas"><img
+                                                  src="assets/img/+.svg" alt="+"></button>
+                                          <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
+                                      </div>
+                                      <div class="cell shrink">
+                                          <ul class="menu text-center">
+                                              <li><a href="listen.html">Listen</a></li>
+                                              <li><a href="music.html">Music</a></li>
+                                              <li><a href="news.html">News</a></li>
+                                              <li><a href="about.html">About</a></li>
+                                              <li><a href="contact.html">Contact</a></li>
+                                          </ul>
+                                      </div>
+                                      <div class="cell auto">
+                                          <ul class="menu float-right">
+                                              <li><button type="button" class="button"><i
+                                                          class="fas fa-search"></i></button></li>
+                                              <li><input type="search" placeholder="Search"></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- END OF THE DESKTOP TOP BAR --> 
+  <div class="grid-container">
+    <div class="grid-x grid-padding-y">
+        <div class="cell ">
+          <h1>Title</h1>
+        <div>
+    <!-- TABS MULTI CONTENT-->
+    <div class="md-tabs">
+      <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs large-tabs" id="collapsing-tabs" data-allow-all-closed="true" data-multi-expand="true">
+        <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
+        <div class="slide"></div>
+      </ul>
+    
+      <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panel1c">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet pulvinar enim. Donec mattis metus a hendrerit aliquam. Nulla facilisi. Etiam facilisis, nisi eu varius gravida, tellus odio blandit mauris, et egestas neque sapien sit amet massa.
+            Morbi ullamcorper, metus nec dictum faucibus, mauris dolor semper purus, quis tincidunt sapien nibh ut tellus. Suspendisse at lectus ac dolor commodo malesuada in non elit. Donec nibh nulla, vehicula a quam quis, luctus interdum est.
+          </p>
+        </div>
+        <div class="tabs-panel" id="panel2c">
+          <p>Nunc ipsum massa, venenatis sed fringilla ut, elementum eu sapien. In eget dolor volutpat, fringilla metus et, dignissim lectus. Proin interdum sit amet odio ut varius. Nam id quam lacus. Aenean et tellus a sapien pulvinar sollicitudin. Mauris posuere
+            tellus urna, non fermentum urna scelerisque in. Nulla scelerisque est leo, non tempus purus laoreet in. Aliquam erat volutpat. Nunc nulla eros, blandit quis nunc vel, luctus fermentum nisi. Phasellus ullamcorper gravida facilisis.</p>
+        </div>
+        <div class="tabs-panel" id="panel3c">
+          <p>Donec ornare, ex quis volutpat vulputate, dui eros fermentum tellus, id eleifend velit diam non leo. Aliquam convallis vestibulum elementum. Phasellus facilisis tempus nisi eget lobortis. Duis magna sem, placerat vel tellus sed, auctor laoreet enim.
+            Integer sit amet libero rutrum, vestibulum massa at, volutpat leo. Proin id ex porta, hendrerit erat sed, fringilla urna. Phasellus hendrerit consequat arcu non pretium. Proin vel velit vitae nisl aliquet rutrum. Maecenas quis lectus sit amet
+            mi fermentum pulvinar. Mauris fermentum tortor id ipsum tristique sollicitudin.</p>
+        </div>
+        <div class="tabs-panel" id="panel4c">
+          <p>Fusce justo velit, pulvinar eu sem eu, fringilla sodales urna. Mauris mollis aliquet nibh. Suspendisse porttitor, nisi a egestas iaculis, augue metus semper tortor, eget tristique leo enim mollis libero. Integer et lacus non ipsum finibus pharetra
+            sit amet quis ipsum. Mauris vitae elementum lorem. Quisque vel mauris magna. Duis non nisl neque. Suspendisse posuere magna id risus sodales bibendum.</p>
         </div>
       </div>
     </div>
-    <!-- END OF THE TOP BAR -->
+    <!-- END OF TABS-->
+  </div>
+    </div>
+    <div class="cell">
+        <h1>Title</h1>
+    </div>
+    <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
+      <div class="cell">
+        <div class="callout gradient-1">
+          <p>Pegasi B</p>
+          <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+          <p class="lead">Copernican Revolution caused an uproar</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <button class="boom-button float-right">Go</button>
 
+        </div>
+      </div>
+      <div class="cell">
+        <div class="callout gradient-2">
+          <p>Pegasi B</p>
+          <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+          <p class="lead">Copernican Revolution caused an uproar</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <button class="boom-button float-right">Go</button>
+
+        </div>
+      </div>
+      <div class="cell">
+        <div class="callout gradient-3">
+          <p>Pegasi B</p>
+          <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+          <p class="lead">Copernican Revolution caused an uproar</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <button class="boom-button float-right">Go</button>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="callout">
+          <p>Pegasi B</p>
+          <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+          <p class="lead">Copernican Revolution caused an uproar</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="callout">
+          <p>Pegasi B</p>
+          <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+          <p class="lead">Copernican Revolution caused an uproar</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="callout">
+          <p>Pegasi B</p>
+          <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+          <p class="lead">Copernican Revolution caused an uproar</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <a class="button hollow expanded">Load More</a>
+    </div>
+  </article>
 
 
     <script src="js-fanny/vendor/jquery.js"></script>
