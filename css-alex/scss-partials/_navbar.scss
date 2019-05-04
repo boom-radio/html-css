@@ -70,6 +70,7 @@ $transform-scale: 2;
 
 //This is the customised audio player
 #audioplayer {
+    width: 195px;
     border: 2px solid $color-six;
     border-radius: 15px;
 }
@@ -79,6 +80,7 @@ $transform-scale: 2;
 }
 
 #timeline {
+    width: 70px;
     border-radius: 15px;
     background: $gradient-three-four;
 
