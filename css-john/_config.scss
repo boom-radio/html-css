@@ -198,7 +198,7 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
     
   @keyframes wave {
     0% {}
-    100% {transform: scaleY(1);background: $color-eight;}
+    100% {transform: scaleY(1);background: $color-six;}
     20% { transform: scaleY(3); background: $color-four;}
     33% {transform: scaleY(1); background: $color-three;}
     50% {transform: scaleY(3); background: $color-five;}

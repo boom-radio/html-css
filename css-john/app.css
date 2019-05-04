@@ -393,7 +393,7 @@ button.boom-button-dark {
   0% { }
   100% {
     transform: scaleY(1);
-    background: #0a1417; }
+    background: #eb5b27; }
   20% {
     transform: scaleY(3);
     background: #3aa9e1; }
