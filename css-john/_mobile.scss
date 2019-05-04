@@ -3,7 +3,6 @@
 body {
     font-family: 'Fjalla One', sans-serif;
     background: $color-black !important;
-    color: $color-white !important ;
 }
 
 header {
@@ -11,8 +10,10 @@ header {
     height: 200px;
 }
 
-.callout {
-    padding: 0 !important;
+//Site wide title controller
+.section-title {
+    color: $color-six;
+    padding: 0.5rem;
 }
 
 //Seperator & Title line
@@ -23,13 +24,35 @@ header {
 
 .boom-title {
     color: $color-six;
+    /*width: 10rem;
+    height: 2rem;*/
+    position: relative;   
+    padding-left: 1rem;   
+    padding-right: 1rem;                 
+    top: 3rem;
+    background: $color-black;
     z-index: 2;
+}
+
+//Gradient surround gradient border for sections
+.module-hor {
+    @include module-border-hor;
+}
+
+//Coloured vertical gradient borders for sections
+.module {
+    @include module-border;
+    color: $color-white;
 }
 
 
 //Top three elements in the News section of index.html
 .card {
     border: 0 !important;
+
+    img {
+        @include box-shadow;
+    }
 }
 
 .card-section {
@@ -37,19 +60,18 @@ header {
     color: $color-white;
     font-family: 'Quicksand-Regular', sans-serif;
     font-size: 0.8rem;
-    padding: 0.1rem 0.75rem 0.5rem 0.75rem !important;
+    /*padding: 0.1rem 0.75rem 0.5rem 0.75rem !important;*/
 }
 
 .bio {
     width: 100%;
+
+    p {
+        padding-left: 0.5rem;
+    }
 }
 
 /*This is for the sound wave and section title layout*/
-.section-title {
-    color: $color-six;
-    padding: 0.5rem;
-    /*font-size: 1.5rem;*/
-}
 .custom-list-class {
     @include horizontal-list;
     margin-left: 0;

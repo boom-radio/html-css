@@ -20,7 +20,6 @@
     //This for the tiles large panels on with overlay
     .about-box {
         img {
-            border-radius: 15px; 
             @include box-shadow;
         }
         
@@ -57,9 +56,4 @@
             color: $color-black;
         }
     }
-
-    //For use with block positioning for desktop view
-    /*div {
-        @include panel-control;    
-    }*/
 }

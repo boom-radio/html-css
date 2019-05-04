@@ -1,6 +1,3 @@
-
-/*Set variables for the main site colours*/
-/*$color-dark: #4c61a5;*/
 //Set variables for the main site colours
 $color-white: rgba(255,255,255,1); //#FFFFFF
 $color-black: rgba(0,0,0,1); //#000000
@@ -14,7 +11,7 @@ $color-seven: rgba(17,14,22,1); //#110E16
 $color-eight: rgba(10,20,23,1); //#0A1417
 $color-nine: rgba(83,81,86,1); //#535156
 $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
-$show-panel: true;
+
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;
@@ -95,28 +92,33 @@ $show-panel: true;
 }
 
 @mixin boom-line {
-      margin: 25px 0;
-      height: 1px;
-      background: black;
-      background: -webkit-gradient(linear, 0 0, 100% 0, from($color-three), to($color-three), color-stop(50%, $color-four));
-} 
-
-
-/*For use as a relative position controller for images in desktop view
-@mixin panel-control {
-  @if $show-panel {
-    .panel.show {
-    }
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from($color-three), to($color-three), color-stop(50%, $color-four));
+    background: -moz-linear-gradient(linear,  $color-three 0%, $color-five 50%, $color-three 100%);
+    background: -webkit-linear-gradient(linear,  $color-three 0%,$color-five 50%, $color-three 100%);
+    background: -o-linear-gradient(linear,  $color-three 0%,$color-five 50%,$color-three 100%);
+    background: -ms-linear-gradient(linear,  $color-three 0%,$color-five 50%,$color-three 100%);
+    background: linear-gradient(to right,  $color-three 0%,$color-five 50%,$color-three 100%);
 }
-}*/
+ 
+@mixin module-border {
+  padding: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, $color-five, $color-three) 1 100%;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from($color-five), to($color-three)) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient($color-five, $color-three) 1 100%;
+  -moz-border-image: -moz-linear-gradient($color-five, $color-three) 1 100%;    
+  -o-border-image:-o-linear-gradient($color-five, $color-three) 1 100%;
+  }
 
-//Set text colour - if required
-/*@function set-text-color($color) {
-    @if (lightness($color) > 48) {
-      @return #000;
-    }
-  
-    @else {
-      @return #fff;
-    }
-  }*/
+  @mixin module-border-hor {
+    padding: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-image-source: linear-gradient(45deg, $color-five, $color-three);
+    border-image-slice: 1;
+}
+

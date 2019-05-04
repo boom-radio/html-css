@@ -136,8 +136,6 @@ html * {
   margin: 0;
   box-sizing: border-box; }
 
-/*Set variables for the main site colours*/
-/*$color-dark: #4c61a5;*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(../assets/fonts/FjallaOne-Regular.ttf); }
@@ -152,25 +150,7 @@ html * {
 
 /*Mixin for controlling section titles with sounds waves*/
 /*Mixin for controlling the Footer icins*/
-/*For use as a relative position controller for images in desktop view
-@mixin panel-control {
-  @if $show-panel {
-    .panel.show {
-    }
-}
-}*/
-/*@function set-text-color($color) {
-    @if (lightness($color) > 48) {
-      @return #000;
-    }
-  
-    @else {
-      @return #fff;
-    }
-  }*/
 /*Navbar controls*/
-/*Set variables for the main site colours*/
-/*$color-dark: #4c61a5;*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(../assets/fonts/FjallaOne-Regular.ttf); }
@@ -185,22 +165,6 @@ html * {
 
 /*Mixin for controlling section titles with sounds waves*/
 /*Mixin for controlling the Footer icins*/
-/*For use as a relative position controller for images in desktop view
-@mixin panel-control {
-  @if $show-panel {
-    .panel.show {
-    }
-}
-}*/
-/*@function set-text-color($color) {
-    @if (lightness($color) > 48) {
-      @return #000;
-    }
-  
-    @else {
-      @return #fff;
-    }
-  }*/
 .fa-search {
   color: #eb5b27;
   margin-top: 0.5rem; }
@@ -215,8 +179,6 @@ html * {
   color: white;
   background-color: rgba(0, 0, 0, 0.9) !important; }
 
-/*Set variables for the main site colours*/
-/*$color-dark: #4c61a5;*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(../assets/fonts/FjallaOne-Regular.ttf); }
@@ -231,64 +193,82 @@ html * {
 
 /*Mixin for controlling section titles with sounds waves*/
 /*Mixin for controlling the Footer icins*/
-/*For use as a relative position controller for images in desktop view
-@mixin panel-control {
-  @if $show-panel {
-    .panel.show {
-    }
-}
-}*/
-/*@function set-text-color($color) {
-    @if (lightness($color) > 48) {
-      @return #000;
-    }
-  
-    @else {
-      @return #fff;
-    }
-  }*/
 body {
   font-family: 'Fjalla One', sans-serif;
-  background: black !important;
-  color: white !important; }
+  background: black !important; }
 
 header {
   background-image: url(../assets/img/BackHeader.png);
   height: 200px; }
 
-.callout {
-  padding: 0 !important; }
+.section-title {
+  color: #eb5b27;
+  padding: 0.5rem; }
 
 .boom-line {
   margin: 25px 0;
   height: 1px;
   background: black;
   background: -webkit-gradient(linear, 0 0, 100% 0, from(#3fc5be), to(#3fc5be), color-stop(50%, #3aa9e1));
+  background: -moz-linear-gradient(linear, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
+  background: -webkit-linear-gradient(linear, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
+  background: -o-linear-gradient(linear, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
+  background: -ms-linear-gradient(linear, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
+  background: linear-gradient(to right, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
   z-index: 1; }
 
 .boom-title {
   color: #eb5b27;
+  /*width: 10rem;
+    height: 2rem;*/
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: 3rem;
+  background: black;
   z-index: 2; }
+
+.module-hor {
+  padding: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-image-source: linear-gradient(45deg, #fcab62, #3fc5be);
+  border-image-slice: 1; }
+
+.module {
+  padding: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #fcab62, #3fc5be) 1 100%;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcab62), to(#3fc5be)) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(#fcab62, #3fc5be) 1 100%;
+  -moz-border-image: -moz-linear-gradient(#fcab62, #3fc5be) 1 100%;
+  -o-border-image: -o-linear-gradient(#fcab62, #3fc5be) 1 100%;
+  color: white; }
 
 .card {
   border: 0 !important; }
+  .card img {
+    -webkit-box-shadow: 3px 3px 5px 6px #535156;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #535156;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 5px 5px 5px 0px #535156;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
 
 .card-section {
   background-color: #535156;
   color: white;
   font-family: 'Quicksand-Regular', sans-serif;
   font-size: 0.8rem;
-  padding: 0.1rem 0.75rem 0.5rem 0.75rem !important; }
+  /*padding: 0.1rem 0.75rem 0.5rem 0.75rem !important;*/ }
 
 .bio {
   width: 100%; }
+  .bio p {
+    padding-left: 0.5rem; }
 
 /*This is for the sound wave and section title layout*/
-.section-title {
-  color: #eb5b27;
-  padding: 0.5rem;
-  /*font-size: 1.5rem;*/ }
-
 .custom-list-class {
   padding: 0;
   text-align: center;
@@ -470,8 +450,6 @@ div {
     @extend .grid-item;
 }*/
 /*Tablet View*/
-/*Set variables for the main site colours*/
-/*$color-dark: #4c61a5;*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(../assets/fonts/FjallaOne-Regular.ttf); }
@@ -486,40 +464,15 @@ div {
 
 /*Mixin for controlling section titles with sounds waves*/
 /*Mixin for controlling the Footer icins*/
-/*For use as a relative position controller for images in desktop view
-@mixin panel-control {
-  @if $show-panel {
-    .panel.show {
-    }
-}
-}*/
-/*@function set-text-color($color) {
-    @if (lightness($color) > 48) {
-      @return #000;
-    }
-  
-    @else {
-      @return #fff;
-    }
-  }*/
 @media (min-width: 768px) {
-  .about-box img {
-    box-shadow: darkgrey; }
-  .about-box .gradient-one-two {
-    background-image: linear-gradient(to right, #faa294, #fe657e); }
-  .about-box .gradient-three-four {
-    background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
-  .about-box .gradient-five-six {
-    background-image: linear-gradient(to right, #fcab62, #eb5b27); }
-  .about-box .about-tile {
+  .about-tile {
     width: 50%;
-    padding: 2.5rem 0.5rem 1rem 0.5rem;
-    color: black;
+    padding: 1rem;
+    padding: 1rem 2rem 2rem 1rem;
+    color: white;
     text-align: justify; } }
 
 /*Desktop View*/
-/*Set variables for the main site colours*/
-/*$color-dark: #4c61a5;*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(../assets/fonts/FjallaOne-Regular.ttf); }
@@ -534,22 +487,6 @@ div {
 
 /*Mixin for controlling section titles with sounds waves*/
 /*Mixin for controlling the Footer icins*/
-/*For use as a relative position controller for images in desktop view
-@mixin panel-control {
-  @if $show-panel {
-    .panel.show {
-    }
-}
-}*/
-/*@function set-text-color($color) {
-    @if (lightness($color) > 48) {
-      @return #000;
-    }
-  
-    @else {
-      @return #fff;
-    }
-  }*/
 @media screen and (min-width: 1024px) {
   body {
     max-width: 2400px; }
@@ -559,7 +496,6 @@ div {
   .card-section {
     padding: 0.1rem 1rem 0.5rem 1rem !important; }
   .about-box img {
-    border-radius: 15px;
     -webkit-box-shadow: 3px 3px 5px 6px #535156;
     /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #535156;
@@ -592,7 +528,4 @@ div {
     padding-right: 0.5rem;
     padding-top: 2.5rem;
     padding-right: 1rem;
-    color: black; }
-  /*div {
-        @include panel-control;    
-    }*/ }
+    color: black; } }
