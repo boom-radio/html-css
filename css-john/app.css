@@ -606,4 +606,6 @@ div {
     padding-right: 0.5rem;
     padding-top: 2.5rem;
     padding-right: 1rem;
-    color: black; } }
+    color: black; }
+    .about-box .about-tile p {
+      padding-right: 1.5rem; } }
