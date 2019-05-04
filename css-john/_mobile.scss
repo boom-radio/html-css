@@ -83,6 +83,7 @@ ul.footer-menu {
     height: 6vh;
 
     @include horizontal-list-padded(5px, 10px);
+
     i {
         color: $color-six;
         width: 4vh;
@@ -120,11 +121,11 @@ button.boom-button-dark {
 .about-box {
     /*@include box-shadow;*/
     .gradient-one-two {
-        @include gradient-one-two }
+        @include gradient-one-two };
     .gradient-three-four {
-        @include gradient-three-four }
+        @include gradient-three-four };
     .gradient-five-six {
-        @include gradient-five-six }
+        @include gradient-five-six };
 
         .about-tile {
             width: 50%;
@@ -132,6 +133,12 @@ button.boom-button-dark {
             color: $color-black;
         }
     }
+
+//Sound wave
+.animation-container {
+    @include sound-wave;
+}
+
 
 /*Possible gradient animation for blocks
 @-webkit-keyframes gradientAnimation {

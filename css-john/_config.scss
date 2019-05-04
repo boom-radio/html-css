@@ -122,3 +122,68 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
     border-image-slice: 1;
 }
 
+
+//Sound wave
+@mixin sound-wave {
+  width: 100%;
+  height: 10px;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  
+.sound-container {
+ /*position: relative;*/
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+  margin-left: 4px;
+}
+  
+.sound-container>div {
+  /*position: relative;*/
+  height: 100%;
+  width: 10px;
+  background: $color-black;
+  display: inline-block;
+  animation: wave 3s infinite ease-in-out;
+  -webkit-animation: wave 3s infinite ease-in-out;
+}
+
+.sound-container .rect-2 {
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+}
+
+.sound-container .rect-3 {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+ 
+.sound-container .rect-4 {
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+  
+.sound-container .rect-5 {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+  
+.sound-container .rect-6 {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+  
+@keyframes wave {
+  0% {}
+  100% {transform: scaleY(1);background: $color-eight;}
+  20% { transform: scaleY(3); background: $color-four;}
+  33% {transform: scaleY(1); background: $color-three;}
+  50% {transform: scaleY(3); background: $color-five;}
+  66% {transform: scaleY(1); background: $color-two;}
+  84% {transform: scaleY(3); background: $color-one;}
+}
+}
