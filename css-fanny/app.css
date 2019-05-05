@@ -553,14 +553,14 @@ h2 {
   padding: 0.7em; }
 
 a {
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One", sans-serif !important;
   color: white;
   font-size: 1.3em; }
   a:hover {
     color: #eb5b27; }
 
 input {
-  font-family: "Fjalla One" !important; }
+  font-family: "Fjalla One", sans-serif !important; }
 
 .callout {
   width: 100vw;
