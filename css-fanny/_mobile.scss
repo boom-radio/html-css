@@ -2,10 +2,14 @@
 
 body {
     font-family: 'Quicksand-Regular', sans-serif;
-    background: $color-eight !important;    
+    background: $color-eight !important;
 }
 
 header {
+    @include mediaSm {
+        display: none;
+    }
+
     height: 75px;
 }
 
@@ -25,9 +29,9 @@ header {
     color: $color-six;
     /*width: 10rem;
     height: 2rem;*/
-    position: relative;   
-    padding-left: 1rem;   
-    padding-right: 1rem;                 
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
     top: 3rem;
     background: $color-black;
     z-index: 2;
@@ -90,21 +94,22 @@ ul.footer-menu {
     }
 
     i:hover {
-      color: $color-four;
+        color: $color-four;
     }
 }
 
-  
+
 //Button styling for Boom "Go" buttons
 button.boom-button, button.boom-button-dark {
-    border-radius: 0.5rem;
-    padding: .5rem 1.5rem;
-    color: $color-white;
-    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    font-family: 'Fjalla One';
+    border-radius: 0.7rem;
+    padding: .5rem 0.5rem;
+    color: $color-six;
     border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg,  $color-five, $color-six);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 2px 1000px 1px $color-nine inset;
+    box-shadow: 2px 1000px 1px $color-white inset;
     }
     
 button.boom-button:hover, button.boom-button-dark:hover {
@@ -115,22 +120,35 @@ button.boom-button:hover, button.boom-button-dark:hover {
 button.boom-button-dark {
     box-shadow: 2px 1000px 1px $color-black inset;
 }
+
 //Coloured panel gradient
 .about-box {
+
     /*@include box-shadow;*/
     .gradient-one-two {
-        @include gradient-one-two };
-    .gradient-three-four {
-        @include gradient-three-four };
-    .gradient-five-six {
-        @include gradient-five-six };
-
-        .about-tile {
-            width: 50%;
-            padding: 2.5rem 0.5rem 1rem 0.5rem;
-            color: $color-black;
-        }
+        @include gradient-one-two
     }
+
+    ;
+
+    .gradient-three-four {
+        @include gradient-three-four
+    }
+
+    ;
+
+    .gradient-five-six {
+        @include gradient-five-six
+    }
+
+    ;
+
+    .about-tile {
+        width: 50%;
+        padding: 2.5rem 0.5rem 1rem 0.5rem;
+        color: $color-black;
+    }
+}
 
 //Sound wave
 .animation-container {
@@ -257,135 +275,118 @@ div {
     @extend .grid-item;
 }*/
 
-////////////////Listen
+////////////////Listen page
 //Overlay menu full width
-.position-left{
+.position-left {
     @include mediaSm {
-    width:100vw;
+        width: 100vw;
     }
 }
+
 //Font-family
-
-
-h1{
+@mixin title{
     font-family: 'Fjalla One';
     color: $color-six;
+    text-align: center;
+}
+
+h1 {
+    @include title;
+    font-size: 2em;
+}
+
+h2 {
+    @include title;
     font-size: 1.6em;
     display: block;
-    text-align:center;
-    padding:0.7em;
+    padding: 0.7em;
 }
-h2{
-    font-family: 'Fjalla One';
-    color: $color-six;
-    font-size: 1.6em;
-    display: block;
-    text-align:center;
-    padding:0.7em;
+h3{
+    @include title;
+    font-size: 1.3em;
+    padding: 0.3em;
 }
-a{
-    font-family: 'Fjalla One', sans-serif!important;
+h4{
+    @include title;
+    font-size: 1em;
+    padding: 0.5em;
     color: $color-white;
-    font-size:1.3em;
-    &:hover{
+}
+a {
+    font-family: 'Fjalla One', sans-serif !important;
+    color: $color-white;
+    font-size: 1.1em;
+
+    &:hover {
         color: $color-six;
     }
 }
-input{
-    font-family: 'Fjalla One', sans-serif!important;
+.orange{
+    color: $color-six;
 }
-
-//Blocks
-
-.callout{
-    width:100vw;
-    margin-left: -0.625rem;
-    img {
-        @include box-shadow;
-        border-radius: 10px;
-    }
+input {
+    font-family: 'Fjalla One', sans-serif !important;
 }
-.gradient-1{
-    @include gradient-one-two;
- }
-.gradient-2{
-   @include gradient-three-four;
-}
-.gradient-3{
-    @include gradient-five-six;
- }
-
- //Tabs 
- .md-tabs {
+//Tabs 
+.md-tabs {
     background-color: $color-five;
-  
+    text-align: center;
     > {
-      .mobile-nav-bar {
-        background-color: $color-five;
-        margin-bottom: 15px;
-  
-        .title-bar-text {
-          font-size: 26px;
+
+        .tabs {
+            margin: 0;
+            border: 0;
+            @include gradient-one-two;
+            list-style-type: none;
+            display: table;
+            width: 100%;
+
+            >.tabs-title {
+                display: table-cell;
+                width: 25%;
+                text-align: center;
+                display: inline-block;
+
+                &.is-active {
+                    >a {
+                        color: $color-black;
+                        background-color: transparent;
+                        outline: none;
+                    }
+
+                    &:nth-of-type(1)~.slide {
+                        left: calc((100% / 4) * 0);
+                    }
+
+                    &:nth-of-type(2)~.slide {
+                        left: calc((100% / 4) * 1);
+                    }
+
+                    &:nth-of-type(3)~.slide {
+                        left: calc((100% / 4) * 2);
+                    }
+
+                    &:nth-of-type(4)~.slide {
+                        left: calc((100% / 4) * 3);
+                    }
+                }
+
+                >a {
+                    color: $color-white;
+                    font-size: 16px;
+
+                    &:hover,
+                    &:focus {
+                        background: transparent;
+                        color:$color-black;
+                    }
+                }
+            }
         }
-  
-        a {
-          color: $color-white;
-        }
-      }
-  
-      .tabs {
-        margin: 0;
-        border: 0;
-        @include gradient-one-two;
-        list-style-type: none;
-        display: table;
-        width: 100%;
-  
-        > .tabs-title {
-          display: table-cell;
-          width: 25%;
-          text-align: center;
-          display: inline-block;
-  
-          &.is-active {
-            > a {
-              color: $color-black;
-              background-color: transparent;
-              outline: none;
-            }
-  
-            &:nth-of-type(1) ~ .slide {
-              left: calc((100% / 4) * 0);
-            }
-  
-            &:nth-of-type(2) ~ .slide {
-              left: calc((100% / 4) * 1);
-            }
-  
-            &:nth-of-type(3) ~ .slide {
-              left: calc((100% / 4) * 2);
-            }
-  
-            &:nth-of-type(4) ~ .slide {
-              left: calc((100% / 4) * 3);
-            }
-          }
-  
-          > a {
-            color: $color-white;
-            font-size: 16px;
-  
-            &:hover,
-            &:focus {
-              background: transparent;
-            }
-          }
-        }
-      }
     }
-  }
-  
-  .slide {
+}
+
+.slide {
     background: $color-five;
     width: calc(100% / 4);
     height: 4px;
@@ -393,58 +394,112 @@ input{
     left: 0;
     top: 52px;
     transition: left 0.3s ease-out;
-  }
-  
-  @include mediaSm {
+}
+
+@include mediaSm {
     .slide {
-      width: 0;
-      height: 0;
+        width: 0;
+        height: 0;
     }
-  
+
     .md-tabs {
-      > .accordion {
-        margin-left: 0;
-        list-style-type: none;
-  
-        > .accordion-item > .accordion-title {
-          position: relative;
-          display: block;
-          padding: 1.25rem 1rem;
-          border: 0;
-          font-size: 0.75rem;
-          line-height: 1;
-          background: $color-four;
-          color: $color-white;
-  
-          &:hover {
-            background-color: $color-four;
-            color: $color-nav;
-            outline: none;
-          }
+        >.accordion {
+            margin-left: 0;
+            list-style-type: none;
+
+            >.accordion-item>.accordion-title {
+                position: relative;
+                display: block;
+                padding: 1.25rem 1rem;
+                border: 0;
+                font-size: 0.9rem;
+                line-height: 1;
+                @include gradient-one-two;
+                color: $color-black;
+
+                &:hover {
+                    background-color: $color-four;
+                    color: $color-nav;
+                    outline: none;
+                }
+            }
         }
-      }
-  
-      > .accordion > {
-        .is-active.accordion-item > a.accordion-title {
-          border-bottom: 4px solid $color-five;
-          color: $color-five;
+
+        >.accordion> {
+            .is-active.accordion-item>a.accordion-title {
+                border-bottom: 4px solid $color-five;
+                color: $color-white;
+            }
+
+            .accordion-item>.accordion-content {
+                display: none;
+                padding: 1rem;
+                border: 0px;
+                background-color: #fefefe;
+                color: #0a0a0a;
+            }
         }
-  
-        .accordion-item > .accordion-content {
-          display: none;
-          padding: 1rem;
-          border: 1px solid #e6e6e6;
-          border-top: 0px;
-          background-color: #fefefe;
-          color: #0a0a0a;
-        }
-      }
     }
-  
-    > .accordion > .accordion-item > .accordion-title:focus {
-      background-color: $color-four;
-      color: $color-five;
-      outline: none;
+
+    >.accordion>.accordion-item>.accordion-title:focus {
+        background-color: $color-four;
+        color: $color-five;
+        outline: none;
     }
-  }
-  
+}  
+
+
+//Blocks
+
+.callout {
+    margin-left: -0.625rem;
+    margin-bottom:20px;
+
+    img {
+        @include box-shadow;
+        border-radius: 10px;
+        margin:  20px auto ;
+        display:block;
+        opacity: .50;
+        &:hover{
+            opacity:1;
+        }
+    }
+    p{
+        display: inline-block;
+        margin :5px 10px;
+    }
+}
+
+.gradient-1 {
+    @include gradient-one-two;
+}
+
+.gradient-2 {
+    @include gradient-three-four;
+}
+
+.gradient-3 {
+    @include gradient-five-six;
+}
+
+.boom-button-white{
+    font-family: 'Fjalla One';
+    border-radius: 0.7rem;
+    padding: .5rem 1.5rem;
+    margin-bottom:15px;
+    color:$color-white;
+    border: solid 2px $color-white;
+    background-color: transparent;
+    &:hover{
+        box-shadow: 2px 2px 0px 0px rgba( $color-eight, .4 ) inset;
+        color: $color-white;
+    }
+    }
+.button:hover{
+    background-color: rgba( $color-six, 1 )
+}
+
+.overlap{
+    margin-bottom : -50px;
+}
