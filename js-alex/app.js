@@ -13,9 +13,9 @@ var sticky = topBarContainer.offsetTop;
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    topBarContainer.classList.add("sticky-test");
+    topBarContainer.classList.add("sticky-navbar");
   } else {
-    topBarContainer.classList.remove("sticky-test");
+    topBarContainer.classList.remove("sticky-navbar");
   }
 }
 //END OF JS FOR SCROLLING-STICKY TOP BAR

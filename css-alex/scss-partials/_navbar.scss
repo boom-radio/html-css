@@ -1,7 +1,14 @@
 // This partial contains all the styles relative to the navbar (so in this case topbar and off canvas menu
 @import "config";
 
-.top-bar-container {
+.off-canvas {
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.top-bar-container, .off-canvas {
+    font-family: 'Fjalla One', sans-serif;
+
     a {
         color: $color-white;
 
@@ -15,7 +22,7 @@
     background: $color-nav;
 }
 
-.sticky-test {
+.sticky-navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,13 +32,6 @@
 .off-canvas {
     background-color: rgba(0, 0, 0, 0.8);
 
-    a {
-        color: $color-white;
-
-        &:hover {
-            color: $color-three;
-        }
-    }
 }
 
 .title-bar {

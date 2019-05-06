@@ -68,10 +68,6 @@ button.boom-button-dark {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
-header {
-  background-image: url(../assets/img/BackHeader.png);
-  height: 200px; }
-
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
@@ -80,15 +76,20 @@ header {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
-.top-bar-container a {
-  color: white; }
-  .top-bar-container a:hover {
-    color: #eb5b27; }
+.off-canvas {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.top-bar-container, .off-canvas {
+  font-family: 'Fjalla One', sans-serif; }
+  .top-bar-container a, .off-canvas a {
+    color: white; }
+    .top-bar-container a:hover, .off-canvas a:hover {
+      color: #eb5b27; }
 
 .title-bar {
   background: #0a0a0a; }
 
-.sticky-test {
+.sticky-navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -96,10 +97,6 @@ header {
 
 .off-canvas {
   background-color: rgba(0, 0, 0, 0.8); }
-  .off-canvas a {
-    color: white; }
-    .off-canvas a:hover {
-      color: #3fc5be; }
 
 .title-bar .button {
   color: #eb5b27; }
@@ -328,6 +325,11 @@ footer a {
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+@media screen and (min-width: 665px) {
+  header {
+    background-image: url(../assets/img/BackHeader.png);
+    height: 150px; } }
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;
