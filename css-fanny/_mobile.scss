@@ -203,7 +203,6 @@ button.boom-button-dark {
 //For use with block positioning for desktop view
 div {
     @include panel-control;
-   
 }
 
 //For use in mobile view
@@ -502,4 +501,23 @@ input {
 
 .overlap{
     margin-bottom : -50px;
+}
+
+//Seperator & Title line
+.boom-line {
+    @include boom-line;
+    z-index: 1;
+}
+
+.wave-line{
+    @include horizontal-list;
+    li{
+    background-color: $color-eight;
+    margin-top:-22px;
+    z-index:2;
+}
+    h2{
+        padding:10px;
+
+    }
 }

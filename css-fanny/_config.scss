@@ -94,13 +94,8 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a black
 @mixin boom-line {
     margin: 25px 0;
     height: 1px;
-    background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from($color-three), to($color-three), color-stop(50%, $color-four));
-    background: -moz-linear-gradient(linear,  $color-three 0%, $color-five 50%, $color-three 100%);
-    background: -webkit-linear-gradient(linear,  $color-three 0%,$color-five 50%, $color-three 100%);
-    background: -o-linear-gradient(linear,  $color-three 0%,$color-five 50%,$color-three 100%);
-    background: -ms-linear-gradient(linear,  $color-three 0%,$color-five 50%,$color-three 100%);
-    background: linear-gradient(to right,  $color-three 0%,$color-five 50%,$color-three 100%);
+    background: white;
+    
 }
  
 @mixin module-border {

@@ -214,13 +214,7 @@ header {
 .boom-line {
   margin: 25px 0;
   height: 1px;
-  background: black;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(#3fc5be), to(#3fc5be), color-stop(50%, #3aa9e1));
-  background: -moz-linear-gradient(linear, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
-  background: -webkit-linear-gradient(linear, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
-  background: -o-linear-gradient(linear, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
-  background: -ms-linear-gradient(linear, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
-  background: linear-gradient(to right, #3fc5be 0%, #fcab62 50%, #3fc5be 100%);
+  background: white;
   z-index: 1; }
 
 .boom-title {
@@ -462,7 +456,6 @@ button.boom-button-dark {
 //For use with block positioning for desktop view
 div {
     @include panel-control;
-   
 }
 
 //For use in mobile view
@@ -702,6 +695,28 @@ input {
 
 .overlap {
   margin-bottom: -50px; }
+
+.boom-line {
+  margin: 25px 0;
+  height: 1px;
+  background: white;
+  z-index: 1; }
+
+.wave-line {
+  padding: 0;
+  text-align: center;
+  word-spacing: -1em;
+  display: table;
+  width: 100%; }
+  .wave-line li {
+    display: inline-block;
+    word-spacing: 0; }
+  .wave-line li {
+    background-color: #0a1417;
+    margin-top: -22px;
+    z-index: 2; }
+  .wave-line h2 {
+    padding: 10px; }
 
 /*Tablet View*/
 @font-face {
