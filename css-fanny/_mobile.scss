@@ -285,7 +285,7 @@ div {
 
 //Font-family
 @mixin title{
-    font-family: 'Fjalla One';
+    font-family: 'Fjalla One', sans-serif !important;
     color: $color-six;
     text-align: center;
 }
