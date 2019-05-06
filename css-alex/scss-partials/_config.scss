@@ -12,6 +12,36 @@ $color-eight: rgba(10, 20, 23, 1); //#0A1417
 $color-nine: rgba(83, 81, 86, 1); //#535156
 $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
 
+//Set the fonts
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One);
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand);
+}
+
+//Set media query mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (min-width: 665px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
 //Set variables for gradients
 $gradient-one-two: linear-gradient(to right, $color-one, $color-two);
 $gradient-three-four: linear-gradient(to right, $color-three, $color-four);
@@ -158,22 +188,6 @@ $transform-scale: 0;
   -o-transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
   transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
 }
-
-//Setting fonts
-// @font-face {
-//   font-family: 'Fjalla One', sans-serif;
-//   src: url(../assets/fonts/FjallaOne-Regular.ttf);
-// }
-
-// @font-face {
-//   font-family: 'Quicksand-Regular', sans-serif;
-//   src: url(../assets/fonts/Quicksand-Regular.ttf);
-// }
-
-// @font-face {
-//   font-family: 'Quicksand-Medium', sans-serif;
-//   src: url(../assets/fonts/Quicksand-Medium.ttf);
-// }
 
 //Sound wave
 @mixin sound-wave {

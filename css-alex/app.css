@@ -1,9 +1,33 @@
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
 .test {
   border: 1px solid red; }
 
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
 body {
   background: #0a1417;
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Quicksand-Regular', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif; }
@@ -36,9 +60,25 @@ button.boom-button:hover, button.boom-button-dark:hover {
 button.boom-button-dark {
   box-shadow: 2px 1000px 1px black inset; }
 
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
 header {
   background-image: url(../assets/img/BackHeader.png);
   height: 200px; }
+
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 .top-bar-container a {
   color: white; }
@@ -179,6 +219,27 @@ header {
     transform: scaleY(3);
     background: #faa294; } }
 
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+footer a {
+  color: #eb5b27; }
+  footer a:hover {
+    color: #3fc5be; }
+
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
 .gradiented-box {
   border-radius: 5px; }
   .gradiented-box img {
@@ -189,11 +250,6 @@ header {
     background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
   .gradiented-box.gradient-five-six {
     background-image: linear-gradient(to right, #fcab62, #eb5b27); }
-
-.img-left {
-  position: relative;
-  top: 3.5rem;
-  left: 1rem; }
 
 .box-shadow-one-left {
   -webkit-box-shadow: -5px -5px 0 0 #faa294;
@@ -230,11 +286,6 @@ header {
   -moz-box-shadow: -5px -5px 0 0 rgba(10, 20, 23, 0.4);
   box-shadow: -5px -5px 0 0 rgba(10, 20, 23, 0.4); }
 
-.img-right {
-  position: relative;
-  top: 3.5rem;
-  right: 1rem; }
-
 .box-shadow-one-right {
   -webkit-box-shadow: 5px 5px 0 0 #faa294;
   -moz-box-shadow: 5px 5px 0 0 #faa294;
@@ -270,7 +321,27 @@ header {
   -moz-box-shadow: 5px 5px 0 0 rgba(10, 20, 23, 0.4);
   box-shadow: 5px 5px 0 0 rgba(10, 20, 23, 0.4); }
 
-footer a {
-  color: #eb5b27; }
-  footer a:hover {
-    color: #3fc5be; }
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+@media screen and (min-width: 1024px) {
+  .img-left, .img-right {
+    position: relative;
+    top: 3.5rem; }
+  .img-left {
+    left: 1rem; }
+  .img-right {
+    right: 1rem; } }

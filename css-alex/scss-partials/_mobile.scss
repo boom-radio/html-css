@@ -1,4 +1,3 @@
-//ABOUT PAGE styles
 @import "config";
 
 .gradiented-box {
@@ -24,14 +23,6 @@
 //Setting variables for box shadows on about page boxes
 $color-eight: rgba(10, 20, 23, 0.4);
 $box-shadow-top-left: -5px -5px 0 0;
-
-
-.img-left {
-    position: relative;
-    top: 3.5rem;
-    left: 1rem;
-
-}
 
 .box-shadow-one-left {
     @include box-shadow-one-left;
@@ -62,13 +53,6 @@ $box-shadow-top-left: -5px -5px 0 0;
 }
 
 $box-shadow-top-right: 5px 5px 0 0;
-
-.img-right {
-    position: relative;
-    top: 3.5rem;
-    right: 1rem;
-
-}
 
 .box-shadow-one-right {
     @include box-shadow-one-right;
