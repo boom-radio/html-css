@@ -147,6 +147,7 @@ $transform-scale: 0;
   transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
 }
 
+//Setting fonts
 // @font-face {
 //   font-family: 'Fjalla One', sans-serif;
 //   src: url(../assets/fonts/FjallaOne-Regular.ttf);
