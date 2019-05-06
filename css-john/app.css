@@ -138,11 +138,11 @@ html * {
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;
-  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
 
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
-  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 @font-face {
   font-family: 'Quicksand-Medium', sans-serif;
@@ -153,11 +153,11 @@ html * {
 /*Navbar controls*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
-  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
 
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
-  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 @font-face {
   font-family: 'Quicksand-Medium', sans-serif;
@@ -181,11 +181,11 @@ html * {
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;
-  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
 
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
-  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 @font-face {
   font-family: 'Quicksand-Medium', sans-serif;
@@ -194,13 +194,11 @@ html * {
 /*Mixin for controlling section titles with sounds waves*/
 /*Mixin for controlling the Footer icins*/
 body {
-  background: black !important; }
+  background: black !important;
+  font-family: 'Quicksand-Regular', sans-serif !important; }
 
-h3 {
+h1, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif !important; }
-
-p {
-  font-family: 'Quicksand-Medium', sans-serif !important; }
 
 header {
   background-image: url(../assets/img/BackHeader.png);
@@ -535,11 +533,11 @@ div {
 /*Tablet View*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
-  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
 
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
-  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 @font-face {
   font-family: 'Quicksand-Medium', sans-serif;
@@ -558,11 +556,11 @@ div {
 /*Desktop View*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
-  src: url(../assets/fonts/FjallaOne-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
 
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
-  src: url(../assets/fonts/Quicksand-Regular.ttf); }
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 @font-face {
   font-family: 'Quicksand-Medium', sans-serif;
