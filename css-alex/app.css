@@ -2,7 +2,11 @@
   border: 1px solid red; }
 
 body {
-  background: #110e16; }
+  background: #110e16;
+  font-family: 'Quicksand', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif; }
 
 h1 {
   color: #eb5b27;

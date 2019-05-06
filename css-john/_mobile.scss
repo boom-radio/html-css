@@ -1,8 +1,12 @@
 @import "config";
 
 body {
-    font-family: 'Fjalla One', sans-serif;
     background: $color-black !important;
+    font-family: 'Quicksand-Regular', sans-serif !important;
+}
+
+h1, h2 , h3 , h4, h5, .menu li a {
+    @include title-font;
 }
 
 header {
