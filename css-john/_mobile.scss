@@ -1,8 +1,15 @@
 @import "config";
 
 body {
-    font-family: 'Fjalla One', sans-serif;
     background: $color-black !important;
+}
+
+h3 {
+    font-family: 'Fjalla One', sans-serif !important;
+}
+
+p {
+    font-family: 'Quicksand-Medium', sans-serif !important;
 }
 
 header {

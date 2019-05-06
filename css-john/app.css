@@ -194,8 +194,13 @@ html * {
 /*Mixin for controlling section titles with sounds waves*/
 /*Mixin for controlling the Footer icins*/
 body {
-  font-family: 'Fjalla One', sans-serif;
   background: black !important; }
+
+h3 {
+  font-family: 'Fjalla One', sans-serif !important; }
+
+p {
+  font-family: 'Quicksand-Medium', sans-serif !important; }
 
 header {
   background-image: url(../assets/img/BackHeader.png);
