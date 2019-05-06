@@ -2,10 +2,10 @@
 @import "config";
 
 .gradiented-box {
-    border-radius: 15px;
+    border-radius: 5px;
 
     img {
-        border-radius: 15px;
+        border-radius: 5px;
     }
 
     &.gradient-one-two {
@@ -22,132 +22,78 @@
 }
 
 //Setting variables for box shadows on about page boxes
-$box-shadow-top-left: -0.5rem -0.5rem 0.5rem;
+$color-eight: rgba(10, 20, 23, 0.4);
+$box-shadow-top-left: -5px -5px 0 0;
+
 
 .img-left {
     position: relative;
     top: 3.5rem;
     left: 1rem;
 
-    &.box-shadow-one-left {
-        @include box-shadow-one-left;
-    }
-
-    &.box-shadow-two-left {
-        @include box-shadow-two-left;
-    }
-
-    &.box-shadow-three-left {
-        @include box-shadow-three-left;
-    }
-
-    &.box-shadow-four-left {
-        @include box-shadow-four-left;
-    }
-
-    &.box-shadow-five-left {
-        @include box-shadow-five-left;
-    }
-
-    &.box-shadow-six-left {
-        @include box-shadow-six-left;
-    }
-
 }
 
-//Setting variables for hover image box shadows on about page boxes
-$box-shadow-top-left: -1rem -1rem 0.5rem;
-
-.img-left:hover {
-    top: 4rem;
-    left: 1.5rem;
-
-    &.box-shadow-one-left {
-        @include box-shadow-one-left;
-    }
-
-    &.box-shadow-two-left {
-        @include box-shadow-two-left;
-    }
-
-    &.box-shadow-three-left {
-        @include box-shadow-three-left;
-    }
-
-    &.box-shadow-four-left {
-        @include box-shadow-four-left;
-    }
-
-    &.box-shadow-five-left {
-        @include box-shadow-five-left;
-    }
-
-    &.box-shadow-six-left {
-        @include box-shadow-six-left;
-    }
+.box-shadow-one-left {
+    @include box-shadow-one-left;
 }
 
-//Setting variables for box shadows on about page boxes
-$box-shadow-top-right: 0.5rem -0.5rem 0.5rem;
+.box-shadow-two-left {
+    @include box-shadow-two-left;
+}
+
+.box-shadow-three-left {
+    @include box-shadow-three-left;
+}
+
+.box-shadow-four-left {
+    @include box-shadow-four-left;
+}
+
+.box-shadow-five-left {
+    @include box-shadow-five-left;
+}
+
+.box-shadow-six-left {
+    @include box-shadow-six-left;
+}
+
+.box-shadow-eight-left {
+    @include box-shadow-eight-left;
+}
+
+$box-shadow-top-right: 5px 5px 0 0;
 
 .img-right {
     position: relative;
     top: 3.5rem;
     right: 1rem;
 
-    &.box-shadow-one-right {
-        @include box-shadow-one-right;
-    }
-
-    &.box-shadow-two-right {
-        @include box-shadow-two-right;
-    }
-
-    &.box-shadow-three-right {
-        @include box-shadow-three-right;
-    }
-
-    &.box-shadow-four-right {
-        @include box-shadow-four-right;
-    }
-
-    &.box-shadow-five-right {
-        @include box-shadow-five-right;
-    }
-
-    &.box-shadow-six-right {
-        @include box-shadow-six-right;
-    }
 }
 
-//Setting variables for hover image box shadows on about page boxes
-$box-shadow-top-right: 1rem -1rem 0.5rem;
+.box-shadow-one-right {
+    @include box-shadow-one-right;
+}
 
-.img-right:hover {
-    top: 4rem;
-    right: 1.5rem;
+.box-shadow-two-right {
+    @include box-shadow-two-right;
+}
 
-    &.box-shadow-one-right {
-        @include box-shadow-one-right;
-    }
+.box-shadow-three-right {
+    @include box-shadow-three-right;
+}
 
-    &.box-shadow-two-right {
-        @include box-shadow-two-right;
-    }
+.box-shadow-four-right {
+    @include box-shadow-four-right;
+}
 
-    &.box-shadow-three-right {
-        @include box-shadow-three-right;
-    }
+.box-shadow-five-right {
+    @include box-shadow-five-right;
+}
 
-    &.box-shadow-four-right {
-        @include box-shadow-four-right;
-    }
+.box-shadow-six-right {
+    @include box-shadow-six-right;
+}
 
-    &.box-shadow-five-right {
-        @include box-shadow-five-right;
-    }
-
-    &.box-shadow-six-right {
-        @include box-shadow-six-right;
-    }
+.box-shadow-eight-right {
+    @include box-shadow-eight-right;
 }
