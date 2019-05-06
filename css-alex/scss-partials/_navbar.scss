@@ -6,9 +6,13 @@
         color: $color-white;
 
         &:hover {
-            color: $color-three;
+            color: $color-six;
         }
     }
+}
+
+.title-bar {
+    background: $color-nav;
 }
 
 .sticky-test {

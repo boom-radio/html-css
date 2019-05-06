@@ -32,81 +32,93 @@ $gradient-five-six: linear-gradient(to right, $color-five, $color-six);
 
 //Set variables for the box-shadows
 //First is negative left, positive righ; second is negative top, positive bottom. Third is blur.
-$box-shadow-top-left: 0rem 0rem 0rem;
-$box-shadow-top-right: 0rem 0rem 0rem;
+$box-shadow-top-left: 0 0 0 0;
+$box-shadow-top-right: 0 0 0 0;
 
 
 //Set box shadow colours
 @mixin box-shadow-one-left {
-  -webkit-box-shadow: $box-shadow-top-left 0 $color-one;
-  -moz-box-shadow: $box-shadow-top-left 0 $color-one;
-  box-shadow: $box-shadow-top-left 0 $color-one;
+  -webkit-box-shadow: $box-shadow-top-left $color-one;
+  -moz-box-shadow: $box-shadow-top-left $color-one;
+  box-shadow: $box-shadow-top-left $color-one;
 }
 
 @mixin box-shadow-one-right {
-  -webkit-box-shadow: $box-shadow-top-right 0 $color-one;
-  -moz-box-shadow: $box-shadow-top-right 0 $color-one;
-  box-shadow: $box-shadow-top-right 0 $color-one;
+  -webkit-box-shadow: $box-shadow-top-right $color-one;
+  -moz-box-shadow: $box-shadow-top-right $color-one;
+  box-shadow: $box-shadow-top-right $color-one;
 }
 
 @mixin box-shadow-two-left {
-  -webkit-box-shadow: $box-shadow-top-left 0 $color-two;
-  -moz-box-shadow: $box-shadow-top-left 0 $color-two;
-  box-shadow: $box-shadow-top-left 0 $color-two;
+  -webkit-box-shadow: $box-shadow-top-left $color-two;
+  -moz-box-shadow: $box-shadow-top-left $color-two;
+  box-shadow: $box-shadow-top-left $color-two;
 }
 
 @mixin box-shadow-two-right {
-  -webkit-box-shadow: $box-shadow-top-right 0 $color-two;
-  -moz-box-shadow: $box-shadow-top-right 0 $color-two;
-  box-shadow: $box-shadow-top-right 0 $color-two;
+  -webkit-box-shadow: $box-shadow-top-right $color-two;
+  -moz-box-shadow: $box-shadow-top-right $color-two;
+  box-shadow: $box-shadow-top-right $color-two;
 }
 
 @mixin box-shadow-three-left {
-  -webkit-box-shadow: $box-shadow-top-left 0 $color-three;
-  -moz-box-shadow: $box-shadow-top-left 0 $color-three;
-  box-shadow: $box-shadow-top-left 0 $color-three;
+  -webkit-box-shadow: $box-shadow-top-left $color-three;
+  -moz-box-shadow: $box-shadow-top-left $color-three;
+  box-shadow: $box-shadow-top-left $color-three;
 }
 
 @mixin box-shadow-three-right {
-  -webkit-box-shadow: $box-shadow-top-right 0 $color-three;
-  -moz-box-shadow: $box-shadow-top-right 0 $color-three;
-  box-shadow: $box-shadow-top-right 0 $color-three;
+  -webkit-box-shadow: $box-shadow-top-right $color-three;
+  -moz-box-shadow: $box-shadow-top-right $color-three;
+  box-shadow: $box-shadow-top-right $color-three;
 }
 
 @mixin box-shadow-four-left {
-  -webkit-box-shadow: $box-shadow-top-left 0 $color-four;
-  -moz-box-shadow: $box-shadow-top-left 0 $color-four;
-  box-shadow: $box-shadow-top-left 0 $color-four;
+  -webkit-box-shadow: $box-shadow-top-left $color-four;
+  -moz-box-shadow: $box-shadow-top-left $color-four;
+  box-shadow: $box-shadow-top-left $color-four;
 }
 
 @mixin box-shadow-four-right {
-  -webkit-box-shadow: $box-shadow-top-right 0 $color-four;
-  -moz-box-shadow: $box-shadow-top-right 0 $color-four;
-  box-shadow: $box-shadow-top-right 0 $color-four;
+  -webkit-box-shadow: $box-shadow-top-right $color-four;
+  -moz-box-shadow: $box-shadow-top-right $color-four;
+  box-shadow: $box-shadow-top-right $color-four;
 }
 
 @mixin box-shadow-five-left {
-  -webkit-box-shadow: $box-shadow-top-left 0 $color-five;
-  -moz-box-shadow: $box-shadow-top-left 0 $color-five;
-  box-shadow: $box-shadow-top-left 0 $color-five;
+  -webkit-box-shadow: $box-shadow-top-left $color-five;
+  -moz-box-shadow: $box-shadow-top-left $color-five;
+  box-shadow: $box-shadow-top-left $color-five;
 }
 
 @mixin box-shadow-five-right {
-  -webkit-box-shadow: $box-shadow-top-right 0 $color-five;
-  -moz-box-shadow: $box-shadow-top-right 0 $color-five;
-  box-shadow: $box-shadow-top-right 0 $color-five;
+  -webkit-box-shadow: $box-shadow-top-right $color-five;
+  -moz-box-shadow: $box-shadow-top-right $color-five;
+  box-shadow: $box-shadow-top-right $color-five;
 }
 
 @mixin box-shadow-six-left {
-  -webkit-box-shadow: $box-shadow-top-left 0 $color-six;
-  -moz-box-shadow: $box-shadow-top-left 0 $color-six;
-  box-shadow: $box-shadow-top-left 0 $color-six;
+  -webkit-box-shadow: $box-shadow-top-left $color-six;
+  -moz-box-shadow: $box-shadow-top-left $color-six;
+  box-shadow: $box-shadow-top-left $color-six;
 }
 
 @mixin box-shadow-six-right {
-  -webkit-box-shadow: $box-shadow-top-right 0 $color-six;
-  -moz-box-shadow: $box-shadow-top-right 0 $color-six;
-  box-shadow: $box-shadow-top-right 0 $color-six;
+  -webkit-box-shadow: $box-shadow-top-right $color-six;
+  -moz-box-shadow: $box-shadow-top-right $color-six;
+  box-shadow: $box-shadow-top-right $color-six;
+}
+
+@mixin box-shadow-eight-left {
+  -webkit-box-shadow: $box-shadow-top-left $color-eight;
+  -moz-box-shadow: $box-shadow-top-left $color-eight;
+  box-shadow: $box-shadow-top-left $color-eight;
+}
+
+@mixin box-shadow-eight-right {
+  -webkit-box-shadow: $box-shadow-top-right $color-eight;
+  -moz-box-shadow: $box-shadow-top-right $color-eight;
+  box-shadow: $box-shadow-top-right $color-eight;
 }
 
 //Set mixins for transitions
