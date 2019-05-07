@@ -6,22 +6,28 @@ body {
     font-family: 'Quicksand-Regular', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Fjalla One', sans-serif;
-  }
+}
 
-h1{
+h1 {
     color: $color-six;
     text-transform: uppercase;
 }
 
-h2{
+h2 {
     text-transform: uppercase;
 }
 
-h3{
+h3 {
     color: $color-six;
 }
+
 //END GENERAL STYLES
 
 //BEGINNING NAVIGATION MENU STYLES
@@ -30,7 +36,8 @@ h3{
     width: 100%;
 }
 
-.top-bar-container, .off-canvas {
+.top-bar-container,
+.off-canvas {
     font-family: 'Fjalla One', sans-serif;
 
     a {
@@ -76,11 +83,11 @@ $transform-y-translation: 0rem;
 $transform-scale: 2;
 
 #logo {
-    width: 150px;
-    @include mixin-transition;
+    width: 200px;
+    //@include mixin-transition;
 
     &:hover {
-        @include mixin-transform;
+       // @include mixin-transform;
     }
 }
 
@@ -121,6 +128,7 @@ $transform-scale: 2;
 .animation-container {
     @include sound-wave;
 }
+
 //END NAVIGATION MENU STYLES
 
 //BEGINNING BODY STYLES
@@ -205,6 +213,7 @@ $box-shadow-top-right: 5px 5px 0 0;
 .box-shadow-eight-right {
     @include box-shadow-eight-right;
 }
+
 //END BODY STYLES
 
 //BEGINNING BUTTONS STYLES
@@ -231,6 +240,7 @@ button.boom-button-dark:hover {
 button.boom-button-dark {
     box-shadow: 2px 1000px 1px $color-black inset;
 }
+
 //John's button
 
 //Fanny's button
@@ -248,6 +258,7 @@ button.boom-button-dark {
         color: $color-white;
     }
 }
+
 //Fanny's button
 //END BUTTONS STYLES
 
