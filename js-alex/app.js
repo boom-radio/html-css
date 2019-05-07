@@ -145,10 +145,11 @@ function getPosition(el) {
 //BEGINNING EXPLOSION ANIMATION FOR LOGO
 var logo = document.getElementById('logo'); // id for logo element
 {
-    // const colors = [ '#ffc000', '#ff3b3b', '#ff8400' ]; ORIGINAL COLOURS FROM CODEPEN
+    //const colors = [ '#ffc000', '#ff3b3b', '#ff8400' ]; //ORIGINAL COLOURS FROM CODEPEN
     // const colors = [ '#FE657E', '#3AA9E1', '#EB5B27' ];
     const colors = [ '#FAA294', '#3FC5BE', '#FCAB62' ];
-    const bubbles = 25;
+    // const bubbles = 25; //ORIGINAL FROM CODEPEN
+    const bubbles = 50;
 
     const explode = (x, y) => {
         let particles = [];
@@ -156,13 +157,23 @@ var logo = document.getElementById('logo'); // id for logo element
         let c = document.createElement('canvas');
         let ctx = c.getContext('2d');
 
+        //ORIGINAL FROM CODEPEN
+        // c.style.position = 'absolute';
+        // c.style.left = (x - 100) + 'px';
+        // c.style.top = (y - 100) + 'px';
+        // c.style.pointerEvents = 'none';
+        // c.style.width = 200 + 'px';
+        // c.style.height = 200 + 'px';
+        // c.style.zIndex = 100;
+        // c.width = 200 * ratio;
+        // c.height = 200 * ratio;
         c.style.position = 'absolute';
         c.style.left = (x - 100) + 'px';
         c.style.top = (y - 100) + 'px';
         c.style.pointerEvents = 'none';
         c.style.width = 200 + 'px';
         c.style.height = 200 + 'px';
-        c.style.zIndex = 100;
+        c.style.zIndex = 2000;
         c.width = 200 * ratio;
         c.height = 200 * ratio;
         document.body.appendChild(c);
@@ -174,9 +185,10 @@ var logo = document.getElementById('logo'); // id for logo element
                 radius: r(20, 30),
                 color: colors[Math.floor(Math.random() * colors.length)],
                 rotation: r(0, 360, true),
-                speed: r(8, 12),
+                // speed: r(8, 12),
+                speed: r(12, 8),
                 friction: 0.9,
-                opacity: r(0, 0.5, true),
+                opacity: r(0, 1, true),
                 yVel: 0,
                 gravity: 0.1
             });
