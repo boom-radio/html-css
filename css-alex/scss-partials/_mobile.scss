@@ -1,5 +1,129 @@
 @import "config";
 
+//BEGINNING GENERAL STYLES
+body {
+    background: $color-eight;
+    font-family: 'Quicksand-Regular', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+h1{
+    color: $color-six;
+    text-transform: uppercase;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+h3{
+    color: $color-six;
+}
+//END GENERAL STYLES
+
+//BEGINNING NAVIGATION MENU STYLES
+.off-canvas {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.top-bar-container, .off-canvas {
+    font-family: 'Fjalla One', sans-serif;
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            color: $color-six;
+        }
+    }
+}
+
+.title-bar {
+    background: $color-nav;
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.title-bar {
+    .button {
+        color: $color-six;
+
+        &:hover {
+            color: $color-three;
+        }
+    }
+}
+
+//Setting variables for transition of the logo
+$transition-property: transform;
+$transition-duration: 0.25s;
+$transition-timing: ease-in-out;
+$transition-delay: 0s;
+
+//setting variables for transformation of the logo
+$transform-rotation-degrees: 10deg;
+$transform-x-translation: 5rem;
+$transform-y-translation: 0rem;
+$transform-scale: 2;
+
+#logo {
+    width: 150px;
+    @include mixin-transition;
+
+    &:hover {
+        @include mixin-transform;
+    }
+}
+
+//This is the browser default styles music player
+#music-stream {
+    //max-width: 245px;
+    border: 0.2rem solid $color-six;
+    border-radius: 50px;
+}
+
+//This is the customised audio player
+#audioplayer {
+    width: 195px;
+    border: 2px solid $color-six;
+    border-radius: 15px;
+}
+
+#pButton {
+    color: $color-six;
+}
+
+#timeline {
+    width: 70px;
+    border-radius: 15px;
+    background: $gradient-three-four;
+
+}
+
+#playhead {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: $gradient-five-six;
+
+}
+
+//Sound wave
+.animation-container {
+    @include sound-wave;
+}
+//END NAVIGATION MENU STYLES
+
+//BEGINNING BODY STYLES
 .gradiented-box {
     border-radius: 5px;
 
@@ -81,3 +205,61 @@ $box-shadow-top-right: 5px 5px 0 0;
 .box-shadow-eight-right {
     @include box-shadow-eight-right;
 }
+//END BODY STYLES
+
+//BEGINNING BUTTONS STYLES
+//John's button
+button.boom-button,
+button.boom-button-dark {
+    border-radius: 0.5rem;
+    padding: .5rem 1.5rem;
+    color: $color-white;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, $color-five, $color-six);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px $color-nine inset;
+}
+
+button.boom-button:hover,
+button.boom-button-dark:hover {
+    box-shadow: none;
+    color: white;
+}
+
+button.boom-button-dark {
+    box-shadow: 2px 1000px 1px $color-black inset;
+}
+//John's button
+
+//Fanny's button
+.boom-button-white {
+    font-family: 'Fjalla One';
+    border-radius: 0.7rem;
+    padding: .5rem 1.5rem;
+    margin-bottom: 15px;
+    color: $color-white;
+    border: solid 2px $color-white;
+    background-color: transparent;
+
+    &:hover {
+        box-shadow: 2px 2px 0px 0px rgba($color-eight, .4) inset;
+        color: $color-white;
+    }
+}
+//Fanny's button
+//END BUTTONS STYLES
+
+//BEGINNING FOOTER STYLES
+footer {
+    a {
+        color: $color-six;
+
+        &:hover {
+            color: $color-three;
+        }
+    }
+}
+
+//END FOOTER STYLES

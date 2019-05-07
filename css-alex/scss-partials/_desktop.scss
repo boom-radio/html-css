@@ -1,6 +1,11 @@
 @import "config";
 
 @include mediaLg {
+    .off-canvas {
+        width: 15%;
+    
+    }
+
     .img-left, .img-right {
         position: relative;
         top: 3.5rem;
