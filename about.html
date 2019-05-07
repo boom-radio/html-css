@@ -17,11 +17,22 @@
     <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
     <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
         <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
-        <div class="grid-container">
-            <div class="grid-x grid-padding-y align-center">
+        <div class="grid-container-fluid">
+            <div class="grid-x grid-padding-x grid-padding-y align-center align-middle">
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">
+                    <div class="search-input-animated float-right">
+                        <span class="searchbox-icon"><i class="fas fa-search"></i></span>
+                        <input type="search" name="search" class="searchbox-input" required>
+                        <button type="button" class="button search-button">GO</button>
+                    </div>
+                </div>
                 <div class="cell">
                     <ul class="menu vertical text-center">
-                        <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li>
+                        <!-- <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li> -->
+                        <li><a href="./">Home</a></li>
                         <li><a href="listen.html">Listen</a></li>
                         <li><a href="music.html">Music</a></li>
                         <li><a href="news.html">News</a></li>
@@ -32,10 +43,12 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
                 <div class="cell shrink">
                     <ul class="menu text-center">
-                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
                     </ul>
@@ -48,8 +61,8 @@
         <!-- Your page content lives here -->
         <header class="grid-container-fluid">
             <div class="grid-x">
-                <div class="cell">
-                </div>
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
             </div>
         </header>
         <div class="grid-container-fluid">
@@ -64,19 +77,25 @@
                             <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="xlarge">
                                 <div class="title-bar-left">
                                     <div class="grid-container-fluid">
-                                        <div class="grid-x grid-padding-x grid-margin-y align-middle">
-                                            <div class="cell shrink">
-                                                <img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo">
-                                            </div>
-                                            <div class="cell shrink">
+                                        <div class="grid-x grid-padding-y align-justify align-middle">
+                                            <div class="cell small-1">
                                                 <button type="button" data-toggle="offCanvas"><img
                                                         src="assets/img/+.svg" alt="+"></button>
-                                                <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
                                             </div>
+                                            <div class="cell small-10 text-center">
+                                                <img id="mobile-logo" src="assets/img/BoomLogoOrange.svg"
+                                                    alt="Boom Radio Logo">
+                                            </div>
+                                            <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE LOGO -->
+                                            <div class="cell small-1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-container">
+                                        <div class="grid-x align-center align-middle">
                                             <div class="cell shrink">
-                                                <audio id="music-stream" controls preload="metadata"
-                                                    style=" width:225px;">
-                                                    <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3"
+                                                <audio id="music-stream" controls controlsList="nodownload"
+                                                    preload="metadata">
+                                                    <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3"
                                                         type="audio/mpeg">
                                                 </audio>
                                             </div>
@@ -150,11 +169,16 @@
                                                 </div>
                                             </div>
                                             <div class="cell auto">
-                                                <ul class="menu float-right">
+                                                <!-- <ul class="menu float-right">
                                                     <li><input type="search" placeholder="Search"></li>
                                                     <li><button type="button" class="clear button"><i
                                                                 class="fas fa-search"></i></button></li>
-                                                </ul>
+                                                </ul> -->
+                                                <div class="search-input-animated float-right">
+                                                    <span class="searchbox-icon"><i class="fas fa-search"></i></span>
+                                                    <input type="search" name="search" class="searchbox-input" required>
+                                                    <button type="button" class="button search-button">GO</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -170,6 +194,7 @@
         <!-- BEGINNING OF MAIN BODY -->
         <div class="grid-container">
             <div class="grid-x grid-margin-x grid-margin-y align-center">
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell small-3">
                     <img class="float-right" src="assets/img/wave_left.svg" alt="Left wave">
@@ -207,6 +232,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell">
@@ -236,6 +262,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell small-3">
@@ -275,6 +302,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell"></div>
             </div>
@@ -284,11 +312,12 @@
         <!-- BEGINNING OF FOOTER -->
         <footer class="grid-container">
             <div class="grid-x grid-margin-y align-center">
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell shrink">
                     <ul class="menu text-center">
-                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
                     </ul>

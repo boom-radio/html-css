@@ -1,6 +1,6 @@
 @import "config";
 
-//BEGINNING GENERAL STYLES
+//BEGINNING GENERAL STYLES ========================================================================================================
 body {
     background: $color-eight;
     font-family: 'Quicksand-Regular', sans-serif;
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Fjalla One', sans-serif;
+    @include title-font;
 }
 
 h1 {
@@ -28,12 +28,16 @@ h3 {
     color: $color-six;
 }
 
-//END GENERAL STYLES
+//END GENERAL STYLES =================================================================================================================
 
-//BEGINNING NAVIGATION MENU STYLES
+//BEGINNING NAVIGATION MENU STYLES====================================================================================================
 .off-canvas {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
+}
+
+.off-canvas.is-transition-overlap {
+    z-index: 200;
 }
 
 .top-bar-container,
@@ -57,45 +61,12 @@ h3 {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
 }
 
-.title-bar {
-    .button {
-        color: $color-six;
-
-        &:hover {
-            color: $color-three;
-        }
-    }
-}
-
-//Setting variables for transition of the logo
-$transition-property: transform;
-$transition-duration: 0.25s;
-$transition-timing: ease-in-out;
-$transition-delay: 0s;
-
-//setting variables for transformation of the logo
-$transform-rotation-degrees: 10deg;
-$transform-x-translation: 5rem;
-$transform-y-translation: 0rem;
-$transform-scale: 2;
-
-#logo {
-    width: 200px;
-    //@include mixin-transition;
-
-    &:hover {
-       // @include mixin-transform;
-    }
-}
-
-//This is the browser default styles music player
-#music-stream {
-    //max-width: 245px;
-    border: 0.2rem solid $color-six;
-    border-radius: 50px;
+//Mobile logo styles
+#mobile-logo {
+    width: 150px;
 }
 
 //This is the customised audio player
@@ -127,6 +98,80 @@ $transform-scale: 2;
 //Sound wave
 .animation-container {
     @include sound-wave;
+}
+
+//Start search bar styles
+.search-input-animated {
+    position: relative;
+    min-width: 40px;
+    min-height: 40px;
+    width: 0%;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-transition: width 0.75s;
+    -moz-transition: width 0.75s;
+    -ms-transition: width 0.75s;
+    -o-transition: width 0.75s;
+    transition: width 0.75s;
+
+    input {
+        text-indent: 5%;
+    }
+}
+
+.searchbox-input {
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0px 55px 0px 20px;
+}
+
+.searchbox-icon {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    padding: 0 15px 0 0;
+    margin: 0;
+    border-right: 1px solid $color-six;
+    outline: 0;
+    text-align: center;
+    color: $color-six;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-three;
+    }
+}
+
+.search-button {
+    min-width: 50px;
+    width: 5%;
+    background-color: $color-white;
+    color: $color-six;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border-left: 1px solid $color-six;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-six;
+        color: $color-white;
+    }
+}
+
+.show-search-button {
+    display: block;
+}
+
+.searchbox-open {
+    width: 100%;
 }
 
 //END NAVIGATION MENU STYLES
