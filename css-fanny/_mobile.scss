@@ -296,9 +296,9 @@ h1 {
 
 h2 {
     @include title;
-    font-size: 1.6em;
+    font-size: 1.4em;
     display: block;
-    padding: 0.7em;
+    padding: 0.7em 0.5em;
 }
 h3{
     @include title;
@@ -514,5 +514,9 @@ input {
     border-style:  solid ;
     border-width : 0 0 1px 0;
     border-color:$color-white;
-    height:40.5px;
+    height:41px;
+}
+
+.white-line-left{
+    background-image: url(../assets/img/wave_left-bottom.svg);
 }

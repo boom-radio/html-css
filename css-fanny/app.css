@@ -547,9 +547,9 @@ h2 {
   font-family: 'Fjalla One', sans-serif !important;
   color: #eb5b27;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.4em;
   display: block;
-  padding: 0.7em; }
+  padding: 0.7em 0.5em; }
 
 h3 {
   font-family: 'Fjalla One', sans-serif !important;
@@ -711,7 +711,10 @@ input {
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: white;
-  height: 40.5px; }
+  height: 41px; }
+
+.white-line-left {
+  background-image: url(../assets/img/wave_left-bottom.svg); }
 
 /*Tablet View*/
 @font-face {
@@ -797,4 +800,8 @@ input {
     padding-right: 1rem;
     color: black; }
     .about-box .about-tile p {
-      padding-right: 1.5rem; } }
+      padding-right: 1.5rem; }
+  .white-bottom-border {
+    height: 40.5px; }
+  h2 {
+    font-weight: 1.6em; } }
