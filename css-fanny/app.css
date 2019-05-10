@@ -183,6 +183,13 @@ html * {
   width: 100%;
   z-index: 1000; }
 
+a {
+  font-family: 'Fjalla One', sans-serif !important;
+  color: white;
+  font-size: 1.1em; }
+  a:hover {
+    color: #eb5b27; }
+
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(../assets/fonts/FjallaOne-Regular.ttf); }
@@ -257,7 +264,7 @@ header {
     /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
 
 .card-section {
-  background-color: #535156;
+  background-color: #0a1417;
   color: white;
   font-family: 'Quicksand-Regular', sans-serif;
   font-size: 0.8rem;
@@ -696,30 +703,15 @@ input {
 .overlap {
   margin-bottom: -50px; }
 
-.boom-line {
-  margin: 30px 0;
-  height: 0.7px;
-  background: white;
-  z-index: 1; }
-
-.wave-line {
-  padding: 0;
-  text-align: center;
-  word-spacing: -1em;
-  display: table;
-  width: 100%; }
-  .wave-line li {
-    display: inline-block;
-    word-spacing: 0; }
-  .wave-line li {
-    background-color: #0a1417;
-    margin-top: -23.5px;
-    z-index: 2; }
-  .wave-line h2 {
-    padding: 1px 15px;
-    position: relative;
-    top: -12px;
-    margin-top: 5px; }
+/*.boom-line {
+    @include boom-line;
+    z-index: 1;
+}*/
+.white-bottom-border {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: white;
+  height: 40.5px; }
 
 /*Tablet View*/
 @font-face {

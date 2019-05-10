@@ -59,7 +59,7 @@ header {
 }
 
 .card-section {
-    background-color: $color-nine;
+    background-color: $color-eight;
     color: $color-white;
     font-family: 'Quicksand-Regular', sans-serif;
     font-size: 0.8rem;
@@ -503,23 +503,16 @@ input {
     margin-bottom : -50px;
 }
 
-//Seperator & Title line
-.boom-line {
+//Separator & Title line
+/*.boom-line {
     @include boom-line;
     z-index: 1;
-}
+}*/
 
-.wave-line{
-    @include horizontal-list;
-    li{
-    background-color: $color-eight;
-    margin-top:-23.5px;
-    z-index:2;
-}
-    h2{
-    padding: 1px 15px;
-    position: relative;
-    top: -12px;
-    margin-top: 5px;
-    }
+
+.white-bottom-border{
+    border-style:  solid ;
+    border-width : 0 0 1px 0;
+    border-color:$color-white;
+    height:40.5px;
 }
