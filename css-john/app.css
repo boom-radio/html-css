@@ -177,8 +177,19 @@ html * {
 
 .off-canvas {
   color: white;
-  background-color: rgba(0, 0, 0, 0.9) !important; }
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  width: 100%; }
 
+/* Fanny's control for nav
+a {
+    font-family: 'Fjalla One', sans-serif !important;
+    color: $color-white;
+    font-size: 1.1em;
+
+    &:hover {
+        color: $color-six;
+    }
+}*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
@@ -203,6 +214,14 @@ h1, h2, h3, h4, h5, .menu li a {
 header {
   background-image: url(../assets/img/BackHeader.png);
   height: 200px; }
+
+/*Fanny's navbar setings*/
+a {
+  font-family: 'Fjalla One', sans-serif !important;
+  color: white;
+  font-size: 1.1em; }
+  a:hover {
+    color: #eb5b27; }
 
 .section-title {
   color: #eb5b27;
@@ -545,7 +564,8 @@ div {
 
 /*Mixin for controlling section titles with sounds waves*/
 /*Mixin for controlling the Footer icins*/
-@media (min-width: 768px) {
+/*original settings @media screen and (min-width: 665px)*/
+@media screen and (min-width: 768px) {
   .about-tile {
     width: 50%;
     padding: 1rem;

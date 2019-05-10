@@ -16,5 +16,17 @@
 
 .off-canvas {
     color: $color-white;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    width: 100%;
 }
+
+/* Fanny's control for nav
+a {
+    font-family: 'Fjalla One', sans-serif !important;
+    color: $color-white;
+    font-size: 1.1em;
+
+    &:hover {
+        color: $color-six;
+    }
+}*/
