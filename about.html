@@ -6,22 +6,35 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="css-alex/foundation.css">
+    <link rel="icon" href="assets/img/BoomLogoOrange.svg">
     <link rel="stylesheet" href="assets/fonts/fa/css/all.css">
+    <link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css">
     <link rel="stylesheet" href="css-alex/app.css">
 </head>
 
 <body>
+    <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
     <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
     <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
         <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
-        <div class="grid-container">
-            <div class="grid-x grid-padding-y align-center">
+        <div class="grid-container-fluid">
+            <div class="grid-x grid-padding-x grid-padding-y align-center align-middle">
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">
+                    <div class="search-input-animated float-right">
+                        <span class="searchbox-icon"><i class="fas fa-search"></i></span>
+                        <input type="search" name="search" class="searchbox-input" required>
+                        <button type="button" class="button search-button">GO</button>
+                    </div>
+                </div>
                 <div class="cell">
                     <ul class="menu vertical text-center">
-                        <li><a href="./"><img src="assets/img/BoomLogoWhite.svg" alt="Boom Radio Logo"></a></li>
+                        <!-- <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li> -->
+                        <li><a href="./">Home</a></li>
                         <li><a href="listen.html">Listen</a></li>
                         <li><a href="music.html">Music</a></li>
                         <li><a href="news.html">News</a></li>
@@ -32,10 +45,12 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
                 <div class="cell shrink">
                     <ul class="menu text-center">
-                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
                     </ul>
@@ -43,40 +58,49 @@
             </div>
         </div>
     </aside>
+    <!-- END OFF CANVAS ASIDE ================================================================================================================================================ -->
+
+    <!-- OFF CANVAS CONTENT (Whole website) ================================================================================================================================== -->
     <!-- In the off-canvas-content DIV goes the whole page content -->
     <div class="off-canvas-content" data-off-canvas-content>
-        <!-- Your page content lives here -->
+        <!-- HEADER Content ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? -->
         <header class="grid-container-fluid">
             <div class="grid-x">
-                <div class="cell">
-                </div>
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
             </div>
         </header>
+        <!-- END HEADER Content ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? -->
+
+        <!-- NAVIGATION BAR Content ========================================================================================================================================= -->
         <div class="grid-container-fluid">
             <div class="grid-x">
-                <!-- BEGINNING OF THE TOP BAR -->
                 <div class="cell">
-                    <!-- data-sticky-container was at the end of the following DIV -->
                     <div id="topBarContainer" class="top-bar-container">
-                        <!--class="sticky sticky-topbar" and attributes data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;" were in the following DIV -->
                         <div class="topbar">
-                            <!-- Mobile top bar -->
+                            <!-- Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????????? -->
                             <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="xlarge">
                                 <div class="title-bar-left">
                                     <div class="grid-container-fluid">
-                                        <div class="grid-x grid-padding-x grid-margin-y align-middle">
-                                            <div class="cell shrink">
-                                                <img src="assets/img/BoomLogoWhite.svg" alt="Boom Radio Logo">
-                                            </div>
-                                            <div class="cell shrink">
+                                        <div class="grid-x grid-padding-y align-justify align-middle">
+                                            <div class="cell small-1">
                                                 <button type="button" data-toggle="offCanvas"><img
                                                         src="assets/img/+.svg" alt="+"></button>
-                                                <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
                                             </div>
+                                            <div class="cell small-10 text-center">
+                                                <img id="mobile-logo" src="assets/img/BoomLogoOrange.svg"
+                                                    alt="Boom Radio Logo">
+                                            </div>
+                                            <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE LOGO -->
+                                            <div class="cell small-1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-container">
+                                        <div class="grid-x align-center align-middle">
                                             <div class="cell shrink">
-                                                <audio id="music-stream" controls preload="metadata"
-                                                    style=" width:225px;">
-                                                    <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3"
+                                                <audio id="music-stream" controls controlsList="nodownload"
+                                                    preload="metadata">
+                                                    <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3"
                                                         type="audio/mpeg">
                                                 </audio>
                                             </div>
@@ -84,19 +108,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Desktop top bar -->
+                            <!-- END Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????? -->
+
+                            <!-- Desktop top bar //////////////////////////////////////////////////////////////////////////////////////////// -->
                             <div class="title-bar" id="desktop-menu">
                                 <div class="title-bar-left">
                                     <div class="grid-container-fluid">
                                         <div class="grid-x grid-padding-x grid-margin-y align-middle">
                                             <div class="cell shrink">
-                                                <a href="./"><img id="logo" src="assets/img/BoomLogoWhite.svg"
+                                                <a href="./"><img id="logo" src="assets/img/BoomLogoOrange.svg"
                                                         alt="Boom Radio Logo"></a>
                                             </div>
                                             <div class="cell shrink">
                                                 <button type="button" data-toggle="offCanvas"><img
                                                         src="assets/img/+.svg" alt="+"></button>
-                                                <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
                                             </div>
                                             <div class="cell shrink">
                                                 <ul class="menu text-center">
@@ -150,26 +175,33 @@
                                                 </div>
                                             </div>
                                             <div class="cell auto">
-                                                <ul class="menu float-right">
+                                                <!-- <ul class="menu float-right">
                                                     <li><input type="search" placeholder="Search"></li>
                                                     <li><button type="button" class="clear button"><i
                                                                 class="fas fa-search"></i></button></li>
-                                                </ul>
+                                                </ul> -->
+                                                <div class="search-input-animated float-right">
+                                                    <span class="searchbox-icon"><i class="fas fa-search"></i></span>
+                                                    <input type="search" name="search" class="searchbox-input" required>
+                                                    <button type="button" class="button search-button">GO</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- END Desktop top bar ///////////////////////////////////////////////////////////////////////////////////////////// -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END OF THE DESKTOP TOP BAR -->
+        <!-- END NAVIGATION BAR Content ======================================================================================================================================= -->
 
-        <!-- BEGINNING OF MAIN BODY -->
+        <!-- BEGINNING OF MAIN BODY =========================================================================================================================================== -->
         <div class="grid-container">
             <div class="grid-x grid-margin-x grid-margin-y align-center">
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell small-3">
                     <img class="float-right" src="assets/img/wave_left.svg" alt="Left wave">
@@ -181,6 +213,7 @@
                     <img class="float-left" src="assets/img/wave_right.svg" alt="Left wave">
                 </div>
                 <div class="cell">
+                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
                     <div class="grid-container-fluid gradiented-box gradient-one-two">
                         <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
                             <div class="cell medium-4">
@@ -199,22 +232,25 @@
                                                 Magni, cum?</p>
                                         </div>
                                         <div class="cell">
-                                            <button type="button" class="boom-button float-right">Read More...</li>
+                                            <button type="button" class="boom-button-white float-right">Read More...</li>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
                 </div>
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell">
+                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
                     <div class="grid-container-fluid gradiented-box gradient-three-four">
                         <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
                             <div class="cell medium-6">
                                 <div class="grid-container-fluid">
-                                    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
+                                    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
                                         <div class="cell">
                                             <h2>Lorem Ipsum</h2>
                                         </div>
@@ -225,7 +261,7 @@
                                                 Magni, cum?</p>
                                         </div>
                                         <div class="cell">
-                                            <button type="button" class="boom-button">Read More...</li>
+                                            <button type="button" class="boom-button-white">Read More...</li>
                                         </div>
                                     </div>
                                 </div>
@@ -235,7 +271,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
                 </div>
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell small-3">
@@ -248,6 +286,7 @@
                     <img class="float-left" src="assets/img/wave_right.svg" alt="Left wave">
                 </div>
                 <div class="cell">
+                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
                     <div class="grid-container-fluid gradiented-box gradient-five-six">
                         <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
                             <div class="cell medium-4">
@@ -267,39 +306,43 @@
                                                 Magni, cum?</p>
                                         </div>
                                         <div class="cell">
-                                            <button type="button" class="boom-button float-right">Read More...</li>
+                                            <button type="button" class="boom-button-white float-right">Read More...</li>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
                 </div>
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell"></div>
             </div>
         </div>
-        <!-- END OF MAIN BODY -->
+        <!-- END OF MAIN BODY ============================================================================================================================================== -->
 
-        <!-- BEGINNING OF FOOTER -->
+        <!-- BEGINNING OF FOOTER =========================================================================================================================================== -->
         <footer class="grid-container">
             <div class="grid-x grid-margin-y align-center">
+                <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell shrink">
                     <ul class="menu text-center">
-                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
                         <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
-        <!-- END OF FOOTER -->
+        <!-- END OF FOOTER ================================================================================================================================================= -->
     </div>
 
-    <script src="js-alex/vendor/jquery.js"></script>
-    <script src="js-alex/vendor/foundation.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
     <script src="js-alex/app.js"></script>
 </body>
 

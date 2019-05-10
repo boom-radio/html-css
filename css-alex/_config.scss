@@ -23,6 +23,10 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
   src: url(//fonts.googleapis.com/css?family=Quicksand);
 }
 
+@mixin title-font {
+  font-family: 'Fjalla One', sans-serif !important;
+}
+
 //Set media query mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {

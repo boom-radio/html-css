@@ -1,0 +1,208 @@
+@import "config";
+
+//BEGINNING GENERAL STYLES ========================================================================================================
+body {
+    background: $color-eight;
+    font-family: 'Quicksand-Regular', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include title-font;
+}
+
+h1 {
+    color: $color-six;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    color: $color-six;
+}
+
+.test {
+    border: 1px solid red;
+}
+
+//Site wide title controller
+.section-title {
+    color: $color-six;
+    padding: 0.5rem;
+}
+//END GENERAL STYLES =================================================================================================================
+
+//BEGINNING BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????
+.gradiented-box {
+    border-radius: 5px;
+
+    img {
+        border-radius: 5px;
+    }
+
+    &.gradient-one-two {
+        @include gradient-one-two;
+    }
+
+    &.gradient-three-four {
+        @include gradient-three-four;
+    }
+
+    &.gradient-five-six {
+        @include gradient-five-six;
+    }
+}
+
+//Setting variables for box shadows on about page boxes
+$color-eight: rgba(10, 20, 23, 0.4);
+$box-shadow-top-left: -5px -5px 0 0;
+
+.box-shadow-one-left {
+    @include box-shadow-one-left;
+}
+
+.box-shadow-two-left {
+    @include box-shadow-two-left;
+}
+
+.box-shadow-three-left {
+    @include box-shadow-three-left;
+}
+
+.box-shadow-four-left {
+    @include box-shadow-four-left;
+}
+
+.box-shadow-five-left {
+    @include box-shadow-five-left;
+}
+
+.box-shadow-six-left {
+    @include box-shadow-six-left;
+}
+
+.box-shadow-eight-left {
+    @include box-shadow-eight-left;
+}
+
+$box-shadow-top-right: 5px 5px 0 0;
+
+.box-shadow-one-right {
+    @include box-shadow-one-right;
+}
+
+.box-shadow-two-right {
+    @include box-shadow-two-right;
+}
+
+.box-shadow-three-right {
+    @include box-shadow-three-right;
+}
+
+.box-shadow-four-right {
+    @include box-shadow-four-right;
+}
+
+.box-shadow-five-right {
+    @include box-shadow-five-right;
+}
+
+.box-shadow-six-right {
+    @include box-shadow-six-right;
+}
+
+.box-shadow-eight-right {
+    @include box-shadow-eight-right;
+}
+
+//News elements in the news.html
+.card {
+    border: 0 !important;
+
+    img {
+        @include box-shadow;
+    }
+}
+
+.card-section {
+    background-color: $color-nine;
+    color: $color-white;
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-size: 0.8rem;
+    /*padding: 0.1rem 0.75rem 0.5rem 0.75rem !important;*/
+}
+
+.bio {
+    width: 100%;
+
+    p {
+        padding-left: 0.5rem;
+    }
+}
+
+//END BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+
+//BEGINNING BUTTONS STYLES =================================================================================================================
+//John's button
+button.boom-button,
+button.boom-button-dark {
+    border-radius: 0.5rem;
+    padding: .5rem 1.5rem;
+    color: $color-white;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, $color-five, $color-six);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px $color-nine inset;
+}
+
+button.boom-button:hover,
+button.boom-button-dark:hover {
+    box-shadow: none;
+    color: white;
+}
+
+button.boom-button-dark {
+    box-shadow: 2px 1000px 1px $color-black inset;
+}
+
+//John's button
+
+//Fanny's button
+.boom-button-white {
+    font-family: 'Fjalla One';
+    border-radius: 0.7rem;
+    padding: .5rem 1.5rem;
+    margin-bottom: 15px;
+    color: $color-white;
+    border: solid 2px $color-white;
+    background-color: transparent;
+
+    &:hover {
+        box-shadow: 2px 2px 0px 0px rgba($color-eight, .4) inset;
+        color: $color-white;
+    }
+}
+//Fanny's button
+//END BUTTONS STYLES =========================================================================================================
+
+//BEGINNING FOOTER STYLES ????????????????????????????????????????????????????????????????????????????????????????????????????
+footer {
+    a {
+        color: $color-six;
+
+        &:hover {
+            color: $color-three;
+        }
+    }
+}
+
+//END FOOTER STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????
