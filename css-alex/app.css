@@ -30,6 +30,9 @@
     .top-bar-container a:hover,
     .off-canvas a:hover {
       color: #eb5b27; }
+  .top-bar-container .menu li button,
+  .off-canvas .menu li button {
+    color: #eb5b27; }
 
 .title-bar {
   background: #0a0a0a; }
@@ -137,67 +140,6 @@
   84% {
     transform: scaleY(3);
     background: #faa294; } }
-
-.search-input-animated {
-  position: relative;
-  min-width: 40px;
-  min-height: 40px;
-  width: 0%;
-  overflow: hidden;
-  border-radius: 20px;
-  -webkit-transition: width 0.75s;
-  -moz-transition: width 0.75s;
-  -ms-transition: width 0.75s;
-  -o-transition: width 0.75s;
-  transition: width 0.75s; }
-  .search-input-animated input {
-    text-indent: 5%;
-    box-sizing: unset; }
-
-.searchbox-input {
-  top: 0;
-  right: 0;
-  border: 0;
-  outline: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0px 55px 0px 20px; }
-
-.searchbox-icon {
-  display: block;
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  text-align: center;
-  color: #eb5b27;
-  cursor: pointer; }
-  .searchbox-icon:hover {
-    color: #3fc5be; }
-
-.search-button {
-  min-width: 50px;
-  width: 5%;
-  background-color: white;
-  color: #eb5b27;
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: center;
-  border-left: 1px solid #eb5b27;
-  cursor: pointer; }
-  .search-button:hover {
-    background-color: #eb5b27;
-    color: white; }
-
-.show-search-button {
-  display: block; }
-
-.searchbox-open {
-  width: 100%; }
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;
