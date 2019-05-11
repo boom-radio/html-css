@@ -14,39 +14,6 @@
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
-.test {
-  border: 1px solid red; }
-
-@font-face {
-  font-family: 'Fjalla One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
-
-@font-face {
-  font-family: 'Quicksand-Regular', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Quicksand); }
-
-body {
-  background: #0a1417;
-  font-family: 'Quicksand-Regular', sans-serif; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Fjalla One', sans-serif !important; }
-
-h1 {
-  color: #eb5b27;
-  text-transform: uppercase; }
-
-h2 {
-  text-transform: uppercase; }
-
-h3 {
-  color: #eb5b27; }
-
 .off-canvas {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%; }
@@ -232,6 +199,43 @@ h3 {
 .searchbox-open {
   width: 100%; }
 
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+body {
+  background: #0a1417;
+  font-family: 'Quicksand-Regular', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif !important; }
+
+h1 {
+  color: #eb5b27;
+  text-transform: uppercase; }
+
+h2 {
+  text-transform: uppercase; }
+
+h3 {
+  color: #eb5b27; }
+
+.test {
+  border: 1px solid red; }
+
+.section-title {
+  color: #eb5b27;
+  padding: 0.5rem; }
+
 .gradiented-box {
   border-radius: 5px; }
   .gradiented-box img {
@@ -243,75 +247,29 @@ h3 {
   .gradiented-box.gradient-five-six {
     background-image: linear-gradient(to right, #fcab62, #eb5b27); }
 
-.box-shadow-one-left {
-  -webkit-box-shadow: -5px -5px 0 0 #faa294;
-  -moz-box-shadow: -5px -5px 0 0 #faa294;
-  box-shadow: -5px -5px 0 0 #faa294; }
+.box-shadowed {
+  -webkit-box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4);
+  -moz-box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4);
+  box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4); }
 
-.box-shadow-two-left {
-  -webkit-box-shadow: -5px -5px 0 0 #fe657e;
-  -moz-box-shadow: -5px -5px 0 0 #fe657e;
-  box-shadow: -5px -5px 0 0 #fe657e; }
+.card {
+  border: 0 !important; }
+  .card img {
+    -webkit-box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);
+    -moz-box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);
+    box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4); }
 
-.box-shadow-three-left {
-  -webkit-box-shadow: -5px -5px 0 0 #3fc5be;
-  -moz-box-shadow: -5px -5px 0 0 #3fc5be;
-  box-shadow: -5px -5px 0 0 #3fc5be; }
+.card-section {
+  background-color: #535156;
+  color: white;
+  font-family: 'Quicksand-Regular', sans-serif;
+  font-size: 0.8rem;
+  /*padding: 0.1rem 0.75rem 0.5rem 0.75rem !important;*/ }
 
-.box-shadow-four-left {
-  -webkit-box-shadow: -5px -5px 0 0 #3aa9e1;
-  -moz-box-shadow: -5px -5px 0 0 #3aa9e1;
-  box-shadow: -5px -5px 0 0 #3aa9e1; }
-
-.box-shadow-five-left {
-  -webkit-box-shadow: -5px -5px 0 0 #fcab62;
-  -moz-box-shadow: -5px -5px 0 0 #fcab62;
-  box-shadow: -5px -5px 0 0 #fcab62; }
-
-.box-shadow-six-left {
-  -webkit-box-shadow: -5px -5px 0 0 #eb5b27;
-  -moz-box-shadow: -5px -5px 0 0 #eb5b27;
-  box-shadow: -5px -5px 0 0 #eb5b27; }
-
-.box-shadow-eight-left {
-  -webkit-box-shadow: -5px -5px 0 0 rgba(10, 20, 23, 0.4);
-  -moz-box-shadow: -5px -5px 0 0 rgba(10, 20, 23, 0.4);
-  box-shadow: -5px -5px 0 0 rgba(10, 20, 23, 0.4); }
-
-.box-shadow-one-right {
-  -webkit-box-shadow: 5px 5px 0 0 #faa294;
-  -moz-box-shadow: 5px 5px 0 0 #faa294;
-  box-shadow: 5px 5px 0 0 #faa294; }
-
-.box-shadow-two-right {
-  -webkit-box-shadow: 5px 5px 0 0 #fe657e;
-  -moz-box-shadow: 5px 5px 0 0 #fe657e;
-  box-shadow: 5px 5px 0 0 #fe657e; }
-
-.box-shadow-three-right {
-  -webkit-box-shadow: 5px 5px 0 0 #3fc5be;
-  -moz-box-shadow: 5px 5px 0 0 #3fc5be;
-  box-shadow: 5px 5px 0 0 #3fc5be; }
-
-.box-shadow-four-right {
-  -webkit-box-shadow: 5px 5px 0 0 #3aa9e1;
-  -moz-box-shadow: 5px 5px 0 0 #3aa9e1;
-  box-shadow: 5px 5px 0 0 #3aa9e1; }
-
-.box-shadow-five-right {
-  -webkit-box-shadow: 5px 5px 0 0 #fcab62;
-  -moz-box-shadow: 5px 5px 0 0 #fcab62;
-  box-shadow: 5px 5px 0 0 #fcab62; }
-
-.box-shadow-six-right {
-  -webkit-box-shadow: 5px 5px 0 0 #eb5b27;
-  -moz-box-shadow: 5px 5px 0 0 #eb5b27;
-  box-shadow: 5px 5px 0 0 #eb5b27; }
-
-.box-shadow-eight-right {
-  -webkit-box-shadow: 5px 5px 0 0 rgba(10, 20, 23, 0.4);
-  -moz-box-shadow: 5px 5px 0 0 rgba(10, 20, 23, 0.4);
-  box-shadow: 5px 5px 0 0 rgba(10, 20, 23, 0.4); }
+.bio {
+  width: 100%; }
+  .bio p {
+    padding-left: 0.5rem; }
 
 button.boom-button,
 button.boom-button-dark {
