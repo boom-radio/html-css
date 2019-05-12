@@ -21,10 +21,20 @@
             color: $color-six;
         }
     }
+
+    .menu {
+
+        li {
+            button {
+                color: $color-six;
+            }
+        }
+    }
 }
 
 .title-bar {
     background: $color-nav;
+
 }
 
 .sticky-navbar {
@@ -68,80 +78,6 @@
 //Sound wave
 .animation-container {
     @include sound-wave;
-}
-
-//Start search bar styles
-.search-input-animated {
-    position: relative;
-    min-width: 40px;
-    min-height: 40px;
-    width: 0%;
-    overflow: hidden;
-    border-radius: 20px;
-    -webkit-transition: width 0.75s;
-    -moz-transition: width 0.75s;
-    -ms-transition: width 0.75s;
-    -o-transition: width 0.75s;
-    transition: width 0.75s;
-
-    input {
-        text-indent: 5%;
-        box-sizing: unset;
-    }
-}
-
-.searchbox-input {
-    top: 0;
-    right: 0;
-    border: 0;
-    outline: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0px 55px 0px 20px;
-}
-
-.searchbox-icon {
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    padding: 0;
-    margin: 0;
-    outline: 0;
-    text-align: center;
-    color: $color-six;
-    cursor: pointer;
-
-    &:hover {
-        color: $color-three;
-    }
-}
-
-.search-button {
-    min-width: 50px;
-    width: 5%;
-    background-color: $color-white;
-    color: $color-six;
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: center;
-    border-left: 1px solid $color-six;
-    cursor: pointer;
-
-    &:hover {
-        background-color: $color-six;
-        color: $color-white;
-    }
-}
-
-.show-search-button {
-    display: block;
-}
-
-.searchbox-open {
-    width: 100%;
 }
 
 //END NAVIGATION MENU STYLES =================================================================================================================

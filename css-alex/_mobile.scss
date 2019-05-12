@@ -37,6 +37,7 @@ h3 {
     color: $color-six;
     padding: 0.5rem;
 }
+
 //END GENERAL STYLES =================================================================================================================
 
 //BEGINNING BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????
@@ -62,67 +63,17 @@ h3 {
 
 //Setting variables for box shadows on about page boxes
 $color-eight: rgba(10, 20, 23, 0.4);
-$box-shadow-top-left: -5px -5px 0 0;
+$box-shadow: 5px -5px 0 $color-eight;
 
-.box-shadow-one-left {
-    @include box-shadow-one-left;
+.box-shadowed {
+    @include box-shadow;
 }
 
-.box-shadow-two-left {
-    @include box-shadow-two-left;
-}
-
-.box-shadow-three-left {
-    @include box-shadow-three-left;
-}
-
-.box-shadow-four-left {
-    @include box-shadow-four-left;
-}
-
-.box-shadow-five-left {
-    @include box-shadow-five-left;
-}
-
-.box-shadow-six-left {
-    @include box-shadow-six-left;
-}
-
-.box-shadow-eight-left {
-    @include box-shadow-eight-left;
-}
-
-$box-shadow-top-right: 5px 5px 0 0;
-
-.box-shadow-one-right {
-    @include box-shadow-one-right;
-}
-
-.box-shadow-two-right {
-    @include box-shadow-two-right;
-}
-
-.box-shadow-three-right {
-    @include box-shadow-three-right;
-}
-
-.box-shadow-four-right {
-    @include box-shadow-four-right;
-}
-
-.box-shadow-five-right {
-    @include box-shadow-five-right;
-}
-
-.box-shadow-six-right {
-    @include box-shadow-six-right;
-}
-
-.box-shadow-eight-right {
-    @include box-shadow-eight-right;
-}
 
 //News elements in the news.html
+$color-nine: rgba(83, 81, 86, 0.4);
+$box-shadow: 5px 5px 5px $color-nine;
+
 .card {
     border: 0 !important;
 
@@ -130,6 +81,8 @@ $box-shadow-top-right: 5px 5px 0 0;
         @include box-shadow;
     }
 }
+
+$color-nine: rgba(83, 81, 86, 1);
 
 .card-section {
     background-color: $color-nine;
@@ -191,6 +144,7 @@ button.boom-button-dark {
         color: $color-white;
     }
 }
+
 //Fanny's button
 //END BUTTONS STYLES =========================================================================================================
 
