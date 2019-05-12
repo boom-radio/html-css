@@ -15,238 +15,266 @@
 </head>
 
 <body>
- <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
+    <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
     <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
     <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
-            <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
-            <div class="grid-container-fluid">
-                <div class="grid-x grid-padding-x grid-padding-y align-center align-middle">
-                    <!-- Empty cell/s used  for spacing-->
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell shrink">
-                            <img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo" width="130px">
-                          </div>
-                    <div class="cell">
-                        <ul class="menu vertical text-center">
-                            <!-- <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li> -->
-                            <li><a href="./">Home</a></li>
-                            <li><a href="listen.html">Listen</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                        <button class="close-button" aria-label="Close alert" type="button" data-close>
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div> 
-                    <div class="cell">
-                        <div class="search-input-animated float-right">
-                            <span class="searchbox-icon"><i class="fas fa-search"></i></span>
-                            <input type="search" name="search" class="searchbox-input" required>
-                            <button type="button" class="button search-button">GO</button>
-                        </div>
-                    </div>
-                    <!-- Empty cell/s used  for spacing-->
-                    <div class="cell"></div>
-                    <div class="cell shrink">
-                        <ul class="menu text-center">
-                            <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
-                            <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
-                        </ul>
-                    </div>
+        <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
+        <div class="grid-container-fluid">
+            <div class="grid-x grid-padding-x grid-padding-y align-center align-middle">
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
+                <div class="cell">
+                    <ul class="menu vertical text-center">
+                        <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li>
+                        <li><input type="search" placeholder="Search"></li>
+                        <li><a href="listen.html">Listen</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <button class="close-button" aria-label="Close alert" type="button" data-close>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
+                <div class="cell shrink">
+                    <ul class="menu text-center">
+                        <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </aside>
-        <!-- END OFF CANVAS ASIDE ================================================================================================================================================ -->
-    
-        <!-- OFF CANVAS CONTENT (Whole website) ================================================================================================================================== -->
-        <!-- In the off-canvas-content DIV goes the whole page content -->
-        <div class="off-canvas-content" data-off-canvas-content>
-            <!-- HEADER Content ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? -->
-            <header class="grid-container-fluid">
-                <div class="grid-x">
-                    <!-- Empty cell/s used  for spacing-->
-                    <div class="cell"></div>
-                </div>
-            </header>
-            <!-- END HEADER Content ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? -->
-    
-            <!-- NAVIGATION BAR Content ========================================================================================================================================= -->
-            <div class="grid-container-fluid">
-                <div class="grid-x">
-                    <div class="cell">
-                        <div id="topBarContainer" class="top-bar-container">
-                            <div class="topbar">
-                                <!-- Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                                <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="xlarge">
-                                    <div class="title-bar-left">
-                                        <div class="grid-container-fluid">
-                                            <div class="grid-x grid-padding-y align-justify align-middle">
-                                                <div class="cell small-1">
-                                                    <button type="button" data-toggle="offCanvas"><img
-                                                            src="assets/img/+.svg" alt="+"></button>
-                                                </div>
-                                                <div class="cell small-10 text-center">
-                                                    <img id="mobile-logo" src="assets/img/BoomLogoOrange.svg"
-                                                        alt="Boom Radio Logo">
-                                                </div>
-                                                <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE LOGO -->
-                                                <div class="cell small-1"></div>
+        </div>
+    </aside>
+    <!-- END OFF CANVAS ASIDE ================================================================================================================================================ -->
+
+    <!-- OFF CANVAS CONTENT (Whole website) ================================================================================================================================== -->
+    <!-- In the off-canvas-content DIV goes the whole page content -->
+    <div class="off-canvas-content" data-off-canvas-content>
+        <!-- HEADER Content ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? -->
+        <header class="grid-container-fluid">
+            <div class="grid-x">
+                <!-- Empty cell/s used  for spacing-->
+                <div class="cell"></div>
+            </div>
+        </header>
+        <!-- END HEADER Content ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? -->
+
+        <!-- NAVIGATION BAR Content ========================================================================================================================================= -->
+        <div class="grid-container-fluid">
+            <div class="grid-x">
+                <div class="cell">
+                    <div id="topBarContainer" class="top-bar-container">
+                        <div class="topbar">
+                            <!-- Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????????? -->
+                            <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="xlarge">
+                                <div class="title-bar-left">
+                                    <div class="grid-container-fluid">
+                                        <div class="grid-x grid-padding-y align-justify align-middle">
+                                            <div class="cell small-1">
+                                                <button type="button" data-toggle="offCanvas"><img
+                                                        src="assets/img/+.svg" alt="+"></button>
+                                            </div>
+                                            <div class="cell small-10 text-center">
+                                                <img id="mobile-logo" src="assets/img/BoomLogoOrange.svg"
+                                                    alt="Boom Radio Logo">
+                                            </div>
+                                            <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE LOGO -->
+                                            <div class="cell small-1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-container">
+                                        <div class="grid-x align-center align-middle">
+                                            <div class="cell shrink">
+                                                <audio id="music-stream" controls controlsList="nodownload"
+                                                    preload="metadata">
+                                                    <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3"
+                                                        type="audio/mpeg">
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- END Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????? -->
-    
-                                <!-- Desktop top bar //////////////////////////////////////////////////////////////////////////////////////////// -->
-                                <div class="title-bar" id="desktop-menu">
-                                    <div class="title-bar-left">
-                                        <div class="grid-container-fluid">
-                                            <div class="grid-x grid-padding-x grid-margin-y align-middle">
-                                                <div class="cell shrink">
-                                                    <a href="./"><img id="logo" src="assets/img/BoomLogoOrange.svg"
-                                                            alt="Boom Radio Logo"></a>
-                                                </div>
-                                                <div class="cell shrink">
-                                                    <button type="button" data-toggle="offCanvas"><img
-                                                            src="assets/img/+.svg" alt="+"></button>
-                                                </div>
-                                                <div class="cell shrink">
-                                                    <ul class="menu text-center">
-                                                        <li><a href="listen.html">Listen</a></li>
-                                                        <li><a href="music.html">Music</a></li>
-                                                        <li><a href="news.html">News</a></li>
-                                                        <li><a href="about.html">About</a></li>
-                                                        <li><a href="contact.html">Contact</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="cell shrink">
-                                                    <!-- The following commented audio is the one that uses the browser's default controls, not customisable -->
-                                                    <!-- <audio id="music-stream" controls preload="metadata">
-                                                        <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3"
-                                                            type="audio/mpeg">
-                                                    </audio> -->
-                                                    <audio id="music" preload="true">
-                                                        <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3">
-                                                    </audio>
-                                                    <div class="grid-container">
-                                                        <div class="grid-x grid-margin-x grid-padding-y align-justify align-middle"
-                                                            id="audioplayer">
-                                                            <div class="cell shrink">
-                                                                <button id="pButton"><i id="pButtonIcon"
-                                                                        class="fas fa-play"></i></button>
+                            </div>
+                            <!-- END Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????? -->
+
+                            <!-- Desktop top bar //////////////////////////////////////////////////////////////////////////////////////////// -->
+                            <div class="title-bar" id="desktop-menu">
+                                <div class="title-bar-left">
+                                    <div class="grid-container-fluid">
+                                        <div class="grid-x grid-padding-x grid-margin-y align-middle">
+                                            <div class="cell shrink">
+                                                <a href="./"><img id="logo" src="assets/img/BoomLogoOrange.svg"
+                                                        alt="Boom Radio Logo"></a>
+                                            </div>
+                                            <div class="cell shrink">
+                                                <button type="button" data-toggle="offCanvas"><img
+                                                        src="assets/img/+.svg" alt="+"></button>
+                                            </div>
+                                            <div class="cell shrink">
+                                                <ul class="menu text-center">
+                                                    <li><a href="listen.html">Listen</a></li>
+                                                    <li><a href="music.html">Music</a></li>
+                                                    <li><a href="news.html">News</a></li>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cell shrink">
+                                                <!-- The following commented audio is the one that uses the browser's default controls, not customisable -->
+                                                <!-- <audio id="music-stream" controls preload="metadata">
+                                                    <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3"
+                                                        type="audio/mpeg">
+                                                </audio> -->
+                                                <audio id="music" preload="true">
+                                                    <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3">
+                                                </audio>
+                                                <div class="grid-container">
+                                                    <div class="grid-x grid-margin-x grid-padding-y align-justify align-middle"
+                                                        id="audioplayer">
+                                                        <div class="cell shrink">
+                                                            <button id="pButton"><i id="pButtonIcon"
+                                                                    class="fas fa-play"></i></button>
+                                                        </div>
+                                                        <div class="cell auto">
+                                                            <div id="timeline">
+                                                                <div id="playhead"></div>
                                                             </div>
-                                                            <div class="cell auto">
-                                                                <div id="timeline">
-                                                                    <div id="playhead"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cell small-4">
-                                                                <div id="animationContainer" class="animation-container">
-                                                                    <!-- Class is populated by JS when the player is playing -->
-                                                                    <div id="soundContainer" class="">
-                                                                        <!--<div class="rect-1"></div>-->
-                                                                        <!-- <div class="rect-2"></div> -->
-                                                                        <!-- <div class="rect-3"></div> -->
-                                                                        <div class="rect-4"></div>
-                                                                        <div class="rect-5"></div>
-                                                                        <div class="rect-6"></div>
-                                                                        <div class="rect-5"></div>
-                                                                        <div class="rect-4"></div>
-                                                                        <!-- <div class="rect-3"></div> -->
-                                                                        <!-- <div class="rect-2"></div> -->
-                                                                        <!-- <div class="rect-1"></div> -->
-                                                                    </div>
+                                                        </div>
+                                                        <div class="cell small-4">
+                                                            <div id="animationContainer" class="animation-container">
+                                                                <!-- Class is populated by JS when the player is playing -->
+                                                                <div id="soundContainer" class="">
+                                                                    <!--<div class="rect-1"></div>-->
+                                                                    <!-- <div class="rect-2"></div> -->
+                                                                    <!-- <div class="rect-3"></div> -->
+                                                                    <div class="rect-4"></div>
+                                                                    <div class="rect-5"></div>
+                                                                    <div class="rect-6"></div>
+                                                                    <div class="rect-5"></div>
+                                                                    <div class="rect-4"></div>
+                                                                    <!-- <div class="rect-3"></div> -->
+                                                                    <!-- <div class="rect-2"></div> -->
+                                                                    <!-- <div class="rect-1"></div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="cell auto">
-                                                    <!-- <ul class="menu float-right">
-                                                        <li><input type="search" placeholder="Search"></li>
-                                                        <li><button type="button" class="clear button"><i
-                                                                    class="fas fa-search"></i></button></li>
-                                                    </ul> -->
-                                                    <div class="search-input-animated float-right">
-                                                        <span class="searchbox-icon"><i class="fas fa-search"></i></span>
-                                                        <input type="search" name="search" class="searchbox-input" required>
-                                                        <button type="button" class="button search-button">GO</button>
-                                                    </div>
-                                                </div>
+                                            </div>
+                                            <div class="cell auto">
+                                                <ul class="menu float-right">
+                                                    <li><button type="button" class="clear button"><i
+                                                                class="fas fa-search orange"></i></button>
+                                                    </li>
+                                                    <li><input type="search" placeholder="Search"></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- END Desktop top bar ///////////////////////////////////////////////////////////////////////////////////////////// -->
                             </div>
+                            <!-- END Desktop top bar ///////////////////////////////////////////////////////////////////////////////////////////// -->
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- END NAVIGATION BAR Content ======================================================================================================================================= -->
+        </div>
+        <!-- END NAVIGATION BAR Content ======================================================================================================================================= -->
 
-    <div class="grid-container">
-
-     <!---H2 WITH WAVE & RESIZABLE LINE-->
-     <div class="grid-x align-center ">
-            <div class="cell white-bottom-border auto"></div>
-            <div class="cell shrink">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="86" height="50" viewBox="25.5 0 86 50"><path d="M110.1 30.1c-0.2-6.8-1.6-12.7-5.3-12.7 -11.9 0-1.7 30.6-15.1 30.6 -10.7 0-3.4-25.4-14.1-25.4 -8.4 0-5 19.7-13.2 19.7 -6.4 0-4.5-11-11.1-11 -6.3 0-6.1 8.5-12.5 8.9 -6 0.3-13.9 0.3-13.9 0.3" style="fill:none;stroke:#FFF"/></svg>
-                  </div>
-                <div class="cell shrink"><h2>Contact us</h2></div>
-                <div class="cell shrink">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="86" height="50" viewBox="25.5 0 86 50"><path d="M112.1 40.5c0 0-7.9 0-13.9-0.3 -6.4-0.4-6.2-8.9-12.5-8.9 -6.7 0-4.8 11-11.1 11 -8.2 0-4.8-19.7-13.2-19.7 -10.7 0-3.4 25.4-14.1 25.4 -13.4 0-3.2-30.6-15.1-30.6 -3.7 0-5.1 5.9-5.3 12.7" style="fill:none;stroke:#FFF"/></svg>
-                  </div>
-              <div class="cell white-bottom-border auto"></div>
+        <!-- BEGINNING OF MAIN BODY =========================================================================================================================================== -->
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x align-center">
+                <div class="medium-4 cell ">
+                    <button class="button large"> Call to action</button>>
+                </div>
+                <div class="medium-4 cell">
+                    <button class="button large"> Call to action</button>>
+                </div>
+                <div class="medium-4 cell">
+                    <button class="button large"> Call to action</button>>
+                </div>
             </div>
-          <!--END OF WAVE-->  
-        <form>
+        </div>
+        <div class="grid-container">
+
+            <!---H2 WITH WAVE & RESIZABLE LINE-->
+            <div class="grid-x align-center ">
+                <div class="cell white-bottom-border auto"></div>
+                <div class="cell shrink">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="86" height="50" viewBox="25.5 0 86 50">
+                        <path
+                            d="M110.1 30.1c-0.2-6.8-1.6-12.7-5.3-12.7 -11.9 0-1.7 30.6-15.1 30.6 -10.7 0-3.4-25.4-14.1-25.4 -8.4 0-5 19.7-13.2 19.7 -6.4 0-4.5-11-11.1-11 -6.3 0-6.1 8.5-12.5 8.9 -6 0.3-13.9 0.3-13.9 0.3"
+                            style="fill:none;stroke:#FFF" /></svg>
+                </div>
+                <div class="cell shrink">
+                    <h2>Contact us</h2>
+                </div>
+                <div class="cell shrink">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="86" height="50" viewBox="25.5 0 86 50">
+                        <path
+                            d="M112.1 40.5c0 0-7.9 0-13.9-0.3 -6.4-0.4-6.2-8.9-12.5-8.9 -6.7 0-4.8 11-11.1 11 -8.2 0-4.8-19.7-13.2-19.7 -10.7 0-3.4 25.4-14.1 25.4 -13.4 0-3.2-30.6-15.1-30.6 -3.7 0-5.1 5.9-5.3 12.7"
+                            style="fill:none;stroke:#FFF" /></svg>
+                </div>
+                <div class="cell white-bottom-border auto"></div>
+            </div>
+            <!--END OF WAVE-->
+            <form>
                 <div class="grid-container">
-                <div class="grid-x grid-padding-x align-center">
-                    <div class="medium-6 cell">
-                      <label>Name
-                        <input type="text" placeholder="Type your Name">
-                      </label>
+                    <div class="grid-x grid-padding-x align-center">
+                        <div class="medium-6 cell">
+                            <label>Name
+                                <input type="text" placeholder="Type your Name">
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="grid-x grid-padding-x align-center">
-                    <div class="medium-6 cell">
-                      <label>Email
-                        <input type="text" placeholder="address@domain.com">
-                      </label>
+                    <div class="grid-x grid-padding-x align-center">
+                        <div class="medium-6 cell">
+                            <label>Email
+                                <input type="text" placeholder="address@domain.com">
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="grid-x grid-padding-x align-center">
-                    <div class="medium-6 cell">
+                    <div class="grid-x grid-padding-x align-center">
+                        <div class="medium-6 cell">
                             <label>Textarea Label</label>
                             <textarea placeholder="Tell us all about your life"></textarea>
-                          </div>
-                  </div>
-                </div>
-                <button class=" boom-button-white float-right">Send</button>
-              </form>
-            <div class="cell">
-\                        <div class="responsive-embed">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.9608120447087!2d115.84000901516082!3d-31.934821281234534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a548c76d72d7%3A0x757fadbc1194a0a5!2sBoom!5e0!3m2!1sen!2sau!4v1557493206517!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                        
                         </div>
-                  
-                        <ul class="contact-us-list">
-                          <li class="address">100 W Rincon Ave, Campbell CA 95008</li>
-                          <li class="email"><a href="mailto:">hello@yeticave.com</a></li>
-                          <li class="phone">
-                            1 (408) 445 9978
-                          </li>
-                        </ul>
-                      </div>
                     </div>
-    <script src="js-fanny/vendor/jquery.js"></script>
-    <script src="js-fanny/vendor/foundation.js"></script>
-    <script src="js-fanny/app.js"></script>
+                </div>
+                <div class="grid-x grid-padding-x margin-x align-center">
+                    <div class="medium-6 cell align-middle">
+                        <button class=" boom-button-white float-right">Send</button>
+                    </div>
+                </div>
+            </form>
+                <div class ="grid-x align-center ">
+                <div class="responsive-embed medium-6 map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.9608120447087!2d115.84000901516082!3d-31.934821281234534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a548c76d72d7%3A0x757fadbc1194a0a5!2sBoom!5e0!3m2!1sen!2sau!4v1557493206517!5m2!1sen!2sau"
+                        width="200" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+                <div class grid-x padding-x margin-x>
+                    <ul class="contact-us-list">
+                        <li class="address">100 W Rincon Ave, Campbell CA 95008</li>
+                        <li class="email"><a href="mailto:">hello@yeticave.com</a></li>
+                        <li class="phone">
+                            1 (408) 445 9978
+                        </li>
+                    </ul>
+                </div>
+            
+        </div>
+        </div>
+        <script src="js-fanny/vendor/jquery.js"></script>
+        <script src="js-fanny/vendor/foundation.js"></script>
+        <script src="js-fanny/app.js"></script>
 </body>
 
 </html>

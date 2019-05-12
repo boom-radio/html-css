@@ -1,120 +1,118 @@
 //Set variables for the main site colours
-$color-white: rgba(255,255,255,1); //#FFFFFF
-$color-black: rgba(0,0,0,1); //#000000
-$color-one: rgba(250,162,148,1); //#FAA294 coral
-$color-two: rgba(254,101,126,1); //#FE657E pink
-$color-three: rgba(63,197,190,1); //#3FC5BE turquoise
-$color-four: rgba(58,169,225,1); //#3AA9E1 blue
-$color-five: rgba(252,171,98,1); //#FCAB62 light-orange
-$color-six: rgba(235,91,39,1); //#EB5B27 boom orange
-$color-eight: rgba(10,20,23,1); //#0A1417 dark grey background
-$color-nav: rgba(10, 10, 10, 1); //#0a0a0a black
+$color-white: rgba(255, 255, 255, 1); //#FFFFFF
+$color-black: rgba(0, 0, 0, 1); //#000000
+$color-one: rgba(250, 162, 148, 1); //#FAA294
+$color-two: rgba(254, 101, 126, 1); //#FE657E
+$color-three: rgba(63, 197, 190, 1); //#3FC5BE
+$color-four: rgba(58, 169, 225, 1); //#3AA9E1
+$color-five: rgba(252, 171, 98, 1); //#FCAB62
+$color-six: rgba(235, 91, 39, 1); //#EB5B27
+$color-seven: rgba(17, 14, 22, 1); //#110E16
+$color-eight: rgba(10, 20, 23, 1); //#0A1417
+$color-nine: rgba(83, 81, 86, 1); //#535156
+$color-nav: rgba(10, 10, 10, 1); //#0a0a0a
 
-
+//Set the fonts
 @font-face {
   font-family: 'Fjalla One', sans-serif;
-  src: url(../assets/fonts/FjallaOne-Regular.ttf);
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One);
 }
 
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
-  src: url(../assets/fonts/Quicksand-Regular.ttf);
+  src: url(//fonts.googleapis.com/css?family=Quicksand);
 }
 
-@font-face {
-  font-family: 'Quicksand-Medium', sans-serif;
-  src: url(../assets/fonts/Quicksand-Medium.ttf);
+@mixin title-font {
+  font-family: 'Fjalla One', sans-serif !important;
 }
 
-//media query mixins
+//Set media query mixins
 @mixin mediaSm {
-    @media screen and (max-width: 500px) {
-      @content;
-    }
+  @media screen and (max-width: 500px) {
+    @content;
   }
-  
-  @mixin mediaMd {
-    @media screen and (min-width: 665px) {
-      @content;
-    }
+}
+
+@mixin mediaMd {
+  @media screen and (min-width: 665px) {
+    @content;
   }
+}
 
 @mixin mediaLg {
-    @media screen and (min-width: 1024px) {
-      @content;
-    }
-  }
-
-/*Mixin for controlling section titles with sounds waves*/
-@mixin horizontal-list {
-  padding: 0;
-  text-align: center;
-  word-spacing: -1em;
-  display: table;
-  width: 100%;
-  li {
-    display: inline-block;
-    word-spacing: 0;
+  @media screen and (min-width: 1024px) {
+    @content;
   }
 }
 
-/*Mixin for controlling the Footer icins*/
-@mixin horizontal-list-padded($vertical, $horizontal) {
-  @include horizontal-list;
-  li {
-    padding: $vertical 0;
-    a {
-      padding: $vertical $horizontal;
-    }
-  }
-}
+//Set variables for gradients
+$gradient-one-two: linear-gradient(to right, $color-one, $color-two);
+$gradient-three-four: linear-gradient(to right, $color-three, $color-four);
+$gradient-five-six: linear-gradient(to right, $color-five, $color-six);
 
 //Set mixins for gradients
 @mixin gradient-one-two {
-  background-image: linear-gradient(to right, $color-one , $color-two);
+  background-image: $gradient-one-two;
 }
 
 @mixin gradient-three-four {
-  background-image: linear-gradient(to right, $color-three , $color-four);
+  background-image: $gradient-three-four;
 }
 
 @mixin gradient-five-six {
-  background-image: linear-gradient(to right, $color-five , $color-six);
+  background-image: $gradient-five-six;
 }
 
-//Webstandard box shadow
+//Set variables for the box-shadows
+//First is negative left, positive right; second is negative top, positive bottom. Third is blur. Fourth is the colour.
+$box-shadow: 0 0 0 0;
+
+//Set box shadow colours
 @mixin box-shadow {
-    -webkit-box-shadow: 5px 5px 0px 0px rgba( $color-eight, .4 );  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    5px 5px 0px 0px rgba( $color-eight, .4 );  /* Firefox 3.5 - 3.6 */
-    box-shadow:         5px 5px 0px 0px rgba( $color-eight, .4 );  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow ;
+  box-shadow: $box-shadow;
 }
 
-@mixin boom-line {
-    margin: 30px 0;
-    height: 0.7px;
-    background: white;
-    
-}
- 
-@mixin module-border {
-  padding: 1rem;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, $color-five, $color-three) 1 100%;
-  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from($color-five), to($color-three)) 1 100%;
-  -webkit-border-image: -webkit-linear-gradient($color-five, $color-three) 1 100%;
-  -moz-border-image: -moz-linear-gradient($color-five, $color-three) 1 100%;    
-  -o-border-image:-o-linear-gradient($color-five, $color-three) 1 100%;
-  }
 
-  @mixin module-border-hor {
-    padding: 1rem;
-    border-width: 2px;
-    border-style: solid;
-    border-image-source: linear-gradient(45deg, $color-five, $color-three);
-    border-image-slice: 1;
+//Set mixins for transitions
+//$transform-property is the property affected (all, transform)
+//$transform-duration is the duration of the transition
+//$transform-timing is the timing of the transition (ease,linear, ease-in, ease-out, ease-in-out)
+//$transform-delay is the delay on the beginning of the transition (usually ms)
+//Initialising variables
+$transition-property: 0;
+$transition-duration: 0;
+$transition-timing: 0;
+$transition-delay: 0;
+
+@mixin mixin-transition {
+  -webkit-transition: $transition-property $transition-duration $transition-timing $transition-delay;
+  -moz-transition: $transition-property $transition-duration $transition-timing $transition-delay;
+  -ms-transition: $transition-property $transition-duration $transition-timing $transition-delay;
+  -o-transition: $transition-property $transition-duration $transition-timing $transition-delay;
+  transition: $transition-property $transition-duration $transition-timing $transition-delay;
 }
 
+//Set mixin for transform
+//$transform-rotation-degrees are the degrees for the rotation (0deg to 360deg)
+//$transform-x-translation is the length of the horizontal translation (px, rem)
+//$transform-y-translation is the length of the verticalal translation (px, rem)
+//$transform-scale is the scaling size (1 equal, 2 double size, 3 triple size)
+//Initialising variables
+$transform-rotation-degrees: 0deg;
+$transform-x-translation: 0rem;
+$transform-y-translation: 0rem;
+$transform-scale: 0;
+
+@mixin mixin-transform {
+  -webkit-transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
+  -moz-transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
+  -ms-transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
+  -o-transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
+  transform: rotate($transform-rotation-degrees) translateX($transform-x-translation) translateY($transform-y-translation) scale($transform-scale);
+}
 
 //Sound wave
 @mixin sound-wave {
@@ -125,20 +123,23 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a black
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
-  
+  //margin: auto;
+
   .sound-container {
-  /*position: relative;*/
-    width: 150px;
+    //Position relative was commented and top -10px did not exist.
+    position: relative;
+    top: -8px;
+    //width: 150px;
     height: 100%;
     display: inline-block;
-    margin-left: 4px;
+
+    //margin-left: 4px;
   }
-    
+
   .sound-container>div {
     /*position: relative;*/
     height: 100%;
-    width: 10px;
+    width: 0.1rem;
     background: $color-black;
     display: inline-block;
     animation: wave 3s infinite ease-in-out;
@@ -164,7 +165,7 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a black
     -ms-animation-delay: 0.2s;
     -o-animation-delay: 0.2s;
   }
-  
+
   .sound-container .rect-4 {
     animation-delay: 0.3s;
     -webkit-animation-delay: 0.3s;
@@ -172,7 +173,7 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a black
     -ms-animation-delay: 0.3s;
     -o-animation-delay: 0.3s;
   }
-    
+
   .sound-container .rect-5 {
     animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
@@ -180,7 +181,7 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a black
     -ms-animation-delay: 0.4s;
     -o-animation-delay: 0.4s;
   }
-    
+
   .sound-container .rect-6 {
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
@@ -188,15 +189,49 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a black
     -ms-animation-delay: 0.6s;
     -o-animation-delay: 0.6s;
   }
-    
+
   @keyframes wave {
     0% {}
-    100% {transform: scaleY(1);background: $color-six;}
-    20% { transform: scaleY(3); background: $color-four;}
-    33% {transform: scaleY(1); background: $color-three;}
-    50% {transform: scaleY(3); background: $color-five;}
-    66% {transform: scaleY(1); background: $color-two;}
-    84% {transform: scaleY(3); background: $color-one;}
+
+    100% {
+      transform: scaleY(1);
+      background: $color-eight;
+    }
+
+    20% {
+      transform: scaleY(3);
+      background: $color-four;
+    }
+
+    33% {
+      transform: scaleY(1);
+      background: $color-three;
+    }
+
+    50% {
+      transform: scaleY(3);
+      background: $color-five;
+    }
+
+    66% {
+      transform: scaleY(1);
+      background: $color-two;
+    }
+
+    84% {
+      transform: scaleY(3);
+      background: $color-one;
+    }
   }
 }
 
+//Set text colour - if required
+// @function set-text-color($color) {
+//     @if (lightness($color) > 48) {
+//       @return #000;
+//     }
+
+//     @else {
+//       @return #fff;
+//     }
+//   }

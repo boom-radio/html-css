@@ -1,35 +1,83 @@
-/*Navbar controls*/
 @import "config";
 
-.top-bar-container {
-    @include mediaSm{
-        position:sticky;
-    }
-}
-
+//BEGINNING NAVIGATION MENU STYLES====================================================================================================
 .off-canvas {
-    color: $color-white;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
 }
 
-.title-bar{
-    @include mediaSm{
-        height:75px;
+.off-canvas.is-transition-overlap {
+    z-index: 200;
+}
+
+.top-bar-container,
+.off-canvas {
+    font-family: 'Fjalla One', sans-serif;
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            color: $color-six;
+        }
+    }
+
+    .menu {
+
+        li {
+            button {
+                color: $color-six;
+            }
+        }
     }
 }
-.sticky-test {
+
+.title-bar {
+    background: $color-nav;
+
+}
+
+.sticky-navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
 }
 
-a {
-    font-family: 'Fjalla One', sans-serif !important;
-    color: $color-white;
-    font-size: 1.1em;
-
-    &:hover {
-        color: $color-six;
-    }
+//Mobile logo styles
+#mobile-logo {
+    width: 150px;
 }
+
+//This is the customised audio player
+#audioplayer {
+    width: 195px;
+    border: 2px solid $color-six;
+    border-radius: 15px;
+}
+
+#pButton {
+    color: $color-six;
+}
+
+#timeline {
+    width: 70px;
+    border-radius: 15px;
+    background: $gradient-three-four;
+
+}
+
+#playhead {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: $gradient-five-six;
+
+}
+
+//Sound wave
+.animation-container {
+    @include sound-wave;
+}
+
+//END NAVIGATION MENU STYLES =================================================================================================================

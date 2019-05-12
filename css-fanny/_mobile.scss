@@ -19,11 +19,6 @@ header {
     padding: 0.5rem;
 }
 
-//Seperator & Title line
-.boom-line {
-    @include boom-line;
-    z-index: 1;
-}
 
 .boom-title {
     color: $color-six;
@@ -37,16 +32,8 @@ header {
     z-index: 2;
 }
 
-//Gradient surround gradient border for sections
-.module-hor {
-    @include module-border-hor;
-}
 
-//Coloured vertical gradient borders for sections
-.module {
-    @include module-border;
-    color: $color-white;
-}
+
 
 
 //Top three elements in the News section of index.html
@@ -74,29 +61,6 @@ header {
     }
 }
 
-/*This is for the sound wave and section title layout*/
-.custom-list-class {
-    @include horizontal-list;
-    margin-left: 0;
-}
-
-
-//Change footer to horizontal list with padded links (including hover effects):
-ul.footer-menu {
-    height: 6vh;
-
-    @include horizontal-list-padded(5px, 10px);
-
-    i {
-        color: $color-six;
-        width: 4vh;
-        height: 4vh;
-    }
-
-    i:hover {
-        color: $color-four;
-    }
-}
 
 
 //Button styling for Boom "Go" buttons
@@ -156,123 +120,7 @@ button.boom-button-dark {
 }
 
 
-/*Possible gradient animation for blocks
-@-webkit-keyframes gradientAnimation {
-    0% {
-        background-position: 0% 30%, 0 0;
-    }
 
-    50% {
-        background-position: 100% 70%, 0 0;
-    }
-
-    100% {
-        background-position: 0% 30%, 0 0;
-    }
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 30%, 0 0;
-    }
-
-    50% {
-        background-position: 100% 70%, 0 0;
-    }
-
-    100% {
-        background-position: 0% 30%, 0 0;
-    }
-}*/
-
-/*Use for button mixin
-@mixin block_set($c:0 auto, $d: block, $e: relative){
-    margin: $c;
-    display: $d;
-    position: $e;
-}
-
-#ribbon {
-    @include block_set;
-    background: url('../images/ribbon.png') no-repeat;
-    width: 251px;
-    height: 48px;
-    top: -38px;
-}
-
-//For use with block positioning for desktop view
-div {
-    @include panel-control;
-}
-
-//For use in mobile view
-.nodisplay {
-    display: none;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-/*Keyframes & Boxshadows for use with the boom speaker affect
-@keyframes robot-pulse {
-    0% {
-        box-shadow: 0 0 0 0px $color-dark;
-    }
-
-    100% {
-        box-shadow: 0 0 0 30px $color-bright;
-    }
-}
-
-.imagepulse {
-    margin: 3em;
-    width: 50%;
-    height: 50%;
-    background: $color-white;
-    border-radius: 50%;
-    animation: robot-pulse 1s infinite;
-}
-
-/*Grid container - use to change grid items when hovered and contain within required container
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: $color-white;
-    padding: 7px;
-}
-
-
-.grid-item {
-
-    &:nth-child(even) {
-        background-color: $color-dark;
-        border: 1px solid $color-black;
-        padding: 20px;
-        text-align: center;
-    }
-
-    &:nth-child(odd) {
-        background-color: $color-bright;
-        border: 1px solid $color-black;
-        padding: 20px;
-        text-align: center;
-    }
-
-    &:hover {
-        background-color: $color-white;
-    }
-}
-
-2nd grid with @extend
-
-.extend-container {
-    @extend .grid-container;
-}
-
-.extend-item {
-    @extend .grid-item;
-}*/
 
 ////////////////Listen page
 //Overlay menu full width
@@ -510,8 +358,18 @@ input {
     border-width : 0 0 1px 0;
     border-color:$color-white;
     height:41px;
+    box-sizing: border-box;
 }
 
 .white-line-left{
     background-image: url(../assets/img/wave_left-bottom.svg);
+}
+
+//////////////Contact page
+.map{
+    width: 90vw;
+    max-height:40vh;
+}
+.contact-us-list{
+    color:$color-white;
 }
