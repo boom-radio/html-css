@@ -296,9 +296,9 @@ h1 {
 
 h2 {
     @include title;
-    font-size: 1.4em;
+    font-size: 22px;
     display: block;
-    padding: 0.7em 0.5em;
+    padding: 14px 0.5em;
 }
 h3{
     @include title;
@@ -503,11 +503,6 @@ input {
     margin-bottom : -50px;
 }
 
-//Separator & Title line
-/*.boom-line {
-    @include boom-line;
-    z-index: 1;
-}*/
 
 
 .white-bottom-border{

@@ -547,9 +547,9 @@ h2 {
   font-family: 'Fjalla One', sans-serif !important;
   color: #eb5b27;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 22px;
   display: block;
-  padding: 0.7em 0.5em; }
+  padding: 14px 0.5em; }
 
 h3 {
   font-family: 'Fjalla One', sans-serif !important;
@@ -703,10 +703,6 @@ input {
 .overlap {
   margin-bottom: -50px; }
 
-/*.boom-line {
-    @include boom-line;
-    z-index: 1;
-}*/
 .white-bottom-border {
   border-style: solid;
   border-width: 0 0 1px 0;
@@ -804,4 +800,5 @@ input {
   .white-bottom-border {
     height: 40.5px; }
   h2 {
-    font-weight: 1.6em; } }
+    font-size: 26px;
+    padding: 12px 0.5em; } }
