@@ -13,30 +13,35 @@ h4,
 h5,
 h6 {
     @include title-font;
-    color: $color-six;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.6em;
+    display: block;
+    padding: 14px 0.5em;
+    color: $color-six;
 }
 
 h2 {
     font-size: 1.4em;
-    display: block;
-    padding: 14px 0.5em;
 }
 h3{
-    font-size: 1.3em;
-    padding: 0.3em;
+    font-size: 1.6em;
+    display: block;
+    padding: 14px 0.5em;
+    color: $color-six;
 }
 h4{
     font-size: 1em;
     padding: 0.5em;
-    color: $color-white;
+    color: $color-six;
+}
+h5{
+    font-size:1.2em;
 }
 
 a {
-    font-family: 'Fjalla One', sans-serif !important;
+    @include title-font;
     color: $color-white;
     font-size: 1.1em;
 
@@ -47,13 +52,19 @@ a {
 .orange{
     color: $color-six;
 }
-input, textarea {
-    font-family: 'Fjalla One', sans-serif !important;
+input, textarea, button, label {
+    @include title-font;
+}
+label{
+    color: $color-white;
+    padding-bottom: 5px;
 }
 .test {
     border: 1px solid red;
 }
-
+p{
+    font-size:1.1em;
+}
 //Site wide title controller
 .section-title {
     color: $color-six;
@@ -131,7 +142,7 @@ $color-nine: rgba(83, 81, 86, 1);
 button.boom-button,
 button.boom-button-dark {
     border-radius: 0.5rem;
-    padding: .5rem 1.5rem;
+    padding: .5rem ;
     color: $color-white;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 2px transparent;
@@ -187,50 +198,57 @@ footer {
 
 /////////STYLES ON LISTEN PAGE////////////////////////////
 /////////TABS
+div{
+.tabs, .tabs-content, .tabs-content, .accordion, .md-tabs, .accordion-content, .accordion-item{
+    background-color: transparent!important;
+}
+}
+.slide {
+    width: 0;
+    height: 0;
+}
+.md-tabs, .tabs-content{
+    border: none;
+}
+div.md-tabs {
+    border:0px!important;
+    >.accordion {
+        margin-left: 0;
+        list-style-type: none;
 
-    .slide {
-        width: 0;
-        height: 0;
-    }
+        >.accordion-item>.accordion-title {
+            position: relative;
+            display: block;
+            padding: 1.25rem 1rem;
+            border: 0px;
+            font-size: 0.9rem;
+            line-height: 1;
+            @include gradient-one-two;
+            color: $color-black;
 
-    .md-tabs {
-        >.accordion {
-            margin-left: 0;
-            list-style-type: none;
-
-            >.accordion-item>.accordion-title {
-                position: relative;
-                display: block;
-                padding: 1.25rem 1rem;
-                border: 0;
-                font-size: 0.9rem;
-                line-height: 1;
-                @include gradient-one-two;
-                color: $color-black;
-
-                &:hover {
-                    background-color: $color-four;
-                    color: $color-nav;
-                    outline: none;
-                }
-            }
-        }
-
-        >.accordion> {
-            .is-active.accordion-item>a.accordion-title {
-                border-bottom: 4px solid $color-five;
-                color: $color-white;
-            }
-
-            .accordion-item>.accordion-content {
-                display: none;
-                padding: 1rem;
-                border: 0px;
-                background-color: #fefefe;
-                color: #0a0a0a;
+            &:hover {
+                background-color: $color-four;
+                color: $color-nav;
+                outline: none;
             }
         }
     }
+
+    >.accordion> {
+        .is-active.accordion-item>a.accordion-title {
+            border-bottom: 4px solid $color-five;
+            color: $color-white;
+        }
+
+        .accordion-item>.accordion-content {
+            display: none;
+            padding: 1rem;
+            border: 0px;
+            background-color: #fefefe;
+            color: #0a0a0a;
+        }
+    }
+}
 
     >.accordion>.accordion-item>.accordion-title:focus {
         background-color: $color-four;
@@ -269,5 +287,11 @@ footer {
 }
 .social-button{
     min-width:200px;
+}
+textarea{
+    padding:8px;
+}
+button i:hover{
+    color:$color-white;
 }
 ///////////////END OF CONTACT STYLES/////////////

@@ -50,9 +50,10 @@
 }
 
 //This is the customised audio player
+$color-white: rgba(255, 255, 255, 0.3);
 #audioplayer {
     width: 195px;
-    border: 2px solid $color-six;
+    border: 1px solid $color-white;
     border-radius: 15px;
 }
 
@@ -79,5 +80,6 @@
 .animation-container {
     @include sound-wave;
 }
+//End of customised player
 
 //END NAVIGATION MENU STYLES =================================================================================================================

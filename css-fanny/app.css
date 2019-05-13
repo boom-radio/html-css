@@ -186,7 +186,7 @@ html * {
 
 #audioplayer {
   width: 195px;
-  border: 2px solid #eb5b27;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px; }
 
 #pButton {
@@ -262,7 +262,7 @@ html * {
   0% { }
   100% {
     transform: scaleY(1);
-    background: #0a1417; }
+    background: #102126; }
   20% {
     transform: scaleY(3);
     background: #3aa9e1; }
@@ -288,7 +288,7 @@ html * {
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 body {
-  background: #0a1417;
+  background: #102126;
   font-family: 'Quicksand-Regular', sans-serif; }
 
 h1,
@@ -297,25 +297,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Fjalla One', sans-serif !important;
-  color: #eb5b27; }
+  font-family: 'Fjalla One', sans-serif !important; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 1.6em;
+  display: block;
+  padding: 14px 0.5em;
+  color: #eb5b27; }
 
 h2 {
-  font-size: 1.4em;
-  display: block;
-  padding: 14px 0.5em; }
+  font-size: 1.4em; }
 
 h3 {
-  font-size: 1.3em;
-  padding: 0.3em; }
+  font-size: 1.6em;
+  display: block;
+  padding: 14px 0.5em;
+  color: #eb5b27; }
 
 h4 {
   font-size: 1em;
   padding: 0.5em;
-  color: white; }
+  color: #eb5b27; }
+
+h5 {
+  font-size: 1.2em; }
 
 a {
   font-family: 'Fjalla One', sans-serif !important;
@@ -327,11 +332,18 @@ a {
 .orange {
   color: #eb5b27; }
 
-input, textarea {
+input, textarea, button, label {
   font-family: 'Fjalla One', sans-serif !important; }
+
+label {
+  color: white;
+  padding-bottom: 5px; }
 
 .test {
   border: 1px solid red; }
+
+p {
+  font-size: 1.1em; }
 
 .section-title {
   color: #eb5b27;
@@ -375,7 +387,7 @@ input, textarea {
 button.boom-button,
 button.boom-button-dark {
   border-radius: 0.5rem;
-  padding: .5rem 1.5rem;
+  padding: .5rem;
   color: white;
   box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
   border: solid 2px transparent;
@@ -409,37 +421,43 @@ footer a {
   footer a:hover {
     color: #3fc5be; }
 
+div .tabs, div .tabs-content, div .tabs-content, div .accordion, div .md-tabs, div .accordion-content, div .accordion-item {
+  background-color: transparent !important; }
+
 .slide {
   width: 0;
   height: 0; }
 
-.md-tabs > .accordion {
-  margin-left: 0;
-  list-style-type: none; }
-  .md-tabs > .accordion > .accordion-item > .accordion-title {
-    position: relative;
-    display: block;
-    padding: 1.25rem 1rem;
-    border: 0;
-    font-size: 0.9rem;
-    line-height: 1;
-    background-image: linear-gradient(to right, #faa294, #fe657e);
-    color: black; }
-    .md-tabs > .accordion > .accordion-item > .accordion-title:hover {
-      background-color: #3aa9e1;
-      color: #0a0a0a;
-      outline: none; }
+.md-tabs, .tabs-content {
+  border: none; }
 
-.md-tabs > .accordion > .is-active.accordion-item > a.accordion-title {
-  border-bottom: 4px solid #fcab62;
-  color: white; }
-
-.md-tabs > .accordion > .accordion-item > .accordion-content {
-  display: none;
-  padding: 1rem;
-  border: 0px;
-  background-color: #fefefe;
-  color: #0a0a0a; }
+div.md-tabs {
+  border: 0px !important; }
+  div.md-tabs > .accordion {
+    margin-left: 0;
+    list-style-type: none; }
+    div.md-tabs > .accordion > .accordion-item > .accordion-title {
+      position: relative;
+      display: block;
+      padding: 1.25rem 1rem;
+      border: 0px;
+      font-size: 0.9rem;
+      line-height: 1;
+      background-image: linear-gradient(to right, #faa294, #fe657e);
+      color: black; }
+      div.md-tabs > .accordion > .accordion-item > .accordion-title:hover {
+        background-color: #3aa9e1;
+        color: #0a0a0a;
+        outline: none; }
+  div.md-tabs > .accordion > .is-active.accordion-item > a.accordion-title {
+    border-bottom: 4px solid #fcab62;
+    color: white; }
+  div.md-tabs > .accordion > .accordion-item > .accordion-content {
+    display: none;
+    padding: 1rem;
+    border: 0px;
+    background-color: #fefefe;
+    color: #0a0a0a; }
 
 > .accordion > .accordion-item > .accordion-title:focus {
   background-color: #3aa9e1;
@@ -471,6 +489,12 @@ footer a {
 .social-button {
   min-width: 200px; }
 
+textarea {
+  padding: 8px; }
+
+button i:hover {
+  color: white; }
+
 /*Tablet View*/
 @font-face {
   font-family: 'Fjalla One', sans-serif;
@@ -486,33 +510,7 @@ footer a {
     padding: 1rem;
     padding: 1rem 2rem 2rem 1rem;
     color: white;
-    text-align: justify; } }
-
-/*Desktop View*/
-@font-face {
-  font-family: 'Fjalla One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
-
-@font-face {
-  font-family: 'Quicksand-Regular', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Quicksand); }
-
-@media screen and (min-width: 1024px) {
-  header {
-    background-image: url(../assets/img/BackHeader.png);
-    height: 150px; }
-  .off-canvas {
-    width: 15%; }
-  #logo {
-    width: 200px; }
-  .img-left,
-  .img-right {
-    position: relative;
-    top: 3.5rem; }
-  .img-left {
-    left: 1rem; }
-  .img-right {
-    right: 1rem; }
+    text-align: justify; }
   .slide {
     background: #fcab62;
     width: calc(100% / 4);
@@ -554,3 +552,29 @@ footer a {
           .md-tabs > .tabs > .tabs-title > a:hover, .md-tabs > .tabs > .tabs-title > a:focus {
             background: transparent;
             color: black; } }
+
+/*Desktop View*/
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+@media screen and (min-width: 1024px) {
+  header {
+    background-image: url(../assets/img/BackHeader.png);
+    height: 150px; }
+  .off-canvas {
+    width: 15%; }
+  #logo {
+    width: 200px; }
+  .img-left,
+  .img-right {
+    position: relative;
+    top: 3.5rem; }
+  .img-left {
+    left: 1rem; }
+  .img-right {
+    right: 1rem; } }
