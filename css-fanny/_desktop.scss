@@ -3,73 +3,123 @@
 
 @include mediaLg {
 
-    body {
-        max-width: 2400px;
-        
-    }
     header {
         background-image: url(../assets/img/BackHeader.png);
-        height: 200px;
+        height: 150px;
+    }
+    
+    .off-canvas {
+        width: 15%;
+
     }
 
-    .grid-container {
-        max-width: 110rem !important;
+    //Setting variables for transition of the logo
+    $transition-property: transform;
+    $transition-duration: 0.25s;
+    $transition-timing: ease-in-out;
+    $transition-delay: 0s;
+
+    //setting variables for transformation of the logo
+    $transform-rotation-degrees: 10deg;
+    $transform-x-translation: 5rem;
+    $transform-y-translation: 0rem;
+    $transform-scale: 2;
+
+    #logo {
+        width: 200px;
+        //@include mixin-transition;
+
+        // &:hover {
+        //     // @include mixin-transform;
+        // }
     }
 
-    /*Reduce the padding in mobile*/
-    .card-section {
-        padding: 0.1rem 1rem 0.5rem 1rem !important;
+    .img-left,
+    .img-right {
+        position: relative;
+        top: 3.5rem;
+
     }
 
-    //This for the tiles large panels on with overlay
-    .about-box {
-        img {
-            @include box-shadow;
-        }
-        
-        .z-one {
-            width: 800px;
-            height: 20rem;
-            position: relative;                       
-            top: -11rem;
-            left: 0.2rem;
-            z-index: 1;
-        }
-        .z-two {
-            width: 10rem;
-            height: 2rem;
-            position: relative;                       
-            top: -10rem;
-            left: 0px;
-            z-index: 2;
-        }
-        .z-three {
-            width: 10rem;
-            height: 10rem;
-            position: relative;                       
-            top: 1.8rem;
-            left: 3rem;
-            z-index: 3;
-        }
+    .img-left {
+        left: 1rem;
 
-        .about-tile {
-            width: 50%;
-            padding-right: 0.5rem;
-            padding-top: 2.5rem;
-            padding-right: 1rem;
-            color: $color-black;
+    }
 
-            p {
-                padding-right: 1.5rem;
+    .img-right {
+        right: 1rem;
+
+    }
+
+    /////////STYLES ON LISTEN PAGE////////////////////////////
+    /////////TABS ON LISTEN PAGE
+    .slide {
+        background: $color-five;
+        width: calc(100% / 4);
+        height: 4px;
+        position: relative;
+        left: 0;
+        top: 52px;
+        transition: left 0.3s ease-out;
+    }
+    .md-tabs {
+        background-color: $color-five;
+        text-align: center;
+        > {
+    
+            .tabs {
+                margin: 0;
+                border: 0;
+                @include gradient-one-two;
+                list-style-type: none;
+                display: table;
+                width: 100%;
+    
+                >.tabs-title {
+                    display: table-cell;
+                    width: 25%;
+                    text-align: center;
+                    display: inline-block;
+    
+                    &.is-active {
+                        >a {
+                            color: $color-black;
+                            background-color: transparent;
+                            outline: none;
+                        }
+    
+                        &:nth-of-type(1)~.slide {
+                            left: calc((100% / 4) * 0);
+                        }
+    
+                        &:nth-of-type(2)~.slide {
+                            left: calc((100% / 4) * 1);
+                        }
+    
+                        &:nth-of-type(3)~.slide {
+                            left: calc((100% / 4) * 2);
+                        }
+    
+                        &:nth-of-type(4)~.slide {
+                            left: calc((100% / 4) * 3);
+                        }
+                    }
+    
+                    >a {
+                        color: $color-white;
+                        font-size: 16px;
+    
+                        &:hover,
+                        &:focus {
+                            background: transparent;
+                            color:$color-black;
+                        }
+                    }
+                }
             }
         }
     }
-    .white-bottom-border{
-    height:40.5px;
-}
-h2{
-    font-size:26px;
-    padding: 12px 0.5em;
-}
+    /////////STYLES ON LISTEN PAGE////////////////////////////
+
 }
 

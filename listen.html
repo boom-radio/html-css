@@ -22,9 +22,11 @@
     <div class="grid-container">
       <div class="grid-x grid-padding-y">
         <div class="cell">
+          <div class="cell">
+          <div class="cell">
           <ul class="menu vertical text-center">
-            <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li>
-            <li><input type="search" placeholder="Search"></li>
+            <!-- <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li>
+            <li><input type="search" placeholder="Search"></li> -->
             <li><a href="index.html">Home</a></li>
             <li><a href="listen.html">Listen</a></li>
             <li><a href="music.html">Music</a></li>
@@ -84,7 +86,6 @@
                       </div>
                       <div class="cell shrink">
                         <button type="button" data-toggle="offCanvas"><img src="assets/img/+.svg" alt="+"></button>
-                        <!-- Use this code in the button for hamburger menu <i class="fas fa-bars fa-3x"></i> -->
                       </div>
                       <div class="cell shrink">
                         <ul class="menu text-center">
@@ -112,121 +113,121 @@
       </div>
     </div>
     <!-- END OF THE DESKTOP TOP BAR -->
- <!---H2 WITH WAVE & RESIZABLE LINE-->
-      <div class="grid-x align-center ">
-        <div class="cell white-bottom-border auto"></div>
-        <div class="cell shrink">
-            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="50" viewBox="25.5 0 86 50"><path d="M110.1 30.1c-0.2-6.8-1.6-12.7-5.3-12.7 -11.9 0-1.7 30.6-15.1 30.6 -10.7 0-3.4-25.4-14.1-25.4 -8.4 0-5 19.7-13.2 19.7 -6.4 0-4.5-11-11.1-11 -6.3 0-6.1 8.5-12.5 8.9 -6 0.3-13.9 0.3-13.9 0.3" style="fill:none;stroke:#FFF"/></svg>
-          </div>
-        <div class="cell shrink"><h2>The Shows</h2></div>
-        <div class="cell shrink">
-            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="50" viewBox="25.5 0 86 50"><path d="M112.1 40.5c0 0-7.9 0-13.9-0.3 -6.4-0.4-6.2-8.9-12.5-8.9 -6.7 0-4.8 11-11.1 11 -8.2 0-4.8-19.7-13.2-19.7 -10.7 0-3.4 25.4-14.1 25.4 -13.4 0-3.2-30.6-15.1-30.6 -3.7 0-5.1 5.9-5.3 12.7" style="fill:none;stroke:#FFF"/></svg>
-          </div>
-          <div class="cell white-bottom-border auto"></div>
+    <!---H2 WITH WAVE -->
+    <div class="grid-x grid-padding-y align-center align-middle">
+        <div class="cell auto text-right">
+          <img src="assets/img/wave_left.svg">
         </div>
-      <!--END OF WAVE-->   
-      <div class="grid-container">
-        <div class="cell ">
+        <div class="cell shrink">
+          <h2>Shows</h2>
+        </div>
+        <div class="cell auto text-left">
+            <img src="assets/img/wave_right.svg">
+        </div>
+      </div>
+      <!--END OF WAVE-->
+    <div class="grid-container">
+      <div class="cell ">
+        <!-- TABS MULTI CONTENT : RADIO SHOWS-->
+        <div class="md-tabs">
+          <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs large-tabs"
+            id="collapsing-tabs" data-allow-all-closed="true" data-multi-expand="true">
+            <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true"><i class="fas fa-microphone-alt"></i>BOOM's Big Breakfast</a></li>
+            <li class="tabs-title"><a href="#panel2c"><i class="fas fa-microphone-alt"></i> The Drive Home</a></li>
+            <li class="tabs-title"><a href="#panel3c"><i class="fas fa-microphone-alt"></i> Speciality shows - 7pm to 10pm</a></li>
+            <li class="tabs-title"><a href="#panel4c"><i class="fas fa-microphone-alt"></i> Speciality shows - 10pm to 12am</a></li>
+            <div class="slide"></div>
+          </ul>
 
-          <!-- TABS MULTI CONTENT : RADIO SHOWS-->
-          <div class="md-tabs">
-            <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs large-tabs" id="collapsing-tabs" data-allow-all-closed="true" data-multi-expand="true">
-              <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true"><i class="fas fa-microphone-alt"></i> Show 1</a></li>
-              <li class="tabs-title"><a href="#panel2c"><i class="fas fa-microphone-alt"></i> Show 2</a></li>
-              <li class="tabs-title"><a href="#panel3c"><i class="fas fa-microphone-alt"></i> Show 3</a></li>
-              <li class="tabs-title"><a href="#panel4c"><i class="fas fa-microphone-alt"></i> Show 4</a></li>
-              <div class="slide"></div>
-            </ul>
-
-            <div class="tabs-content" data-tabs-content="collapsing-tabs">
-              <div class="tabs-panel is-active" id="panel1c">
-                <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-4">
-                  <div class="cell">
-                    <div class="callout">
-                      <h3>Time</h3>
-                      <p><img src="https://placehold.it/200" alt="image"></p>
-                      <p class="lead">Choose your Artist</p>
-                      <p class="subheader">And enjoy listening !</p>
-                      <button class="boom-button float-right">Go</button>
-
-                    </div>
+          <div class="tabs-content" data-tabs-content="collapsing-tabs">
+            <div class="tabs-panel is-active" id="panel1c">
+              <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-4">
+                <div class="cell">
+                  <div class="callout">
+                    <h3>Time</h3>
+                    <p><img src="https://placehold.it/200" alt="image"></p>
+                    <p class="lead">Choose your Artist</p>
+                    <p class="subheader">And enjoy listening !</p>
+                    <button class="boom-button float-right">Go</button>
                   </div>
-                  <div class="cell">
-                    <div class="callout">
-                      <h3>Time</h3>
-                      <p><img src="https://placehold.it/200" alt="image"></p>
-                      <p class="lead">Choose your Artist</p>
-                      <p class="subheader">And enjoy listening !</p>
-                      <button class="boom-button float-right">Go</button>
-
-                    </div>
+                </div>
+                <div class="cell">
+                  <div class="callout">
+                    <h3>Time</h3>
+                    <p><img src="https://placehold.it/200" alt="image"></p>
+                    <p class="lead">Choose your Artist</p>
+                    <p class="subheader">And enjoy listening !</p>
+                    <button class="boom-button float-right">Go</button>
                   </div>
-                  <div class="cell">
-                    <div class="callout">
-                      <h3>Time</h3>
-                      <p><img src="https://placehold.it/200" alt="image"></p>
-                      <p class="lead">Choose your Artist</p>
-                      <p class="subheader">And enjoy listening !</p>
-                      <button class="boom-button float-right">Go</button>
-                    </div>
+                </div>
+                <div class="cell">
+                  <div class="callout">
+                    <h3>Time</h3>
+                    <p><img src="https://placehold.it/200" alt="image"></p>
+                    <p class="lead">Choose your Artist</p>
+                    <p class="subheader">And enjoy listening !</p>
+                    <button class="boom-button float-right">Go</button>
                   </div>
-                  <div class="cell">
-                    <div class="callout">
-                      <h3>Time</h3>
-                      <p><img src="https://placehold.it/200" alt="image"></p>
-                      <p class="lead">Choose your Artist</p>
-                      <p class="subheader">And enjoy listening !</p>
-                      <button class="boom-button float-right">Go</button>
-                    </div>
+                </div>
+                <div class="cell">
+                  <div class="callout">
+                    <h3>Time</h3>
+                    <p><img src="https://placehold.it/200" alt="image"></p>
+                    <p class="lead">Choose your Artist</p>
+                    <p class="subheader">And enjoy listening !</p>
+                    <button class="boom-button float-right">Go</button>
                   </div>
                 </div>
               </div>
-              <div class="tabs-panel" id="panel2c">
-                <p><img src="https://placehold.it/200" alt="image"></p>
-                <p>Nunc ipsum massa, venenatis sed fringilla ut, elementum eu sapien. In eget dolor volutpat, fringilla
-                  metus et, dignissim lectus. Proin interdum sit amet odio ut varius. Nam id quam lacus. Aenean et
-                  tellus a sapien pulvinar sollicitudin. Mauris posuere
-                  tellus urna, non fermentum urna scelerisque in. Nulla scelerisque est leo, non tempus purus laoreet
-                  in. Aliquam erat volutpat. Nunc nulla eros, blandit quis nunc vel, luctus fermentum nisi. Phasellus
-                  ullamcorper gravida facilisis.</p>
-              </div>
-              <div class="tabs-panel" id="panel3c">
-                <p><img src="https://placehold.it/200" alt="image"></p>
-                <p>Donec ornare, ex quis volutpat vulputate, dui eros fermentum tellus, id eleifend velit diam non leo.
-                  Aliquam convallis vestibulum elementum. Phasellus facilisis tempus nisi eget lobortis. Duis magna sem,
-                  placerat vel tellus sed, auctor laoreet enim.
-                  Integer sit amet libero rutrum, vestibulum massa at, volutpat leo. Proin id ex porta, hendrerit erat
-                  sed, fringilla urna. Phasellus hendrerit consequat arcu non pretium. Proin vel velit vitae nisl
-                  aliquet rutrum. Maecenas quis lectus sit amet
-                  mi fermentum pulvinar. Mauris fermentum tortor id ipsum tristique sollicitudin.</p>
-              </div>
-              <div class="tabs-panel" id="panel4c">
-                <p><img src="https://placehold.it/200" alt="image"></p>
-                <p>Fusce justo velit, pulvinar eu sem eu, fringilla sodales urna. Mauris mollis aliquet nibh.
-                  Suspendisse porttitor, nisi a egestas iaculis, augue metus semper tortor, eget tristique leo enim
-                  mollis libero. Integer et lacus non ipsum finibus pharetra
-                  sit amet quis ipsum. Mauris vitae elementum lorem. Quisque vel mauris magna. Duis non nisl neque.
-                  Suspendisse posuere magna id risus sodales bibendum.</p>
-              </div>
+            </div>
+            <div class="tabs-panel" id="panel2c">
+              <p><img src="https://placehold.it/200" alt="image"></p>
+              <p>Nunc ipsum massa, venenatis sed fringilla ut, elementum eu sapien. In eget dolor volutpat, fringilla
+                metus et, dignissim lectus. Proin interdum sit amet odio ut varius. Nam id quam lacus. Aenean et
+                tellus a sapien pulvinar sollicitudin. Mauris posuere
+                tellus urna, non fermentum urna scelerisque in. Nulla scelerisque est leo, non tempus purus laoreet
+                in. Aliquam erat volutpat. Nunc nulla eros, blandit quis nunc vel, luctus fermentum nisi. Phasellus
+                ullamcorper gravida facilisis.</p>
+            </div>
+            <div class="tabs-panel" id="panel3c">
+              <p><img src="https://placehold.it/200" alt="image"></p>
+              <p>Donec ornare, ex quis volutpat vulputate, dui eros fermentum tellus, id eleifend velit diam non leo.
+                Aliquam convallis vestibulum elementum. Phasellus facilisis tempus nisi eget lobortis. Duis magna sem,
+                placerat vel tellus sed, auctor laoreet enim.
+                Integer sit amet libero rutrum, vestibulum massa at, volutpat leo. Proin id ex porta, hendrerit erat
+                sed, fringilla urna. Phasellus hendrerit consequat arcu non pretium. Proin vel velit vitae nisl
+                aliquet rutrum. Maecenas quis lectus sit amet
+                mi fermentum pulvinar. Mauris fermentum tortor id ipsum tristique sollicitudin.</p>
+            </div>
+            <div class="tabs-panel" id="panel4c">
+              <p><img src="https://placehold.it/200" alt="image"></p>
+              <p>Fusce justo velit, pulvinar eu sem eu, fringilla sodales urna. Mauris mollis aliquet nibh.
+                Suspendisse porttitor, nisi a egestas iaculis, augue metus semper tortor, eget tristique leo enim
+                mollis libero. Integer et lacus non ipsum finibus pharetra
+                sit amet quis ipsum. Mauris vitae elementum lorem. Quisque vel mauris magna. Duis non nisl neque.
+                Suspendisse posuere magna id risus sodales bibendum.</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
     <!-- END OF TABS-->
-    <!-- CATEGORY ARTISTS-->
-    <!---H2 WITH WAVE & RESIZABLE LINE-->
-    <div class="grid-x align-center ">
-        <div class="cell white-bottom-border auto"></div>
-        <div class="cell shrink">
-            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="50" viewBox="25.5 0 86 50"><path d="M110.1 30.1c-0.2-6.8-1.6-12.7-5.3-12.7 -11.9 0-1.7 30.6-15.1 30.6 -10.7 0-3.4-25.4-14.1-25.4 -8.4 0-5 19.7-13.2 19.7 -6.4 0-4.5-11-11.1-11 -6.3 0-6.1 8.5-12.5 8.9 -6 0.3-13.9 0.3-13.9 0.3" style="fill:none;stroke:#FFF"/></svg>
-          </div>
-        <div class="cell shrink"><h2>The Shows</h2></div>
-        <div class="cell shrink">
-            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="50" viewBox="25.5 0 86 50"><path d="M112.1 40.5c0 0-7.9 0-13.9-0.3 -6.4-0.4-6.2-8.9-12.5-8.9 -6.7 0-4.8 11-11.1 11 -8.2 0-4.8-19.7-13.2-19.7 -10.7 0-3.4 25.4-14.1 25.4 -13.4 0-3.2-30.6-15.1-30.6 -3.7 0-5.1 5.9-5.3 12.7" style="fill:none;stroke:#FFF"/></svg>
-          </div>
-          <div class="cell white-bottom-border auto"></div>
+    <!-- CATEGORY SHOWS-->
+    
+    <!---H2 WITH WAVE -->
+    <div class="grid-x grid-padding-y align-center align-middle">
+        <div class="cell auto text-right">
+          <img src="assets/img/wave_left.svg">
         </div>
-      <!--END OF WAVE-->  
+        <div class="cell shrink">
+          <h2>Presenters</h2>
+        </div>
+        <div class="cell auto text-left">
+            <img src="assets/img/wave_right.svg">
+        </div>
+      </div>
+      <!--END OF WAVE-->
+      <!--BEGINNING OF ARTIST SECTION-->
     <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
       <div class="cell">
         <div class="callout gradient-1">
@@ -252,26 +253,30 @@
           <button class="boom-button-white float-right">Listen</button>
         </div>
       </div>
-    </div>
     <div class="grid-x align-center">
       <button class="button boom-button-white ">Load More</button>
     </div>
-
-    </article>
-    <footer>
-      <div class="grid-x secondary">
-        <ul class="footer-menu">
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-        </ul>
+  </div>
+    <!-- BEGINNING OF FOOTER =========================================================================================================================================== -->
+    <footer class="grid-container">
+      <div class="grid-x grid-margin-y align-center">
+        <!-- Empty cell/s used  for spacing-->
+        <div class="cell"></div>
+        <div class="cell shrink">
+          <ul class="menu text-center">
+            <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
+            <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+          </ul>
+        </div>
       </div>
     </footer>
-
-    <script src="js-fanny/vendor/jquery.js"></script>
-    <script src="js-fanny/vendor/foundation.js"></script>
-    <script src="js-fanny/app.js"></script>
+    <!-- END OF FOOTER ================================================================================================================================================= -->
+  </div>
+  <script src="js-fanny/vendor/jquery.js"></script>
+  <script src="js-fanny/vendor/foundation.js"></script>
+  <script src="js-fanny/app.js"></script>
 </body>
 
 </html>
