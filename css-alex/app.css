@@ -48,7 +48,7 @@
 
 #audioplayer {
   width: 195px;
-  border: 2px solid #eb5b27;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px; }
 
 #pButton {

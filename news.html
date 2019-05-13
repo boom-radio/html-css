@@ -23,10 +23,12 @@
             <div class="grid-x grid-padding-x grid-padding-y align-center align-middle">
                 <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
+                <div class="cell"></div>
                 <div class="cell">
                     <ul class="menu vertical text-center">
-                        <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li>
-                        <li><input type="search" placeholder="Search"></li>
+                        <!-- <li><a href="./"><img src="assets/img/BoomLogoOrange.svg" alt="Boom Radio Logo"></a></li>
+                        <li><input type="search" placeholder="Search"></li> -->
+                        <li><a href="./">Home</a></li>
                         <li><a href="listen.html">Listen</a></li>
                         <li><a href="music.html">Music</a></li>
                         <li><a href="news.html">News</a></li>
@@ -85,17 +87,6 @@
                                             </div>
                                             <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE LOGO -->
                                             <div class="cell small-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-container">
-                                        <div class="grid-x align-center align-middle">
-                                            <div class="cell shrink">
-                                                <audio id="music-stream" controls controlsList="nodownload"
-                                                    preload="metadata">
-                                                    <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3"
-                                                        type="audio/mpeg">
-                                                </audio>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -187,6 +178,17 @@
         <!-- END NAVIGATION BAR Content ======================================================================================================================================= -->
 
         <!-- BEGINNING OF MAIN BODY =========================================================================================================================================== -->
+        <!-- Showing the music player in the body for mobile only. -->
+        <div class="grid-container show-for-small-only">
+            <div class="grid-x grid-margin-y align-center align-middle">
+                <div class="cell"></div>
+                <div class="cell shrink">
+                    <audio id="music-stream" controls controlsList="nodownload" preload="metadata">
+                        <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
         <div class="grid-container">
             <div class="grid-x grid-margin-x grid-margin-y align-center">
                 <!-- Empty cell/s used  for spacing-->
@@ -221,7 +223,7 @@
                                         </div>
                                         <div class="cell">
                                             <button type="button" class="boom-button-white float-right">Read More...
-                                                </li>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
