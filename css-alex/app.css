@@ -46,6 +46,43 @@
 #mobile-logo {
   width: 150px; }
 
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
+
+@font-face {
+  font-family: 'Quicksand-Regular', sans-serif;
+  src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+body {
+  background: #0a1417;
+  font-family: 'Quicksand-Regular', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif !important; }
+
+h1 {
+  color: #eb5b27;
+  text-transform: uppercase; }
+
+h2 {
+  text-transform: uppercase; }
+
+h3 {
+  color: #eb5b27; }
+
+.test {
+  border: 1px solid red; }
+
+.section-title {
+  color: #eb5b27;
+  padding: 0.5rem; }
+
 #audioplayer {
   width: 195px;
   border: 2px solid #eb5b27;
@@ -140,43 +177,6 @@
   84% {
     transform: scaleY(3);
     background: #faa294; } }
-
-@font-face {
-  font-family: 'Fjalla One', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
-
-@font-face {
-  font-family: 'Quicksand-Regular', sans-serif;
-  src: url(//fonts.googleapis.com/css?family=Quicksand); }
-
-body {
-  background: #0a1417;
-  font-family: 'Quicksand-Regular', sans-serif; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Fjalla One', sans-serif !important; }
-
-h1 {
-  color: #eb5b27;
-  text-transform: uppercase; }
-
-h2 {
-  text-transform: uppercase; }
-
-h3 {
-  color: #eb5b27; }
-
-.test {
-  border: 1px solid red; }
-
-.section-title {
-  color: #eb5b27;
-  padding: 0.5rem; }
 
 .gradiented-box {
   border-radius: 5px; }
