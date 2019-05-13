@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>Home</title>
   <link rel="icon" href="assets/img/BoomLogoOrange.svg">
   <link rel="stylesheet" href="assets/fonts/fa/css/all.css">
   <link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
@@ -66,6 +66,7 @@
     </header>
     <!-- END HEADER Content ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? -->
 
+
     <!-- NAVIGATION BAR Content ========================================================================================================================================= -->
     <div class="grid-container-fluid">
       <div class="grid-x">
@@ -85,15 +86,6 @@
                       </div>
                       <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE LOGO -->
                       <div class="cell small-1"></div>
-                    </div>
-                  </div>
-                  <div class="grid-container">
-                    <div class="grid-x align-center align-middle">
-                      <div class="cell shrink">
-                        <audio id="music-stream" controls controlsList="nodownload" preload="metadata">
-                          <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3" type="audio/mpeg">
-                        </audio>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -181,6 +173,17 @@
 
 
     <!-- BEGINNING OF MAIN BODY -->
+    <!-- Showing the music player in the body for mobile only. -->
+    <div class="grid-container show-for-small-only">
+      <div class="grid-x grid-margin-y align-center align-middle">
+        <div class="cell"></div>
+        <div class="cell shrink">
+          <audio id="music-stream" controls controlsList="nodownload" preload="metadata">
+            <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </div>
     <!--Start of news Section-->
     <article class="grid-container">
       <!--Title for secton-->
@@ -322,10 +325,11 @@
               <div class="cell medium-6">
                 <div class="grid-container-fluid">
                   <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
-                    <div class="cell">
+                    <!--<div class="cell">
                       <h4>Lorem Ipsum</h4>
-                    </div>
+                    </div>-->
                     <div class="cell text-justify">
+                      <h4>Lorem Ipsum</h4>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
                         magnam impedit repudiandae maxime, est recusandae accusantium porro ex
                         officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
@@ -373,11 +377,12 @@
               </div>
               <div class="cell medium-6">
                 <div class="grid-container-fluid">
-                  <div class="grid-x grid-padding-x grid-padding-y">
-                    <div class="cell">
+                  <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
+                    <!--<div class="cell">
                       <h4>Lorem Ipsum</h4>
-                    </div>
+                    </div>-->
                     <div class="cell text-justify">
+                      <h4>Lorem Ipsum</h4>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
                         magnam impedit repudiandae maxime, est recusandae accusantium porro ex
                         officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
@@ -408,11 +413,12 @@
                   </div>
                   <div class="cell medium-6">
                     <div class="grid-container-fluid">
-                      <div class="grid-x grid-padding-x grid-padding-y">
-                        <div class="cell">
+                      <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
+                        <!--<div class="cell">
                           <h4>Lorem Ipsum</h4>
-                        </div>
-                        <div class="cell text-justify">
+                        </div>-->
+                        <div class="cell align-middle text-justify">
+                          <h4>Lorem Ipsum</h4>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
                             magnam impedit repudiandae maxime</p>
                         </div>
@@ -425,6 +431,8 @@
                 </div>
               </div>
             </div>
+
+            <div class="cell show-for-small-only"></div>
 
             <div class="cell auto">
               <div class="cell">
@@ -444,6 +452,7 @@
               </div>
             </div>
           </div>
+        </article>
       </div>
     </div>
     <!--End of Social Section-->
