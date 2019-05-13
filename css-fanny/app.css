@@ -353,17 +353,20 @@ p {
   border-radius: 5px; }
   .gradiented-box img {
     border-radius: 5px; }
-  .gradiented-box.gradient-one-two {
-    background-image: linear-gradient(to right, #faa294, #fe657e); }
-  .gradiented-box.gradient-three-four {
-    background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
-  .gradiented-box.gradient-five-six {
-    background-image: linear-gradient(to right, #fcab62, #eb5b27); }
+
+.gradient-one-two {
+  background-image: linear-gradient(to right, #faa294, #fe657e); }
+
+.gradient-three-four {
+  background-image: linear-gradient(to right, #3fc5be, #3aa9e1); }
+
+.gradient-five-six {
+  background-image: linear-gradient(to right, #fcab62, #eb5b27); }
 
 .box-shadowed {
-  -webkit-box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4);
-  -moz-box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4);
-  box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4); }
+  -webkit-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
+  -moz-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
+  box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important; }
 
 .card {
   border: 0 !important; }
@@ -413,7 +416,7 @@ button.boom-button-dark {
   border: solid 2px white;
   background-color: transparent; }
   .boom-button-white:hover {
-    box-shadow: 2px 2px 0px 0px rgba(10, 20, 23, 0.4) inset;
+    box-shadow: 2px 2px 0px 0px rgba(16, 33, 38, 0.4) inset;
     color: white; }
 
 footer a {

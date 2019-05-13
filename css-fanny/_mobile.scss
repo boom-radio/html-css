@@ -82,23 +82,18 @@ p{
     img {
         border-radius: 5px;
     }
-
-    &.gradient-one-two {
+}
+.gradient-one-two {
         @include gradient-one-two;
     }
-
-    &.gradient-three-four {
+.gradient-three-four {
         @include gradient-three-four;
     }
-
-    &.gradient-five-six {
+.gradient-five-six {
         @include gradient-five-six;
     }
-}
-
 //Setting variables for box shadows on about page boxes
-$color-eight: rgba(10, 20, 23, 0.4);
-$box-shadow: 5px -5px 0 $color-eight;
+$box-shadow: 5px 5px 0 rgba($color-eight, 0.3)!important;
 
 .box-shadowed {
     @include box-shadow;
