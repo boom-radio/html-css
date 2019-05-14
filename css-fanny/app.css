@@ -213,7 +213,7 @@ html * {
   bottom: 0; }
   .animation-container .sound-container {
     position: relative;
-    top: -8px;
+    top: -5px;
     height: 100%;
     display: inline-block; }
   .animation-container .sound-container > div {
@@ -317,15 +317,15 @@ h3 {
 h4 {
   font-size: 1em;
   padding: 0.5em;
-  color: #eb5b27; }
+  color: #102126;
+  text-align: center; }
 
 h5 {
   font-size: 1.2em; }
 
 a {
   font-family: 'Fjalla One', sans-serif !important;
-  color: white;
-  font-size: 1.1em; }
+  color: white; }
   a:hover {
     color: #eb5b27; }
 
@@ -414,15 +414,32 @@ button.boom-button-dark {
   margin-bottom: 15px;
   color: white;
   border: solid 2px white;
-  background-color: transparent; }
+  background-color: transparent;
+  z-index: 1;
+  position: relative;
+  overflow: hidden; }
+  .boom-button-white::after {
+    content: '';
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -120%;
+    bottom: -50%;
+    width: 2em;
+    transform: translateX(-525%) rotate(35deg); }
   .boom-button-white:hover {
-    box-shadow: 2px 2px 0px 0px rgba(16, 33, 38, 0.4) inset;
-    color: white; }
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4) inset;
+    color: white;
+    background-color: transparent;
+    cursor: pointer; }
+  .boom-button-white:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translateX(200%) rotate(35deg); }
 
 footer a {
   color: #eb5b27; }
   footer a:hover {
-    color: #3fc5be; }
+    color: white; }
 
 div .tabs, div .tabs-content, div .tabs-content, div .accordion, div .md-tabs, div .accordion-content, div .accordion-item {
   background-color: transparent !important; }
@@ -468,8 +485,7 @@ div.md-tabs {
   outline: none; }
 
 .callout {
-  margin-left: -0.625rem;
-  margin-bottom: 20px; }
+  border: none; }
   .callout img {
     -webkit-box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);
     -moz-box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);

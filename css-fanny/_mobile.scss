@@ -34,7 +34,8 @@ h3{
 h4{
     font-size: 1em;
     padding: 0.5em;
-    color: $color-six;
+    color: $color-eight;
+    text-align: center;
 }
 h5{
     font-size:1.2em;
@@ -43,7 +44,6 @@ h5{
 a {
     @include title-font;
     color: $color-white;
-    font-size: 1.1em;
 
     &:hover {
         color: $color-six;
@@ -168,12 +168,35 @@ button.boom-button-dark {
     color: $color-white;
     border: solid 2px $color-white;
     background-color: transparent;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
 
+    &::after {
+        content: '';
+        z-index: -1;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        position: absolute;
+        top: -120%;
+        bottom: -50%;
+        width: 2em;
+        transform: translateX(-525%) rotate(35deg);
+      }
     &:hover {
-        box-shadow: 2px 2px 0px 0px rgba($color-eight, .4) inset;
+        box-shadow: 2px 2px 0px 0px rgba($color-black, .4) inset;
         color: $color-white;
+        background-color:transparent;
+        cursor: pointer
     }
+    &:hover::after {
+        transition: transform 0.45s ease-in-out;
+        transform: translateX(200%) rotate(35deg);
+      }
+
+
+
 }
+
 
 //Fanny's button
 //END BUTTONS STYLES =========================================================================================================
@@ -184,7 +207,7 @@ footer {
         color: $color-six;
 
         &:hover {
-            color: $color-three;
+            color: $color-white;
         }
     }
 }
@@ -253,8 +276,7 @@ div.md-tabs {
 /////////////////END OF TABS
 ////////////////COLORED CALLOUT
 .callout {
-    margin-left: -0.625rem;
-    margin-bottom:20px;
+    border:none;
 
     img {
         @include box-shadow;
