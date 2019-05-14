@@ -429,7 +429,6 @@ button.boom-button-dark {
     transform: translateX(-525%) rotate(35deg); }
   .boom-button-white:hover {
     box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4) inset;
-    color: white;
     background-color: transparent;
     cursor: pointer; }
   .boom-button-white:hover::after {
@@ -506,7 +505,25 @@ div.md-tabs {
   height: 40vh; }
 
 .social-button {
-  min-width: 200px; }
+  min-width: 200px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0 !important; }
+  .social-button:hover {
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4) inset; }
+  .social-button::after {
+    content: '';
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -120%;
+    bottom: -50%;
+    width: 2em;
+    transform: translateX(-525%) rotate(35deg); }
+  .social-button:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translateX(200%) rotate(35deg); }
 
 textarea {
   padding: 8px; }
@@ -596,4 +613,6 @@ button i:hover {
   .img-left {
     left: 1rem; }
   .img-right {
-    right: 1rem; } }
+    right: 1rem; }
+  .social-button {
+    margin-top: 10px; } }
