@@ -116,8 +116,6 @@
                                                 </ul>
                                             </div>
                                             <div class="cell shrink show-for-large">
-                                                <iframe src="https://tunein.com/embed/player/s195836/" style="width:100%; height:100px;"
-                                                scrolling="no" frameborder="no"></iframe>
                                                 <!-- THE PLAYER IS IN THE BODY -->
                                                 <!-- The following commented audio is the one that uses the browser's default controls, not customisable -->
                                                 <!-- <audio id="music-stream" controls preload="metadata">
@@ -182,14 +180,14 @@
 
         <!-- BEGINNING OF MAIN BODY =========================================================================================================================================== -->
         <!-- Showing the music player in the body -->
-        <div class="grid-container show-for-small hide-for-large">
+        <div class="grid-container show-for-small">
             <div class="grid-x grid-margin-y align-center align-middle">
                 <div class="cell"></div>
                 <div class="cell text-center">
-                    <h3>Now on Air</h3>
+                    <h3>Now on Air...</h3>
                 </div>
-                <div class="cell medium-8 text-center">
-                        <iframe src="https://tunein.com/embed/player/s195836/" style="width:100%; height:100px;"
+                <div class="cell small-10 medium-6">
+                        <iframe id="boomPlayer" src="https://tunein.com/embed/player/s195836/"
                         scrolling="no" frameborder="no"></iframe>
                     <!-- Browser default player commented just in case -->
                     <!-- <audio id="music-stream" controls controlsList="nodownload" preload="metadata">
