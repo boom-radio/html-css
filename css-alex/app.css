@@ -76,6 +76,7 @@
   .animation-container .sound-container {
     position: relative;
     top: -8px;
+    left: 10px;
     height: 100%;
     display: inline-block; }
   .animation-container .sound-container > div {
