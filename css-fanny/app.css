@@ -564,7 +564,7 @@ button i:hover {
     height: 4px;
     position: relative;
     left: 0;
-    top: 52px;
+    top: 53px;
     transition: left 0.3s ease-out; }
   .md-tabs {
     background-color: #fcab62;
@@ -576,6 +576,8 @@ button i:hover {
       list-style-type: none;
       display: table;
       width: 100%; }
+      .md-tabs > .tabs .cell {
+        padding: 5px; }
       .md-tabs > .tabs > .tabs-title {
         display: table-cell;
         width: 25%;
@@ -596,7 +598,10 @@ button i:hover {
         .md-tabs > .tabs > .tabs-title > a {
           color: white;
           font-size: 16px; }
-          .md-tabs > .tabs > .tabs-title > a:hover, .md-tabs > .tabs > .tabs-title > a:focus {
+          .md-tabs > .tabs > .tabs-title > a:hover {
+            color: #3aa9e1;
+            background-color: transparent; }
+          .md-tabs > .tabs > .tabs-title > a:focus {
             background-image: linear-gradient(to right, #3fc5be, #3aa9e1);
             color: white; } }
 
