@@ -134,10 +134,9 @@ $color-nine: rgba(83, 81, 86, 1);
 
 //BEGINNING BUTTONS STYLES =================================================================================================================
 //John's button
-button.boom-button,
-button.boom-button-dark {
-    border-radius: 0.5rem;
-    padding: .5rem ;
+button.boom-button{
+    border-radius: 0.7rem;
+    padding: .5rem 1.5rem;
     color: $color-white;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 2px transparent;
@@ -145,23 +144,33 @@ button.boom-button-dark {
     background-origin: border-box;
     background-clip: content-box, border-box;
     box-shadow: 2px 1000px 1px $color-nine inset;
-}
-
-button.boom-button:hover,
-button.boom-button-dark:hover {
-    box-shadow: none;
-    color: white;
-}
-
-button.boom-button-dark {
-    box-shadow: 2px 1000px 1px $color-black inset;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        z-index: -1;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        position: absolute;
+        top: -120%;
+        bottom: -50%;
+        width: 2em;
+        transform: translateX(-525%) rotate(35deg);
+    }
+    &:hover {
+        box-shadow: 2px 2px 0px 0px rgba($color-black, .4) inset;
+        cursor: pointer
+    }
+    &:hover::after {
+        transition: transform 0.45s ease-in-out;
+        transform: translateX(200%) rotate(35deg);
+    }
 }
 
 //John's button
 
 //Fanny's button
 .boom-button-white {
-    font-family: 'Fjalla One';
     border-radius: 0.7rem;
     padding: .5rem 1.5rem;
     margin-bottom: 15px;
@@ -216,29 +225,37 @@ div{
 .tabs, .tabs-content, .tabs-content, .accordion, .md-tabs, .accordion-content, .accordion-item{
     background-color: transparent!important;
 }
+.tabs-panel{
+    padding:0;
 }
-.slide {
-    width: 0;
-    height: 0;
 }
+// .slide {
+//     width: 0;
+//     height: 0;
+// }
 .md-tabs, .tabs-content{
     border: none;
 }
+.accordion-content{
+    padding:0;
+}
 div.md-tabs {
     border:0px!important;
+    >.accordion-content{
+    padding:0;
+    }
     >.accordion {
         margin-left: 0;
         list-style-type: none;
-
         >.accordion-item>.accordion-title {
             position: relative;
             display: block;
             padding: 1.25rem 1rem;
             border: 0px;
-            font-size: 0.9rem;
+            font-size: 1rem;
             line-height: 1;
-            @include gradient-one-two;
-            color: $color-black;
+            @include gradient-three-four;
+            color: $color-white;
 
             &:hover {
                 background-color: $color-four;
@@ -247,16 +264,14 @@ div.md-tabs {
             }
         }
     }
-
     >.accordion> {
         .is-active.accordion-item>a.accordion-title {
-            border-bottom: 4px solid $color-five;
-            color: $color-white;
+            border-bottom: 4px solid $color-eight;
+            color: $color-black;
         }
 
         .accordion-item>.accordion-content {
             display: none;
-            padding: 1rem;
             border: 0px;
             background-color: #fefefe;
             color: #0a0a0a;
