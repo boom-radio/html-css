@@ -213,6 +213,7 @@ html * {
   .animation-container .sound-container {
     position: relative;
     top: -8px;
+    left: 10px;
     height: 100%;
     display: inline-block; }
   .animation-container .sound-container > div {
@@ -336,6 +337,19 @@ label {
 .section-title {
   color: #eb5b27;
   padding: 0.5rem; }
+
+input,
+textarea,
+button,
+label {
+  font-family: 'Fjalla One', sans-serif !important; }
+
+label {
+  color: white;
+  padding-bottom: 5px; }
+
+textarea {
+  padding: 8px; }
 
 .gradiented-box {
   border-radius: 5px; }

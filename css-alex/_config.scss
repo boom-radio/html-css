@@ -69,7 +69,7 @@ $box-shadow: 0 0 0 0;
 //Set box shadow colours
 @mixin box-shadow {
   -webkit-box-shadow: $box-shadow;
-  -moz-box-shadow: $box-shadow ;
+  -moz-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
 }
 
@@ -127,6 +127,7 @@ $transform-scale: 0;
     //Position relative was commented and top -10px did not exist.
     position: relative;
     top: -8px;
+    left: 10px;
     //width: 150px;
     height: 100%;
     display: inline-block;
