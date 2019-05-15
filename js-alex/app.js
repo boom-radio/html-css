@@ -22,27 +22,47 @@ function myFunction() {
 
 
 //BEGINNING OF JS FOR AUDIO PLAYER
-var music = document.getElementById('music'); // id for audio element
+var music = document.getElementById('musicPlayer'); // class for audio element
+//var music = document.getElementsByClassName('musicPlayer'); // class for audio element
 var duration = music.duration; // Duration of audio clip, calculated here for embedding purposes
 var pButton = document.getElementById('pButton'); // play button
+//var pButton = document.getElementsByClassName('pButton'); // play button
 var pButtonIcon = document.getElementById('pButtonIcon'); // play button
+//var pButtonIcon = document.getElementsByClassName('pButtonIcon'); // play button
 var playhead = document.getElementById('playhead'); // playhead
+//var playhead = document.getElementsByClassName('playhead'); // playhead
 var timeline = document.getElementById('timeline'); // timeline
+//var timeline = document.getElementsByClassName('timeline'); // timeline
 
 // timeline width adjusted for playhead
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
 // play button event listenter
 pButton.addEventListener("click", play);
+//TEST FOR CLASS BELOW
+// for (var i = 0; i < pButton.length; i++) {
+//     pButton[i].addEventListener('click', play);
+// }
 
 // timeupdate event listener
 music.addEventListener("timeupdate", timeUpdate, false);
+//TEST FOR CLASS BELOW
+// for (var i = 0; i < music.length; i++) {
+//     music[i].addEventListener('click', timeUpdate, false);
+// }
 
 // makes timeline clickable
 timeline.addEventListener("click", function(event) {
     moveplayhead(event);
     music.currentTime = duration * clickPercent(event);
 }, false);
+//TEST FOR CLASS BELOW
+// for (var i = 0; i < timeline.length; i++) {
+//     timeline[i].addEventListener('click', function(event) {
+//         moveplayhead(event);
+//         music.currentTime = duration * clickPercent(event);
+//         }, false);
+// }
 
 // returns click as decimal (.77) of the total timelineWidth
 function clickPercent(event) {
@@ -51,7 +71,11 @@ function clickPercent(event) {
 
 // makes playhead draggable
 playhead.addEventListener('mousedown', mouseDown, false);
-window.addEventListener('mouseup', mouseUp, false);
+//TEST FOR CLASS BELOW
+// for (var i = 0; i < playhead.length; i++) {
+//     playhead[i].addEventListener('mousedown', mouseDown, false);
+// }
+// window.addEventListener('mouseup', mouseUp, false);
 
 // Boolean value so that audio position is updated only when the playhead is released
 var onplayhead = false;
@@ -72,6 +96,10 @@ function mouseUp(event) {
         // change current time
         music.currentTime = duration * clickPercent(event);
         music.addEventListener('timeupdate', timeUpdate, false);
+        //TEST FOR CLASS BELOW
+        // for (var i = 0; i < music.length; i++) {
+        //     music[i].addEventListener('timeupdate', timeUpdate, false);
+        // }
     }
     onplayhead = false;
 }
@@ -103,6 +131,9 @@ function timeUpdate() {
         //At the end of the track, show play icon and stop animation
         pButtonIcon.className = "fas fa-play";
         soundContainer.className = "";
+        //TEST FOR CLASS BELOW
+        // pButtonIcon.className = "pButtonIcon fas fa-play";
+        // soundContainer.className = "soundContainer ";
     }
 }
 
@@ -111,13 +142,12 @@ function play() {
     // start music
     if (music.paused) {
         music.play();
-        // remove play, add pause
-        // pButton.className = "";
-        // pButton.className = "pause";
-
         //If playing show pause button and sound animation
         pButtonIcon.className = "fas fa-pause";
         soundContainer.className = "sound-container";
+        //TEST FOR CLASS BELOW
+        // pButtonIcon.className = "pButtonIcon fas fa-pause";
+        // soundContainer.className = "soundContainer sound-container";
     } else { // pause music
         music.pause();
         // remove pause, add play
@@ -127,6 +157,9 @@ function play() {
         //If paused show play button and stop sound animation
         pButtonIcon.className = "fas fa-play";
         soundContainer.className = "";
+        //TEST FOR CLASS BELOW
+        // pButtonIcon.className = "pButtonIcon fas fa-play";
+        // soundContainer.className = "soundContainer";
     }
 }
 
@@ -134,6 +167,12 @@ function play() {
 music.addEventListener("canplaythrough", function() {
     duration = music.duration;
 }, false);
+//TEST FOR CLASS BELOW
+// for (var i = 0; i < music.length; i++) {
+//     music[i].addEventListener("canplaythrough", function() {
+//         duration = music.duration;
+//         }, false);
+// }
 
 // getPosition
 // Returns elements left position relative to top-left of viewport
@@ -141,43 +180,6 @@ function getPosition(el) {
     return el.getBoundingClientRect().left;
 }
 //END OF JS FOR AUDIO PLAYER
-
-
-//BEGINNING OF JS FOR SEARCH BAR ====================================================================================================================================================
-$(document).ready(function () {
-    var submitIcon = $('.searchbox-icon');
-    var inputBox = $('.searchbox-input');
-    var searchBox = $('.search-input-animated');
-    var searchButton = $('.search-button');
-    var isOpen = false;
-    submitIcon.click(function () {
-        if (isOpen == false) {
-            searchBox.addClass('searchbox-open');
-            searchButton.addClass('show-search-button');
-            inputBox.focus();
-            isOpen = true;
-        } else {
-            searchBox.removeClass('searchbox-open');
-            searchButton.removeClass('show-search-button');
-            inputBox.focusout();
-            isOpen = false;
-        }
-    });
-    submitIcon.mouseup(function () {
-        return false;
-    });
-    searchBox.mouseup(function () {
-        return false;
-    });
-    $(document).mouseup(function () {
-        if (isOpen == true) {
-            $('.searchbox-icon').css('display', 'block');
-            submitIcon.click();
-        }
-    });
-});
-//END OF JS FOR SEARCH BAR===========================================================================================================================================================
-
 
 //BEGINNING EXPLOSION ANIMATION FOR LOGO
 var logo = document.getElementById('logo'); // id for logo element

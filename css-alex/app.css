@@ -1,3 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Removed for accessibility guidleines iframe,*/
+html,
+body,
+div,
+span,
+applet,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+.category {
+  visibility: hidden; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
@@ -15,7 +152,7 @@
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 .off-canvas {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100%; }
 
 .off-canvas.is-transition-overlap {
@@ -83,7 +220,7 @@
     /*position: relative;*/
     height: 100%;
     width: 0.1rem;
-    background: black;
+    background: rgba(0, 0, 0, 0.9);
     display: inline-block;
     animation: wave 3s infinite ease-in-out;
     -webkit-animation: wave 3s infinite ease-in-out;
@@ -125,7 +262,7 @@
   0% { }
   100% {
     transform: scaleY(1);
-    background: #0a1417; }
+    background: #102126; }
   20% {
     transform: scaleY(3);
     background: #3aa9e1; }
@@ -151,7 +288,7 @@
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
 body {
-  background: #0a1417;
+  background: #102126;
   font-family: 'Quicksand-Regular', sans-serif; }
 
 h1,
@@ -163,14 +300,36 @@ h6 {
   font-family: 'Fjalla One', sans-serif !important; }
 
 h1 {
+  font-size: 2em;
+  display: block;
+  padding: 14px 0.5em;
   color: #eb5b27;
   text-transform: uppercase; }
 
 h2 {
-  text-transform: uppercase; }
+  font-size: 1.4em; }
 
 h3 {
+  font-size: 1.6em;
+  display: block;
+  padding: 14px 0.5em;
   color: #eb5b27; }
+
+h4 {
+  font-size: 1em;
+  padding: 0.5em;
+  color: #102126;
+  text-align: center; }
+
+h5 {
+  font-size: 1.2em; }
+
+input, textarea, button, label {
+  font-family: 'Fjalla One', sans-serif !important; }
+
+label {
+  color: white;
+  padding-bottom: 5px; }
 
 .test {
   border: 1px solid red; }
@@ -204,9 +363,9 @@ textarea {
     background-image: linear-gradient(to right, #fcab62, #eb5b27); }
 
 .box-shadowed {
-  -webkit-box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4);
-  -moz-box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4);
-  box-shadow: 5px -5px 0 rgba(10, 20, 23, 0.4); }
+  -webkit-box-shadow: 5px 5px 0 rgba(10, 20, 23, 0.4);
+  -moz-box-shadow: 5px 5px 0 rgba(10, 20, 23, 0.4);
+  box-shadow: 5px 5px 0 rgba(10, 20, 23, 0.4); }
 
 .card {
   border: 0 !important; }
@@ -262,7 +421,7 @@ button.boom-button-dark {
 footer a {
   color: #eb5b27; }
   footer a:hover {
-    color: #3fc5be; }
+    color: white; }
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;

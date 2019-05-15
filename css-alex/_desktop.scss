@@ -12,23 +12,23 @@
     }
 
     //Setting variables for transition of the logo
-    $transition-property: transform;
-    $transition-duration: 0.25s;
-    $transition-timing: ease-in-out;
-    $transition-delay: 0s;
+    // $transition-property: transform;
+    // $transition-duration: 0.25s;
+    // $transition-timing: ease-in-out;
+    // $transition-delay: 0s;
 
     //setting variables for transformation of the logo
-    $transform-rotation-degrees: 10deg;
-    $transform-x-translation: 5rem;
-    $transform-y-translation: 0rem;
-    $transform-scale: 2;
+    // $transform-rotation-degrees: 10deg;
+    // $transform-x-translation: 5rem;
+    // $transform-y-translation: 0rem;
+    // $transform-scale: 2;
 
     #logo {
         width: 200px;
-        //@include mixin-transition;
+        // @include mixin-transition;
 
         // &:hover {
-        //     // @include mixin-transform;
+        //     @include mixin-transform;
         // }
     }
 
