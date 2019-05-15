@@ -181,43 +181,6 @@ function getPosition(el) {
 }
 //END OF JS FOR AUDIO PLAYER
 
-
-//BEGINNING OF JS FOR SEARCH BAR ====================================================================================================================================================
-$(document).ready(function () {
-    var submitIcon = $('.searchbox-icon');
-    var inputBox = $('.searchbox-input');
-    var searchBox = $('.search-input-animated');
-    var searchButton = $('.search-button');
-    var isOpen = false;
-    submitIcon.click(function () {
-        if (isOpen == false) {
-            searchBox.addClass('searchbox-open');
-            searchButton.addClass('show-search-button');
-            inputBox.focus();
-            isOpen = true;
-        } else {
-            searchBox.removeClass('searchbox-open');
-            searchButton.removeClass('show-search-button');
-            inputBox.focusout();
-            isOpen = false;
-        }
-    });
-    submitIcon.mouseup(function () {
-        return false;
-    });
-    searchBox.mouseup(function () {
-        return false;
-    });
-    $(document).mouseup(function () {
-        if (isOpen == true) {
-            $('.searchbox-icon').css('display', 'block');
-            submitIcon.click();
-        }
-    });
-});
-//END OF JS FOR SEARCH BAR===========================================================================================================================================================
-
-
 //BEGINNING EXPLOSION ANIMATION FOR LOGO
 var logo = document.getElementById('logo'); // id for logo element
 {
