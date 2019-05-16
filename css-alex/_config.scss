@@ -21,7 +21,7 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
   width: 0;
   border: 0px none;
   line-height: 0px;
-  }
+}
 
 //Set the fonts
 @font-face {
@@ -134,22 +134,21 @@ $transform-scale: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  //margin: auto;
+  margin: auto;
 
   .sound-container {
     //Position relative was commented and top -8px did not exist.
-    //position: relative;
-    //top: -8px;
-    //left: 10px;
-    //width: 150px;
-    height: 100%;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 80%;
     display: inline-block;
-
-    //margin-left: 4px;
+    margin-left: 4px;
   }
 
   .sound-container>div {
-    position: relative;
+    /*position: relative;*/
     height: 100%;
     width: 0.05rem;
     background: $color-black;

@@ -26,26 +26,33 @@ h1 {
 h2 {
     font-size: 1.4em;
 }
-h3{
+
+h3 {
     font-size: 1.6em;
     display: block;
     padding: 14px 0.5em;
     color: $color-six;
 }
-h4{
+
+h4 {
     font-size: 1em;
     padding: 0.5em;
     color: $color-eight;
     text-align: center;
 }
-h5{
-    font-size:1.2em;
+
+h5 {
+    font-size: 1.2em;
 }
 
-input, textarea, button, label {
+input,
+textarea,
+button,
+label {
     @include title-font;
 }
-label{
+
+label {
     color: $color-white;
     padding-bottom: 5px;
 }
@@ -142,6 +149,7 @@ $box-shadow: 5px 5px 0 $color-eight;
 .box-shadowed {
     @include box-shadow;
 }
+
 $color-eight: rgba(10, 20, 23, 1); //Re-declaring the original color-eight after using it
 
 //News elements in the news.html
@@ -155,6 +163,7 @@ $box-shadow: 5px 5px 5px $color-nine;
         @include box-shadow;
     }
 }
+
 $color-nine: rgba(83, 81, 86, 1); //Re-declaring the original color-nine after using it
 
 .card-section {
@@ -200,7 +209,11 @@ button.boom-button-dark {
     box-shadow: 2px 1000px 1px $color-black inset;
 }
 
-//John's button
+//John's Wave Animation
+//Sound wave
+.animation-container {
+    @include sound-wave;
+}
 
 //Fanny's button
 .boom-button-white {
@@ -224,11 +237,13 @@ button.boom-button-dark {
         width: 2em;
         transform: translateX(-525%) rotate(35deg);
     }
+
     &:hover {
         box-shadow: 2px 2px 0px 0px rgba($color-black, .4) inset;
-        background-color:transparent;
+        background-color: transparent;
         cursor: pointer
     }
+
     &:hover::after {
         transition: transform 0.45s ease-in-out;
         transform: translateX(200%) rotate(35deg);
