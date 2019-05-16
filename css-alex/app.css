@@ -135,6 +135,17 @@ html * {
   margin: 0;
   box-sizing: border-box; }
 
+.clearfloat {
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+  float: none;
+  height: 0;
+  width: 0;
+  border: 0px none;
+  line-height: 0px; }
+
 @font-face {
   font-family: 'Fjalla One', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Fjalla+One); }
@@ -142,6 +153,17 @@ html * {
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+.clearfloat {
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+  float: none;
+  height: 0;
+  width: 0;
+  border: 0px none;
+  line-height: 0px; }
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;
@@ -183,101 +205,16 @@ html * {
 #mobile-logo {
   width: 150px; }
 
-#audioplayer {
-  width: 195px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 15px; }
-
-#pButton {
-  color: #eb5b27; }
-
-#timeline {
-  width: 70px;
-  border-radius: 15px;
-  background: linear-gradient(to right, #3fc5be, #3aa9e1); }
-
-#playhead {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: linear-gradient(to right, #fcab62, #eb5b27); }
-
-.animation-container {
-  width: 100%;
-  height: 10px;
-  /*position: absolute;*/
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  .animation-container .sound-container {
-    position: relative;
-    top: -8px;
-    left: 10px;
-    height: 100%;
-    display: inline-block; }
-  .animation-container .sound-container > div {
-    /*position: relative;*/
-    height: 100%;
-    width: 0.1rem;
-    background: rgba(0, 0, 0, 0.9);
-    display: inline-block;
-    animation: wave 3s infinite ease-in-out;
-    -webkit-animation: wave 3s infinite ease-in-out;
-    -moz-animation: wave 3s infinite ease-in-out;
-    -ms-animation: wave 3s infinite ease-in-out;
-    -o-animation: wave 3s infinite ease-in-out; }
-  .animation-container .sound-container .rect-2 {
-    animation-delay: 0.1s;
-    -webkit-animation-delay: 0.1s;
-    -moz-animation-delay: 0.1s;
-    -ms-animation-delay: 0.1s;
-    -o-animation-delay: 0.1s; }
-  .animation-container .sound-container .rect-3 {
-    animation-delay: 0.2s;
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -ms-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s; }
-  .animation-container .sound-container .rect-4 {
-    animation-delay: 0.3s;
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    -ms-animation-delay: 0.3s;
-    -o-animation-delay: 0.3s; }
-  .animation-container .sound-container .rect-5 {
-    animation-delay: 0.4s;
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    -ms-animation-delay: 0.4s;
-    -o-animation-delay: 0.4s; }
-  .animation-container .sound-container .rect-6 {
-    animation-delay: 0.5s;
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.6s;
-    -ms-animation-delay: 0.6s;
-    -o-animation-delay: 0.6s; }
-
-@keyframes wave {
-  0% { }
-  100% {
-    transform: scaleY(1);
-    background: #102126; }
-  20% {
-    transform: scaleY(3);
-    background: #3aa9e1; }
-  33% {
-    transform: scaleY(1);
-    background: #3fc5be; }
-  50% {
-    transform: scaleY(3);
-    background: #fcab62; }
-  66% {
-    transform: scaleY(1);
-    background: #fe657e; }
-  84% {
-    transform: scaleY(3);
-    background: #faa294; } }
+.clearfloat {
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+  float: none;
+  height: 0;
+  width: 0;
+  border: 0px none;
+  line-height: 0px; }
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;
@@ -324,7 +261,10 @@ h4 {
 h5 {
   font-size: 1.2em; }
 
-input, textarea, button, label {
+input,
+textarea,
+button,
+label {
   font-family: 'Fjalla One', sans-serif !important; }
 
 label {
@@ -350,6 +290,14 @@ label {
 
 textarea {
   padding: 8px; }
+
+#boomPlayer {
+  width: 100%;
+  height: 100px;
+  margin: 0; }
+
+#embed-player {
+  border-radius: 20px !important; }
 
 .gradiented-box {
   border-radius: 5px; }
@@ -406,22 +354,128 @@ button.boom-button-dark:hover {
 button.boom-button-dark {
   box-shadow: 2px 1000px 1px black inset; }
 
+.animation-container {
+  width: 100%;
+  height: 15px;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+  .animation-container .sound-container {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 80%;
+    display: inline-block;
+    margin-left: 4px; }
+  .animation-container .sound-container > div {
+    /*position: relative;*/
+    height: 100%;
+    width: 0.05rem;
+    background: black;
+    display: inline-block;
+    animation: wave 3s infinite ease-in-out;
+    -webkit-animation: wave 3s infinite ease-in-out;
+    -moz-animation: wave 3s infinite ease-in-out;
+    -ms-animation: wave 3s infinite ease-in-out;
+    -o-animation: wave 3s infinite ease-in-out; }
+  .animation-container .sound-container .rect-2 {
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -ms-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s; }
+  .animation-container .sound-container .rect-3 {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -ms-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s; }
+  .animation-container .sound-container .rect-4 {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s; }
+  .animation-container .sound-container .rect-5 {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s; }
+  .animation-container .sound-container .rect-6 {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.6s;
+    -ms-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s; }
+
+@keyframes wave {
+  0% { }
+  100% {
+    transform: scaleY(1);
+    background: #0a1417; }
+  20% {
+    transform: scaleY(3);
+    background: #3aa9e1; }
+  33% {
+    transform: scaleY(1);
+    background: #3fc5be; }
+  50% {
+    transform: scaleY(3);
+    background: #fcab62; }
+  66% {
+    transform: scaleY(1);
+    background: #fe657e; }
+  84% {
+    transform: scaleY(3);
+    background: #faa294; } }
+
 .boom-button-white {
-  font-family: 'Fjalla One';
   border-radius: 0.7rem;
   padding: .5rem 1.5rem;
   margin-bottom: 15px;
   color: white;
   border: solid 2px white;
-  background-color: transparent; }
+  background-color: transparent;
+  z-index: 1;
+  position: relative;
+  overflow: hidden; }
+  .boom-button-white::after {
+    content: '';
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -120%;
+    bottom: -50%;
+    width: 2em;
+    transform: translateX(-525%) rotate(35deg); }
   .boom-button-white:hover {
-    box-shadow: 2px 2px 0px 0px rgba(10, 20, 23, 0.4) inset;
-    color: white; }
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4) inset;
+    background-color: transparent;
+    cursor: pointer; }
+  .boom-button-white:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translateX(200%) rotate(35deg); }
 
 footer a {
   color: #eb5b27; }
   footer a:hover {
     color: white; }
+
+.clearfloat {
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+  float: none;
+  height: 0;
+  width: 0;
+  border: 0px none;
+  line-height: 0px; }
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;
@@ -430,6 +484,17 @@ footer a {
 @font-face {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
+
+.clearfloat {
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+  float: none;
+  height: 0;
+  width: 0;
+  border: 0px none;
+  line-height: 0px; }
 
 @font-face {
   font-family: 'Fjalla One', sans-serif;

@@ -115,7 +115,9 @@
                                                     <li><a href="contact.html">Contact</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="cell shrink show-for-large">
+                                            <div class="cell shrink large-offset-4">
+                                                <iframe id="boomPlayer" src="https://tunein.com/embed/player/s195836/"
+                                                    scrolling="no" frameborder="no"></iframe>
                                                 <!-- THE PLAYER IS IN THE BODY -->
                                                 <!-- The following commented audio is the one that uses the browser's default controls, not customisable -->
                                                 <!-- <audio id="music-stream" controls preload="metadata">
@@ -140,18 +142,18 @@
                                                         <div class="cell small-4">
                                                             <div id="animationContainer" class="animation-container">
                                                                 <!-- Class is populated by JS when the player is playing -->
-                                                                <!-- <div id="soundContainer" class=""> -->
-                                                                    <!--<div class="rect-1"></div>-->
-                                                                    <!-- <div class="rect-2"></div> -->
-                                                                    <!-- <div class="rect-3"></div> -->
-                                                                    <!-- <div class="rect-4"></div>
+                                                <!-- <div id="soundContainer" class=""> -->
+                                                <!--<div class="rect-1"></div>-->
+                                                <!-- <div class="rect-2"></div> -->
+                                                <!-- <div class="rect-3"></div> -->
+                                                <!-- <div class="rect-4"></div>
                                                                     <div class="rect-5"></div>
                                                                     <div class="rect-6"></div>
                                                                     <div class="rect-5"></div>
                                                                     <div class="rect-4"></div> -->
-                                                                    <!-- <div class="rect-3"></div> -->
-                                                                    <!-- <div class="rect-2"></div> -->
-                                                                    <!-- <div class="rect-1"></div>
+                                                <!-- <div class="rect-3"></div> -->
+                                                <!-- <div class="rect-2"></div> -->
+                                                <!-- <div class="rect-1"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -179,209 +181,232 @@
         <!-- END NAVIGATION BAR Content ======================================================================================================================================= -->
 
         <!-- BEGINNING OF MAIN BODY =========================================================================================================================================== -->
-        <!-- Showing the music player in the body for mobile only. -->
-        <div class="grid-container show-for-small">
-            <div class="grid-x grid-margin-y align-center align-middle">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-y">
                 <div class="cell"></div>
-                <div class="cell shrink">
-                    <!-- Browser default player commented just in case -->
-                    <!-- <audio id="music-stream" controls controlsList="nodownload" preload="metadata">
+            </div>
+        </div>
+        <!-- Showing the music player in the body -->
+        <div class="grid-container show-for-small">
+            <div class="grid-x grid-margin-y grid-padding-x grid-padding-y align-middle">
+                <div class="cell medium-3"></div>
+                <div class="cell medium-6 gradiented-box gradient-five-six">
+                    <iframe id="boomPlayer" src="https://tunein.com/embed/player/s195836/" scrolling="no"
+                        frameborder="no"></iframe>
+                </div>
+                <div class="cell medium-3"></div>
+                <!-- <div class="cell"></div>
+                <div class="cell text-center">
+                    <h3>Now on Air...</h3>
+                </div>-->
+                <!-- <div class="cell small-10 medium-6"> 
+                        <iframe id="boomPlayer" src="https://tunein.com/embed/player/s195836/"
+                        scrolling="no" frameborder="no"></iframe> -->
+                <!-- Browser default player commented just in case -->
+                <!-- <audio id="music-stream" controls controlsList="nodownload" preload="metadata">
                         <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3" type="audio/mpeg">
                     </audio> -->
-                    <audio id="musicPlayer" preload="true">
-                    <!-- <audio class="musicPlayer" preload="true"> -->
-                        <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3">
-                    </audio>
-                    <div class="grid-container">
-                        <div class="grid-x grid-margin-x grid-padding-y align-justify align-middle" id="audioplayer">
-                        <!-- <div class="grid-x grid-margin-x grid-padding-y align-justify align-middle audioplayer"> -->
-                            <div class="cell shrink">
-                                <button id="pButton"><i id="pButtonIcon" class="fas fa-play"></i></button>
-                                <!-- <button class="pButton"><i class="pButtonIcon fas fa-play"></i></button> -->
+                <!-- <audio id="musicPlayer" preload="true"> -->
+                <!-- <audio class="musicPlayer" preload="true"> -->
+                <!-- <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3"> -->
+                <!-- <source src="http://tun.in/se72I">
+                    </audio> -->
+                <!-- <div class="grid-container">
+                        <div class="grid-x grid-padding-x grid-margin-x grid-padding-y grid-margin-y align-spaced align-middle"
+                            id="audioplayer"> -->
+                <!-- <div class="grid-x grid-margin-x grid-padding-y align-justify align-middle audioplayer"> -->
+                <!-- <div class="cell shrink text-center">
+                                <button id="pButton"><i id="pButtonIcon" class="fas fa-play"></i></button> -->
+                <!-- <button class="pButton"><i class="pButtonIcon fas fa-play"></i></button> -->
+                <!-- </div>
+                            <div class="cell auto text-center">
+                                <div id="timeline"> -->
+                <!-- <div class="timeline"> -->
+                <!-- <div id="playhead"></div> -->
+                <!-- <div class="playhead"></div> -->
+                <!-- </div>
                             </div>
-                            <div class="cell auto">
-                                <div id="timeline">
-                                <!-- <div class="timeline"> -->
-                                    <div id="playhead"></div>
-                                    <!-- <div class="playhead"></div> -->
-                                </div>
-                            </div>
-                            <div class="cell small-4">
-                                <div id="animationContainer" class="animation-container">
-                                <!-- <div class="animationContainer animation-container"> -->
-                                    <!-- Class is populated by JS when the player is playing -->
-                                    <div id="soundContainer" class="">
-                                    <!-- <div class="soundContainer "> -->
-                                        <!--<div class="rect-1"></div>-->
-                                        <!-- <div class="rect-2"></div> -->
-                                        <!-- <div class="rect-3"></div> -->
+                            <div class="cell auto text-center">
+                                <div id="animationContainer" class="animation-container"> -->
+                <!-- <div class="animationContainer animation-container"> -->
+                <!-- Class is populated by JS when the player is playing -->
+                <!-- <div id="soundContainer" class=""> -->
+                <!-- <div class="soundContainer "> -->
+                <!-- <div class="rect-1"></div> -->
+                <!-- <div class="rect-2"></div>
+                                        <div class="rect-3"></div>
                                         <div class="rect-4"></div>
                                         <div class="rect-5"></div>
                                         <div class="rect-6"></div>
                                         <div class="rect-5"></div>
                                         <div class="rect-4"></div>
-                                        <!-- <div class="rect-3"></div> -->
-                                        <!-- <div class="rect-2"></div> -->
-                                        <!-- <div class="rect-1"></div> -->
+                                        <div class="rect-3"></div>
+                                        <div class="rect-2"></div> -->
+                <!-- <div class="rect-1"></div> -->
+                <!-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+            <!-- Empty cell/s used for spacing-->
+            <div class="cell"></div>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-x grid-margin-y">
+            <div class="cell"></div>
+        </div>
+    </div>
+    <!---H1 WITH WAVE -->
+    <div class="grid-x grid-padding-y align-center align-middle">
+        <div class="cell auto text-right">
+            <img src="assets/img/wave_left.svg" alt="wave left">
+        </div>
+        <div class="cell shrink">
+            <h1>About BOOM</h1>
+        </div>
+        <div class="cell auto text-left">
+            <img src="assets/img/wave_right.svg" alt="wave right">
+        </div>
+    </div>
+    <!--END OF H1 WAVE-->
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-margin-y align-center">
+            <div class="cell">
+                <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+                <div class="grid-container-fluid gradiented-box gradient-one-two">
+                    <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+                        <div class="cell medium-4">
+                            <img class="img-left box-shadowed" src="https://placehold.it/400" alt="">
+                        </div>
+                        <div class="cell medium-6">
+                            <div class="grid-container-fluid">
+                                <div class="grid-x grid-padding-x grid-padding-y">
+                                    <div class="cell">
+                                        <h2>Lorem Ipsum</h2>
+                                    </div>
+                                    <div class="cell text-justify">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+                                            magnam impedit repudiandae maxime, est recusandae accusantium porro ex
+                                            officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
+                                            Magni, cum?</p>
+                                    </div>
+                                    <div class="cell">
+                                        <button type="button" class="boom-button-white float-right">Read More...
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Empty cell/s used for spacing-->
-                <div class="cell"></div>
+                <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
             </div>
-        </div>
-        <!---H1 WITH WAVE -->
-        <div class="grid-x grid-padding-y align-center align-middle">
-            <div class="cell auto text-right">
-                <img src="assets/img/wave_left.svg" alt="wave left">
-            </div>
-            <div class="cell shrink">
-                <h1>About BOOM</h1>
-            </div>
-            <div class="cell auto text-left">
-                <img src="assets/img/wave_right.svg" alt="wave right">
-            </div>
-        </div>
-        <!--END OF H1 WAVE-->
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x grid-margin-y align-center">
-                <div class="cell">
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                    <div class="grid-container-fluid gradiented-box gradient-one-two">
-                        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-                            <div class="cell medium-4">
-                                <img class="img-left box-shadowed" src="https://placehold.it/400" alt="">
+            <!-- Empty cell/s used  for spacing-->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell">
+                <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+                <div class="grid-container-fluid gradiented-box gradient-three-four">
+                    <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+                        <div class="cell medium-6">
+                            <div class="grid-container-fluid">
+                                <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
+                                    <div class="cell">
+                                        <h2>Lorem Ipsum</h2>
+                                    </div>
+                                    <div class="cell text-justify">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+                                            magnam impedit repudiandae maxime, est recusandae accusantium porro ex
+                                            officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
+                                            Magni, cum?</p>
+                                    </div>
+                                    <div class="cell">
+                                        <button type="button" class="boom-button-white">Read More...</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="cell medium-6">
-                                <div class="grid-container-fluid">
-                                    <div class="grid-x grid-padding-x grid-padding-y">
-                                        <div class="cell">
-                                            <h2>Lorem Ipsum</h2>
-                                        </div>
-                                        <div class="cell text-justify">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-                                                magnam impedit repudiandae maxime, est recusandae accusantium porro ex
-                                                officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
-                                                Magni, cum?</p>
-                                        </div>
-                                        <div class="cell">
-                                            <button type="button" class="boom-button-white float-right">Read More...
-                                            </button>
-                                        </div>
+                        </div>
+                        <div class="cell medium-4">
+                            <img class="img-right box-shadowed" src="https://placehold.it/400" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+    <!---H3 WITH WAVE -->
+    <div class="grid-x grid-padding-y align-center align-middle">
+        <div class="cell auto text-right">
+            <img src="assets/img/wave_left.svg" alt="wave left">
+        </div>
+        <div class="cell shrink">
+            <h3>Lorem Ipsum</h3>
+        </div>
+        <div class="cell auto text-left">
+            <img src="assets/img/wave_right.svg" alt="wave right">
+        </div>
+    </div>
+    <!--END OF H3 WAVE-->
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-margin-y align-center">
+            <div class="cell">
+                <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+                <div class="grid-container-fluid gradiented-box gradient-five-six">
+                    <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+                        <div class="cell medium-4">
+                            <img class="img-left box-shadowed" src="https://placehold.it/400" alt="Left wave">
+                        </div>
+                        <div class="cell medium-6">
+                            <div class="grid-container-fluid">
+                                <div class="grid-x grid-padding-x grid-padding-y">
+                                    <div class="cell">
+                                        <h4>Lorem Ipsum</h4>
+                                    </div>
+                                    <div class="cell text-justify">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+                                            magnam impedit repudiandae maxime, est recusandae accusantium porro ex
+                                            officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
+                                            Magni, cum?</p>
+                                    </div>
+                                    <div class="cell">
+                                        <button type="button" class="boom-button-white float-right">Read More...
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
                 </div>
-                <!-- Empty cell/s used  for spacing-->
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell">
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                    <div class="grid-container-fluid gradiented-box gradient-three-four">
-                        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-                            <div class="cell medium-6">
-                                <div class="grid-container-fluid">
-                                    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-                                        <div class="cell">
-                                            <h2>Lorem Ipsum</h2>
-                                        </div>
-                                        <div class="cell text-justify">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-                                                magnam impedit repudiandae maxime, est recusandae accusantium porro ex
-                                                officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
-                                                Magni, cum?</p>
-                                        </div>
-                                        <div class="cell">
-                                            <button type="button" class="boom-button-white">Read More...</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cell medium-4">
-                                <img class="img-right box-shadowed" src="https://placehold.it/400" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                </div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+                <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
             </div>
+            <!-- Empty cell/s used  for spacing-->
+            <div class="cell"></div>
+            <div class="cell"></div>
         </div>
-        <!---H3 WITH WAVE -->
-        <div class="grid-x grid-padding-y align-center align-middle">
-            <div class="cell auto text-right">
-                <img src="assets/img/wave_left.svg" alt="wave left">
-            </div>
-            <div class="cell shrink">
-                <h3>Lorem Ipsum</h3>
-            </div>
-            <div class="cell auto text-left">
-                <img src="assets/img/wave_right.svg" alt="wave right">
-            </div>
-        </div>
-        <!--END OF H3 WAVE-->
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x grid-margin-y align-center">
-                <div class="cell">
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                    <div class="grid-container-fluid gradiented-box gradient-five-six">
-                        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-                            <div class="cell medium-4">
-                                <img class="img-left box-shadowed" src="https://placehold.it/400" alt="Left wave">
-                            </div>
-                            <div class="cell medium-6">
-                                <div class="grid-container-fluid">
-                                    <div class="grid-x grid-padding-x grid-padding-y">
-                                        <div class="cell">
-                                            <h4>Lorem Ipsum</h4>
-                                        </div>
-                                        <div class="cell text-justify">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-                                                magnam impedit repudiandae maxime, est recusandae accusantium porro ex
-                                                officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
-                                                Magni, cum?</p>
-                                        </div>
-                                        <div class="cell">
-                                            <button type="button" class="boom-button-white float-right">Read More...
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                </div>
-                <!-- Empty cell/s used  for spacing-->
-                <div class="cell"></div>
-                <div class="cell"></div>
-            </div>
-        </div>
-        <!-- END OF MAIN BODY ============================================================================================================================================== -->
+    </div>
+    <!-- END OF MAIN BODY ============================================================================================================================================== -->
 
-        <!-- BEGINNING OF FOOTER =========================================================================================================================================== -->
-        <footer class="grid-container">
-            <div class="grid-x grid-margin-y align-center">
-                <!-- Empty cell/s used  for spacing-->
-                <div class="cell"></div>
-                <div class="cell shrink">
-                    <ul class="menu text-center">
-                        <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
-                        <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
-                    </ul>
-                </div>
+    <!-- BEGINNING OF FOOTER =========================================================================================================================================== -->
+    <footer class="grid-container">
+        <div class="grid-x grid-margin-y align-center">
+            <!-- Empty cell/s used  for spacing-->
+            <div class="cell"></div>
+            <div class="cell shrink">
+                <ul class="menu text-center">
+                    <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-1x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-1x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+                </ul>
             </div>
-        </footer>
-        <!-- END OF FOOTER ================================================================================================================================================= -->
+        </div>
+    </footer>
+    <!-- END OF FOOTER ================================================================================================================================================= -->
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

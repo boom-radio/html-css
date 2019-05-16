@@ -8,7 +8,20 @@ $color-four: rgba(58, 169, 225, 1); //#3AA9E1
 $color-five: rgba(252, 171, 98, 1); //#FCAB62
 $color-six: rgba(235, 91, 39, 1); //#EB5B27
 $color-eight: rgba(16, 33, 38, 1); //#0A1417
+$color-nine: rgba(83, 81, 86, 1);
 $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
+
+.clearfloat {
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+  float: none;
+  height: 0;
+  width: 0;
+  border: 0px none;
+  line-height: 0px;
+}
 
 //Set the fonts
 @font-face {
@@ -115,30 +128,29 @@ $transform-scale: 0;
 //Sound wave
 @mixin sound-wave {
   width: 100%;
-  height: 10px;
+  height: 15px;
   /*position: absolute;*/
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  //margin: auto;
+  margin: auto;
 
   .sound-container {
-    //Position relative was commented and top -10px did not exist.
+    //Position relative was commented and top -8px did not exist.
     position: relative;
-    top: -8px;
+    top: 20px;
     left: 10px;
-    //width: 150px;
-    height: 100%;
+    width: 150px;
+    height: 80%;
     display: inline-block;
-
-    //margin-left: 4px;
+    margin-left: 4px;
   }
 
   .sound-container>div {
     /*position: relative;*/
     height: 100%;
-    width: 0.1rem;
+    width: 0.05rem;
     background: $color-black;
     display: inline-block;
     animation: wave 3s infinite ease-in-out;
