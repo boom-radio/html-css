@@ -253,13 +253,16 @@ h3 {
   color: #eb5b27; }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.2em;
   padding: 0.5em;
   color: #102126;
   text-align: center; }
 
 h5 {
-  font-size: 1.2em; }
+  font-size: 1.1rem; }
+
+p {
+  font-size: 1rem; }
 
 input,
 textarea,
@@ -343,7 +346,8 @@ textarea {
   width: 100%; }
   .bio p {
     padding-left: 0.5rem;
-    font-size: 0.8rem; }
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem; }
 
 button.boom-button,
 button.boom-button-dark {

@@ -35,14 +35,18 @@ h3 {
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.5em;
     color: $color-eight;
     text-align: center;
 }
 
 h5 {
-    font-size: 1.2em;
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 input,
@@ -198,7 +202,8 @@ $color-nine: rgba(83, 81, 86, 1); //Re-declaring the original color-nine after u
 
     p {
         padding-left: 0.5rem;
-        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
     }
 }
 
