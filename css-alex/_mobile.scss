@@ -98,6 +98,14 @@ textarea {
     border-radius: 20px !important;
 }
 
+//Styling of icons on the site
+.icons {
+    height: 70%;
+    width: 70%;
+    background-color: white;
+    padding: 0.5rem;
+}
+
 //This is the customised audio player (Commented because we are using the BOOM embedded one)
 // $color-white: rgba(255, 255, 255, 0.3); //Setting color-white opacity for player border
 // #audioplayer {
