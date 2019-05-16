@@ -93,6 +93,10 @@ textarea {
     height: 100px;
 }
 
+#embed-player {
+    border-radius: 20px !important;
+}
+
 //This is the customised audio player (Commented because we are using the BOOM embedded one)
 // $color-white: rgba(255, 255, 255, 0.3); //Setting color-white opacity for player border
 // #audioplayer {

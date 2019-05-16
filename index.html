@@ -112,47 +112,7 @@
                           <li><a href="contact.html">Contact</a></li>
                         </ul>
                       </div>
-                      <div class="cell shrink">
-                        <!-- The following commented audio is the one that uses the browser's default controls, not customisable -->
-                        <!-- <audio id="music-stream" controls preload="metadata">
-                                                  <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3"
-                                                      type="audio/mpeg">
-                                              </audio> -->
-                        <audio id="music" preload="true">
-                          <source src="media-alex/mp3/01. AC DC - Highway To Hell.mp3">
-                        </audio>
-                        <div class="grid-container">
-                          <div class="grid-x grid-margin-x grid-padding-y align-justify align-middle" id="audioplayer">
-                            <div class="cell shrink">
-                              <button id="pButton"><i id="pButtonIcon" class="fas fa-play"></i></button>
-                            </div>
-                            <div class="cell auto">
-                              <div id="timeline">
-                                <div id="playhead"></div>
-                              </div>
-                            </div>
-                            <div class="cell small-4">
-                              <div id="animationContainer" class="animation-container">
-                                <!-- Class is populated by JS when the player is playing -->
-                                <div id="soundContainer" class="">
-                                  <!--<div class="rect-1"></div>-->
-                                  <!-- <div class="rect-2"></div> -->
-                                  <!-- <div class="rect-3"></div> -->
-                                  <div class="rect-4"></div>
-                                  <div class="rect-5"></div>
-                                  <div class="rect-6"></div>
-                                  <div class="rect-5"></div>
-                                  <div class="rect-4"></div>
-                                  <!-- <div class="rect-3"></div> -->
-                                  <!-- <div class="rect-2"></div> -->
-                                  <!-- <div class="rect-1"></div> -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="cell auto">
+                      <div class="cell auto  show-for-large">
                         <ul class="menu float-right">
                           <li><button type="button" class="clear button"><i class="fas fa-search orange"></i></button>
                           </li>
@@ -173,17 +133,23 @@
 
 
     <!-- BEGINNING OF MAIN BODY -->
-    <!-- Showing the music player in the body for mobile only. -->
-    <div class="grid-container show-for-small-only">
-      <div class="grid-x grid-margin-y align-center align-middle">
-        <div class="cell"></div>
-        <div class="cell shrink">
-          <audio id="music-stream" controls controlsList="nodownload" preload="metadata">
-            <source src=" media-alex/mp3/01. AC DC - Highway To Hell.mp3" type="audio/mpeg">
-          </audio>
+    <!-- Showing the music player in the body -->
+    <div class="grid-container">
+      <div class="grid-x grid-margin-y">
+        <div class="grid-container gradiented-box gradient-five-six">
+          <div class="grid-x grid-margin-y align-center">
+            <div class="cell"></div>
+            <div class="cell text-center">
+              <h4>Now on Air...</h4>
+            </div>
+            <iframe class="cell" id="boomPlayer" src="https://tunein.com/embed/player/s195836/" scrolling="no"
+              frameborder="no"></iframe>
+            <div class="cell"></div>
+          </div>
         </div>
       </div>
     </div>
+
     <!--Start of news Section-->
     <article class="grid-container">
       <!--Title for secton-->
@@ -199,8 +165,6 @@
         <div class="cell small-3">
           <img class="float-left" src="assets/img/wave_right.svg" alt="Left wave">
         </div>
-
-        <!--<div class="cell"></div>-->
       </div>
 
       <!--Start of card section-->
@@ -316,7 +280,6 @@
         </div>
 
         <!-- Empty cell/s used  for spacing-->
-        <!--<div class="cell"></div>
         <div class="cell"></div>-->
 
         <div class="cell">
@@ -325,9 +288,6 @@
               <div class="cell medium-6">
                 <div class="grid-container-fluid">
                   <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
-                    <!--<div class="cell">
-                      <h4>Lorem Ipsum</h4>
-                    </div>-->
                     <div class="cell text-justify">
                       <h4>Lorem Ipsum</h4>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
@@ -368,7 +328,6 @@
         <div class="cell small-3">
           <img class="float-left" src="assets/img/wave_right.svg" alt="Left wave">
         </div>
-        <!--<div class="cell"></div>-->
         <div class="cell">
           <div class="grid-container-fluid gradiented-box gradient-five-six">
             <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
@@ -378,9 +337,6 @@
               <div class="cell medium-6">
                 <div class="grid-container-fluid">
                   <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
-                    <!--<div class="cell">
-                      <h4>Lorem Ipsum</h4>
-                    </div>-->
                     <div class="cell text-justify">
                       <h4>Lorem Ipsum</h4>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
@@ -414,9 +370,6 @@
                   <div class="cell medium-6">
                     <div class="grid-container-fluid">
                       <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
-                        <!--<div class="cell">
-                          <h4>Lorem Ipsum</h4>
-                        </div>-->
                         <div class="cell align-middle text-justify">
                           <h4>Lorem Ipsum</h4>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
@@ -432,7 +385,7 @@
               </div>
             </div>
 
-            <!--Creat space between cells in card section-->
+            <!--Create space between cells in card section-->
             <div class="cell show-for-small show-for-medium hide-for-large"><br></div>
 
             <div class="cell auto">
