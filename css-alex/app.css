@@ -267,6 +267,12 @@ button,
 label {
   font-family: 'Fjalla One', sans-serif !important; }
 
+button a {
+  color: white; }
+
+button a::after {
+  color: #eb5b27; }
+
 label {
   color: white;
   padding-bottom: 5px; }

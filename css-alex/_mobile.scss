@@ -52,6 +52,14 @@ label {
     @include title-font;
 }
 
+button a {
+    color: $color-white;
+}
+
+button a::after {
+    color: $color-six;
+}
+
 label {
     color: $color-white;
     padding-bottom: 5px;
