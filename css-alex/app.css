@@ -385,6 +385,9 @@ textarea {
     margin-bottom: 0.5rem;
     font-size: 0.9rem; }
 
+.shared {
+  margin-bottom: 0.7rem; }
+
 /*
 REMOVED BY JR TO PASS VALIDATION
 button.boom-button,
