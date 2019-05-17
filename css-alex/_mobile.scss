@@ -57,7 +57,7 @@ label {
     @include title-font;
 }
 
-/* Removed to pass validation
+/* Removed by JR to pass validation
 button a {
     color: $color-white;
 }
@@ -214,7 +214,7 @@ $color-nine: rgba(83, 81, 86, 1); //Re-declaring the original color-nine after u
 //BEGINNING BUTTONS STYLES =================================================================================================================
 //John's button
 /*
-REMOVED TO PASS VALIDATION
+REMOVED BY JR TO PASS VALIDATION
 button.boom-button,
 button.boom-button-dark {
     border-radius: 0.5rem;
@@ -239,7 +239,6 @@ button.boom-button-dark {
 }*/
 
 //INSERTED TO PASS VALIDATION
-
 a.boom-button {
     @include title-font;
     border-radius: 0.7rem;
@@ -320,7 +319,6 @@ a.boom-button {
     }
 }
 
-//Fanny's button
 //END BUTTONS STYLES =========================================================================================================
 
 //BEGINNING FOOTER STYLES ????????????????????????????????????????????????????????????????????????????????????????????????????

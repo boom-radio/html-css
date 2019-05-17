@@ -304,7 +304,7 @@ button,
 label {
   font-family: 'Fjalla One', sans-serif !important; }
 
-/* Removed to pass validation
+/* Removed by JR to pass validation
 button a {
     color: $color-white;
 }
@@ -386,7 +386,7 @@ textarea {
     font-size: 0.9rem; }
 
 /*
-REMOVED TO PASS VALIDATION
+REMOVED BY JR TO PASS VALIDATION
 button.boom-button,
 button.boom-button-dark {
     border-radius: 0.5rem;
