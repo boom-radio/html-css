@@ -272,13 +272,14 @@ h6 {
 h1 {
   font-size: 2em;
   display: block;
-  padding: 14px 0.5em;
+  padding: 1em 0.5em;
   color: #eb5b27;
   /*text-transform: uppercase;*/ }
 
 h2 {
   font-size: 1.4em;
-  padding-bottom: 0.5em; }
+  padding-bottom: 1em;
+  padding-top: 0.5em; }
 
 h3 {
   font-size: 1.6em;
