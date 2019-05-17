@@ -409,10 +409,9 @@ button.boom-button-dark:hover {
 button.boom-button-dark {
     box-shadow: 2px 1000px 1px $color-black inset;
 }*/
-a.boom-button,
-a.boom-button-dark {
+a.boom-button {
   font-family: 'Fjalla One', sans-serif !important;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
   padding: .5rem 1.5rem;
   color: white;
   box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
@@ -420,18 +419,25 @@ a.boom-button-dark {
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #fcab62, #eb5b27);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px #535156 inset; }
-
-a.boom-button:hover,
-a.boom-button-dark:hover {
-  box-shadow: none;
-  color: white; }
-
-a.boom-button::after {
-  color: #eb5b27; }
-
-a.boom-button-dark {
-  box-shadow: 2px 1000px 1px black inset; }
+  box-shadow: 2px 1000px 1px #535156 inset;
+  z-index: 1;
+  position: relative;
+  overflow: hidden; }
+  a.boom-button::after {
+    content: '';
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -120%;
+    bottom: -50%;
+    width: 2em;
+    transform: translateX(-525%) rotate(35deg); }
+  a.boom-button:hover {
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4) inset;
+    cursor: pointer; }
+  a.boom-button:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translateX(200%) rotate(35deg); }
 
 .animation-container {
   width: 100%;
@@ -514,6 +520,7 @@ a.boom-button-dark {
     background: #faa294; } }
 
 .boom-button-white {
+  font-family: 'Fjalla One', sans-serif !important;
   border-radius: 0.7rem;
   padding: .5rem 1.5rem;
   margin-bottom: 15px;
@@ -535,7 +542,8 @@ a.boom-button-dark {
   .boom-button-white:hover {
     box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4) inset;
     background-color: transparent;
-    cursor: pointer; }
+    cursor: pointer;
+    color: white; }
   .boom-button-white:hover::after {
     transition: transform 0.45s ease-in-out;
     transform: translateX(200%) rotate(35deg); }
