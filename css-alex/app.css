@@ -205,6 +205,46 @@ html * {
 #mobile-logo {
   width: 150px; }
 
+.multilevel-accordion-menu .is-accordion-submenu-parent a {
+  background: #4d5158; }
+
+.multilevel-accordion-menu .is-accordion-submenu a {
+  background: #35383d; }
+
+.multilevel-accordion-menu .sublevel-1 {
+  text-indent: 1rem; }
+
+.multilevel-accordion-menu .sublevel-2 {
+  text-indent: 2rem; }
+
+.multilevel-accordion-menu .sublevel-3 {
+  text-indent: 3rem; }
+
+.multilevel-accordion-menu .sublevel-4 {
+  text-indent: 4rem; }
+
+.multilevel-accordion-menu .sublevel-5 {
+  text-indent: 5rem; }
+
+.multilevel-accordion-menu .sublevel-6 {
+  text-indent: 6rem; }
+
+.multilevel-accordion-menu .multilevel-accordion-menu a {
+  color: white;
+  box-shadow: inset 0 -1px #41444a; }
+  .multilevel-accordion-menu .multilevel-accordion-menu a::after {
+    border-color: white transparent transparent; }
+
+.multilevel-accordion-menu .menu > li:not(.menu-text) > a {
+  padding: 1.2rem 1rem; }
+
+/*.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="false"] a {
+    &::before /*{
+        content: "\f07b";
+        font-family: FontAwesome;
+        margin-right: 1rem;
+    }
+}*/
 .clearfloat {
   font-size: 0px;
   margin: 0px;
