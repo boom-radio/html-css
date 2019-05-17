@@ -1,6 +1,8 @@
 @import "config";
 
 @include mediaMd {
-    
-    
+    .icons {
+        height: 70%;
+        width: 70%;
+    }
 }
