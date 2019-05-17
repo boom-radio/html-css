@@ -238,13 +238,6 @@ html * {
 .multilevel-accordion-menu .menu > li:not(.menu-text) > a {
   padding: 1.2rem 1rem; }
 
-/*.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="false"] a {
-    &::before /*{
-        content: "\f07b";
-        font-family: FontAwesome;
-        margin-right: 1rem;
-    }
-}*/
 .clearfloat {
   font-size: 0px;
   margin: 0px;

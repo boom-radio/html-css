@@ -94,31 +94,4 @@ $multilevel-accordion-separator: #41444a;
     }
 }
 
-// style for folder icon on subitem anchors without a submenu
-//.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="true"] a.subitem::after {
-//  content: "\f016";
-// font-family: FontAwesome;
-//   margin-right: 1rem;
-//}
-
-// changes folder icon to open then accordion is open
-//.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="true"] a {
-//    &::after {
-//       content: "\f07c";
-//        font-family: FontAwesome;
-//       margin-right: 1rem;
-//    }
-//}
-
-// changes folder icon to closed then accordion is closed
-/*.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="false"] a {
-    &::before /*{
-        content: "\f07b";
-        font-family: FontAwesome;
-        margin-right: 1rem;
-    }
-}*/
-
-
-
 //END NAVIGATION MENU STYLES =================================================================================================================
