@@ -519,7 +519,8 @@ a.boom-button {
     transform: translateX(-525%) rotate(35deg); }
   a.boom-button:hover {
     box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4) inset;
-    cursor: pointer; }
+    cursor: pointer;
+    color: white; }
   a.boom-button:hover::after {
     transition: transform 0.45s ease-in-out;
     transform: translateX(200%) rotate(35deg); }

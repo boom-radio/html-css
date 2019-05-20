@@ -379,7 +379,8 @@ a.boom-button {
 
     &:hover {
         box-shadow: 2px 2px 0px 0px rgba($color-black, .4) inset;
-        cursor: pointer
+        cursor: pointer;
+        color:$color-white;
     }
 
     &:hover::after {
