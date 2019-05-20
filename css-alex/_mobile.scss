@@ -58,20 +58,16 @@ a {
     &:hover {
         color: $color-six;
     }
-    i:hover{
-        color:$color-white;
+
+    i:hover {
+        color: $color-white;
     }
 }
-.orange{
+
+.orange {
     color: $color-six;
 }
 
-input,
-textarea,
-button,
-label {
-    @include title-font;
-}
 
 /* Removed by JR to pass validation
 button a {
@@ -81,11 +77,6 @@ button a {
 button a::after {
     color: $color-six;
 }*/
-
-label {
-    color: $color-white;
-    padding-bottom: 5px;
-}
 
 .test {
     border: 1px solid red;
@@ -172,27 +163,25 @@ textarea {
         border-radius: 5px;
     }
 }
+
 .gradient-one-two {
-        @include gradient-one-two;
-    }
+    @include gradient-one-two;
+}
+
 .gradient-three-four {
-        @include gradient-three-four;
-    }
+    @include gradient-three-four;
+}
+
 .gradient-five-six {
-        @include gradient-five-six;
-    }
+    @include gradient-five-six;
+}
+
 //Setting variables for box shadows on about page boxes
-$box-shadow: 5px 5px 0 rgba($color-eight, 0.3)!important;
+$box-shadow: 5px 5px 0 rgba($color-eight, 0.3) !important;
 
 .box-shadowed {
     @include box-shadow;
 }
-
-$color-eight: rgba(10, 20, 23, 1); //Re-declaring the original color-eight after using it
-
-//News elements in the news.html
-$color-nine: rgba(83, 81, 86, 0.4); //Setting color-nine opacity for box shadow
-$box-shadow: 5px 5px 5px $color-nine;
 
 .card {
     border: 0 !important;
@@ -201,8 +190,6 @@ $box-shadow: 5px 5px 5px $color-nine;
         @include box-shadow;
     }
 }
-
-$color-nine: rgba(83, 81, 86, 1); //Re-declaring the original color-nine after using it
 
 .card-section {
     background-color: $color-nine;
@@ -225,95 +212,116 @@ $color-nine: rgba(83, 81, 86, 1); //Re-declaring the original color-nine after u
     margin-bottom: 0.7rem;
 }
 
-.map{
+.map {
     width: 100%;
     background-size: cover;
-    height:40vh;
+    height: 60vh;
+    max-height: 400px;
 }
 
 /////////STYLES ON LISTEN PAGE////////////////////////////
 /////////TABS
-div{
-    .tabs, .tabs-content, .tabs-content, .accordion, .md-tabs, .accordion-content, .accordion-item{
-        background-color: transparent!important;
+div {
+
+    .tabs,
+    .tabs-content,
+    .tabs-content,
+    .accordion,
+    .md-tabs,
+    .accordion-content,
+    .accordion-item {
+        background-color: transparent !important;
     }
-    .tabs-panel{
-        padding:0;
+
+    .tabs-panel {
+        padding: 0;
     }
+}
+
+.md-tabs,
+.tabs-content {
+    border: none;
+}
+
+.accordion-content {
+    padding: 0;
+}
+
+div.md-tabs {
+    border: 0px !important;
+
+    >.accordion-content {
+        padding: 0;
     }
-    .md-tabs, .tabs-content{
-        border: none;
-    }
-    .accordion-content{
-        padding:0;
-    }
-    div.md-tabs {
-        border:0px!important;
-        >.accordion-content{
-        padding:0;
-        }
-        >.accordion {
-            margin-left: 0;
-            list-style-type: none;
-            >.accordion-item>.accordion-title {
-                position: relative;
-                display: block;
-                padding: 1.25rem 1rem;
-                border: 0px;
-                font-size: 1rem;
-                line-height: 1;
-                @include gradient-three-four;
-                color: $color-white;
-    
-                &:hover {
-                    background-color: $color-four;
-                    color: $color-nav;
-                    outline: none;
-                }
+
+    >.accordion {
+        margin-left: 0;
+        list-style-type: none;
+
+        >.accordion-item>.accordion-title {
+            position: relative;
+            display: block;
+            padding: 1.25rem 1rem;
+            border: 0px;
+            font-size: 1rem;
+            line-height: 1;
+            @include gradient-three-four;
+            color: $color-white;
+
+            &:hover {
+                background-color: $color-four;
+                color: $color-nav;
+                outline: none;
             }
         }
-        >.accordion> {
-            .is-active.accordion-item>a.accordion-title {
-                border-bottom: 4px solid $color-eight;
-                color: $color-black;
-            }
-    
-            .accordion-item>.accordion-content {
-                display: none;
-                border: 0px;
-                background-color: #fefefe;
-                color: #0a0a0a;
-            }
+    }
+
+    >.accordion> {
+        .is-active.accordion-item>a.accordion-title {
+            border-bottom: 4px solid $color-eight;
+            color: $color-black;
+        }
+
+        .accordion-item>.accordion-content {
+            display: none;
+            border: 0px;
+            background-color: #fefefe;
+            color: #0a0a0a;
         }
     }
-    
-        >.accordion>.accordion-item>.accordion-title:focus {
-            background-color: $color-four;
-            color: $color-five;
-            outline: none;
-        }
-    /////////////////END OF TABS
-    ////////////////COLORED CALLOUT
-    .callout {
-        border:none;
-    
-        img {
-            @include box-shadow;
-            border-radius: 10px;
-            margin:  20px auto ;
-            display:block;
-            opacity: .50;
-            &:hover{
-                opacity:1;
-            }
-        }
-        p{
-            display: inline-block;
-            margin :5px 10px;
+}
+
+>.accordion>.accordion-item>.accordion-title:focus {
+    background-color: $color-four;
+    color: $color-five;
+    outline: none;
+}
+
+/////////////////END OF TABS
+////////////////COLORED CALLOUT
+.callout {
+    border: none;
+
+    img {
+        @include box-shadow;
+        border-radius: 10px;
+        margin: 20px auto;
+        display: block;
+        opacity: .50;
+
+        &:hover {
+            opacity: 1;
         }
     }
-    //////////////END OF CALLOUT
-    //////////////END OF LISTEN STYLES//////////////
+
+    p {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
+
+//////////////END OF CALLOUT
+//////////////END OF LISTEN STYLES//////////////
 
 //END BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
@@ -421,15 +429,17 @@ a.boom-button {
     }
 }
 
-.social-button{
-    min-width:200px;
+.social-button {
+    min-width: 200px;
     z-index: 1;
     position: relative;
     overflow: hidden;
-    margin-bottom:0!important;
-    &:hover{
+    margin-bottom: 0 !important;
+
+    &:hover {
         box-shadow: 2px 2px 0px 0px rgba($color-black, .4) inset;
     }
+
     &::after {
         content: '';
         z-index: -1;
@@ -440,6 +450,7 @@ a.boom-button {
         width: 2em;
         transform: translateX(-525%) rotate(35deg);
     }
+
     &:hover::after {
         transition: transform 0.45s ease-in-out;
         transform: translateX(200%) rotate(35deg);

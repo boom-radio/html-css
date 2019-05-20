@@ -193,6 +193,9 @@ html * {
   .off-canvas .menu li button {
     color: #eb5b27; }
 
+.menu input {
+  margin-bottom: 10px !important; }
+
 .title-bar {
   background: #0a0a0a; }
 
@@ -310,12 +313,6 @@ a {
 .orange {
   color: #eb5b27; }
 
-input,
-textarea,
-button,
-label {
-  font-family: 'Fjalla One', sans-serif !important; }
-
 /* Removed by JR to pass validation
 button a {
     color: $color-white;
@@ -324,10 +321,6 @@ button a {
 button a::after {
     color: $color-six;
 }*/
-label {
-  color: white;
-  padding-bottom: 5px; }
-
 .test {
   border: 1px solid red; }
 
@@ -384,9 +377,9 @@ textarea {
 .card {
   border: 0 !important; }
   .card img {
-    -webkit-box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);
-    -moz-box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);
-    box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4); }
+    -webkit-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
+    -moz-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
+    box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important; }
 
 .card-section {
   background-color: #535156;
@@ -407,15 +400,23 @@ textarea {
 .map {
   width: 100%;
   background-size: cover;
-  height: 40vh; }
+  height: 60vh;
+  max-height: 400px; }
 
-div .tabs, div .tabs-content, div .tabs-content, div .accordion, div .md-tabs, div .accordion-content, div .accordion-item {
+div .tabs,
+div .tabs-content,
+div .tabs-content,
+div .accordion,
+div .md-tabs,
+div .accordion-content,
+div .accordion-item {
   background-color: transparent !important; }
 
 div .tabs-panel {
   padding: 0; }
 
-.md-tabs, .tabs-content {
+.md-tabs,
+.tabs-content {
   border: none; }
 
 .accordion-content {
@@ -442,7 +443,7 @@ div.md-tabs {
         color: #0a0a0a;
         outline: none; }
   div.md-tabs > .accordion > .is-active.accordion-item > a.accordion-title {
-    border-bottom: 4px solid #0a1417;
+    border-bottom: 4px solid #102126;
     color: black; }
   div.md-tabs > .accordion > .accordion-item > .accordion-content {
     display: none;
@@ -458,9 +459,9 @@ div.md-tabs {
 .callout {
   border: none; }
   .callout img {
-    -webkit-box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);
-    -moz-box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);
-    box-shadow: 5px 5px 5px rgba(83, 81, 86, 0.4);
+    -webkit-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
+    -moz-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
+    box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
     border-radius: 10px;
     margin: 20px auto;
     display: block;
@@ -586,7 +587,7 @@ a.boom-button {
   0% { }
   100% {
     transform: scaleY(1);
-    background: #0a1417; }
+    background: #102126; }
   20% {
     transform: scaleY(3);
     background: #3aa9e1; }

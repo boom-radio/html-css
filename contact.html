@@ -26,8 +26,8 @@
                 <div class="cell"></div>
                 <div class="cell">
                     <ul class="menu vertical text-center">
-                        <!-- <li><a href="./"><img src="assets/img/boom_logo_orange.svg" alt="Boom Radio Logo"></a></li>
-                            <li><input type="search" placeholder="Search"></li> -->
+                        <!-- <li><a href="./"><img src="assets/img/boom_logo_orange.svg" alt="Boom Radio Logo"></a></li> -->
+                        <li><input type="search" placeholder="Search"></li>
                         <li><a href="./">Home</a></li>
                         <li><a href="listen.html">Listen</a></li>
                         <li><a href="music.html">Music</a></li>
@@ -75,7 +75,7 @@
                     <div id="topBarContainer" class="top-bar-container">
                         <div class="topbar">
                             <!-- Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                            <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="xlarge">
+                            <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="medium">
                                 <div class="title-bar-left">
                                     <div class="grid-container-fluid">
                                         <div class="grid-x grid-padding-y align-justify align-middle">
@@ -99,73 +99,32 @@
                             <div class="title-bar" id="desktop-menu">
                                 <div class="title-bar-left">
                                     <div class="grid-container-fluid">
-                                        <div class="grid-x grid-padding-x grid-margin-y align-middle">
+                                        <div class="grid-x grid-padding-x grid-margin-y align-justify align-middle">
                                             <div class="cell shrink">
-                                                <a href="./"><img id="logo" src="assets/img/boom_logo_orange.svg"
-                                                        alt="Boom Radio Logo"></a>
-                                            </div>
-                                            <div class="cell shrink">
-                                                <button type="button" data-toggle="offCanvas"><img
-                                                        src="assets/img/icons/+.svg" alt="plus button"></button>
-                                            </div>
-                                            <div class="cell shrink">
-                                                <ul class="menu text-center">
-                                                    <li><a href="listen.html">Listen</a></li>
-                                                    <li><a href="music.html">Music</a></li>
-                                                    <li><a href="news.html">News</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="cell shrink">
-                                                <!-- The following commented audio is the one that uses the browser's default controls, not customisable -->
-                                                <!-- <audio id="music-stream" controls preload="metadata">
-                                                        <source src="media/mp3/01. AC DC - Highway To Hell.mp3"
-                                                            type="audio/mpeg">
-                                                    </audio> -->
-                                                <audio id="music" preload="true">
-                                                    <source src="media/mp3/01. AC DC - Highway To Hell.mp3">
-                                                </audio>
-                                                <div class="grid-container">
-                                                    <div class="grid-x grid-margin-x grid-padding-y align-justify align-middle"
-                                                        id="audioplayer">
-                                                        <div class="cell shrink">
-                                                            <button id="pButton"><i id="pButtonIcon"
-                                                                    class="fas fa-play"></i></button>
-                                                        </div>
-                                                        <div class="cell auto">
-                                                            <div id="timeline">
-                                                                <div id="playhead"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cell small-4">
-                                                            <div id="animationContainer" class="animation-container">
-                                                                <!-- Class is populated by JS when the player is playing -->
-                                                                <div id="soundContainer" class="">
-
-                                                                    <!-- <div class="rect-2"></div> -->
-                                                                    <!-- <div class="rect-3"></div> -->
-                                                                    <div class="rect-4"></div>
-                                                                    <div class="rect-5"></div>
-                                                                    <div class="rect-6"></div>
-                                                                    <div class="rect-5"></div>
-                                                                    <div class="rect-4"></div>
-                                                                    <!-- <div class="rect-3"></div> -->
-                                                                    <!-- <div class="rect-2"></div> -->
-                                                                    <!-- <div class="rect-1"></div> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                <div class="grid-x align-left align-middle">
+                                                    <div class="cell shrink">
+                                                        <a href="./"><img id="logo"
+                                                                src="assets/img/boom_logo_orange.svg"
+                                                                alt="Boom Radio Logo"></a>
+                                                    </div>
+                                                    <div class="cell shrink">
+                                                        <button type="button" data-toggle="offCanvas"><img
+                                                                src="assets/img/icons/+.svg" alt="plus button"></button>
+                                                    </div>
+                                                    <div class="cell shrink">
+                                                        <ul class="menu text-center">
+                                                            <li><a href="listen.html">Listen</a></li>
+                                                            <li><a href="music.html">Music</a></li>
+                                                            <li><a href="news.html">News</a></li>
+                                                            <li><a href="about.html">About</a></li>
+                                                            <li><a href="contact.html">Contact</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="cell auto">
-                                                <ul class="menu float-right">
-                                                    <li><button type="button" class="clear button"><i
-                                                                class="fas fa-search orange"></i></button>
-                                                    </li>
-                                                    <li><input type="search" placeholder="Search"></li>
-                                                </ul>
+                                            <div class="cell show-for-large shrink">
+                                                <iframe id="boomPlayer"
+                                                    src="https://tunein.com/embed/player/s195836/"></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -180,14 +139,11 @@
         <!-- END NAVIGATION BAR Content ======================================================================================================================================= -->
 
         <!-- BEGINNING OF MAIN BODY =========================================================================================================================================== -->
-        <!-- Showing the music player in the body for mobile only. -->
+        <!-- Showing the music player in the body -->
         <div class="grid-container show-for-small-only">
-            <div class="grid-x grid-margin-y align-center align-middle">
-                <div class="cell"></div>
-                <div class="cell shrink">
-                    <audio id="music-stream" controls controlsList="nodownload" preload="metadata">
-                        <source src=" media/mp3/01. AC DC - Highway To Hell.mp3" type="audio/mpeg">
-                    </audio>
+            <div class="grid-x grid-margin-y grid-padding-x grid-padding-y align-middle">
+                <div class="cell medium-6 gradiented-box gradient-five-six">
+                    <iframe id="boomPlayer" src="https://tunein.com/embed/player/s195836/"></iframe>
                 </div>
             </div>
         </div>
@@ -226,9 +182,9 @@
                             <textarea placeholder="Write your message here:" rows="8"></textarea>
                         </div>
                     </div>
-                    <div class="grid-x grid-padding-x grid-padding-y text-right">
+                    <div class="grid-x grid-padding-x grid-padding-y">
                         <div class="medium-10 cell">
-                            <button class=" boom-button-white">Send</button>
+                            <a class="boom-button-white float-right">Send</a>
                         </div>
                     </div>
                     <div class="grid-x grid-padding-x align-center ">
@@ -244,20 +200,20 @@
                 <div class="grid-y grid-padding-x grid-padding-y align-center-middle ">
                     <div class="cell show-for-small-only"></div>
                     <div class="cell ">
-                        <button class="social-button button large gradiented-box gradient-three-four"
+                        <a class="social-button button large gradiented-box gradient-three-four"
                             title="Like us on Facebook"> Like us on
-                            <i class="fab fa-facebook-f fa-1x"></i></button>
+                            <i class="fab fa-facebook-f fa-1x"></i></a>
                     </div>
                     <div class="cell"><img src="https://placehold.it/200?text=FacebookFeed" alt="facebook feed"></div>
                     <div class="cell">
-                        <button class="social-button button large gradiented-box gradient-one-two"
-                            title="Follow us on Instagram"> Follow us on <i class="fab fa-instagram fa-1x"></i></button>
+                        <a class="social-button button large gradiented-box gradient-one-two"
+                            title="Follow us on Instagram"> Follow us on <i class="fab fa-instagram fa-1x"></i></a>
                     </div>
                     <div class="cell"><img src="https://placehold.it/200?text=InstagramFeed" alt="instagram feed"></div>
                     <div class="cell">
-                        <button class="social-button button large gradiented-box gradient-five-six"
+                        <a class="social-button button large gradiented-box gradient-five-six"
                             title="Stay tuned on Twitter"> Stay tuned on
-                            <i class="fab fa-twitter fa-1x"></i></button>
+                            <i class="fab fa-twitter fa-1x"></i></a>
                     </div>
                     <div class="cell"><img src="https://placehold.it/200?text=TwitterFeed" alt="twitter feed"></div>
 
