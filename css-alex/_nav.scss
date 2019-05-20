@@ -1,0 +1,97 @@
+@import "config";
+
+//BEGINNING NAVIGATION MENU STYLES====================================================================================================
+$color-black: rgba(0, 0, 0, 0.9);
+
+.off-canvas {
+    background-color: $color-black;
+    width: 100%;
+}
+
+.off-canvas.is-transition-overlap {
+    z-index: 200;
+}
+
+.top-bar-container,
+.off-canvas {
+    font-family: 'Fjalla One', sans-serif;
+
+    a {
+        color: $color-white;
+
+        &:hover {
+            color: $color-six;
+        }
+    }
+
+    .menu {
+
+        li {
+            button {
+                color: $color-six;
+            }
+        }
+    }
+}
+
+.title-bar {
+    background: $color-nav;
+
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+//Mobile logo styles
+#mobile-logo {
+    width: 150px;
+}
+
+
+//Dropdown styles
+// variables
+$multilevel-accordion-bg: #4d5158;
+$multilevel-accordion-sub-bg: #35383d;
+$multilevel-accordion-separator: #41444a;
+
+.multilevel-accordion-menu {
+
+    // background for main accordion items
+    .is-accordion-submenu-parent a {
+        background: $multilevel-accordion-bg;
+    }
+
+    // background for sub accordion items
+    .is-accordion-submenu a {
+        background: $multilevel-accordion-sub-bg;
+    }
+
+    // creates classes for nested elements, sub-item-*
+    @for $i from 1 through 6 {
+        .sublevel-#{$i} {
+            text-indent: 0rem + $i;
+        }
+    }
+
+    .multilevel-accordion-menu a {
+        color: $color-white;
+        // sets accodion item separator color
+        box-shadow: inset 0 -1px $multilevel-accordion-separator;
+
+        &::after {
+            // sets accodion arrow color and direction
+            border-color: $color-white transparent transparent;
+        }
+    }
+
+    // padding for each list item
+    .menu>li:not(.menu-text)>a {
+        padding: 1.2rem 1rem;
+    }
+}
+
+//END NAVIGATION MENU STYLES =================================================================================================================
