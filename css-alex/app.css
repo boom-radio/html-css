@@ -311,9 +311,6 @@ a {
   a i:hover {
     color: white; }
 
-.orange {
-  color: #eb5b27; }
-
 /* Removed by JR to pass validation
 button a {
     color: $color-white;
@@ -341,6 +338,12 @@ label {
 
 textarea {
   padding: 8px; }
+
+form {
+  margin-top: 30px; }
+
+iframe {
+  border: 0 !important; }
 
 .boomPlayer {
   width: 100%;
@@ -402,7 +405,8 @@ textarea {
   width: 100%;
   background-size: cover;
   height: 60vh;
-  max-height: 400px; }
+  max-height: 400px;
+  margin-bottom: 20px; }
 
 div .tabs,
 div .tabs-content,
@@ -459,6 +463,10 @@ div.md-tabs {
 
 .md-tabs > .tabs > .tabs-title.is-active > a:hover {
   color: white; }
+
+.contact a {
+  font-family: inherit !important;
+  font-size: inherit !important; }
 
 .callout {
   border: none;

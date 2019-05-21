@@ -64,11 +64,6 @@ a {
     }
 }
 
-.orange {
-    color: $color-six;
-}
-
-
 /* Removed by JR to pass validation
 button a {
     color: $color-white;
@@ -104,7 +99,12 @@ label {
 textarea {
     padding: 8px;
 }
-
+form{
+    margin-top: 30px;
+}
+iframe{
+    border:0!important;
+}
 //END GENERAL STYLES =================================================================================================================
 
 //BEGINNING BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????
@@ -217,6 +217,7 @@ $box-shadow: 5px 5px 0 rgba($color-eight, 0.3) !important;
     background-size: cover;
     height: 60vh;
     max-height: 400px;
+    margin-bottom:20px;
 }
 
 /////////STYLES ON LISTEN PAGE////////////////////////////
@@ -299,7 +300,13 @@ div.md-tabs {
 .md-tabs > .tabs > .tabs-title.is-active > a:hover{
     color:$color-white;
 }
+.contact{
+    a{
+        font-family: inherit!important;
+        font-size:inherit!important;
 
+    }
+}
 /////////////////END OF TABS
 ////////////////COLORED CALLOUT
 .callout {
