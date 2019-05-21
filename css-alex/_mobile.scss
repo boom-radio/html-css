@@ -54,7 +54,7 @@ p {
 a {
     @include title-font;
     color: $color-white;
-
+    font-size:1.1em;
     &:hover {
         color: $color-six;
     }
@@ -296,11 +296,15 @@ div.md-tabs {
     color: $color-five;
     outline: none;
 }
+.md-tabs > .tabs > .tabs-title.is-active > a:hover{
+    color:$color-white;
+}
 
 /////////////////END OF TABS
 ////////////////COLORED CALLOUT
 .callout {
     border: none;
+    min-height: 400px;
 
     img {
         @include box-shadow;

@@ -304,7 +304,8 @@ p {
 
 a {
   font-family: 'Fjalla One', sans-serif !important;
-  color: white; }
+  color: white;
+  font-size: 1.1em; }
   a:hover {
     color: #eb5b27; }
   a i:hover {
@@ -456,8 +457,12 @@ div.md-tabs {
   color: #fcab62;
   outline: none; }
 
+.md-tabs > .tabs > .tabs-title.is-active > a:hover {
+  color: white; }
+
 .callout {
-  border: none; }
+  border: none;
+  min-height: 400px; }
   .callout img {
     -webkit-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
     -moz-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3) !important;
