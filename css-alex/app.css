@@ -343,7 +343,8 @@ form {
   margin-top: 30px; }
 
 iframe {
-  border: 0 !important; }
+  border: 0 !important;
+  overflow: hidden !important; }
 
 .boomPlayer {
   width: 100%;
