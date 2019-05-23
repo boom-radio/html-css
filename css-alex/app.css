@@ -463,10 +463,13 @@ div.md-tabs {
 .md-tabs > .tabs > .tabs-title.is-active > a:hover {
   color: white; }
 
-.contact a {
-  font-family: inherit !important;
-  font-size: inherit !important; }
+/*.contact {
+    a {
+        font-family: inherit !important;
+        font-size: inherit !important;
 
+    }
+}*/
 .callout {
   border: none;
   min-height: 400px; }
