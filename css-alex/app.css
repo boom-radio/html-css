@@ -154,6 +154,7 @@ html * {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
+/*Styling for button 'glint' effect*/
 .clearfloat {
   font-size: 0px;
   margin: 0px;
@@ -173,6 +174,7 @@ html * {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
+/*Styling for button 'glint' effect*/
 .off-canvas {
   background-color: rgba(0, 0, 0, 0.9);
   width: 100%; }
@@ -260,6 +262,7 @@ html * {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
+/*Styling for button 'glint' effect*/
 body {
   background: #102126;
   font-family: 'Quicksand-Regular', sans-serif; }
@@ -325,13 +328,13 @@ label {
 
 label {
   color: white;
-  padding-bottom: 5px; }
+  padding-bottom: 0.25rem; }
 
 textarea {
-  padding: 8px; }
+  padding: 0.5rem; }
 
 form {
-  margin-top: 30px; }
+  margin-top: 2.5rem; }
 
 iframe {
   border: 0 !important;
@@ -390,6 +393,10 @@ iframe {
     margin-bottom: 0.5rem;
     font-size: 0.9rem; }
 
+.list-group {
+  list-style: disc;
+  padding-left: 2rem; }
+
 .shared {
   margin-bottom: 0.7rem; }
 
@@ -398,7 +405,7 @@ iframe {
   background-size: cover;
   height: 60vh;
   max-height: 400px;
-  margin-bottom: 20px; }
+  margin-bottom: 2rem; }
 
 div .tabs,
 div .tabs-content,
@@ -515,7 +522,8 @@ a.boom-button {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto; }
+  margin: auto;
+  /*Controller for colour of waves*/ }
   .animation-container .sound-container {
     position: relative;
     top: 20px;
@@ -590,7 +598,7 @@ a.boom-button {
 .boom-button-white {
   border-radius: 0.7rem;
   padding: .5rem 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   border: solid 2px white;
   background-color: transparent;
   z-index: 1;
@@ -685,6 +693,7 @@ footer a {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
+/*Styling for button 'glint' effect*/
 @media screen and (min-width: 668px) {
   .icons {
     height: 70%;
@@ -755,6 +764,7 @@ footer a {
   font-family: 'Quicksand-Regular', sans-serif;
   src: url(//fonts.googleapis.com/css?family=Quicksand); }
 
+/*Styling for button 'glint' effect*/
 @media screen and (min-width: 1024px) {
   header {
     background-image: url(../assets/img/BackHeader.png);

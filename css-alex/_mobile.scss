@@ -84,15 +84,15 @@ label {
 
 label {
     color: $color-white;
-    padding-bottom: 5px;
+    padding-bottom: 0.25rem;
 }
 
 textarea {
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 form {
-    margin-top: 30px;
+    margin-top: 2.5rem;
 }
 
 iframe {
@@ -203,6 +203,11 @@ $box-shadow: 5px 5px 0 rgba($color-eight, 0.3);
     }
 }
 
+.list-group {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
 .shared {
     margin-bottom: 0.7rem;
 }
@@ -212,7 +217,8 @@ $box-shadow: 5px 5px 0 rgba($color-eight, 0.3);
     background-size: cover;
     height: 60vh;
     max-height: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    ;
 }
 
 /////////STYLES ON LISTEN PAGE////////////////////////////
@@ -359,7 +365,7 @@ a.boom-button {
 .boom-button-white {
     border-radius: 0.7rem;
     padding: .5rem 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     border: solid 2px $color-white;
     background-color: transparent;
     @include button-hover;

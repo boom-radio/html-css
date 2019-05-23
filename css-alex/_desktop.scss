@@ -5,10 +5,9 @@
         background-image: url(../assets/img/BackHeader.png);
         height: 150px;
     }
-    
+
     .off-canvas {
         width: 15%;
-
     }
 
     //Setting variables for transition of the logo
@@ -25,11 +24,6 @@
 
     #logo {
         width: 200px;
-        // @include mixin-transition;
-
-        // &:hover {
-        //     @include mixin-transform;
-        // }
     }
 
     .img-left,
