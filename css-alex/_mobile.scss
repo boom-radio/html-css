@@ -110,21 +110,18 @@ iframe {
     margin: 0;
 }
 
-//Twitter timeline styles on contact.html
-.instagram-media {
+//Instagram & Facebook timeline styles on contact.html
+.instagram-media,
+#facebook {
     background: #FFF;
     border: 0;
     border-radius: 0;
-    /*box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-    margin: 1px;*/
-    width: 200px !important;
+    width: 200px;
     min-width: 200px !important;
     max-width: 200px !important;
     height: 250px;
     padding: 0;
-    /*width: 99.375%;*/
-    width: -webkit-calc(100% - 2px);
-    width: calc(100% - 2px);
+
 }
 
 //Styling of icons on the site
