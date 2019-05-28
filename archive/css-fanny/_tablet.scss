@@ -1,0 +1,91 @@
+/*Tablet View*/
+@import "config";
+
+@media (min-width: 768px) {
+
+    .about-tile {
+        width: 50%;
+        padding: 1rem;
+        padding: 1rem 2rem 2rem 1rem;
+        color: $color-white;
+        text-align: justify;
+    }
+
+    /////////STYLES ON LISTEN PAGE////////////////////////////
+    /////////TABS ON LISTEN PAGE
+    .slide {
+        background: $color-eight;
+        width: calc(100% / 4);
+        height: 4px;
+        position: relative;
+        left: 0;
+        top: 53px;
+        transition: left 0.3s ease-out;
+    }
+
+    .md-tabs {
+        background-color: $color-five;
+        text-align: center;
+       
+        > {
+
+            .tabs {
+                margin: 0;
+                border: 0;
+                background: transparent;
+                list-style-type: none;
+                display: table;
+                width: 100%;
+                .cell{
+                    padding:5px;
+                }
+                >.tabs-title {
+                    display: table-cell;
+                    width: 25%;
+                    text-align: center;
+                    display: inline-block;
+
+                    &.is-active {
+                        >a {
+                            color: $color-white;
+                            @include gradient-three-four;
+                            outline: none;
+                        }
+
+                        &:nth-of-type(1)~.slide {
+                            left: calc((100% / 4) * 0);
+                        }
+
+                        &:nth-of-type(2)~.slide {
+                            left: calc((100% / 4) * 1);
+                        }
+
+                        &:nth-of-type(3)~.slide {
+                            left: calc((100% / 4) * 2);
+                        }
+
+                        &:nth-of-type(4)~.slide {
+                            left: calc((100% / 4) * 3);
+                        }
+                    }
+
+                    >a {
+                        color: $color-white;
+                        font-size: 16px;
+
+                        &:hover                        {
+                            color: $color-four;
+                            background-color: transparent;
+                        }
+                        &:focus {
+                            @include gradient-three-four;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /////////STYLES ON LISTEN PAGE////////////////////////////
+}

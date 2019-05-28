@@ -7,21 +7,8 @@ $color-three: rgba(63, 197, 190, 1); //#3FC5BE
 $color-four: rgba(58, 169, 225, 1); //#3AA9E1
 $color-five: rgba(252, 171, 98, 1); //#FCAB62
 $color-six: rgba(235, 91, 39, 1); //#EB5B27
-$color-eight: rgba(16, 33, 38, 1); //#0A1417
-$color-nine: rgba(83, 81, 86, 1);
+$color-eight: rgb(16, 33, 38); //#0A1417
 $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
-
-.clearfloat {
-  font-size: 0px;
-  margin: 0px;
-  padding: 0px;
-  clear: both;
-  float: none;
-  height: 0;
-  width: 0;
-  border: 0px none;
-  line-height: 0px;
-}
 
 //Set the fonts
 @font-face {
@@ -46,7 +33,7 @@ $color-nav: rgba(10, 10, 10, 1); //#0a0a0a
 }
 
 @mixin mediaMd {
-  @media screen and (min-width: 668px) {
+  @media screen and (min-width: 665px) {
     @content;
   }
 }
@@ -82,7 +69,7 @@ $box-shadow: 0 0 0 0;
 //Set box shadow colours
 @mixin box-shadow {
   -webkit-box-shadow: $box-shadow;
-  -moz-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow ;
   box-shadow: $box-shadow;
 }
 
@@ -128,29 +115,29 @@ $transform-scale: 0;
 //Sound wave
 @mixin sound-wave {
   width: 100%;
-  height: 15px;
+  height: 10px;
   /*position: absolute;*/
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
+  //margin: auto;
 
   .sound-container {
-    //Position relative was commented and top -8px did not exist.
+    //Position relative was commented and top -10px did not exist.
     position: relative;
-    top: 20px;
-    left: 10px;
-    width: 150px;
-    height: 80%;
+    top: -5px;
+    //width: 150px;
+    height: 100%;
     display: inline-block;
-    margin-left: 4px;
+
+    //margin-left: 4px;
   }
 
   .sound-container>div {
     /*position: relative;*/
     height: 100%;
-    width: 0.05rem;
+    width: 0.1rem;
     background: $color-black;
     display: inline-block;
     animation: wave 3s infinite ease-in-out;
@@ -201,7 +188,6 @@ $transform-scale: 0;
     -o-animation-delay: 0.6s;
   }
 
-  /*Controller for colour of waves*/
   @keyframes wave {
     0% {}
 
@@ -237,33 +223,13 @@ $transform-scale: 0;
   }
 }
 
-/*Styling for button 'glint' effect*/
-@mixin button-hover {
-  z-index: 1;
-  position: relative;
-  overflow: hidden;
+//Set text colour - if required
+// @function set-text-color($color) {
+//     @if (lightness($color) > 48) {
+//       @return #000;
+//     }
 
-  &::after {
-    content: '';
-    z-index: -1;
-    background-color: hsla(0, 0%, 100%, 0.2);
-    position: absolute;
-    top: -300%;
-    bottom: -90%;
-    width: 5em;
-    transform: translateX(-400%) rotate(35deg);
-  }
-
-  &:hover {
-    box-shadow: 2px 2px 0px 0px rgba($color-black, .4) inset;
-    background-color: transparent;
-    cursor: pointer;
-    color: $color-white;
-  }
-
-  &:hover::after {
-    transition: transform 0.45s ease-in-out;
-    transform: translateX(200%) rotate(35deg);
-  }
-
-}
+//     @else {
+//       @return #fff;
+//     }
+//   }
