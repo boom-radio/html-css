@@ -20,7 +20,6 @@ h1 {
     display: block;
     padding: 1em 0.5em;
     color: $color-six;
-    /*text-transform: uppercase;*/
 }
 
 h2 {
@@ -54,7 +53,8 @@ p {
 a {
     @include title-font;
     color: $color-white;
-    font-size:1.1em;
+    font-size: 1.1em;
+
     &:hover {
         color: $color-six;
     }
@@ -63,15 +63,6 @@ a {
         color: $color-white;
     }
 }
-
-/* Removed by JR to pass validation
-button a {
-    color: $color-white;
-}
-
-button a::after {
-    color: $color-six;
-}*/
 
 .test {
     border: 1px solid red;
@@ -93,19 +84,28 @@ label {
 
 label {
     color: $color-white;
-    padding-bottom: 5px;
+    padding-bottom: 0.25rem;
 }
 
 textarea {
-    padding: 8px;
+    padding: 0.5rem;
 }
-form{
-    margin-top: 30px;
+
+form {
+    margin-top: 2.5rem;
 }
+<<<<<<< HEAD
 iframe{
     border:0!important;
-    overflow: hidden!important;
+    // overflow: hidden!important; property doesn't work on TuneIn player
+=======
+
+iframe {
+    border: 0 !important;
+    overflow: hidden !important;
+>>>>>>> 908b64e0b657559fb24fe559055a2b73a5802f7a
 }
+
 //END GENERAL STYLES =================================================================================================================
 
 //BEGINNING BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????
@@ -116,8 +116,18 @@ iframe{
     margin: 0;
 }
 
-#embed-player {
-    border-radius: 20px !important;
+//Instagram & Facebook feed styles on contact.html
+.instagram-media,
+#facebook {
+    background: #FFF;
+    border: 0;
+    border-radius: 0;
+    width: 200px;
+    min-width: 200px !important;
+    max-width: 200px !important;
+    height: 250px;
+    padding: 0;
+
 }
 
 //Styling of icons on the site
@@ -178,7 +188,7 @@ iframe{
 }
 
 //Setting variables for box shadows on about page boxes
-$box-shadow: 5px 5px 0 rgba($color-eight, 0.3) !important;
+$box-shadow: 5px 5px 0 rgba($color-eight, 0.3);
 
 .box-shadowed {
     @include box-shadow;
@@ -209,6 +219,11 @@ $box-shadow: 5px 5px 0 rgba($color-eight, 0.3) !important;
     }
 }
 
+.list-group {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
 .shared {
     margin-bottom: 0.7rem;
 }
@@ -218,7 +233,8 @@ $box-shadow: 5px 5px 0 rgba($color-eight, 0.3) !important;
     background-size: cover;
     height: 60vh;
     max-height: 400px;
-    margin-bottom:20px;
+    margin-bottom: 2rem;
+    ;
 }
 
 /////////STYLES ON LISTEN PAGE////////////////////////////
@@ -298,16 +314,19 @@ div.md-tabs {
     color: $color-five;
     outline: none;
 }
-.md-tabs > .tabs > .tabs-title.is-active > a:hover{
-    color:$color-white;
+
+.md-tabs>.tabs>.tabs-title.is-active>a:hover {
+    color: $color-white;
 }
-.contact{
-    a{
-        font-family: inherit!important;
-        font-size:inherit!important;
+
+/*.contact {
+    a {
+        font-family: inherit !important;
+        font-size: inherit !important;
 
     }
-}
+}*/
+
 /////////////////END OF TABS
 ////////////////COLORED CALLOUT
 .callout {
@@ -338,31 +357,6 @@ div.md-tabs {
 //END BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
 //BEGINNING BUTTONS STYLES =================================================================================================================
-//John's button
-/*
-REMOVED BY JR TO PASS VALIDATION
-button.boom-button,
-button.boom-button-dark {
-    border-radius: 0.5rem;
-    padding: .5rem 1.5rem;
-    color: $color-white;
-    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-    border: solid 2px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, $color-five, $color-six);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: 2px 1000px 1px $color-nine inset;
-}
-
-button.boom-button:hover,
-button.boom-button-dark:hover {
-    box-shadow: none;
-    color: white;
-}
-
-button.boom-button-dark {
-    box-shadow: 2px 1000px 1px $color-black inset;
-}*/
 
 //INSERTED TO PASS VALIDATION
 a.boom-button {
@@ -374,7 +368,7 @@ a.boom-button {
     background-origin: border-box;
     background-clip: content-box, border-box;
     box-shadow: 2px 1000px 1px $color-nine inset;
-    @include button-hover; 
+    @include button-hover;
 }
 
 //John's Wave Animation
@@ -387,20 +381,21 @@ a.boom-button {
 .boom-button-white {
     border-radius: 0.7rem;
     padding: .5rem 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     border: solid 2px $color-white;
     background-color: transparent;
-    @include button-hover; 
+    @include button-hover;
 }
 
 .social-button {
     min-width: 200px;
-    margin-bottom: 0 !important; 
-    @include button-hover; 
+    margin-bottom: 0 !important;
+    @include button-hover;
 }
+
 .small-social-button {
-    margin:5px;
-    @include button-hover; 
+    margin: 5px;
+    @include button-hover;
 }
 
 //END BUTTONS STYLES =========================================================================================================

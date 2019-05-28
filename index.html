@@ -2,7 +2,13 @@
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta name="title" content="Boom Radio">
+  <meta name="description"
+    content="Home site for the TAFE Student Radio station based in Leederville, Perth. Plays all modern music genres and promotes locals artists and new music">
+  <meta name="keywords" content="radio,music, artists, dance, rock, promote, concerts, pop,singer, songwriter">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
@@ -15,8 +21,8 @@
 </head>
 
 <body>
-  <!-- ============================ OFF CANVAS ASIDE ======================================================= -->
-  <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
+  <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
+  <!-- In the off-canvas DIV Listen!es everything needed in the side appearing menu -->
   <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
     <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
     <div class="grid-container-fluid">
@@ -26,34 +32,35 @@
         <div class="cell"></div>
         <div class="cell">
           <ul class="menu vertical text-center">
-            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="./"><img src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo"></a></li> -->
+            <li><input type="search" placeholder="Search"></li>
+            <li><a href="./">Home</a></li>
             <li><a href="listen.html">Listen</a></li>
             <li><a href="music.html">Music</a></li>
             <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <button class="close-button" aria-label="Close alert" type="button" data-close>
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="cell">
-        </div>
-
         <!-- Empty cell/s used  for spacing-->
         <div class="cell"></div>
         <div class="cell shrink">
           <ul class="menu text-center">
-            <li><a href="https://www.facebook.com/boomradioau/"><i class="fab fa-facebook-f fa-1x"></i></a></li>
+            <li><a href="https://www.facebook.com/boomradioau/"><i class="fab fa-facebook-f fa-1x"></i></a>
+            </li>
             <li><a href="https://twitter.com/boomradioau"><i class="fab fa-twitter fa-1x"></i></a></li>
-            <li><a href="https://www.instagram.com/boomradioau/"><i class="fab fa-instagram fa-1x"></i></a></li>
-            <li><a href="/index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+            <li><a href="https://www.instagram.com/boomradioau/"><i class="fab fa-instagram fa-1x"></i></a>
+            </li>
+            <li><a href="index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </aside>
-  <!-- END OF OFF CANVAS ASIDE ======================================================= -->
+  <!-- END OFF CANVAS ASIDE ================================================================================================================================================ -->
 
   <!-- OFF CANVAS CONTENT (Whole website)================================================= -->
   <!-- In the off-canvas-content DIV goes the whole page content -->
@@ -68,14 +75,14 @@
     <!-- END HEADER Content ??????????????????????????????????????????????????????????????? -->
 
 
-    <!-- NAVIGATION BAR Content =========================================================================== -->
+    <!-- NAVIGATION BAR Content ========================================================================================================================================= -->
     <div class="grid-container-fluid">
       <div class="grid-x">
         <div class="cell">
           <div id="topBarContainer" class="top-bar-container">
             <div class="topbar">
               <!-- Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????????? -->
-              <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="xlarge">
+              <div class="title-bar" data-responsive-toggle="desktop-menu" data-hide-for="medium">
                 <div class="title-bar-left">
                   <div class="grid-container-fluid">
                     <div class="grid-x grid-padding-y align-justify align-middle">
@@ -84,51 +91,49 @@
                             alt="plus button"></button>
                       </div>
                       <div class="cell small-10 text-center">
-                        <img id="mobile-logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio Logo">
+                        <img id="mobile-logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo">
                       </div>
-                      <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE LOGO -->
+                      <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE logo -->
                       <div class="cell small-1"></div>
                     </div>
                   </div>
                 </div>
               </div>
-
               <!-- END Mobile top bar ????????????????????????????????????????????????????????????????????????????????????????? -->
 
               <!-- Desktop top bar //////////////////////////////////////////////////////////////////////////////////////////// -->
               <div class="title-bar" id="desktop-menu">
                 <div class="title-bar-left">
                   <div class="grid-container-fluid">
-                    <div class="grid-x grid-padding-x grid-margin-y align-middle">
+                    <div class="grid-x grid-padding-x grid-margin-y align-justify align-middle">
                       <div class="cell shrink">
-                        <a href="./"><img id="logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio Logo"></a>
+                        <div class="grid-x align-left align-middle">
+                          <div class="cell shrink">
+                            <a href="./"><img id="logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo"></a>
+                          </div>
+                          <div class="cell shrink">
+                            <button type="button" data-toggle="offCanvas"><img src="assets/img/icons/+.svg"
+                                alt="plus button"></button>
+                          </div>
+                          <div class="cell shrink">
+                            <ul class="menu text-center">
+                              <li><a href="listen.html">Listen</a></li>
+                              <li><a href="music.html">Music</a></li>
+                              <li><a href="news.html">News</a></li>
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
-                      <div class="cell shrink">
-                        <button type="button" data-toggle="offCanvas"><img src="assets/img/icons/+.svg"
-                            alt="plus button"></button>
-                      </div>
-                      <div class="cell shrink">
-                        <ul class="menu text-center horizontal">
-                          <li><a href="listen.html">Listen</a></li>
-                          <li><a href="music.html">Music</a></li>
-                          <li><a href="news.html">News</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                      </div>
-                      <div class="cell auto  show-for-large">
-                        <ul class="menu float-right">
-                          <li><button type="button" class="clear button"><i class="fas fa-search orange"></i></button>
-                          </li>
-                          <li><input type="search" placeholder="Search"></li>
-                        </ul>
+                      <div class="cell show-for-large shrink">
+                        <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/"></iframe>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- END Desktop top bar ///////////////////////////////////////////////////////////////////////////////////////////// -->
-
             </div>
           </div>
         </div>
@@ -139,18 +144,14 @@
 
     <!-- BEGINNING OF MAIN BODY -->
     <!-- Showing the music player in the body -->
-    <div class="grid-container large-offset-6 medium-offset-6">
-      <div class="grid-x grid-margin-y">
-        <div class="grid-container gradiented-box gradient-five-six">
-          <div class="grid-x grid-margin-y align-center">
-            <div class="cell"></div>
-            <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/"></iframe>
-            <div class="cell"></div>
-          </div>
+    <div class="grid-container show-for-small hide-for-large">
+      <div class="grid-x grid-margin-y grid-padding-x grid-padding-y align-middle">
+        <div class="cell medium-3"></div>
+        <div class="cell medium-6 gradiented-box gradient-five-six">
+          <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/"></iframe>
         </div>
       </div>
     </div>
-
     <!--Start of news Section-->
     <article class="grid-container">
       <!--Title for secton-->
@@ -237,7 +238,7 @@
             <div class="card-section">
               <div class="bio">
                 <h5 class="section-title">Meet the Team</h5>
-                <p>Find out about our weekly program schedule and acces our presenters bio's
+                <p>Find out about our weekly program schedule and access our presenters bio's
                 </p>
               </div>
               <div class="cell">
@@ -256,7 +257,7 @@
                   </div>
                 </div>
               </div>
-              <a class="boom-button float-right" href="/music.html">More</a>
+              <a class="boom-button float-right" href="listen.html">More</a>
             </div>
           </div>
         </div>
@@ -296,11 +297,9 @@
               <div class="grid-container-fluid">
                 <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
                   <div class="cell text-justify">
-                    <h2>Lorem Ipsum - Music</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. estiae,
-                      magnam impedit repudiandae maxime, est recusandae accusantium porro ex
-                      officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
-                      Magni, cum?</p>
+                    <h2>Boom on the Road</h2>
+                    <p>The Boom Radio team hit the road recently hosting the show live from our tent, we were
+                      entertained by some live performances and the usual banter!</p>
                   </div>
                   <div class="cell">
                     <a href="" class="boom-button-white float-left">Read More...
@@ -316,6 +315,7 @@
           <!--</div>-->
         </div>
       </div>
+
     </div>
     <!--End of music section-->
 
@@ -323,7 +323,9 @@
     <!--Beginning of Social section-->
     <div class="grid-container">
       <div class="grid-x grid-margin-x grid-margin-y align-center">
+
         <!-- Empty cell/s used  for spacing-->
+        <div class="cell"></div>
         <div class="cell"></div>
         <!---Title with Wave -->
         <div class="grid-x grid-padding-y align-center align-middle">
@@ -350,14 +352,16 @@
                 <div class="grid-container-fluid">
                   <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
                     <div class="cell text-justify">
-                      <h2>Lorem Ipsum</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. estiae,
-                        magnam impedit repudiandae maxime, est recusandae accusantium porro ex
-                        officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
-                        Magni, cum?</p>
+                      <h2>Ticket Giveaway</h2>
+                      <p>Boom is giving you the chance to win 2 tickets to see Dean Lewis at his upcoming concert this
+                        Wednesday the 15th May</p>
+                      <br>
+                      <p>To enter, simply like our Facebook page and Tag a mate you would take! Winner will be announced
+                        on
+                        Tuesday's Drive Show with Pete and Matt...</p>
                     </div>
                     <div class="cell">
-                      <a href="" class="boom-button-white float-right">Read More...
+                      <a href="https://www.facebook.com/boomradioau/" class="boom-button-white float-right">Enter
                       </a>
                     </div>
                   </div>
@@ -384,14 +388,14 @@
                     <div class="grid-container-fluid">
                       <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y">
                         <div class="cell align-middle text-justify">
-                          <h2>Lorem Ipsum</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. estiae,
-                            magnam impedit repudiandae maxime</p>
+                          <h2>Promote your music</h2>
+                          <p>Boom Radio always looks to promote the best local artists. If you want us to play your
+                            music, get in touch with us. Click the button below for more information</p>
                         </div>
                         <div class="cell show-for-small hide-for-large">
                         </div>
                         <div class="cell">
-                          <a href="" class="boom-button-white float-right">Read More...
+                          <a href="music.html" class="boom-button-white float-right">Requests
                           </a>
                         </div>
                       </div>
@@ -408,12 +412,11 @@
                   <img src="assets/img/boom_team/boom_team_medium.jpg" alt="Boom Radio team">
                   <div class=" card-section">
                     <div class="bio">
-                      <h5 class="section-title">Title</h5>
-                      <p>Cupidatat et sint nostrud deserunt labore minim ea voluptate exercitation voluptate adipisicing
-                        ut.
+                      <h5 class="section-title">Schedule</h5>
+                      <p>Find out about our weekly program schedule and access our presenters bio's
                       </p>
                     </div>
-                    <a class="boom-button float-right" href="/listen.html">More</a>
+                    <a class="boom-button float-right" href="listen.html">More</a>
                   </div>
                 </div>
               </div>
@@ -436,7 +439,7 @@
             <li><a href="https://www.facebook.com/boomradioau/"><i class="fab fa-facebook-f fa-1x"></i></a></li>
             <li><a href="https://twitter.com/boomradioau"><i class="fab fa-twitter fa-1x"></i></a></li>
             <li><a href="https://www.instagram.com/boomradioau/"><i class="fab fa-instagram fa-1x"></i></a></li>
-            <li><a href="/index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+            <li><a href="index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
           </ul>
         </div>
       </div>

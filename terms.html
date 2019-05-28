@@ -2,10 +2,16 @@
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
+    <meta name="title" content="Boom Radio">
+    <meta name="description"
+        content="Home site for the TAFE Student Radio station based in Leederville, Perth. Plays all modern music genres and promotes locals artists and new music">
+    <meta name="keywords" content="radio,music, artists, dance, rock, promote, concerts, pop,singer, songwriter">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>T & C's</title>
     <link rel="icon" href="assets/img/boom_logo_orange.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css">
     <link rel="stylesheet" href="assets/fonts/fa/css/all.css">
@@ -16,7 +22,7 @@
 
 <body>
     <!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
-    <!-- In the off-canvas DIV goes everything needed in the side appearing menu -->
+    <!-- In the off-canvas DIV Listen!es everything needed in the side appearing menu -->
     <aside class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
         <!-- Use data-transition="overlap" to overlap the off-canvas on the page-->
         <div class="grid-container-fluid">
@@ -26,7 +32,7 @@
                 <div class="cell"></div>
                 <div class="cell">
                     <ul class="menu vertical text-center">
-                        <!-- <li><a href="./"><img src="assets/img/boom_logo_orange.svg" alt="Boom Radio Logo"></a></li> -->
+                        <!-- <li><a href="./"><img src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo"></a></li> -->
                         <li><input type="search" placeholder="Search"></li>
                         <li><a href="./">Home</a></li>
                         <li><a href="listen.html">Listen</a></li>
@@ -48,7 +54,7 @@
                         <li><a href="https://twitter.com/boomradioau"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="https://www.instagram.com/boomradioau/"><i class="fab fa-instagram fa-1x"></i></a>
                         </li>
-                        <li><a href="/index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+                        <li><a href="index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -85,9 +91,9 @@
                                             </div>
                                             <div class="cell small-10 text-center">
                                                 <img id="mobile-logo" src="assets/img/boom_logo_orange.svg"
-                                                    alt="Boom Radio Logo">
+                                                    alt="Boom Radio logo">
                                             </div>
-                                            <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE LOGO -->
+                                            <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE logo -->
                                             <div class="cell small-1"></div>
                                         </div>
                                     </div>
@@ -99,36 +105,33 @@
                             <div class="title-bar" id="desktop-menu">
                                 <div class="title-bar-left">
                                     <div class="grid-container-fluid">
-                                        <div class="grid-x grid-padding-x grid-margin-y align-middle">
+                                        <div class="grid-x grid-padding-x grid-margin-y align-justify align-middle">
                                             <div class="cell shrink">
-                                                <a href="./"><img id="logo" src="assets/img/boom_logo_orange.svg"
-                                                        alt="Boom Radio Logo"></a>
+                                                <div class="grid-x align-left align-middle">
+                                                    <div class="cell shrink">
+                                                        <a href="./"><img id="logo"
+                                                                src="assets/img/boom_logo_orange.svg"
+                                                                alt="Boom Radio logo"></a>
+                                                    </div>
+                                                    <div class="cell shrink">
+                                                        <button type="button" data-toggle="offCanvas"><img
+                                                                src="assets/img/icons/+.svg" alt="plus button"></button>
+                                                    </div>
+                                                    <div class="cell shrink">
+                                                        <ul class="menu text-center">
+                                                            <li><a href="listen.html">Listen</a></li>
+                                                            <li><a href="music.html">Music</a></li>
+                                                            <li><a href="news.html">News</a></li>
+                                                            <li><a href="about.html">About</a></li>
+                                                            <li><a href="contact.html">Contact</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="cell shrink">
-                                                <button type="button" data-toggle="offCanvas"><img
-                                                        src="assets/img/icons/+.svg" alt="plus button"></button>
-                                            </div>
-                                            <div class="cell shrink">
-                                                <ul class="menu text-center">
-                                                    <li><a href="listen.html">Listen</a></li>
-                                                    <li><a href="music.html">Music</a></li>
-                                                    <li><a href="news.html">News</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="cell shrink show-for-large">
+                                            <div class="cell show-for-large shrink">
                                                 <iframe class="boomPlayer"
                                                     src="https://tunein.com/embed/player/s195836/"></iframe>
                                             </div>
-                                            <!-- <div class="cell auto  show-for-large">
-                                                <ul class="menu float-right">
-                                                    <li><button type="button" class="clear button"><i
-                                                                class="fas fa-search orange"></i></button>
-                                                    </li>
-                                                    <li><input type="search" placeholder="Search"></li>
-                                                </ul>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -142,13 +145,7 @@
         <!-- END NAVIGATION BAR Content ======================================================================================================================================= -->
 
         <!-- BEGINNING OF MAIN BODY =========================================================================================================================================== -->
-        <!-- Grid with empty cell for spacing -->
-        <div class="grid-container show-for-small hide-for-large">
-            <div class="grid-x grid-margin-y">
-                <!-- Empty cell/s used for spacing-->
-                <div class="cell"></div>
-            </div>
-        </div>
+
         <!-- Showing the music player in the body -->
         <div class="grid-container show-for-small hide-for-large">
             <div class="grid-x grid-margin-y grid-padding-x grid-padding-y align-middle">
@@ -156,99 +153,12 @@
                 <div class="cell medium-6 gradiented-box gradient-five-six">
                     <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/"></iframe>
                 </div>
-                <div class="cell medium-3"></div>
             </div>
-            <!-- Empty cell/s used for spacing-->
-            <div class="cell"></div>
         </div>
         <!-- Grid with empty cell for spacing -->
         <div class="grid-container show-for-small hide-for-large">
             <div class="grid-x grid-margin-y">
                 <!-- Empty cell/s used for spacing-->
-                <div class="cell"></div>
-            </div>
-        </div>
-        <!---H1 WITH WAVE -->
-        <div class="grid-x grid-padding-y align-center align-middle">
-            <div class="cell auto text-right">
-                <img src="assets/img/wave_left.svg" alt="wave left">
-            </div>
-            <div class="cell shrink">
-                <h1>About BOOM</h1>
-            </div>
-            <div class="cell auto text-left">
-                <img src="assets/img/wave_right.svg" alt="wave right">
-            </div>
-        </div>
-        <!--End Title with Wave-->
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x grid-margin-y align-center">
-                <div class="cell">
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                    <div class="grid-container-fluid gradiented-box gradient-one-two">
-                        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-                            <div class="cell medium-4">
-                                <img class="img-left box-shadowed" src="assets/img/shows/urban_jungle_lrg.jpg"
-                                    alt="show image">
-                            </div>
-                            <div class="cell medium-6">
-                                <div class="grid-container-fluid">
-                                    <div class="grid-x grid-padding-x grid-padding-y">
-                                        <div class="cell">
-                                            <h2>Lorem Ipsum</h2>
-                                        </div>
-                                        <div class="cell text-justify">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-                                                magnam impedit repudiandae maxime, est recusandae accusantium porro ex
-                                                officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
-                                                Magni, cum?</p>
-                                        </div>
-                                        <div class="cell">
-                                            <a href="" class="boom-button-white float-right">Read More...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                </div>
-                <!-- Empty cell/s used  for spacing-->
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell">
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                    <div class="grid-container-fluid gradiented-box gradient-three-four">
-                        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-                            <div class="cell medium-6">
-                                <div class="grid-container-fluid">
-                                    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-                                        <div class="cell">
-                                            <h2>Lorem Ipsum</h2>
-                                        </div>
-                                        <div class="cell text-justify">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-                                                magnam impedit repudiandae maxime, est recusandae accusantium porro ex
-                                                officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
-                                                Magni, cum?</p>
-                                        </div>
-                                        <div class="cell">
-                                            <a href="" class="boom-button-white float-left">Read More...
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cell medium-4">
-                                <img class="img-right box-shadowed" src="assets/img/shows/the_hype_lrg.jpg"
-                                    alt="show image">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-                </div>
-                <div class="cell"></div>
                 <div class="cell"></div>
             </div>
         </div>
@@ -258,7 +168,7 @@
                 <img src="assets/img/wave_left.svg" alt="wave left">
             </div>
             <div class="cell shrink">
-                <h3>Lorem Ipsum</h3>
+                <h1>Terms & Conditions</h1>
             </div>
             <div class="cell auto text-left">
                 <img src="assets/img/wave_right.svg" alt="wave right">
@@ -271,26 +181,58 @@
                     <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
                     <div class="grid-container-fluid gradiented-box gradient-five-six">
                         <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-                            <div class="cell medium-4">
-                                <img class="img-left box-shadowed" src="assets/img/boom_team/jay_cin_bron_lrg.jpg"
+                            <!--<div class="cell medium-4">
+                                <img class="img-left box-shadowed" src="assets/img/boom_logo_orange.svg"
                                     alt="Show image">
-                            </div>
-                            <div class="cell medium-6">
+                            </div>-->
+                            <div class="cell">
                                 <div class="grid-container-fluid">
                                     <div class="grid-x grid-padding-x grid-padding-y">
                                         <div class="cell">
-                                            <h2>Lorem Ipsum</h2>
+                                            <h2>General Terms</h2>
                                         </div>
                                         <div class="cell text-justify">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-                                                magnam impedit repudiandae maxime, est recusandae accusantium porro ex
-                                                officia eum natus sapiente mollitia modi iusto ullam tenetur amet.
-                                                Magni, cum?</p>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">All winners must adhere to both the
+                                                    contest’s and Boom Radio’s terms
+                                                    and
+                                                    conditions</li>
+                                                <br>
+                                                <li class="list-group-item">All callers must be over the age of 16</li>
+                                                <br>
+                                                <li class="list-group-item">Any decisions made by Boom Radio are final
+                                                </li>
+                                                <br>
+                                                <li class="list-group-item">If the competition prize needs to be
+                                                    collected from Boom Radio,
+                                                    winners
+                                                    will need to collect it within 7 business days</li>
+                                                <br>
+                                                <li class="list-group-item">If a prize is not collected within 7
+                                                    business days, Boom Radio has
+                                                    the
+                                                    right to keep the prize for further competitions or a different
+                                                    entrant</li>
+                                                <br>
+                                                <li class="list-group-item">Boom Radio reserves the rights to cancel
+                                                    competitions at any time,
+                                                    without notice</li>
+                                                <br>
+                                                <li class="list-group-item">Winners under the age of 18 must be
+                                                    accompanied by an adult when
+                                                    collecting the prize from the station</li>
+                                                <br>
+                                                <li class="list-group-item">Entry into the contest deems consent to use
+                                                    prize winners names,
+                                                    photographs and any audio for promotional purposes</li>
+                                                <br>
+                                                <li class="list-group-item"> Employee’s and family members of Boom Radio
+                                                    are ineligible to enter
+                                                    the
+                                                    Competition</li>
+                                            </ul>
                                         </div>
-                                        <div class="cell">
-                                            <a href="" class="boom-button-white float-right">Read More...
-                                            </a>
-                                        </div>
+                                        <div class="cell"></div>
                                     </div>
                                 </div>
                             </div>
@@ -317,7 +259,7 @@
                         <li><a href="https://twitter.com/boomradioau"><i class="fab fa-twitter fa-1x"></i></a></li>
                         <li><a href="https://www.instagram.com/boomradioau/"><i class="fab fa-instagram fa-1x"></i></a>
                         </li>
-                        <li><a href="/index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+                        <li><a href="index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
                     </ul>
                 </div>
             </div>

@@ -2,7 +2,13 @@
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta name="title" content="Boom Radio">
+  <meta name="description"
+    content="Home site for the TAFE Student Radio station based in Leederville, Perth. Plays all modern music genres and promotes locals artists and new music">
+  <meta name="keywords" content="radio,music, artists, dance, rock, promote, concerts, pop,singer, songwriter">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Presenters</title>
@@ -48,7 +54,7 @@
             <li><a href="https://twitter.com/boomradioau"><i class="fab fa-twitter fa-1x"></i></a></li>
             <li><a href="https://www.instagram.com/boomradioau/"><i class="fab fa-instagram fa-1x"></i></a>
             </li>
-            <li><a href="/index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+            <li><a href="index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
           </ul>
         </div>
       </div>
@@ -120,7 +126,8 @@
                         </div>
                       </div>
                       <div class="cell show-for-large shrink">
-                        <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/"></iframe>
+                        <!-- scrolling is a deprecated property but it the only solution to get rid of the scrolling bars when player on, overflow:hidden doesn't work -->
+                        <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/" scrolling="no"></iframe>
                       </div>
                     </div>
                   </div>
@@ -136,13 +143,23 @@
 
     <!-- BEGINNING OF MAIN BODY =========================================================================================================================================== -->
     <!-- Showing the music player in the body -->
+<<<<<<< HEAD
     <div class="grid-container show-for-small-only ">
       <div class="grid-x grid-margin-y grid-padding-x grid-padding-y align-middle sticky">
         <div class="cell medium-6 gradient-five-six">
-          <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/" ></iframe>
+          <!-- scrolling is a deprecated property but it the only solution to get rid of the scrolling bars when player on, overflow:hidden doesn't work -->
+          <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/" scrolling="no"></iframe>
+=======
+    <div class="grid-container show-for-small hide-for-large">
+      <div class="grid-x grid-margin-y grid-padding-x grid-padding-y align-middle">
+        <div class="cell medium-3"></div>
+        <div class="cell medium-6 gradiented-box gradient-five-six">
+          <iframe class="boomPlayer" src="https://tunein.com/embed/player/s195836/"></iframe>
+>>>>>>> 908b64e0b657559fb24fe559055a2b73a5802f7a
         </div>
       </div>
     </div>
+
     <!---H1 WITH WAVE -->
     <div class="grid-x grid-padding-y align-center align-middle">
       <div class="cell auto text-right">
@@ -216,7 +233,7 @@
             <li><a href="https://www.facebook.com/boomradioau/"><i class="fab fa-facebook-f fa-1x"></i></a></li>
             <li><a href="https://twitter.com/boomradioau"><i class="fab fa-twitter fa-1x"></i></a></li>
             <li><a href="https://www.instagram.com/boomradioau/"><i class="fab fa-instagram fa-1x"></i></a></li>
-            <li><a href="/index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
+            <li><a href="index.html"><i class="fab fa-snapchat-ghost fa-1x"></i></a></li>
           </ul>
         </div>
       </div>
