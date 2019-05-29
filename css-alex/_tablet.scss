@@ -5,7 +5,9 @@
         height: 70%;
         width: 70%;
     }
-
+    .social-button, .feed, .twitter-feed iframe{
+        width: 300px!important;   
+    }   
     /////////STYLES ON LISTEN PAGE////////////////////////////
     /////////TABS ON LISTEN PAGE
     .slide {

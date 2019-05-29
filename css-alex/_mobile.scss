@@ -112,16 +112,19 @@ iframe {
 
 //Instagram & Facebook feed styles on contact.html
 .instagram-media,
-#facebook {
+#facebook{
     background: #FFF;
     border: 0;
     border-radius: 0;
-    width: 300px;
-    min-width: 200px !important;
-    max-width: 300px !important;
+    min-width: 300px !important;
+    max-width: 98vw !important;
     height: 250px;
     padding: 0;
-
+}
+.feed,
+.twitter-feed iframe{
+    width:95vw!important; 
+    padding: 0!important;
 }
 
 //Styling of icons on the site
@@ -387,7 +390,7 @@ a.boom-button {
 }
 
 .social-button {
-    min-width: 300px;
+    width:95vw;      
     margin-bottom: 0 !important;
     @include button-hover;
 }
@@ -396,6 +399,7 @@ a.boom-button {
     margin: 5px;
     @include button-hover;
 }
+
 
 //END BUTTONS STYLES =========================================================================================================
 

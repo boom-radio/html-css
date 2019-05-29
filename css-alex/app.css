@@ -350,11 +350,15 @@ iframe {
   background: #FFF;
   border: 0;
   border-radius: 0;
-  width: 300px;
-  min-width: 200px !important;
-  max-width: 300px !important;
+  min-width: 300px !important;
+  max-width: 98vw !important;
   height: 250px;
   padding: 0; }
+
+.feed,
+.twitter-feed iframe {
+  width: 95vw !important;
+  padding: 0 !important; }
 
 .icons {
   height: 100%;
@@ -637,7 +641,7 @@ a.boom-button {
     transform: translateX(200%) rotate(35deg); }
 
 .social-button {
-  min-width: 300px;
+  width: 95vw;
   margin-bottom: 0 !important;
   z-index: 1;
   position: relative;
@@ -712,6 +716,8 @@ footer a {
   .icons {
     height: 70%;
     width: 70%; }
+  .social-button, .feed, .twitter-feed iframe {
+    width: 300px !important; }
   .slide {
     background: #102126;
     width: calc(100% / 4);
