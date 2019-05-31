@@ -1,5 +1,6 @@
 $(document).foundation()
 
+
 //BEGINNING OF JS FOR SCROLLING-STICKY TOP BAR
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
@@ -270,3 +271,4 @@ var logo = document.getElementById('logo'); // id for logo element
     logo.addEventListener('mouseover', e => explode(e.pageX, e.pageY));
 }
 //END EXPLOSION ANIMATION FOR LOGO
+
