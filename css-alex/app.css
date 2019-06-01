@@ -505,6 +505,11 @@ div.md-tabs {
 .info-container li {
   padding: 5px; }
 
+#copyright {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 100; }
+
 a.boom-button {
   border-radius: 0.7rem;
   padding: .5rem 1.5rem;
