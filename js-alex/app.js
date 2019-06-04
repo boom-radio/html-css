@@ -2,7 +2,7 @@ $(document).foundation();
 
 //BEGINNING OF JS FOR SCROLLING-STICKY TOP BAR
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {
+window.onscroll = function () {
   myFunction();
 };
 
@@ -276,3 +276,43 @@ var logo = document.getElementById("logo"); // id for logo element
   logo.addEventListener("mouseover", e => explode(e.pageX, e.pageY));
 }
 //END EXPLOSION ANIMATION FOR LOGO
+
+//SLICK CAROUSEL FOR listen.html
+//Slick carousel
+$(document).ready(function () {
+  //Responsive layout
+  $('.responsive').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+});
