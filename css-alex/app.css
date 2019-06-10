@@ -369,6 +369,9 @@ iframe {
   background-color: white;
   padding: 0.5rem; }
 
+.card-section iframe {
+  width: 100% !important; }
+
 .gradiented-box {
   border-radius: 5px; }
   .gradiented-box img {

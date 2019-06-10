@@ -140,6 +140,11 @@ iframe {
     padding: 0.5rem;
 }
 
+//iframe of tune-in player
+.card-section iframe{
+    width:100%!important;
+}
+
 //This is the customised audio player (Commented because we are using the BOOM embedded one)
 // $color-white: rgba(255, 255, 255, 0.3); //Setting color-white opacity for player border
 // #audioplayer {
