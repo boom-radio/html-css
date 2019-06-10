@@ -741,6 +741,9 @@ footer a {
     left: 0;
     top: 53px;
     transition: left 0.3s ease-out; }
+  .off-canvas {
+    width: 25%;
+    overflow: hidden; }
   .md-tabs {
     background-color: #fcab62;
     text-align: center; }
@@ -804,8 +807,6 @@ footer a {
   header {
     background-image: url(../assets/img/BackHeader.png);
     height: 150px; }
-  .off-canvas {
-    width: 15%; }
   #logo {
     width: 200px; }
   .img-left,

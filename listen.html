@@ -36,23 +36,51 @@
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="cell">
-          <ul class="menu vertical text-center">
-            <!-- <li><a href="./"><img src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo"></a></li> -->
-            <li>
-              <label for="searchBox" class="show-for-sr">Search box</label>
-              <input id="searchBox" type="search" placeholder="Search">
-            </li>
-            <li><a href="./">Home</a></li>
-            <li><a href="listen.html">Listen</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <button class="close-button" aria-label="Close alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+            <ul class="multilevel-accordion-menu vertical menu text-center" data-accordion-menu>
+              <li><input type="search" placeholder="Search"></li>
+              <li><a href="./">Home</a></li>
+              <li><a href="listen.html">Listen</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><a href="#">Sub-item 1</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                </ul>
+              </li>
+              <li><a href="music.html">Music</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><a href="#">Sub-item 1</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                </ul>
+              </li>
+              <li><a href="news.html">News</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><a href="#">Sub-item 1</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                  <li><a href="#">Sub-item 2</a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">About</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><a href="about.html">About Boom</a></li>
+                  <li><a href="#">Sponsors</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><a href="#">Address</a></li>
+                  <li><a href="#">Contact Form</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button class="close-button" aria-label="Close alert" type="button" data-close>
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
         <!-- Empty cell/s used  for spacing-->
         <div class="cell"></div>
         <div class="cell shrink">
@@ -108,8 +136,8 @@
                             alt="plus button"></button>
                       </div>
                       <div class="cell small-10 text-center">
-                        <img id="mobile-logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo">
-                      </div>
+                          <a href="./"><img id="mobile-logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo"></a>
+                  </div>
                       <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE logo -->
                       <div class="cell small-1"></div>
                     </div>
