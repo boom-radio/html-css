@@ -103,6 +103,7 @@ iframe {
 .list-group-item {
     margin-bottom: 1.5rem;
 }
+
 //END GENERAL STYLES =================================================================================================================
 
 //BEGINNING BODY STYLES ??????????????????????????????????????????????????????????????????????????????????????????????????????????????
@@ -115,7 +116,7 @@ iframe {
 
 //Instagram & Facebook feed styles on contact.html
 .instagram-media,
-#facebook{
+#facebook {
     background: #FFF;
     border: 0;
     border-radius: 0;
@@ -124,10 +125,11 @@ iframe {
     height: 250px;
     padding: 0;
 }
+
 .feed,
-.twitter-feed iframe{
-    width:95vw!important; 
-    padding: 0!important;
+.twitter-feed iframe {
+    width: 95vw !important;
+    padding: 0 !important;
 }
 
 //Styling of icons on the site
@@ -136,6 +138,11 @@ iframe {
     width: 100%;
     background-color: white;
     padding: 0.5rem;
+}
+
+//iframe of tune-in player
+.card-section iframe{
+    width:100%!important;
 }
 
 //This is the customised audio player (Commented because we are using the BOOM embedded one)
@@ -354,9 +361,10 @@ div.md-tabs {
 //////////////END OF CALLOUT
 //////////////END OF LISTEN STYLES//////////////
 //////////////BEGINNING OF CONTACT STYLES//////////////
-.info-container li{
-    padding:5px;
+.info-container li {
+    padding: 5px;
 }
+
 //////////////END OF CONTACT STYLES//////////////
 
 #copyright {
@@ -399,7 +407,7 @@ a.boom-button {
 }
 
 .social-button {
-    width:95vw;      
+    width: 95vw;
     margin-bottom: 0 !important;
     @include button-hover;
 }
@@ -409,6 +417,11 @@ a.boom-button {
     @include button-hover;
 }
 
+//Slick carousel styling
+/*John's Style*/
+.responsive {
+    margin: 1rem;
+}
 
 //END BUTTONS STYLES =========================================================================================================
 
