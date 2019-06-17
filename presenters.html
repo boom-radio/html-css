@@ -30,52 +30,53 @@
         <!-- Empty cell/s used  for spacing-->
         <div class="cell"></div>
         <div class="cell"></div>
+        <!-- Drop-down Menu with arrow -->
         <div class="cell">
-            <ul class="multilevel-accordion-menu vertical menu text-center" data-accordion-menu>
-              <li><input type="search" placeholder="Search"></li>
-              <li><a href="./">Home</a></li>
-              <li><a href="listen.html">Listen</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="#">Sub-item 1</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                </ul>
-              </li>
-              <li><a href="music.html">Music</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="#">Sub-item 1</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                </ul>
-              </li>
-              <li><a href="news.html">News</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="#">Sub-item 1</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                </ul>
-              </li>
-              <li><a href="about.html">About</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="about.html">About Boom</a></li>
-                  <li><a href="#">Sponsors</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="#">Address</a></li>
-                  <li><a href="#">Contact Form</a></li>
-                </ul>
-              </li>
-            </ul>
-            <button class="close-button" aria-label="Close alert" type="button" data-close>
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+          <ul class="multilevel-accordion-menu vertical menu text-center" data-accordion-menu>
+            <li><input type="search" placeholder="Search"></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="#">Listen</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="listen.html">Listen to the Shows</a></li>
+                <li><a href="listen.html#panel1c">Boom's Big Breakie</a></li>
+                <li><a href="listen.html#panel2c">The Drive</a></li>
+                <li><a href="listen.html#panel3c">Speciality Shows</a></li>
+                <li><a href="listen.html#presenters">Presenters</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Music</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="music.html">Music On Air</a></li>
+                <li><a href="music.html#artist">Artist of the month</a></li>
+                <li><a href="music.html#yoursong">Your song on Boom Radio!</a></li>
+                <li><a href="music.html#request">Music request</a></li>
+              </ul>
+            </li>
+            <li><a href="#">News</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="news.html">What's on</a></li>
+                <li><a href="news.html#events">Social Wall</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="about.html">About Boom</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+              </ul>
+            </li>
+            <li><a href="">Contact</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="contact.html">Address</a></li>
+                <li><a href="contact.html#contactform">Contact Form</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--end of Dropdown menu-->
         <!-- Empty cell/s used  for spacing-->
         <div class="cell"></div>
         <div class="cell shrink">
@@ -131,8 +132,9 @@
                             alt="plus button"></button>
                       </div>
                       <div class="cell small-10 text-center">
-                          <a href="./"><img id="mobile-logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo"></a>
-                  </div>
+                        <a href="./"><img id="mobile-logo" src="assets/img/boom_logo_orange.svg"
+                            alt="Boom Radio logo"></a>
+                      </div>
                       <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE logo -->
                       <div class="cell small-1"></div>
                     </div>
@@ -195,7 +197,7 @@
     </div>
     <!---H1 WITH WAVE -->
     <!-- id for presenter has been moved further up because the anchor tag is linking too low on the page, data-smooth-scroll data-offset doesn't work -->
-    <div class="grid-x grid-padding-y align-center align-middle" id="presenter1">
+    <div class="grid-x grid-padding-y align-center align-middle">
       <div class="cell auto text-right">
         <img src="assets/img/wave_left.svg" alt="wave left">
       </div>
@@ -210,8 +212,7 @@
     <div class="grid-container">
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
       <section class="grid-x grid-margin-x grid-margin-y align-center">
-        <!-- id="presenter1" has been further up because data-offset is not working -->
-        <div class="cell">
+        <div class="cell" id="presenter1">
           <div class="grid-container-fluid gradiented-box gradient-three-four">
             <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
               <div class="cell medium-4 text-center">
@@ -261,12 +262,8 @@
       </section>
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter2">
-        <!-- theses cells help to show the focus on the beginning of the container, the anchor tag is linking too low on the page, data-smooth-scroll data-offset doesn't work -->
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell">
+      <section class="grid-x grid-margin-x grid-margin-y align-center">
+        <div class="cell" id="presenter2">
           <div class="grid-container-fluid gradiented-box gradient-one-two">
             <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
               <div class="cell medium-4 small-order-1 medium-order-2 text-center">
@@ -326,11 +323,8 @@
       </section>
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter3">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell">
+      <section class="grid-x grid-margin-x grid-margin-y align-center">
+        <div class="cell" id="presenter3">
           <div class="grid-container-fluid gradiented-box gradient-five-six">
             <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
               <div class="cell medium-4 text-center">
@@ -388,11 +382,8 @@
       </section>
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter4">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell">
+      <section class="grid-x grid-margin-x grid-margin-y align-center">
+        <div class="cell" id="presenter4">
           <div class="grid-container-fluid gradiented-box gradient-three-four">
             <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
               <div class="cell medium-4 small-order-1 medium-order-2 text-center">
@@ -451,59 +442,61 @@
       </section>
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter5">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="grid-container-fluid gradiented-box gradient-five-six">
-          <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-            <div class="cell medium-4 text-center">
-              <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_5_sml.jpg"
-                alt="show image">
-              <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_5_lrg.jpg"
-                alt="show image">
-            </div>
-            <div class="cell medium-6">
-              <div class="grid-container-fluid">
-                <div class="grid-x grid-padding-x grid-padding-y">
-                  <div class="cell text-justify">
-                    <h2>Jordy</h2>
-                    <p class="lead">Let's talk about Jordy</p>
-                    <br>
-                    <p>Jordyn, Jordy, or even Jordo is a stubborn Tauras, and that`s all you need to know. As if one
-                      Jordyn wasn`t enough, she`s a twin, although non-identical she is the older one and she never lets
-                      her twin sister forget it. She`s just turned 20 and didn`t fail to let everyone know about her
-                      midlife crisis. listening to a whopping 32,235 minutes of music last year, or rather 32,235
-                      minutes of Dua Lipa.</p>
-                    <br>
-                    <p>In order to be different Jordyn goes out of her way to find unknown or non-mainstream artists
-                      (with the exception of Dua Lipa and Kendrick Lamar), but bought a Kylie Jenner lip kit two years
-                      ago to stay trendy and mainstream and still uses it because it cost $50. Talents include shopping
-                      on a budget and losing at beer pong.</p>
-                    <br>
-                    <p>She really likes the idea of taking care of the environment but not her liver. Jordyn`s
-                      recommended movies on Netflix consist of Shrek, Brooklyn 99 and any Seth Rogan movie.</p>
-                    <br>
-                    <p>This jokester loves a debate and will argue that tomato sauce belongs in the fridge. Our social
-                      media loving, animal activist never fails to wear a different jacket every day, even in the summer
-                      heat she always seems to be cold but will turn up the heat in the studio slam dunking hot tracks
-                    </p>
-                    <br>
-                    <p>Listen to her</p>
-                    <br>
-                    <p>Booms Backyard – 7-10 pm</p>
-                    <br>
-                    <p>Booms Big brekky – Wed & Thurs – 7-10 am</p>
-                    <br>
-                    <p>Fri – 1-4 pm</p>
-                    <br>
-                    <p>Sun – 10pm – 12am</p>
-                    <br>
-                    <a class="small-social-button button gradiented-box gradient-three-four float-right"
-                      title="Share on Facebook">
-                      <i class="fab fa-facebook-f fa-1x"></i> Share</a>
-                    <a class="small-social-button button gradiented-box gradient-one-two float-right"
-                      title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
+      <section class="grid-x grid-margin-x grid-margin-y align-center">
+        <div class="cell" id="presenter5">
+          <div class="grid-container-fluid gradiented-box gradient-five-six">
+            <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+              <div class="cell medium-4 text-center">
+                <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_5_sml.jpg"
+                  alt="show image">
+                <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_5_lrg.jpg"
+                  alt="show image">
+              </div>
+              <div class="cell medium-6">
+                <div class="grid-container-fluid">
+                  <div class="grid-x grid-padding-x grid-padding-y">
+                    <div class="cell text-justify">
+                      <h2>Jordy</h2>
+                      <p class="lead">Let's talk about Jordy</p>
+                      <br>
+                      <p>Jordyn, Jordy, or even Jordo is a stubborn Tauras, and that`s all you need to know. As if one
+                        Jordyn wasn`t enough, she`s a twin, although non-identical she is the older one and she never
+                        lets
+                        her twin sister forget it. She`s just turned 20 and didn`t fail to let everyone know about her
+                        midlife crisis. listening to a whopping 32,235 minutes of music last year, or rather 32,235
+                        minutes of Dua Lipa.</p>
+                      <br>
+                      <p>In order to be different Jordyn goes out of her way to find unknown or non-mainstream artists
+                        (with the exception of Dua Lipa and Kendrick Lamar), but bought a Kylie Jenner lip kit two years
+                        ago to stay trendy and mainstream and still uses it because it cost $50. Talents include
+                        shopping
+                        on a budget and losing at beer pong.</p>
+                      <br>
+                      <p>She really likes the idea of taking care of the environment but not her liver. Jordyn`s
+                        recommended movies on Netflix consist of Shrek, Brooklyn 99 and any Seth Rogan movie.</p>
+                      <br>
+                      <p>This jokester loves a debate and will argue that tomato sauce belongs in the fridge. Our social
+                        media loving, animal activist never fails to wear a different jacket every day, even in the
+                        summer
+                        heat she always seems to be cold but will turn up the heat in the studio slam dunking hot tracks
+                      </p>
+                      <br>
+                      <p>Listen to her</p>
+                      <br>
+                      <p>Booms Backyard – 7-10 pm</p>
+                      <br>
+                      <p>Booms Big brekky – Wed & Thurs – 7-10 am</p>
+                      <br>
+                      <p>Fri – 1-4 pm</p>
+                      <br>
+                      <p>Sun – 10pm – 12am</p>
+                      <br>
+                      <a class="small-social-button button gradiented-box gradient-three-four float-right"
+                        title="Share on Facebook">
+                        <i class="fab fa-facebook-f fa-1x"></i> Share</a>
+                      <a class="small-social-button button gradiented-box gradient-one-two float-right"
+                        title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -513,46 +506,45 @@
       </section>
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter6">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="grid-container-fluid gradiented-box gradient-one-two">
-          <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-            <div class="cell medium-4 small-order-1 medium-order-2 text-center">
-              <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_6_sml.jpg"
-                alt="show image">
-              <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_6_lrg.jpg"
-                alt="show image">
-            </div>
-            <div class="cell medium-6 small-order-2 medium-order-1">
-              <div class="grid-container-fluid">
-                <div class="grid-x grid-padding-x grid-padding-y">
-                  <div class="cell text-justify">
-                    <h2>Bronwyn</h2>
-                    <p class="lead"></p>
-                    <br>
-                    <p></p>
-                    <br>
-                    <p></p>
-                    <br>
-                    <p></p>
-                    <br>
-                    <p></p>
-                    <br>
-                    <p>Catch her on Boom Radio with</p>
-                    <br>
-                    <p>the Jay Way show every Wednesday from 7 – 10pm</p>
-                    <br>
-                    <p>Big Boom Party every Saturday night from 7 – 10pm,</p>
-                    <br>
-                    <p>Monday – Tuesday from 7 – 10am with The Breakky show with Cin, J & Bron.</p>
-                    <br>
-                    <a class="small-social-button button gradiented-box gradient-three-four float-right"
-                      title="Share on Facebook">
-                      <i class="fab fa-facebook-f fa-1x"></i> Share</a>
-                    <a class="small-social-button button gradiented-box gradient-one-two float-right"
-                      title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
+      <section class="grid-x grid-margin-x grid-margin-y align-center">
+        <div class="cell" id="presenter6">
+          <div class="grid-container-fluid gradiented-box gradient-one-two">
+            <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+              <div class="cell medium-4 small-order-1 medium-order-2 text-center">
+                <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_6_sml.jpg"
+                  alt="show image">
+                <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_6_lrg.jpg"
+                  alt="show image">
+              </div>
+              <div class="cell medium-6 small-order-2 medium-order-1">
+                <div class="grid-container-fluid">
+                  <div class="grid-x grid-padding-x grid-padding-y">
+                    <div class="cell text-justify">
+                      <h2>Bronwyn</h2>
+                      <p class="lead"></p>
+                      <br>
+                      <p></p>
+                      <br>
+                      <p></p>
+                      <br>
+                      <p></p>
+                      <br>
+                      <p></p>
+                      <br>
+                      <p>Catch her on Boom Radio with</p>
+                      <br>
+                      <p>the Jay Way show every Wednesday from 7 – 10pm</p>
+                      <br>
+                      <p>Big Boom Party every Saturday night from 7 – 10pm,</p>
+                      <br>
+                      <p>Monday – Tuesday from 7 – 10am with The Breakky show with Cin, J & Bron.</p>
+                      <br>
+                      <a class="small-social-button button gradiented-box gradient-three-four float-right"
+                        title="Share on Facebook">
+                        <i class="fab fa-facebook-f fa-1x"></i> Share</a>
+                      <a class="small-social-button button gradiented-box gradient-one-two float-right"
+                        title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -562,10 +554,8 @@
       </section>
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
       <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter7">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+      <section class="grid-x grid-margin-x grid-margin-y align-center">
+        <div class="cell" id="presenter7"></div>
         <div class="grid-container-fluid gradiented-box gradient-three-four">
           <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
             <div class="cell medium-4 text-center">
@@ -621,272 +611,270 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter8">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="grid-container-fluid gradiented-box gradient-five-six">
-          <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-            <div class="cell medium-4 small-order-1 medium-order-2 text-center">
-              <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_8_sml.jpg"
-                alt="show image">
-              <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_8_lrg.jpg"
-                alt="show image">
-            </div>
-            <div class="cell medium-6 small-order-2 medium-order-1">
-              <div class="grid-container-fluid">
-                <div class="grid-x grid-padding-x grid-padding-y">
-                  <div class="cell text-justify">
-                    <h2>Callan</h2>
-                    <p class="lead">Who’s Callan?</p>
-                    <br>
-                    <p>Callan was Born in Kununurra but grew up in Perth and although he currently works at Maccas he
-                      aspires to become a great radio presenter even though currently he`s a better gamer then he is an
-                      announcer.</p>
-                    <br>
-                    <p>Callan has a bit of a weird and different personality (good weird not bad weird) because when
-                      he’s on air if he is not careful then he could very easily start to ramble on about something
-                      completely different to the subject and it will always be about something that will either be game
-                      related or about something that doesn’t exist and is completely made up. And one of the weirdest
-                      things about him is that every now and again out of nowhere he will do some random impression of a
-                      character or person and although some are good, there are a few that are so bad that you can’t
-                      help but laugh.</p>
-                    <br>
-                    <p>However, behind the scenes, he can almost always be seen holding some kind of game controller and
-                      even if he isn’t you can be sure that there is one on his person. It is because of this that his
-                      knowledge of games and gaming culture is ridiculously large so don’t start talking about games
-                      with him because he will never stop.</p>
-                    <br>
-                    <p>Listen to him on Boom at –</p>
-                    <br>
-                    <p>Booms Geekout – Wed 10pm – 12 am</p>
-                    <br>
-                    <p>Sat – 1 – 4 pm</p>
-                    <br>
-                    <p>Sun 7-10 am</p>
-                    <br>
-                    <a class="small-social-button button gradiented-box gradient-three-four float-right"
-                      title="Share on Facebook">
-                      <i class="fab fa-facebook-f fa-1x"></i> Share</a>
-                    <a class="small-social-button button gradiented-box gradient-one-two float-right"
-                      title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter9">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="grid-container-fluid gradiented-box gradient-one-two">
-          <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-            <div class="cell medium-4 text-center">
-              <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_9_sml.jpg"
-                alt="show image">
-              <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_9_lrg.jpg"
-                alt="show image">
-            </div>
-            <div class="cell medium-6">
-              <div class="grid-container-fluid">
-                <div class="grid-x grid-padding-x grid-padding-y">
-                  <div class="cell text-justify">
-                    <h2>Cindy</h2>
-                    <p class="lead">You can call her Cin</p>
-                    <br>
-                    <p>Now this is a story all about how my life got flipped turned upside down And I like to take a
-                      minute just sit right here… Cos its all about Cin B… HAHAHA just kidding Cin B is just plain old
-                      down to earth happy go lucky type of gal! Grew up in the bogan town of Rocko successfully drag
-                      raced down the local Motorplex….. EPIC!</p>
-                    <br>
-                    <p>Cin loves to get out and party when she can but loves to chill & relax with her loved ones. When
-                      you hear BASS DROP, Cin will be on the dance floor moving her groove thang, music is in her blood.
-                    </p>
-                    <br>
-                    <p>Cin`s spare time consists of Wakeboarding (might I say a total beginner) Mixing Tunez and hanging
-                      with her mates. Her favorite all-time movie is Step Brothers, SO MUCH ROOM FOR ACTIVITIES!
-                      Speaking of activities, she also likes to hang out at her local R.S.L club especially on ANZAC Day
-                      to pay respect and be the amazing Bar Trooper she is. Whats your flavor, tell me what`s your
-                      flavor WOooo!!! Hip Hop, R&B is her flavor of music but truly loves all types of music genre. Fav
-                      artist cant beat Old School Hip Hop esp. Tupac &Notorious BIG. Cin at the end of the day will have
-                      your back in a Chilli eating contest, 80s style dances off and killing it at a Sing Star contest.
-                    </p>
-                    <br>
-                    <p>Catch her on Boom-</p>
-                    <br>
-                    <p>Boom`s Big Brekky Mon – Tues 7-10 am</p>
-                    <br>
-                    <p>Sunday Sessions – Sun 10 am – 1 pm</p>
-                    <br>
-                    <a class="small-social-button button gradiented-box gradient-three-four float-right"
-                      title="Share on Facebook">
-                      <i class="fab fa-facebook-f fa-1x"></i> Share</a>
-                    <a class="small-social-button button gradiented-box gradient-one-two float-right"
-                      title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter10">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="grid-container-fluid gradiented-box gradient-three-four">
-          <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-            <div class="cell medium-4 small-order-1 medium-order-2 text-center">
-              <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_10_sml.jpg"
-                alt="show image">
-              <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_10_lrg.jpg"
-                alt="show image">
-            </div>
-            <div class="cell medium-6 small-order-2 medium-order-1">
-              <div class="grid-container-fluid">
-                <div class="grid-x grid-padding-x grid-padding-y">
-                  <div class="cell text-justify">
-                    <h2>Pete</h2>
-                    <p>Born in the rolling green highlands of Scotland in early1994. Peter already knew from a wee
-                      laddie that he was destined to make people laugh for a living simply because that’s all he is good
-                      at.</p>
-                    <br>
-                    <p>Whether you’re laughing at him or with him, as long as your laughing, it gives him a sense of
-                      accomplishment. At the young age of 11, Peter along with his older sister and parents decided to
-                      immigrate to Perth Western Australia in the tail end of 2005.</p>
-                    <br>
-                    <p>He Fully embraces the Aussie way of life, minus the double plugger thongs and Bintang singlet. He
-                      likes to keep his Scottish roots strong by tossing the caber and occasionally going on a hunt for
-                      some wild haggis. in his downtime peter can be found working on his other passions that include
-                      gaming, writing jokes, tuning into his ever-expanding vinyl collection or watching professional
-                      wrestlers put the smackdown in the squared circle. There’s not much music peter won’t listen to….
-                      (yes even bagpipes) His top three genres are metal, rap and whatever sounds good to his ears.</p>
-                    <br>
-                    <p>The best 3 describing words to summarise Peter is big, brash and bombastic. Leave your big brain
-                      at the door as you won’t need it, just relax and enjoy the ride that big Pete the flying Scotsman
-                      will take you on.</p>
-                    <br>
-                    <p>Listen to him –</p>
-                    <br>
-                    <p>Drive – Mon&Tues 4-7 pm</p>
-                    <br>
-                    <p>Full Metal Jacket Mon – 10pm-12am</p>
-                    <br>
-                    <p>Sat – 10am-1pm</p>
-                    <br>
-                    <a class="small-social-button button gradiented-box gradient-three-four float-right"
-                      title="Share on Facebook">
-                      <i class="fab fa-facebook-f fa-1x"></i> Share</a>
-                    <a class="small-social-button button gradiented-box gradient-one-two float-right"
-                      title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-      <section class="grid-x grid-margin-x grid-margin-y align-center" id="presenter11">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="grid-container-fluid gradiented-box gradient-one-two">
-          <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
-            <div class="cell medium-4 text-center">
-              <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_11_sml.jpg"
-                alt="show image">
-              <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_11_lrg.jpg"
-                alt="show image">
-            </div>
-            <div class="cell medium-6">
-              <div class="grid-container-fluid">
-                <div class="grid-x grid-padding-x grid-padding-y">
-                  <div class="cell text-justify">
-                    <h2>Kyan</h2>
-                    <p></p>
-                    <br>
-                    <p></p>
-                    <br>
-                    <p></p>
-                    <br>
-                    <p></p>
-                    <br>
-                    <p>Listen to her –</p>
-                    <br>
-                    <p>Drive – Mon&Tues 4-7 pm</p>
-                    <br>
-                    <p>Full Metal Jacket Mon – 10pm-12am</p>
-                    <br>
-                    <p>Sat – 10am-1pm</p>
-                    <br>
-                    <a class="small-social-button button gradiented-box gradient-three-four float-right"
-                      title="Share on Facebook">
-                      <i class="fab fa-facebook-f fa-1x"></i> Share</a>
-                    <a class="small-social-button button gradiented-box gradient-one-two float-right"
-                      title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
-
     </div>
-    <!-- BEGINNING OF FOOTER =========================================================================================================================================== -->
-    <footer class="grid-container">
-      <div class="grid-x grid-margin-y align-center">
-        <!-- Empty cell/s used  for spacing-->
-        <div class="cell"></div>
-        <div class="cell shrink">
-          <ul class="menu text-center">
-            <li><a href="https://www.facebook.com/boomradioau/" target="blank"><i class="fab fa-facebook-f fa-1x"></i>
-                <p class="show-for-sr">Facebook link icon</p>
-              </a>
-            </li>
-            <li><a href="https://twitter.com/boomradioau" target="blank"><i class="fab fa-twitter fa-1x"></i>
-                <p class="show-for-sr">Twitter link icon</p>
-              </a>
-            </li>
-            <li><a href="https://www.instagram.com/boomradioau/" target="blank"><i class="fab fa-instagram fa-1x"></i>
-                <p class="show-for-sr">Instagram link icon</p>
-              </a>
-            </li>
-            <li><a href="https://www.snapchat.com/" target="blank"><i class="fab fa-snapchat-ghost fa-1x"></i>
-                <p class="show-for-sr">Snapchat link icon</p>
-              </a>
-            </li>
-          </ul>
+    </section>
+    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+    <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+    <section class="grid-x grid-margin-x grid-margin-y align-center">
+      <div class="cell" id="presenter8"></div>
+      <div class="grid-container-fluid gradiented-box gradient-five-six">
+        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+          <div class="cell medium-4 small-order-1 medium-order-2 text-center">
+            <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_8_sml.jpg"
+              alt="show image">
+            <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_8_lrg.jpg"
+              alt="show image">
+          </div>
+          <div class="cell medium-6 small-order-2 medium-order-1">
+            <div class="grid-container-fluid">
+              <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="cell text-justify">
+                  <h2>Callan</h2>
+                  <p class="lead">Who’s Callan?</p>
+                  <br>
+                  <p>Callan was Born in Kununurra but grew up in Perth and although he currently works at Maccas he
+                    aspires to become a great radio presenter even though currently he`s a better gamer then he is an
+                    announcer.</p>
+                  <br>
+                  <p>Callan has a bit of a weird and different personality (good weird not bad weird) because when
+                    he’s on air if he is not careful then he could very easily start to ramble on about something
+                    completely different to the subject and it will always be about something that will either be game
+                    related or about something that doesn’t exist and is completely made up. And one of the weirdest
+                    things about him is that every now and again out of nowhere he will do some random impression of a
+                    character or person and although some are good, there are a few that are so bad that you can’t
+                    help but laugh.</p>
+                  <br>
+                  <p>However, behind the scenes, he can almost always be seen holding some kind of game controller and
+                    even if he isn’t you can be sure that there is one on his person. It is because of this that his
+                    knowledge of games and gaming culture is ridiculously large so don’t start talking about games
+                    with him because he will never stop.</p>
+                  <br>
+                  <p>Listen to him on Boom at –</p>
+                  <br>
+                  <p>Booms Geekout – Wed 10pm – 12 am</p>
+                  <br>
+                  <p>Sat – 1 – 4 pm</p>
+                  <br>
+                  <p>Sun 7-10 am</p>
+                  <br>
+                  <a class="small-social-button button gradiented-box gradient-three-four float-right"
+                    title="Share on Facebook">
+                    <i class="fab fa-facebook-f fa-1x"></i> Share</a>
+                  <a class="small-social-button button gradiented-box gradient-one-two float-right"
+                    title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="grid-x grid-margin-y align-center">
-        <div class="cell shrink text-center">
-          <ul class="menu text-center">
-            <li><a href="terms.html">Terms &amp; Conds</a></li>
-          </ul>
+  </div>
+  </section>
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+  <section class="grid-x grid-margin-x grid-margin-y align-center">
+    <div class="cell" id="presenter9">
+      <div class="grid-container-fluid gradiented-box gradient-one-two">
+        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+          <div class="cell medium-4 text-center">
+            <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_9_sml.jpg"
+              alt="show image">
+            <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_9_lrg.jpg"
+              alt="show image">
+          </div>
+          <div class="cell medium-6">
+            <div class="grid-container-fluid">
+              <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="cell text-justify">
+                  <h2>Cindy</h2>
+                  <p class="lead">You can call her Cin</p>
+                  <br>
+                  <p>Now this is a story all about how my life got flipped turned upside down And I like to take a
+                    minute just sit right here… Cos its all about Cin B… HAHAHA just kidding Cin B is just plain old
+                    down to earth happy go lucky type of gal! Grew up in the bogan town of Rocko successfully drag
+                    raced down the local Motorplex….. EPIC!</p>
+                  <br>
+                  <p>Cin loves to get out and party when she can but loves to chill & relax with her loved ones. When
+                    you hear BASS DROP, Cin will be on the dance floor moving her groove thang, music is in her blood.
+                  </p>
+                  <br>
+                  <p>Cin`s spare time consists of Wakeboarding (might I say a total beginner) Mixing Tunez and hanging
+                    with her mates. Her favorite all-time movie is Step Brothers, SO MUCH ROOM FOR ACTIVITIES!
+                    Speaking of activities, she also likes to hang out at her local R.S.L club especially on ANZAC Day
+                    to pay respect and be the amazing Bar Trooper she is. Whats your flavor, tell me what`s your
+                    flavor WOooo!!! Hip Hop, R&B is her flavor of music but truly loves all types of music genre. Fav
+                    artist cant beat Old School Hip Hop esp. Tupac &Notorious BIG. Cin at the end of the day will have
+                    your back in a Chilli eating contest, 80s style dances off and killing it at a Sing Star contest.
+                  </p>
+                  <br>
+                  <p>Catch her on Boom-</p>
+                  <br>
+                  <p>Boom`s Big Brekky Mon – Tues 7-10 am</p>
+                  <br>
+                  <p>Sunday Sessions – Sun 10 am – 1 pm</p>
+                  <br>
+                  <a class="small-social-button button gradiented-box gradient-three-four float-right"
+                    title="Share on Facebook">
+                    <i class="fab fa-facebook-f fa-1x"></i> Share</a>
+                  <a class="small-social-button button gradiented-box gradient-one-two float-right"
+                    title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="grid-x grid-margin-y align-center">
-        <div class="cell text-center">
-          <small id="copyright">&copy; Boomradio 2019</small>
+    </div>
+    </div>
+  </section>
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+  <section class="grid-x grid-margin-x grid-margin-y align-center">
+    <div class="cell" id="presenter10">
+      <div class="grid-container-fluid gradiented-box gradient-three-four">
+        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+          <div class="cell medium-4 small-order-1 medium-order-2 text-center">
+            <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_10_sml.jpg"
+              alt="show image">
+            <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_10_lrg.jpg"
+              alt="show image">
+          </div>
+          <div class="cell medium-6 small-order-2 medium-order-1">
+            <div class="grid-container-fluid">
+              <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="cell text-justify">
+                  <h2>Pete</h2>
+                  <p>Born in the rolling green highlands of Scotland in early1994. Peter already knew from a wee
+                    laddie that he was destined to make people laugh for a living simply because that’s all he is good
+                    at.</p>
+                  <br>
+                  <p>Whether you’re laughing at him or with him, as long as your laughing, it gives him a sense of
+                    accomplishment. At the young age of 11, Peter along with his older sister and parents decided to
+                    immigrate to Perth Western Australia in the tail end of 2005.</p>
+                  <br>
+                  <p>He Fully embraces the Aussie way of life, minus the double plugger thongs and Bintang singlet. He
+                    likes to keep his Scottish roots strong by tossing the caber and occasionally going on a hunt for
+                    some wild haggis. in his downtime peter can be found working on his other passions that include
+                    gaming, writing jokes, tuning into his ever-expanding vinyl collection or watching professional
+                    wrestlers put the smackdown in the squared circle. There’s not much music peter won’t listen to….
+                    (yes even bagpipes) His top three genres are metal, rap and whatever sounds good to his ears.</p>
+                  <br>
+                  <p>The best 3 describing words to summarise Peter is big, brash and bombastic. Leave your big brain
+                    at the door as you won’t need it, just relax and enjoy the ride that big Pete the flying Scotsman
+                    will take you on.</p>
+                  <br>
+                  <p>Listen to him –</p>
+                  <br>
+                  <p>Drive – Mon&Tues 4-7 pm</p>
+                  <br>
+                  <p>Full Metal Jacket Mon – 10pm-12am</p>
+                  <br>
+                  <p>Sat – 10am-1pm</p>
+                  <br>
+                  <a class="small-social-button button gradiented-box gradient-three-four float-right"
+                    title="Share on Facebook">
+                    <i class="fab fa-facebook-f fa-1x"></i> Share</a>
+                  <a class="small-social-button button gradiented-box gradient-one-two float-right"
+                    title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- END OF FOOTER ================================================================================================================================================= -->
+    </div>
+  </section>
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+  <section class="grid-x grid-margin-x grid-margin-y align-center">
+    <div class="cell" id="presenter11">
+      <div class="grid-container-fluid gradiented-box gradient-one-two">
+        <div class="grid-x grid-padding-x grid-padding-y align-spaced align-middle">
+          <div class="cell medium-4 text-center">
+            <img class="box-shadowed show-for-small-only" src="assets/img/boom_team/presenter_bio_11_sml.jpg"
+              alt="show image">
+            <img class="box-shadowed show-for-medium" src="assets/img/boom_team/presenter_bio_11_lrg.jpg"
+              alt="show image">
+          </div>
+          <div class="cell medium-6">
+            <div class="grid-container-fluid">
+              <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="cell text-justify">
+                  <h2>Kyan</h2>
+                  <p></p>
+                  <br>
+                  <p></p>
+                  <br>
+                  <p></p>
+                  <br>
+                  <p></p>
+                  <br>
+                  <p>Listen to her –</p>
+                  <br>
+                  <p>Drive – Mon&Tues 4-7 pm</p>
+                  <br>
+                  <p>Full Metal Jacket Mon – 10pm-12am</p>
+                  <br>
+                  <p>Sat – 10am-1pm</p>
+                  <br>
+                  <a class="small-social-button button gradiented-box gradient-three-four float-right"
+                    title="Share on Facebook">
+                    <i class="fab fa-facebook-f fa-1x"></i> Share</a>
+                  <a class="small-social-button button gradiented-box gradient-one-two float-right"
+                    title="Follow on Instagram"><i class="fab fa-instagram fa-1x"></i> Follow</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gradiented container ????????????????????????????????????????????????????????????????????????????????????????????? -->
+
+  </div>
+  <!-- BEGINNING OF FOOTER =========================================================================================================================================== -->
+  <footer class="grid-container">
+    <div class="grid-x grid-margin-y align-center">
+      <!-- Empty cell/s used  for spacing-->
+      <div class="cell"></div>
+      <div class="cell shrink">
+        <ul class="menu text-center">
+          <li><a href="https://www.facebook.com/boomradioau/" target="blank"><i class="fab fa-facebook-f fa-1x"></i>
+              <p class="show-for-sr">Facebook link icon</p>
+            </a>
+          </li>
+          <li><a href="https://twitter.com/boomradioau" target="blank"><i class="fab fa-twitter fa-1x"></i>
+              <p class="show-for-sr">Twitter link icon</p>
+            </a>
+          </li>
+          <li><a href="https://www.instagram.com/boomradioau/" target="blank"><i class="fab fa-instagram fa-1x"></i>
+              <p class="show-for-sr">Instagram link icon</p>
+            </a>
+          </li>
+          <li><a href="https://www.snapchat.com/" target="blank"><i class="fab fa-snapchat-ghost fa-1x"></i>
+              <p class="show-for-sr">Snapchat link icon</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-y align-center">
+      <div class="cell shrink text-center">
+        <ul class="menu text-center">
+          <li><a href="terms.html">Terms &amp; Conds</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-y align-center">
+      <div class="cell text-center">
+        <small id="copyright">&copy; Boomradio 2019</small>
+      </div>
+    </div>
+  </footer>
+  <!-- END OF FOOTER ================================================================================================================================================= -->
   </div>
   <script src="js-alex/vendor/jquery.js"></script>
   <script src="js-alex/vendor/foundation.js"></script>

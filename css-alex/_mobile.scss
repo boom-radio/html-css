@@ -357,7 +357,11 @@ div.md-tabs {
         margin: 5px 10px;
     }
 }
-
+:target:before {
+    content:"";
+    display:block;
+    height:84px; /* fixed header height*/
+    }
 //////////////END OF CALLOUT
 //////////////END OF LISTEN STYLES//////////////
 //////////////BEGINNING OF CONTACT STYLES//////////////

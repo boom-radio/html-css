@@ -30,45 +30,45 @@
                 <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell"></div>
+                <!-- Drop-down Menu with arrow -->
                 <div class="cell">
                     <ul class="multilevel-accordion-menu vertical menu text-center" data-accordion-menu>
                         <li><input type="search" placeholder="Search"></li>
                         <li><a href="./">Home</a></li>
-                        <li><a href="listen.html">Listen</a>
+                        <li><a href="#">Listen</a>
                             <ul class="menu vertical sublevel-1">
-                                <li><a href="#">Sub-item 1</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
+                                <li><a href="listen.html">Listen to the Shows</a></li>
+                                <li><a href="listen.html#panel1c">Boom's Big Breakie</a></li>
+                                <li><a href="listen.html#panel2c">The Drive</a></li>
+                                <li><a href="listen.html#panel3c">Speciality Shows</a></li>
+                                <li><a href="listen.html#presenters">Presenters</a></li>
                             </ul>
                         </li>
-                        <li><a href="music.html">Music</a>
+                        <li><a href="#">Music</a>
                             <ul class="menu vertical sublevel-1">
-                                <li><a href="#">Sub-item 1</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
+                                <li><a href="music.html">Music On Air</a></li>
+                                <li><a href="music.html#artist">Artist of the month</a></li>
+                                <li><a href="music.html#yoursong">Your song on Boom Radio!</a></li>
+                                <li><a href="music.html#request">Music request</a></li>
                             </ul>
                         </li>
-                        <li><a href="news.html">News</a>
+                        <li><a href="#">News</a>
                             <ul class="menu vertical sublevel-1">
-                                <li><a href="#">Sub-item 1</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
-                                <li><a href="#">Sub-item 2</a></li>
+                                <li><a href="news.html">What's on</a></li>
+                                <li><a href="news.html#events">Social Wall</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">About</a>
+                        <li><a href="#">About</a>
                             <ul class="menu vertical sublevel-1">
                                 <li><a href="about.html">About Boom</a></li>
-                                <li><a href="#">Sponsors</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="sponsors.html">Sponsors</a></li>
+                                <li><a href="terms.html">Terms & Conditions</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a>
+                        <li><a href="">Contact</a>
                             <ul class="menu vertical sublevel-1">
-                                <li><a href="#">Address</a></li>
-                                <li><a href="#">Contact Form</a></li>
+                                <li><a href="contact.html">Address</a></li>
+                                <li><a href="contact.html#contactform">Contact Form</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -76,6 +76,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <!--end of Dropdown menu-->
                 <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
                 <div class="cell shrink">
@@ -324,7 +325,7 @@
         <!--End of Artists Section-->
 
         <!--Beginning of Artists review section-->
-        <div class="grid-container">
+        <div class="grid-container" id="artist">
             <div class="grid-x grid-margin-x grid-margin-y align-center">
                 <!-- Empty cell/s used  for spacing-->
                 <div class="cell"></div>
@@ -380,56 +381,7 @@
                 <div class="cell"></div>
             </div>
         </div>
-
-        <!--End of music section-->
-
-
-        <!--Beginning of Contact Form section-->
-        <div class="grid-container">
-            <div class="grid-x grid-padding-y align-center align-middle">
-                <div class="cell auto text-right">
-                    <img src="assets/img/wave_left.svg" alt="wave left">
-                </div>
-                <div class="cell shrink">
-                    <h3>Request Music</h3>
-                </div>
-                <div class="cell auto text-left">
-                    <img src="assets/img/wave_right.svg" alt="wave right">
-                </div>
-            </div>
-            <div class="grid-container">
-                <form>
-                    <div class="grid-x grid-padding-x align-center">
-                        <div class="medium-6 cell">
-                            <label for="requestMusicName">Name</label>
-                            <input id="requestMusicName" type="text" placeholder="Type your Name">
-                        </div>
-                    </div>
-                    <div class="grid-x grid-padding-x align-center">
-                        <div class="medium-6 cell">
-                            <label for="requestMusicEmail">Email</label>
-                            <input id="requestMusicEmail" type="text" placeholder="address@domain.com">
-                        </div>
-                    </div>
-                    <div class="grid-x grid-padding-x align-center">
-                        <div class="medium-6 cell">
-                            <label for="requestMusicMessage">Email</label>
-                            <textarea id="requestMusicMessage" placeholder="Write your Message here:"
-                                rows="8"></textarea>
-                        </div>
-                    </div>
-                    <div class="grid-x grid-padding-y align-center">
-                        <div class="medium-6 cell">
-                            <a href="" class="boom-button-white float-right">Send
-                            </a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-
-        <div class="grid-container">
+        <div class="grid-container"  id="yoursong">
             <div class="grid-x grid-margin-x grid-margin-y align-center"></div>
 
             <div class="grid-x grid-padding-y align-center align-middle">
@@ -443,7 +395,6 @@
                     <img src="assets/img/wave_right.svg" alt="wave right">
                 </div>
             </div>
-
             <!--Social split cell section-->
             <article class="grid-container">
                 <div class="grid-x grid-margin-x">
@@ -488,8 +439,8 @@
                                     </div>
                                     <br>
                                     <!--<button href="mailto:Music@boomradio.com.au" type="button"
-                                        class="boom-button float-right">Music@boomradio.com.au
-                                    </button>-->
+                                class="boom-button float-right">Music@boomradio.com.au
+                            </button>-->
                                     <a class="boom-button float-right"
                                         href="mailto:Music@boomradio.com.au">Music@boomradio.com.au</a>
                                 </div>
@@ -499,6 +450,55 @@
                 </div>
             </article>
         </div>
+
+
+        <!--Beginning of Contact Form section-->
+        <div class="grid-container" id="request">
+            <div class="grid-x grid-padding-y align-center align-middle">
+                <div class="cell auto text-right">
+                    <img src="assets/img/wave_left.svg" alt="wave left">
+                </div>
+                <div class="cell shrink">
+                    <h3>Request Music</h3>
+                </div>
+                <div class="cell auto text-left">
+                    <img src="assets/img/wave_right.svg" alt="wave right">
+                </div>
+            </div>
+            <div class="grid-container">
+                <form>
+                    <div class="grid-x grid-padding-x align-center">
+                        <div class="medium-6 cell">
+                            <label for="requestMusicName">Name</label>
+                            <input id="requestMusicName" type="text" placeholder="Type your Name">
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x align-center">
+                        <div class="medium-6 cell">
+                            <label for="requestMusicEmail">Email</label>
+                            <input id="requestMusicEmail" type="text" placeholder="address@domain.com">
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x align-center">
+                        <div class="medium-6 cell">
+                            <label for="requestMusicMessage">Email</label>
+                            <textarea id="requestMusicMessage" placeholder="Write your Message here:"
+                                rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-y align-center">
+                        <div class="medium-6 cell">
+                            <a href="" class="boom-button-white float-right">Send
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
 
 
         <!--End of music section-->

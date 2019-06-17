@@ -14,9 +14,8 @@
   <title>Listen</title>
   <link rel="icon" type="image/png" href="assets/img/boom_favicon.png">
   <link rel="stylesheet" href="assets/fonts/fa/css/all.css">
-  <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
-  // Add the new slick-theme.css if you want the default styling
+  <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
   <link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -35,52 +34,53 @@
         <!-- Empty cell/s used  for spacing-->
         <div class="cell"></div>
         <div class="cell"></div>
+        <!-- Drop-down Menu with arrow -->
         <div class="cell">
-            <ul class="multilevel-accordion-menu vertical menu text-center" data-accordion-menu>
-              <li><input type="search" placeholder="Search"></li>
-              <li><a href="./">Home</a></li>
-              <li><a href="listen.html">Listen</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="#">Sub-item 1</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                </ul>
-              </li>
-              <li><a href="music.html">Music</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="#">Sub-item 1</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                </ul>
-              </li>
-              <li><a href="news.html">News</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="#">Sub-item 1</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                  <li><a href="#">Sub-item 2</a></li>
-                </ul>
-              </li>
-              <li><a href="about.html">About</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="about.html">About Boom</a></li>
-                  <li><a href="#">Sponsors</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a>
-                <ul class="menu vertical sublevel-1">
-                  <li><a href="#">Address</a></li>
-                  <li><a href="#">Contact Form</a></li>
-                </ul>
-              </li>
-            </ul>
-            <button class="close-button" aria-label="Close alert" type="button" data-close>
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+          <ul class="multilevel-accordion-menu vertical menu text-center" data-accordion-menu>
+            <li><input type="search" placeholder="Search"></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="#">Listen</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="listen.html">Listen to the Shows</a></li>                
+                <li><a href="listen.html#panel1c">Boom's Big Breakie</a></li>
+                <li><a href="listen.html#panel2c">The Drive</a></li>
+                <li><a href="listen.html#panel3c">Speciality Shows</a></li>
+                <li><a href="listen.html#presenters">Presenters</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Music</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="music.html">Music On Air</a></li>
+                <li><a href="music.html#artist">Artist of the month</a></li>
+                <li><a href="music.html#yoursong">Your song on Boom Radio!</a></li>
+                <li><a href="music.html#request">Music request</a></li>
+              </ul>
+            </li>
+            <li><a href="#">News</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="news.html">What's on</a></li>
+                <li><a href="news.html#events">Social Wall</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="about.html">About Boom</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+              </ul>
+            </li>
+            <li><a href="">Contact</a>
+              <ul class="menu vertical sublevel-1">
+                <li><a href="contact.html">Address</a></li>
+                <li><a href="contact.html#contactform">Contact Form</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--end of Dropdown menu-->
         <!-- Empty cell/s used  for spacing-->
         <div class="cell"></div>
         <div class="cell shrink">
@@ -136,8 +136,9 @@
                             alt="plus button"></button>
                       </div>
                       <div class="cell small-10 text-center">
-                          <a href="./"><img id="mobile-logo" src="assets/img/boom_logo_orange.svg" alt="Boom Radio logo"></a>
-                  </div>
+                        <a href="./"><img id="mobile-logo" src="assets/img/boom_logo_orange.svg"
+                            alt="Boom Radio logo"></a>
+                      </div>
                       <!-- Empty cell/s used  for spacing  THIS CELL IS NEEDED TO CENTER THE logo -->
                       <div class="cell small-1"></div>
                     </div>
@@ -216,13 +217,12 @@
         <!-- TABS MULTI CONTENT : RADIO SHOWS-->
         <div class="md-tabs">
           <ul class="tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs large-tabs"
-            id="collapsing-tabs" data-allow-all-closed="true" data-multi-expand="true">
-            <li class="tabs-title is-active"><a href="#panel1c"><i class="fas fa-microphone-alt"></i> BOOM's Big
+            id="collapsing-tabs" data-allow-all-closed="true" data-multi-expand="true" data-deep-link="true">
+            <li class="tabs-title is-active"></span><a href="#panel1c"><i class="fas fa-microphone-alt"></i> BOOM's Big
                 Breakfast</a></li>
-            <li class="tabs-title"><a href="#panel2c"><i class="fas fa-microphone-alt"></i> The Drive Home</a></li>
-            <li class="tabs-title"><a href="#panel3c"><i class="fas fa-microphone-alt"></i> Special - 7pm to 10pm</a>
+            <li class="tabs-title"></span><a href="#panel2c"><i class="fas fa-microphone-alt"></i> The Drive Home</a>
             </li>
-            <li class="tabs-title"><a href="#panel4c"><i class="fas fa-microphone-alt"></i> Special - 10pm to 12am</a>
+            <li class="tabs-title"></span><a href="#panel3c"><i class="fas fa-microphone-alt"></i> Specialty Shows</a>
             </li>
             <li class="slide"></li>
           </ul>
@@ -256,36 +256,6 @@
                       </div>
                       <iframe height="60"
                         src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FBOOMradioau%2Fjordy-loz-booms-big-breakfast%2F"></iframe>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell">
-                  <div class="card">
-                    <h4>Fridays</h4>
-                    <img src="assets/img/shows/boom_geekouts_card.jpg" alt=" show image">
-                    <div class="card-section">
-                      <div class="bio">
-                        <h5 class="section-title">Presenters</h5>
-                        <p class="text-justify lead">Description of the style</p>
-                      </div>
-                      <a class="boom-button float-right"
-                        href="https://www.mixcloud.com/BOOMradioau/booms-big-breakfast-jay-cin-bron/"
-                        target="_blank">Listen!</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell">
-                  <div class="card">
-                    <h4>Saturdays and Sundays</h4>
-                    <img src="assets/img/shows/boom_geekouts_card.jpg" alt=" show image">
-                    <div class="card-section">
-                      <div class="bio">
-                        <h5 class="section-title">Presenters</h5>
-                        <p class="text-justify lead">Description of the style</p>
-                      </div>
-                      <a class="boom-button float-right"
-                        href="https://www.mixcloud.com/BOOMradioau/booms-big-breakfast-jay-cin-bron/"
-                        target="_blank">Listen!</a>
                     </div>
                   </div>
                 </div>
@@ -372,8 +342,6 @@
                     </div>
                   </div>
                 </div>
-
-
                 <div class="cell">
                   <div class="card">
                     <h4>Time</h4>
@@ -419,10 +387,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="tabs-panel" id="panel4c">
-              <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-4">
                 <div class="cell">
                   <div class="card">
                     <h4>Time</h4>
@@ -493,7 +457,7 @@
     <!-- CATEGORY SHOWS-->
 
     <!---Title with Wave -->
-    <div class="grid-x grid-padding-y align-center align-middle">
+    <div class="grid-x grid-padding-y align-center align-middle" id="presenters">
       <div class="cell auto text-right">
         <img src="assets/img/wave_left.svg" alt="wave left">
       </div>
@@ -508,7 +472,7 @@
 
     <!--BEGINNING OF SLICK CAROUSEL SECTION-->
     <!--Slick carousel tester-->
-    <div class="grid-container">
+    <div class="grid-container" >
       <div class="cell">
         <div class="responsive">
           <div class="callout gradient-one-two">
