@@ -1,6 +1,12 @@
 @import "config";
 
 @include mediaMd {
+    :target:before {
+        content:"";
+        display:block;
+        height:133px; /* fixed header height*/
+        }
+
     .icons {
         height: 70%;
         width: 70%;

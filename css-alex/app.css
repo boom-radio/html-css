@@ -527,6 +527,12 @@ div.md-tabs {
     display: inline-block;
     margin: 5px 10px; }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 84px;
+  /* fixed header height*/ }
+
 .info-container li {
   padding: 5px; }
 
@@ -750,6 +756,11 @@ footer a {
 
 /*Styling for button 'glint' effect*/
 @media screen and (min-width: 668px) {
+  :target:before {
+    content: "";
+    display: block;
+    height: 133px;
+    /* fixed header height*/ }
   .icons {
     height: 70%;
     width: 70%; }
