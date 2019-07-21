@@ -418,7 +418,8 @@ iframe {
   .card img {
     -webkit-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3);
     -moz-box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3);
-    box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3); }
+    box-shadow: 5px 5px 0 rgba(16, 33, 38, 0.3);
+    object-fit: cover; }
 
 .card-section {
   background-color: #535156;
